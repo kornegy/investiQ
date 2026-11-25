@@ -51,6 +51,8 @@ struct SectionContainer: View {
             RiskView()
         case .planner:
             PlannerView()
+        case .simulator:
+            SimulatorView()
         default:
             SectionPlaceholderView(section: section)
         }

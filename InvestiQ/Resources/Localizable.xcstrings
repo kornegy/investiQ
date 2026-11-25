@@ -16538,6 +16538,1616 @@
         }
       }
     },
+    "simulator.advance.day": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 den"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 day"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 день"
+          }
+        }
+      }
+    },
+    "simulator.advance.month": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 měsíc"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 month"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 месяц"
+          }
+        }
+      }
+    },
+    "simulator.advance.week": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 týden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 week"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 неделя"
+          }
+        }
+      }
+    },
+    "simulator.benchmark.ahead": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zatím o %@ více než benchmark. Krátká období o dovednosti mnoho neříkají."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ more than the benchmark so far. Short periods say little about skill."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пока на %@ больше, чем бенчмарк. Короткие периоды мало говорят о навыке."
+          }
+        }
+      }
+    },
+    "simulator.benchmark.behind": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zatím o %@ méně než benchmark. Krátká období o dovednosti mnoho neříkají."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ less than the benchmark so far. Short periods say little about skill."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пока на %@ меньше, чем бенчмарк. Короткие периоды мало говорят о навыке."
+          }
+        }
+      }
+    },
+    "simulator.error.backwards": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simulované datum lze posouvat jen dopředu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The simulated date can only move forward."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дату симуляции можно сдвигать только вперёд."
+          }
+        }
+      }
+    },
+    "simulator.error.generic": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cvičný pokyn se nepodařilo provést."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The simulated order could not be completed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось выполнить учебную заявку."
+          }
+        }
+      }
+    },
+    "simulator.error.insufficientCash": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedostatek virtuální hotovosti: k dispozici %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not enough virtual cash: %@ available."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недостаточно виртуальных денег: доступно %@."
+          }
+        }
+      }
+    },
+    "simulator.error.insufficientQuantity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Držíte jen %@ ks."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You hold only %@ units."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У вас только %@ шт."
+          }
+        }
+      }
+    },
+    "simulator.error.invalidCapital": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte kladný počáteční kapitál."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a positive starting capital."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите положительный стартовый капитал."
+          }
+        }
+      }
+    },
+    "simulator.error.invalidQuantity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte kladné množství."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a positive quantity."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите положительное количество."
+          }
+        }
+      }
+    },
+    "simulator.error.invalidStartDate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historické přehrání musí začínat alespoň %@ dní v minulosti."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A historical replay must start at least %@ days in the past."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исторический режим должен начинаться не позже чем %@ дней назад."
+          }
+        }
+      }
+    },
+    "simulator.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simulátor se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The simulator could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить симулятор."
+          }
+        }
+      }
+    },
+    "simulator.error.noPrice": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro nástroj není k simulovanému datu k dispozici cena."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No price is available for this instrument at the simulated date."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для инструмента нет цены на дату симуляции."
+          }
+        }
+      }
+    },
+    "simulator.error.noRate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro %@ není k simulovanému datu k dispozici kurz."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No exchange rate is available for %@ at the simulated date."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет курса для %@ на дату симуляции."
+          }
+        }
+      }
+    },
+    "simulator.error.notTradable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nástroj nemá kotaci s cenovými daty."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This instrument has no listing with price data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У инструмента нет листинга с данными о ценах."
+          }
+        }
+      }
+    },
+    "simulator.holdings": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pozice"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Holdings"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позиции"
+          }
+        }
+      }
+    },
+    "simulator.insight.concentration": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ tvoří %2$@ portfolia. Jednotlivá pozice může prudce klesnout."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ makes up %2$@ of the portfolio. A single position can fall sharply."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ составляет %2$@ портфеля. Отдельная позиция может резко подешеветь."
+          }
+        }
+      }
+    },
+    "simulator.insight.fees": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Náklady přibližně %@ počátečního kapitálu ročně. Náklady snižují výnos rok co rok."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costs of about %@ of the starting capital per year. Costs reduce returns year after year."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расходы около %@ стартового капитала в год. Расходы снижают доходность год за годом."
+          }
+        }
+      }
+    },
+    "simulator.insight.frequent": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přibližně %@ obchodů měsíčně. Časté obchodování výsledky po započtení nákladů zřídka zlepší."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About %@ trades per month. Trading often rarely improves results once costs are included."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Около %@ сделок в месяц. Частая торговля редко улучшает результат с учётом расходов."
+          }
+        }
+      }
+    },
+    "simulator.insight.idleCash": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ portfolia je hotovost. Pokud je to záměr, je to v pořádku; hotovost neroste a ztrácí hodnotu inflací."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ of the portfolio is cash. That is fine if intended; cash does not grow and loses value to inflation."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ портфеля — денежные средства. Это нормально, если так задумано; деньги не растут и обесцениваются инфляцией."
+          }
+        }
+      }
+    },
+    "simulator.insight.sellingAfterFall": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ prodej(e) proběhl(y) po poklesu o 10 %% a více. Prodej po poklesu realizuje ztrátu; stojí za to se zeptat, zda se změnil důvod držení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sale(s) happened after a fall of 10 %% or more. Selling after falls locks in losses; it is worth asking whether the reason for owning changed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ продаж(и) произошли после падения на 10 %% и более. Продажа после падения фиксирует убытки; стоит спросить себя, изменилась ли причина владения."
+          }
+        }
+      }
+    },
+    "simulator.insight.turnover": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roční obrat přibližně %@. Časté nakupování a prodávání ve skutečnosti přidává náklady a daně."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annual turnover of about %@. Frequent buying and selling adds costs and taxes in real life."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Годовой оборот около %@. Частые покупки и продажи в реальности добавляют расходы и налоги."
+          }
+        }
+      }
+    },
+    "simulator.insights.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jednoduché kontroly vašeho cvičného obchodování. Popisují návyky, které často stojí peníze; nejde o hodnocení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simple checks of your simulated trading. They describe habits that often cost money; they are not judgements."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Простые проверки вашей учебной торговли. Они описывают привычки, которые часто стоят денег; это не оценки."
+          }
+        }
+      }
+    },
+    "simulator.insights.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vzorce k zamyšlení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patterns to reflect on"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Закономерности для размышления"
+          }
+        }
+      }
+    },
+    "simulator.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Procvičujte s virtuálními penězi. Uplatňují se poplatky, spready, převod měn a zpoždění dat. Nejsou zde žebříčky ani odměny: cílem je učit se, ne více obchodovat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practise with virtual money. Fees, spreads, currency conversion and data delays are applied. There are no rankings or rewards: the point is to learn, not to trade more."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Практикуйтесь на виртуальных деньгах. Учитываются комиссии, спреды, конвертация валют и задержки данных. Здесь нет рейтингов и наград: цель — учиться, а не торговать больше."
+          }
+        }
+      }
+    },
+    "simulator.liveNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceny pocházejí od vašich poskytovatelů dat a mohou být zpožděné; zpoždění je uvedeno u každé ceny."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prices come from your data providers and may be delayed; the delay is shown with each price."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цены поступают от ваших поставщиков данных и могут быть с задержкой; задержка указана у каждой цены."
+          }
+        }
+      }
+    },
+    "simulator.metric.benchmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark se stejnými vklady"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark with the same deposits"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бенчмарк с теми же взносами"
+          }
+        }
+      }
+    },
+    "simulator.metric.benchmark.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolik by měly stejné vklady hodnotu, kdyby byl každý investován do benchmarku ve stejný den se stejnými náklady."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What the same deposits would be worth if each had been invested in the benchmark on the same day, with the same costs."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сколько стоили бы те же взносы, если бы каждый был вложен в бенчмарк в тот же день с теми же расходами."
+          }
+        }
+      }
+    },
+    "simulator.metric.cash": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hotovost"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cash"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Денежные средства"
+          }
+        }
+      }
+    },
+    "simulator.metric.costs": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaplacené náklady"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costs paid"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уплаченные расходы"
+          }
+        }
+      }
+    },
+    "simulator.metric.costs.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provize a poplatky za převod měn. Náklady spreadu jsou zahrnuty v cenách provedení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commissions and currency conversion fees. Spread costs are included in the fill prices."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Комиссии и сборы за конвертацию валют. Расходы на спред учтены в ценах исполнения."
+          }
+        }
+      }
+    },
+    "simulator.metric.value": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodnota"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стоимость"
+          }
+        }
+      }
+    },
+    "simulator.mode.historical": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historické přehrání"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historical replay"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исторический режим"
+          }
+        }
+      }
+    },
+    "simulator.mode.live": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuální (zpožděná data)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live (delayed data)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Текущий (данные с задержкой)"
+          }
+        }
+      }
+    },
+    "simulator.new.benchmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бенчмарк"
+          }
+        }
+      }
+    },
+    "simulator.new.capital": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtuální počáteční kapitál"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtual starting capital"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Виртуальный стартовый капитал"
+          }
+        }
+      }
+    },
+    "simulator.new.costs": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výchozí náklady: provize 0,1 % (minimum 1), spread 0,1 %, převod měny 0,25 %. Skuteční brokeři se liší."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default costs: 0.1 % commission (minimum 1), 0.1 % spread, 0.25 % currency conversion. Real brokers differ."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расходы по умолчанию: комиссия 0,1 % (минимум 1), спред 0,1 %, конвертация 0,25 %. У реальных брокеров условия отличаются."
+          }
+        }
+      }
+    },
+    "simulator.new.create": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustit simulaci"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start simulation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Начать симуляцию"
+          }
+        }
+      }
+    },
+    "simulator.new.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historické přehrání začíná v minulosti a postupuje den po dni jen s daty dostupnými v dané době. Aktuální režim používá současná zpožděná data."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historical replay starts in the past and moves forward day by day using only data available at that time. Live mode uses current delayed data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исторический режим начинается в прошлом и движется вперёд день за днём, используя только доступные тогда данные. Текущий режим использует актуальные данные с задержкой."
+          }
+        }
+      }
+    },
+    "simulator.new.mode": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Režim"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режим"
+          }
+        }
+      }
+    },
+    "simulator.new.name": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Název"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название"
+          }
+        }
+      }
+    },
+    "simulator.new.noBenchmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádný"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "None"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет"
+          }
+        }
+      }
+    },
+    "simulator.new.start": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum začátku"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start date"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата начала"
+          }
+        }
+      }
+    },
+    "simulator.new.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nová simulace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New simulation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новая симуляция"
+          }
+        }
+      }
+    },
+    "simulator.noFuture": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Používají se jen data do tohoto data. Datum lze posouvat dopředu, nikdy zpět."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only data up to this date is used. The date can move forward but never back."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Используются только данные до этой даты. Дату можно сдвигать вперёд, но не назад."
+          }
+        }
+      }
+    },
+    "simulator.order.buy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nákup"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покупка"
+          }
+        }
+      }
+    },
+    "simulator.order.choose": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите…"
+          }
+        }
+      }
+    },
+    "simulator.order.commission": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provize"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commission"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Комиссия"
+          }
+        }
+      }
+    },
+    "simulator.order.done": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cvičný pokyn zaznamenán."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simulated order recorded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учебная заявка записана."
+          }
+        }
+      }
+    },
+    "simulator.order.fill": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena provedení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill price"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена исполнения"
+          }
+        }
+      }
+    },
+    "simulator.order.fxFee": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poplatek za převod měny"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currency conversion fee"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сбор за конвертацию"
+          }
+        }
+      }
+    },
+    "simulator.order.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokyny se provádějí za referenční cenu plus minus polovinu spreadu. Náklady se zobrazí před potvrzením."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders fill at the reference price plus or minus half the spread. Costs are shown before you confirm."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заявки исполняются по опорной цене плюс или минус половина спреда. Расходы показываются до подтверждения."
+          }
+        }
+      }
+    },
+    "simulator.order.instrument": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nástroj"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instrument"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Инструмент"
+          }
+        }
+      }
+    },
+    "simulator.order.placeBuy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provést cvičný nákup"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Place simulated purchase"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выполнить учебную покупку"
+          }
+        }
+      }
+    },
+    "simulator.order.placeSell": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provést cvičný prodej"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Place simulated sale"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выполнить учебную продажу"
+          }
+        }
+      }
+    },
+    "simulator.order.quantity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Množství"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Количество"
+          }
+        }
+      }
+    },
+    "simulator.order.reference": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referenční cena"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reference price"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Опорная цена"
+          }
+        }
+      }
+    },
+    "simulator.order.sell": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prodej"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sell"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Продажа"
+          }
+        }
+      }
+    },
+    "simulator.order.side": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Směr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Side"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Направление"
+          }
+        }
+      }
+    },
+    "simulator.order.spread": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Náklad spreadu (v ceně provedení)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spread cost (included in the fill)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расход на спред (в цене исполнения)"
+          }
+        }
+      }
+    },
+    "simulator.order.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cvičný pokyn"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simulated order"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учебная заявка"
+          }
+        }
+      }
+    },
+    "simulator.order.totalBuy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Celkem zaplaceno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total paid"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Итого к оплате"
+          }
+        }
+      }
+    },
+    "simulator.order.totalSell": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čistý výnos z prodeje"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Net proceeds"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чистая выручка"
+          }
+        }
+      }
+    },
+    "simulator.order.value": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodnota pokynu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сумма заявки"
+          }
+        }
+      }
+    },
+    "simulator.session": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Session"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сессия"
+          }
+        }
+      }
+    },
+    "simulator.simDate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simulované datum: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simulated date: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата симуляции: %@"
+          }
+        }
+      }
+    },
+    "simulator.tab.sessions": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cvičné obchodování"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paper trading"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учебная торговля"
+          }
+        }
+      }
+    },
+    "simulator.tab.strategy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laboratoř strategií"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strategy lab"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лаборатория стратегий"
+          }
+        }
+      }
+    },
+    "simulator.tabs": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вид"
+          }
+        }
+      }
+    },
     "source.footer": {
       "extractionState": "manual",
       "localizations": {
@@ -16672,6 +18282,880 @@
           "stringUnit": {
             "state": "translated",
             "value": "Финансовые показатели требуют дополнительной проверки"
+          }
+        }
+      }
+    },
+    "strategy.addRow": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přidat nástroj"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add instrument"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить инструмент"
+          }
+        }
+      }
+    },
+    "strategy.allocation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozložení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allocation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Распределение"
+          }
+        }
+      }
+    },
+    "strategy.allocation.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cílové váhy musí dát dohromady 100 %. Rebalancování obchoduje zpět k těmto vahám a pokaždé stojí peníze."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Target weights must add up to 100 %. Rebalancing trades back to these weights and costs money each time."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Целевые веса должны в сумме давать 100 %. Ребалансировка возвращает к этим весам и каждый раз стоит денег."
+          }
+        }
+      }
+    },
+    "strategy.benchmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бенчмарк"
+          }
+        }
+      }
+    },
+    "strategy.disclaimer": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zpětný test ukazuje jen jednu cestu, kterou minulost šla. Jiná období dávají jiné výsledky a je snadné vybrat rozložení, které jen sedí na minulost."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A back-test shows one path the past took. Other periods give different results, and it is easy to pick an allocation that merely fits the past."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бэктест показывает лишь один путь, по которому шло прошлое. Другие периоды дают иные результаты, и легко подобрать структуру, которая просто подогнана под прошлое."
+          }
+        }
+      }
+    },
+    "strategy.end": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По"
+          }
+        }
+      }
+    },
+    "strategy.error.amounts": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte kladnou počáteční částku a měsíční vklad nula nebo více."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a positive initial amount and a monthly contribution of zero or more."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите положительную начальную сумму и ежемесячный взнос не меньше нуля."
+          }
+        }
+      }
+    },
+    "strategy.error.failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zpětný test se s dostupnými daty nepodařilo provést."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The back-test could not be run with the available data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось выполнить бэктест на доступных данных."
+          }
+        }
+      }
+    },
+    "strategy.error.invalidRow": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V každém řádku vyberte nástroj a váhu nula nebo více."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose an instrument and a weight of zero or more in every row."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В каждой строке выберите инструмент и вес не меньше нуля."
+          }
+        }
+      }
+    },
+    "strategy.error.noPriceAtStart": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ nemá k datu začátku cenu. Zvolte pozdější začátek."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ has no price at the start date. Choose a later start."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У %@ нет цены на дату начала. Выберите более позднюю дату."
+          }
+        }
+      }
+    },
+    "strategy.error.period": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum začátku musí předcházet datu konce."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The start date must be before the end date."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата начала должна быть раньше даты окончания."
+          }
+        }
+      }
+    },
+    "strategy.error.weights": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váhy musí dát dohromady 100 %."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weights must add up to 100 %."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сумма весов должна быть 100 %."
+          }
+        }
+      }
+    },
+    "strategy.initial": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Počáteční částka"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Initial amount"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Начальная сумма"
+          }
+        }
+      }
+    },
+    "strategy.instrument": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nástroj"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instrument"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Инструмент"
+          }
+        }
+      }
+    },
+    "strategy.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podívejte se, jak by se pevné rozložení chovalo v minulosti s pravidelnými vklady, rebalancováním a náklady. Minulost se přesně neopakuje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See how a fixed allocation would have behaved in the past, with regular contributions, rebalancing and costs. The past does not repeat exactly."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Посмотрите, как вела бы себя фиксированная структура в прошлом с регулярными взносами, ребалансировкой и расходами. Прошлое не повторяется в точности."
+          }
+        }
+      }
+    },
+    "strategy.metric.contributed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vloženo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paid in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Внесено"
+          }
+        }
+      }
+    },
+    "strategy.metric.costs": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Náklady"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costs"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расходы"
+          }
+        }
+      }
+    },
+    "strategy.metric.drawdown": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximální propad"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum drawdown"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Максимальная просадка"
+          }
+        }
+      }
+    },
+    "strategy.metric.final": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konečná hodnota"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Final value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Итоговая стоимость"
+          }
+        }
+      }
+    },
+    "strategy.metric.rebalances": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rebalancování"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rebalancings"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ребалансировок"
+          }
+        }
+      }
+    },
+    "strategy.metric.twr": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časově vážený výnos"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time-weighted return"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доходность, взвешенная по времени"
+          }
+        }
+      }
+    },
+    "strategy.metric.volatility": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volatilita (roční)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volatility (annualised)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Волатильность (годовая)"
+          }
+        }
+      }
+    },
+    "strategy.monthly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měsíční vklad"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly contribution"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ежемесячный взнос"
+          }
+        }
+      }
+    },
+    "strategy.rebalancing": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rebalancování"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rebalancing"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ребалансировка"
+          }
+        }
+      }
+    },
+    "strategy.rebalancing.annually": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jednou ročně"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once a year"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Раз в год"
+          }
+        }
+      }
+    },
+    "strategy.rebalancing.never": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nikdy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Никогда"
+          }
+        }
+      }
+    },
+    "strategy.rebalancing.quarterly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Každé čtvrtletí"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every quarter"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Каждый квартал"
+          }
+        }
+      }
+    },
+    "strategy.rebalancing.threshold": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Když se váha odchýlí o více než 5 bodů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When a weight drifts by more than 5 points"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когда вес отклоняется более чем на 5 п. п."
+          }
+        }
+      }
+    },
+    "strategy.result": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výsledek zpětného testu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back-test result"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Результат бэктеста"
+          }
+        }
+      }
+    },
+    "strategy.result.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodnoty v základní měně jen s cenami a kurzy známými k danému datu. Náklady: provize 0,1 % (min. 1), spread 0,1 %, převod 0,25 %. Daně nejsou zahrnuty."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Values in your base currency using only prices and exchange rates known on each date. Costs: 0.1 % commission (min. 1), 0.1 % spread, 0.25 % conversion. Taxes are not included."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стоимость в базовой валюте с использованием только цен и курсов, известных на каждую дату. Расходы: комиссия 0,1 % (мин. 1), спред 0,1 %, конвертация 0,25 %. Налоги не учтены."
+          }
+        }
+      }
+    },
+    "strategy.run": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustit zpětný test"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Run back-test"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запустить бэктест"
+          }
+        }
+      }
+    },
+    "strategy.series.benchmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benchmark"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бенчмарк"
+          }
+        }
+      }
+    },
+    "strategy.series.contributed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vloženo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paid in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Внесено"
+          }
+        }
+      }
+    },
+    "strategy.series.strategy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strategie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strategy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стратегия"
+          }
+        }
+      }
+    },
+    "strategy.start": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Od"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "С"
+          }
+        }
+      }
+    },
+    "strategy.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laboratoř strategií"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strategy lab"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лаборатория стратегий"
+          }
+        }
+      }
+    },
+    "strategy.weight": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váha"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weight"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вес"
+          }
+        }
+      }
+    },
+    "strategy.weightSum": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Celkem: %@ %%"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total: %@ %%"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Итого: %@ %%"
           }
         }
       }

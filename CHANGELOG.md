@@ -10,6 +10,13 @@ SemVer once releases start.
   fund coverage, income-loss and unexpected-expense what-ifs, savings scenario (nominal and in today's
   money), hypothetical portfolio moves in months of costs, goals; educational notes that never propose an
   amount to invest.
+- Simulator: live and historical sessions (forward-only simulated date, no later data), realistic order
+  costs (commission, spread, automatic FX conversion with fee), cash and quantity checks, benchmark with
+  the same deposits, mistake analysis; strategy lab with fixed weights, contributions, rebalancing rules
+  and costs. No rankings, streaks or rewards.
+- Fix: cached price history counted as a hit when it covered only the start of a request (could hide
+  recent prices); fetched bars are now merged into the cache instead of replacing it.
+- Portfolio snapshots can be valued as of a past date (used by historical simulations).
 
 ### Phase 4 — Analytics and risk
 - Bond analytics (schedules, five day counts, accrued interest, YTM/YTC, durations, convexity, full

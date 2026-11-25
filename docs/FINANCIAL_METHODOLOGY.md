@@ -258,9 +258,34 @@ The thresholds are heuristics for **education**, not investment advice; they are
 
 ## 11. Simulator (M-SIM)
 
-Orders fill at the latest price available **at the simulated time** (next close in historical mode)
-plus a configurable spread (default 0.1%), fee model (fixed + % with min), FX conversion fee (default
-0.25%). Market data delay is shown. Benchmark: same cash flows invested in a chosen benchmark.
-Strategy backtests: fixed-weight allocation with periodic or threshold rebalancing, costs deducted.
-Mistake analysis heuristics: turnover > 100%/yr, fees > 1% of capital/yr, concentration flags, sales
-within 30 days after a ≥ 10% drawdown ("selling after a fall" pattern).
+**Sessions.** A session is a virtual portfolio (database triggers reject real portfolios) with a starting
+deposit. *Live* mode uses the current (delayed) quote and dates trades today. *Historical* mode starts
+≥ 30 days in the past; prices are the last close on or before the simulated date (carried ≤ 7 days),
+exchange rates are those of that date, and the simulated date can only move forward (never past today).
+
+**Order pricing.** Fill = reference × (1 ± spread/2) (buy +, sell −), rounded to 4 decimals. Bond
+references are converted from percent of face to the price of one bond. Value = qty × fill.
+Commission (base currency) = max(minimum, fixed + percent × value_base). Foreign instruments: cash is
+converted automatically each way with an FX fee = fxFee × value (an `fxConversion` transaction before a
+buy, after a sale). Defaults: 0.1 % commission (min. 1), 0.1 % spread, 0.25 % FX fee — all editable.
+Orders that need more base cash than available, or sell more than held, are rejected (no leverage, no
+shorting). Example (tested): 10 × 100 USD at 25 CZK/USD → fill 100.05, value 25 012.50 CZK, commission
+25.01, FX fee 62.53, total 25 100.04 CZK.
+
+**Benchmark.** Each deposit/withdrawal buys/sells benchmark units at that day's close with the same fee
+model (quantity scaled once so the cash moved after costs ≈ the flow); value on the simulated date.
+
+**Mistake analysis (observations, not judgements).** Annual turnover = min(buys, sells) / average value /
+years > 100 %; trades per month > 8 (both only with ≥ 5 trades); costs > 1 % of starting capital per
+year; a position > 20 %; sales when the close was ≥ 10 % below its 90-day high ("selling after a fall",
+using only data up to the sale); cash > 50 % after the first month.
+
+**Strategy lab (back-test).** Fixed target weights (sum 100 %), initial amount on the first trading day
+and a monthly contribution on the first trading day of each later month, invested at target weights.
+Rebalancing: never, annually (anniversary month), quarterly, or when any weight drifts > 5 pp (checked
+monthly). Each trade costs commission + spread/2 (+ FX fee for foreign assets). Prices and monthly FX
+rates are looked up as of each date (look-ahead test: changing later data never changes earlier
+results). Outputs: value and contributions series, TWR (daily returns net of the day's contribution),
+annualised volatility, maximum drawdown, costs, number of rebalancings; benchmark = the same
+contributions into one instrument, never rebalanced. Double precision (statistics); results never enter
+a ledger.

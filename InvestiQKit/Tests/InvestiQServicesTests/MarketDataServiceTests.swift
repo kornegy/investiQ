@@ -153,4 +153,24 @@ final class MarketDataServiceTests: XCTestCase {
         XCTAssertEqual(Set(registry.exchangeRates.map(\.info.id)), [CNBExchangeRateProvider.id, ECBExchangeRateProvider.id])
         XCTAssertFalse(registry.fundamentals.contains { $0.info.id == SECEdgarProvider.id }, "SEC needs a contact e-mail")
     }
+
+    func testHistoryCacheMustCoverBothEndsAndMergesInsteadOfTruncating() {
+        func series(_ dates: [String]) -> PriceSeries {
+            PriceSeries(listing: ListingKey(mic: nil, ticker: Ticker(rawValue: "T")!), currency: .czk, adjustment: .split,
+                        bars: dates.map { PriceBar(date: .d($0), close: 1) })
+        }
+        let short = series(["2024-12-23", "2025-01-06"])
+        let today = LocalDate.d("2026-11-20")
+        XCTAssertTrue(MarketDataService.covers(short, DateRange(start: .d("2024-12-23"), end: .d("2025-01-06")), today: today))
+        XCTAssertFalse(MarketDataService.covers(short, DateRange(start: .d("2025-05-19"), end: .d("2025-06-02")), today: today),
+                       "a cached series ending earlier than the request is a miss")
+        XCTAssertFalse(MarketDataService.covers(short, DateRange(start: .d("2020-01-01"), end: .d("2025-01-06")), today: today))
+
+        let metadata = DataMetadata(source: DataSourceInfo(id: "demo", name: "Demo"), retrievedAt: Date.utc("2026-11-20T10:00:00Z"),
+                                    delay: .synthetic, quality: .validated)
+        let long = Sourced(series(["2020-01-02", "2024-12-23", "2025-01-06", "2026-11-20"]), metadata: metadata)
+        let fresh = Sourced(series(["2024-12-23", "2025-01-06"]), metadata: metadata)
+        let merged = MarketDataService.merge(cached: long, fresh: fresh)
+        XCTAssertEqual(merged.value.bars.map(\.date), ["2020-01-02", "2024-12-23", "2025-01-06", "2026-11-20"].map { LocalDate.d($0) })
+    }
 }

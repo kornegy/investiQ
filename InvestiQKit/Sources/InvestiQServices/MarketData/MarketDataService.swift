@@ -143,7 +143,7 @@ public actor MarketDataService {
     public func history(for listing: Listing, range: DateRange, forceRefresh: Bool = false) async -> DataOutcome<PriceSeries> {
         let cached = try? await cache.read { try CacheRecords.series(listing.key, in: $0) }
         if !forceRefresh, let cached, clock.now().timeIntervalSince(cached.metadata.retrievedAt) < freshness.history,
-           let first = cached.value.firstDate, first <= range.start.adding(days: 7) {
+           Self.covers(cached.value, range, today: clock.today()) {
             return DataOutcome(value: relabelCached(cached).map { $0.filtered(to: range) }, failures: [])
         }
         var failures: [ProviderAttempt] = []
@@ -152,7 +152,8 @@ public actor MarketDataService {
             do {
                 let fresh = try await provider.history(symbol, range: range)
                 guard !fresh.value.bars.isEmpty else { throw ProviderFailure.notFound }
-                try? await cache.write { try CacheRecords.saveSeries(fresh, in: $0) }
+                let merged = Self.merge(cached: cached, fresh: fresh)
+                try? await cache.write { try CacheRecords.saveSeries(merged, in: $0) }
                 return DataOutcome(value: fresh, failures: failures)
             } catch {
                 let failure = error as? ProviderFailure ?? .connectionFailed
@@ -161,6 +162,28 @@ public actor MarketDataService {
             }
         }
         return DataOutcome(value: cached.map { markStale($0).map { $0.filtered(to: range) } }, failures: failures)
+    }
+
+    /// Gap tolerated at either end of a cached series (weekends and holidays) before it counts as a miss.
+    static let coverageToleranceDays = 5
+
+    /// A cached series answers a request only if it reaches both the start and the end of the range.
+    static func covers(_ series: PriceSeries, _ range: DateRange, today: LocalDate) -> Bool {
+        guard let first = series.firstDate, let last = series.lastDate else { return false }
+        let neededEnd = min(range.end, today)
+        return first <= range.start.adding(days: coverageToleranceDays) && last >= neededEnd.adding(days: -coverageToleranceDays)
+    }
+
+    /// Fresh bars replace cached bars on the same dates; cached bars outside the fetched range are kept, so a
+    /// short request never truncates a longer cached history. Different currency or adjustment: fresh wins.
+    static func merge(cached: Sourced<PriceSeries>?, fresh: Sourced<PriceSeries>) -> Sourced<PriceSeries> {
+        guard let cached, cached.value.currency == fresh.value.currency, cached.value.adjustment == fresh.value.adjustment,
+              let start = fresh.value.firstDate, let end = fresh.value.lastDate else { return fresh }
+        let kept = cached.value.bars.filter { $0.date < start || $0.date > end }
+        guard !kept.isEmpty else { return fresh }
+        return fresh.map { series in
+            PriceSeries(listing: series.listing, currency: series.currency, adjustment: series.adjustment, bars: kept + series.bars)
+        }
     }
 
     // MARK: Fundamentals

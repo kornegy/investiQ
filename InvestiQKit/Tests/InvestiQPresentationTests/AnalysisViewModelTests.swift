@@ -132,3 +132,43 @@ final class PlannerViewModelTests: XCTestCase {
         XCTAssertFalse(reloaded.savings.isEmpty)
     }
 }
+
+@MainActor
+final class SimulatorViewModelTests: XCTestCase {
+    func testCreateHistoricalSessionTradeAndAdvance() async throws {
+        let context = try TestContext()
+        let app = AppModel(environment: AppEnvironment(paths: context.paths, secureStore: context.secureStore,
+                                                       biometricStore: context.biometrics,
+                                                       passwordDerivation: Argon2idKeyDerivation.testing, clock: context.clock,
+                                                       httpClient: OfflineHTTPClient()))
+        await app.startDemo()
+        let model = SimulatorViewModel(app: app, locale: Locale(identifier: "en_US"))
+        await model.load()
+        model.newCapitalText = "50000"
+        let created = await model.createSession(defaultName: "Historical")
+        XCTAssertTrue(created)
+        XCTAssertEqual(model.selected?.portfolio.name, "Historical")
+        XCTAssertNotNil(model.report)
+        model.orderInstrumentID = DemoUniverse.all[0].instrument.id
+        model.orderQuantityText = "10"
+        await model.updatePreview()
+        XCTAssertNotNil(model.preview)
+        await model.placeOrder()
+        XCTAssertEqual(model.orderMessage, Message("simulator.order.done"))
+        XCTAssertEqual(model.heldInstruments.map(\.id), [DemoUniverse.all[0].instrument.id])
+        let before = try XCTUnwrap(model.selected?.session.simDate)
+        await model.advance(days: 7)
+        XCTAssertEqual(model.selected?.session.simDate, before.adding(days: 7))
+        XCTAssertNotNil(model.differenceToBenchmark)
+
+        let lab = StrategyLabViewModel(app: app, locale: Locale(identifier: "en_US"))
+        await lab.load()
+        lab.start = LocalDate.d("2018-01-02").startOfDay(in: .current)
+        await lab.run()
+        XCTAssertNil(lab.error)
+        XCTAssertNotNil(lab.strategy)
+        lab.rows[0].weightText = "70"
+        await lab.run()
+        XCTAssertEqual(lab.error, Message("strategy.error.weights"))
+    }
+}

@@ -143,7 +143,9 @@ public actor PortfolioService {
 
     // MARK: Valuation
 
-    public func snapshot(_ portfolioID: PortfolioID) async throws -> PortfolioSnapshot {
+    /// Valuation with current quotes, or — with `asOf` (historical simulator) — with the last close on or
+    /// before that date and that date's exchange rates, so no later data is used.
+    public func snapshot(_ portfolioID: PortfolioID, asOf: LocalDate? = nil) async throws -> PortfolioSnapshot {
         let (portfolio, transactions, instruments, listings, bonds) = try await store.read {
             db -> (Portfolio, [Transaction], [Instrument], [Listing], [InstrumentID: BondDetails]) in
             guard let portfolio = try PortfolioRecords.portfolio(portfolioID, in: db) else { throw PortfolioServiceError.portfolioNotFound }
@@ -167,12 +169,20 @@ public actor PortfolioService {
             let candidates = listings.filter { $0.instrumentID == position.key.instrumentID }
             guard let listing = candidates.first(where: { $0.tradingCurrency == position.key.currency }) ?? candidates.first,
                   listing.tradingCurrency == position.key.currency else { continue }
-            if let quote = await marketData.quote(for: listing).value {
-                let factor = bonds[position.key.instrumentID]?.quoteToUnitFactor ?? 1
+            let factor = bonds[position.key.instrumentID]?.quoteToUnitFactor ?? 1
+            if let asOf {
+                let range = DateRange(start: asOf.adding(days: -Self.historicalPriceWindowDays), end: asOf)
+                if let history = await marketData.history(for: listing, range: range).value,
+                   let bar = history.value.close(onOrBefore: asOf, maxCarryDays: Self.historicalPriceWindowDays) {
+                    var metadata = history.metadata
+                    metadata.marketTimestamp = bar.date.startOfDay(in: TimeZone(identifier: "UTC") ?? .current)
+                    inputs.prices[position.key] = Sourced(bar.close * factor, metadata: metadata)
+                }
+            } else if let quote = await marketData.quote(for: listing).value {
                 inputs.prices[position.key] = quote.map { $0.price * factor }
             }
         }
-        let today = clock.today()
+        let today = asOf ?? clock.today()
         let currencies = Set(ledger.openPositions.map(\.key.currency)).union(ledger.cash.filter { $0.value != 0 }.keys)
         for currency in currencies where currency != base {
             if let rate = await exchangeRates.rate(from: currency, to: base, on: today).value { inputs.fxToBase[currency] = rate }
@@ -182,6 +192,9 @@ public actor PortfolioService {
                                  instruments: Dictionary(uniqueKeysWithValues: instruments.map { ($0.id, $0) }),
                                  ledgerHash: Self.ledgerHash(transactions), computedAt: clock.now())
     }
+
+    /// Historical valuation carries a close forward at most this many days (weekends and holidays).
+    static let historicalPriceWindowDays = 7
 
     /// Bond terms of the bonds among `instruments` (their quotes are percent of face value).
     static func bondTerms(for instruments: [Instrument], in db: SQLiteDatabase) throws -> [InstrumentID: BondDetails] {
