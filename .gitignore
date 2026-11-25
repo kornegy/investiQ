@@ -1,0 +1,50 @@
+# --- macOS / Xcode ---
+.DS_Store
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+*.xcresult
+
+# --- Swift Package Manager ---
+.build/
+.swiftpm/
+Packages/
+Package.resolved.lock
+
+# --- Secrets: never commit keys, certificates or local configuration ---
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+.env
+.env.*
+Secrets.xcconfig
+LocalOverrides.xcconfig
+*.key
+*.pem
+
+# --- User data, backups and exports must never be committed ---
+*.iqdb
+*.iqbackup
+*-export.csv
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# --- Tooling ---
+.vscode/
+.idea/
+*.swp
+
+# Local-only proxy CA certificates for ci/Dockerfile.linux
+ci/extra-ca/*.crt

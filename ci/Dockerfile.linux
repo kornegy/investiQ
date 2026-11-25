@@ -1,0 +1,20 @@
+# Linux build/test image for the cross-platform InvestiQKit package.
+# Swift 6.2 matches the oldest Swift toolchain shipped with Xcode 26, so code that
+# builds here also builds with the Xcode used by the macOS CI job.
+FROM swift:6.2-noble
+
+# Optional extra CA certificates (e.g. a corporate TLS proxy). The directory is empty
+# in the repository; *.crt files placed there locally are git-ignored.
+COPY extra-ca/ /usr/local/share/ca-certificates/extra/
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ca-certificates libsqlite3-dev pkg-config build-essential autoconf automake libtool git \
+ && update-ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+
+# Ubuntu 24.04 ships libsodium 1.0.18, but swift-sodium 0.12.0 requires >= 1.0.22 (KEM API).
+# Build the pinned upstream release from its git tag instead of using an unverified
+# binary. (macOS builds use swift-sodium's bundled xcframework.)
+ARG LIBSODIUM_TAG=1.0.22-RELEASE
+RUN git clone --depth 1 --branch "${LIBSODIUM_TAG}" https://github.com/jedisct1/libsodium.git /tmp/libsodium \
+ && cd /tmp/libsodium && ./autogen.sh -s && ./configure --prefix=/usr/local --disable-dependency-tracking \
+ && make -j"$(nproc)" && make install && ldconfig && rm -rf /tmp/libsodium
