@@ -35,7 +35,7 @@ investiQ/
 │   │   ├── InvestiQServices/          Use cases: portfolio ledger & valuation, CSV import/export, market
 │   │   │                              data service, news pipeline, calendar, simulator, notifications,
 │   │   │                              education, brokers, AI orchestration, profile/session management
-│   │   ├── InvestiQContent/           Bundled content (education lessons ru/en/cs, broker directory, Lessons are authored in `Content/lessons/*.py` (all three languages side by side) and generated into `Resources/lessons/<lang>.json` by `scripts/build_lessons.py`.
+│   │   ├── InvestiQContent/           Bundled content (education lessons ru/en/cs, broker directory,
 │   │   │                              scheduled events, cause-effect knowledge base)
 │   │   ├── InvestiQPresentation/      @Observable view models (MainActor), AppEnvironment (DI container)
 │   │   └── InvestiQPlatformApple/     Keychain, LocalAuthentication, UserNotifications, NWPathMonitor,
@@ -144,7 +144,7 @@ AES-256-GCM and written atomically. See `docs/SECURITY.md` §3 and `docs/DATABAS
 User-visible text never originates in business logic. Services return structured values and
 `Message(key:arguments:)` descriptors; the app target resolves keys from `Localizable.xcstrings`
 (ru, en, cs) and formats arguments with the current locale (ADR-012). Long-form content (lessons) is
-structured JSON per language in `InvestiQContent`.
+structured JSON per language in `InvestiQContent`. Lessons are authored in `Content/lessons/*.py` (all three languages side by side) and generated into `Resources/lessons/<lang>.json` by `scripts/build_lessons.py`.
 
 ### 3.6 Platform adapters
 
