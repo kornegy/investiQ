@@ -3,6 +3,7 @@ import InvestiQPresentation
 
 @main
 struct InvestiQApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @State private var app = AppModel(environment: AppDependencies.makeEnvironment())
 
     var body: some Scene {

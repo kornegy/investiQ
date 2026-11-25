@@ -1,0 +1,1 @@
+{"ticker":"AAPL","queryCount":2,"resultsCount":2,"adjusted":true,"results":[{"v":40000000,"vw":259,"o":258,"c":259.45,"h":260,"l":257.1,"t":1795064400000,"n":1},{"v":45123456,"vw":261.9,"o":261.07,"c":261.74,"h":263.31,"l":260.68,"t":1795150800000,"n":2}],"status":"OK","request_id":"abc","count":2}

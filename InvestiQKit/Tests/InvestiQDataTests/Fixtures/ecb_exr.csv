@@ -1,0 +1,6 @@
+KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,TITLE,TITLE_COMPL
+EXR.D.CZK.EUR.SP00.A,D,CZK,EUR,SP00,A,2026-11-19,24.912,A,Czech koruna/Euro,"ECB reference exchange rate, Czech koruna/Euro, 2:15 pm (C.E.T.)"
+EXR.D.CZK.EUR.SP00.A,D,CZK,EUR,SP00,A,2026-11-20,24.950,A,Czech koruna/Euro,"ECB reference exchange rate, Czech koruna/Euro, 2:15 pm (C.E.T.)"
+EXR.D.USD.EUR.SP00.A,D,USD,EUR,SP00,A,2026-11-19,1.0810,A,US dollar/Euro,"ECB reference exchange rate, US dollar/Euro, 2:15 pm (C.E.T.)"
+EXR.D.USD.EUR.SP00.A,D,USD,EUR,SP00,A,2026-11-20,1.0850,A,US dollar/Euro,"ECB reference exchange rate, US dollar/Euro, 2:15 pm (C.E.T.)"
+EXR.D.USD.EUR.SP00.A,D,USD,EUR,SP00,A,2026-11-24,1.2000,A,US dollar/Euro,"future row beyond requested date"

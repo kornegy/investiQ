@@ -53,15 +53,18 @@ public struct Listing: Identifiable, Hashable, Codable, Sendable {
     public var ticker: Ticker
     public var tradingCurrency: CurrencyCode
     public var isPrimary: Bool
+    /// Symbol of this listing in each provider's notation (`providerID → symbol`).
+    public var providerSymbols: [String: String]
 
     public init(id: ListingID = ListingID(), instrumentID: InstrumentID, mic: MIC?, ticker: Ticker,
-                tradingCurrency: CurrencyCode, isPrimary: Bool = false) {
+                tradingCurrency: CurrencyCode, isPrimary: Bool = false, providerSymbols: [String: String] = [:]) {
         self.id = id
         self.instrumentID = instrumentID
         self.mic = mic
         self.ticker = ticker
         self.tradingCurrency = tradingCurrency
         self.isPrimary = isPrimary
+        self.providerSymbols = providerSymbols
     }
 
     /// Stable key for caches: `MIC:TICKER` or `?:TICKER` when the venue is unknown.

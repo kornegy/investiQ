@@ -65,6 +65,7 @@ public enum UserSchema {
         ticker TEXT NOT NULL CHECK (length(ticker) BETWEEN 1 AND 24),
         trading_currency TEXT NOT NULL CHECK (length(trading_currency) = 3),
         is_primary INTEGER NOT NULL DEFAULT 0 CHECK (is_primary IN (0, 1)),
+        provider_symbols TEXT NOT NULL DEFAULT '{}',
         UNIQUE (mic, ticker)
     );
     CREATE INDEX idx_listings_instrument ON listings(instrument_id);

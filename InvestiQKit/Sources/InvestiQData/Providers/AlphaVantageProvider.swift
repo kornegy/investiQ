@@ -41,8 +41,10 @@ public struct AlphaVantageProvider: MarketDataProvider, FundamentalsProvider {
         guard let object = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { return }
         if let message = (object["Information"] ?? object["Note"]) as? String {
             let lowered = message.lowercased()
-            if lowered.contains("premium") { throw ProviderFailure.notSupported }
+            if lowered.contains("premium endpoint") { throw ProviderFailure.notSupported }
             if lowered.contains("api key") && lowered.contains("invalid") { throw ProviderFailure.unauthorized }
+            // "25 requests per day": retrying today is pointless; per-minute limits can be retried later.
+            if lowered.contains("per day") { throw ProviderFailure.quotaExhausted }
             throw ProviderFailure.rateLimited(retryAfter: nil)
         }
         if let message = object["Error Message"] as? String {

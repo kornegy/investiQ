@@ -11,8 +11,15 @@ final class InvestiQUITests: XCTestCase {
 
     private func launchApp() -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["--ui-testing", "-AppleLanguages", "(en)", "-AppleLocale", "en_US"]
+        app.launchArguments = ["--ui-testing", "-AppleLanguages", "(en)", "-AppleLocale", "en_US",
+                               "-ApplePersistenceIgnoreState", "YES"]
         app.launch()
+        app.activate()
+        // On CI runners the initial window is sometimes not created; open one explicitly (File ▸ New Window).
+        if !app.windows.firstMatch.waitForExistence(timeout: 10) {
+            app.typeKey("n", modifierFlags: .command)
+        }
+        XCTAssertTrue(app.windows.firstMatch.waitForExistence(timeout: 10), "no window. Hierarchy:\n\(app.debugDescription)")
         return app
     }
 
