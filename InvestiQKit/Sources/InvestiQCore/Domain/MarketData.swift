@@ -119,3 +119,17 @@ public struct DividendEvent: Hashable, Codable, Sendable {
         self.exDate = exDate; self.payDate = payDate; self.amountPerShare = amountPerShare; self.currency = currency
     }
 }
+
+extension PriceSeries {
+    /// Series with every price multiplied by `factor` (volume unchanged). Used to turn bond quotes
+    /// (percent of face value) into the price of one bond.
+    public func scaled(by factor: Decimal) -> PriceSeries {
+        guard factor != 1 else { return self }
+        var copy = self
+        copy.bars = bars.map { bar in
+            PriceBar(date: bar.date, open: bar.open.map { $0 * factor }, high: bar.high.map { $0 * factor },
+                     low: bar.low.map { $0 * factor }, close: bar.close * factor, volume: bar.volume)
+        }
+        return copy
+    }
+}

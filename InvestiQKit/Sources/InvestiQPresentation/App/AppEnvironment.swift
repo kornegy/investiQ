@@ -34,6 +34,8 @@ public struct SessionServices: Sendable {
     public let marketData: MarketDataService
     public let exchangeRates: ExchangeRateService
     public let portfolios: PortfolioService
+    public let forecasts: ForecastService
+    public let risk: RiskService
     /// `nil` in demo mode (no keys are ever used there).
     public let credentials: KeychainCredentials?
 
@@ -53,10 +55,13 @@ public struct SessionServices: Sendable {
         }
         let marketData = MarketDataService(registry: registry, cache: session.cacheStore, clock: clock)
         let exchangeRates = ExchangeRateService(providers: registry.exchangeRates, cache: session.cacheStore, clock: clock)
-        return SessionServices(mode: session.mode, registry: registry,
-                               instruments: InstrumentService(store: session.userStore, clock: clock),
-                               marketData: marketData, exchangeRates: exchangeRates,
-                               portfolios: PortfolioService(store: session.userStore, marketData: marketData, exchangeRates: exchangeRates, clock: clock),
+        let instruments = InstrumentService(store: session.userStore, clock: clock)
+        let portfolios = PortfolioService(store: session.userStore, marketData: marketData, exchangeRates: exchangeRates, clock: clock)
+        return SessionServices(mode: session.mode, registry: registry, instruments: instruments,
+                               marketData: marketData, exchangeRates: exchangeRates, portfolios: portfolios,
+                               forecasts: ForecastService(store: session.userStore, marketData: marketData, clock: clock),
+                               risk: RiskService(store: session.userStore, portfolios: portfolios, instruments: instruments,
+                                                 marketData: marketData, clock: clock),
                                credentials: credentials)
     }
 }

@@ -53,6 +53,13 @@ counted as profit.
 `totalReturn = realised + unrealised + income − taxes − standaloneFees`;
 `totalReturn% = totalReturn / netContributions` when contributions > 0, else `nil`.
 
+**Bond prices (M-VAL-2).** Bond quotes follow the market convention: clean price in percent of face
+value (e.g. 101.20). The ledger records the price of **one bond** in the trading currency, so a bond
+position is valued at `qty · quote/100 · face` and its price history is scaled by `face/100` before
+valuation. The transaction editor accepts percent-of-face prices for bonds and converts them
+(`unit = percent/100 · face`). Market value is a clean value; accrued interest is shown on the asset page
+and recorded on purchase/sale transactions, not added to the market value.
+
 **Historical valuation.** For each date `t`, holdings are derived from transactions with
 `trade_date ≤ t`. If prices are split-adjusted, quantities before a split are converted to the post-split
 basis (multiplied by the cumulative ratio of later splits) so value is continuous. Dates without a price
@@ -85,6 +92,29 @@ use the last available close (carried forward up to 5 trading days, then the poi
   ETFs where look-through data is unavailable — reported as a limitation), currency ≠ base > 50%.
 * **Liquidity (M-LIQ-1):** days to liquidate = position value / (20% × average daily traded value over
   20 days). > 5 days → elevated liquidity risk. Missing volume → `unknown`.
+
+**Portfolio risk report (M-RISK-1, method version `risk-1`).** Inputs: current holdings valued in the
+base currency, one year of daily local-currency log returns per holding, portfolio return series
+`r_t = Σ w_i·r_{i,t}` at **current** weights (historical simulation; FX moves are not included — stated
+as a limitation). Exposures by issuer, sector, country, currency (ETF look-through when known; cash is
+labelled `cash:<base>`) and asset type. Each category gets a level `low < moderate < elevated < high`
+(or `unknown`) from the metric and thresholds `(a, b, c)`: `< a` low, `< b` moderate, `< c` elevated,
+otherwise high.
+
+| Category | Metric | Thresholds |
+|---|---|---|
+| Market | annualised portfolio volatility | 8 % / 15 % / 25 % |
+| Credit | share in individual bonds below investment grade or unrated (no bonds → low) | 0 % / 10 % / 30 % |
+| Liquidity | share needing > 5 days to sell at 20 % of ADV; individual bonds count as less liquid | 10 % / 30 % / 60 % |
+| Currency | share in currencies ≠ base (look-through) | 10 % / 40 % / 70 % |
+| Inflation | share in bonds, bond ETFs and cash | 20 % / 50 % / 80 % |
+| Concentration | top issuer weight / HHI | > 10 % moderate; > 20 % or HHI > 0.15 elevated; > 40 % or HHI > 0.25 high |
+| Interest rate | value-weighted modified duration (bond ETFs: assumed 7 years, labelled) | 1 / 3 / 6 |
+| Political (qualitative) | share outside developed markets | 10 % / 30 % / 60 % |
+| Regulatory (qualitative) | any non-UCITS fund → moderate | — |
+| Counterparty (qualitative) | synthetic ETFs or cash > 50 % → moderate | — |
+
+Each assessment is stored (`risk_assessments`, levels only) so changes over time can be shown later.
 
 ## 4. Fundamentals & valuation (stocks)
 
@@ -134,11 +164,15 @@ holdings currency allocation (look-through), **not** from the trading currency.
 | Equity market decline `−x%` | Stocks/equity ETFs: `ΔV = −x·β_i` (β from history, default 1.0 with "assumed" label) |
 | Interest rates `+Δy` | Bonds: full reprice at `y+Δy`; equities: no direct effect modelled (stated) |
 | Inflation `π` for `T` years | Real value of cash/fixed income: `V/(1+π)^T`; equities not modelled (stated) |
-| FX change `±z%` of each foreign currency vs base | `ΔV = Σ V_ccy·z` |
-| Credit deterioration of issuer | Spread `+s` → bond reprice; default case: recovery rate R (default 40%, user adjustable) |
+| Base currency appreciation `z%` | `ΔV = −Σ V_foreign·z` (ETF currency look-through when known) |
+| Credit spread widening `+s` | Corporate bonds (all or one issuer): full reprice at `y+s` |
+| Issuer default | Bonds of the issuer: `−V·(1−R)` with recovery R = 40 %; shares of the issuer: `−V` |
 | Single company decline `−x%` | Applied to that issuer's direct holdings |
 
-All results are labelled "Hypothetical scenario — not a forecast".
+Presets in the app: equities −20 % and −40 %; rates +1, +2 and −1 pp; inflation 5 % for 3 years; base
+currency +10 %; corporate spreads +2 pp; default of the largest issuer; largest issuer −50 %. Bond ETFs
+in the rate scenario use the assumed 7-year duration (marked "assumed"). All results are labelled
+"Hypothetical scenario — not a forecast" and list their assumptions; no probability is attached.
 
 ## 8. Forecasting & validation (M-FC)
 
@@ -148,16 +182,21 @@ All results are labelled "Hypothetical scenario — not a forecast".
 |---|---|---|
 | FC-NAIVE | Random walk: `P̂_{t+h} = P_t` | baseline |
 | FC-DRIFT | Random walk with drift estimated from training window log returns | point + interval |
-| FC-GBM | Geometric Brownian motion Monte Carlo (μ, σ from training window), 10 000 paths, seeded | quantile bands |
-| FC-BOOT | Stationary block bootstrap of historical log returns (block 20 days), seeded | quantile bands |
+| FC-BOOT | Block bootstrap of historical log returns (block 20 days), 2 000 paths, seeded | quantile bands |
+
+A GBM Monte Carlo model (normal returns) was considered and left out of v1: with μ and σ from the same
+window it produces nearly the same bands as FC-DRIFT while understating fat tails; the bootstrap keeps the
+empirical tails.
 
 **Scenarios (optimistic / base / pessimistic):** built from the empirical distribution of **historical
-rolling h-period returns** of the instrument (or a proxy index if history < 3 years): pessimistic =
+rolling h-period returns** of the instrument (price only; at least `max(3h, 756)` observations, otherwise
+the app says history is insufficient — no proxy is substituted): pessimistic =
 20th percentile, base = median, optimistic = 80th percentile. They are presented as "outcomes observed in
 past periods of the same length", with no probability attached to each scenario. Assumptions, horizon,
 range, risks and limitations are listed for each.
 
-**Sensitivity analysis:** outcome grid over return assumption (±2/±4 pp) × volatility (±25%) × horizon.
+**Sensitivity analysis:** outcome grid for a user-chosen illustration amount over constant annual
+returns around the historical median (±2/±4 pp) × horizons 1, 5 and 10 years.
 
 **Validation (walk-forward, expanding window):** origins every 21 trading days after a minimum 252-day
 training window; for each origin the model sees only data with date ≤ origin (`TimeSeries.asOf(origin)`
@@ -165,10 +204,13 @@ enforces this). Metrics on the evaluation set:
 
 * MAE, RMSE (in price units and in log-return units)
 * **MASE** = MAE_model / MAE_naive(in-sample, h-step) — < 1 means better than naive
+* **Relative MAE** = MAE_model / MAE of the naive forecast made at the same origins (out of sample;
+  exactly 1 for the naive model). This is the direct "did it beat the baseline" test.
 * Directional accuracy (excluding |actual move| < 0.1%)
 * Interval coverage at 80% and 95% (target 0.80/0.95) and calibration curve (coverage at 10…90%)
 
-**Usefulness gate:** a model is shown as a "signal" only if MASE < 0.95 **and** 80% coverage within
+**Usefulness gate:** a model is shown as a "signal" only if MASE < 0.95 **and** relative MAE < 0.95
+**and** 80% coverage within
 [0.70, 0.90] on ≥ 30 evaluations; otherwise the UI states "This model did not outperform a naive
 baseline — do not use it as an investment signal". Point forecasts for prices are never presented
 without the interval.
@@ -178,12 +220,17 @@ forecasts), survivorship (universe-based backtests flag that delisted instrument
 data), corporate actions (adjusted series required; unadjusted series rejected for return statistics),
 costs (simulator and strategy backtests deduct fees and FX spreads).
 
-**Forecast ledger:** every forecast the user generates is stored before the target date, append-only,
-with model version and input hash; evaluations are added when actual data arrives. The Forecast
-Accuracy page lists all forecasts — successes and failures.
+**Forecast ledger:** every forecast the user records is stored before the target date, append-only
+(database triggers reject updates and deletes), with model version, input hash (SHA-256 of the closes
+used), data source, the model's validation MASE and the stale-input flag. The target date is `h`
+weekdays after the last observation. A forecast is evaluated once, when a close on or before the target
+date (carried forward ≤ 5 days) exists: absolute error, the naive forecast's error, 80/95 % interval hits
+and direction (dead band 0.1 %). The Forecast record lists every forecast — successes and failures — and
+per-model average error next to the naive error for the same forecasts.
 
-**Stale data:** forecasts are refused when the last observation is older than 5 trading days unless the
-user explicitly confirms a warning; the forecast is then marked `staleInput`.
+**Stale data:** forecasts are refused when the last observation is more than 7 calendar days (≈ 5
+trading days) old or the series is served stale from cache, unless the user explicitly confirms a
+warning; the forecast is then marked `staleInput`.
 
 ## 9. Analytical statuses (rules)
 

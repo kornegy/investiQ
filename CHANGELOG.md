@@ -5,6 +5,21 @@ SemVer once releases start.
 
 ## [Unreleased]
 
+### Phase 4 — Analytics and risk
+- Bond analytics (schedules, five day counts, accrued interest, YTM/YTC, durations, convexity, full
+  repricing), ETF analysis (cost drag, currency look-through, KID expectation), neutral rule-based
+  statuses and an investment thesis worksheet for stocks.
+- Statistical forecasting (naive, drift, block bootstrap) with walk-forward validation against a naive
+  baseline (MAE, RMSE, MASE, relative MAE, direction, 80/95 % coverage, calibration) and a usefulness
+  gate; historical scenario ranges without probabilities; sensitivity grid.
+- Append-only forecast ledger with later evaluation and a public forecast record; stale input refused
+  unless explicitly confirmed and then flagged.
+- Portfolio risk: ten categories with published thresholds, exposures, correlations, historical VaR/CVaR
+  (never described as maximum loss), hypothetical stress tests with listed assumptions.
+- Risk section and asset analysis cards in the app.
+- Fix: bond positions were valued from percent-of-face quotes as if they were per-bond prices; quotes are
+  now converted (`qty · quote/100 · face`), and the transaction editor accepts percent-of-face prices.
+
 ### Phase 3 — Portfolio accounting
 - Ledger (average cost per instrument and currency, partial sales, oversell rejection, capitalised and
   base-currency fees, dividends/coupons with withholding tax, accrued interest, splits, bond redemption,

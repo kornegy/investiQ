@@ -18,6 +18,7 @@ NAMESPACES = {
     "news", "calendar", "risk", "stress", "forecast", "planner", "simulator", "brokers", "learn", "quiz",
     "analytics", "bond", "etf", "stock", "provider", "ai", "backup", "export", "import", "notification",
     "range", "metric", "method", "scenario", "overview", "allocation", "dashboard", "category", "statement", "uncertainty", "instrument",
+    "rule", "thesis", "analysis",
 }
 NON_KEY_CONTEXTS = ("systemImage:", "systemName:", "accessibilityIdentifier(", "keyPrefix:", "identifier:")
 PLACEHOLDER = re.compile(r"%(?:\d+\$)?[@dlfs]|%lld")
@@ -41,6 +42,11 @@ def main():
         placeholders = {lang: sorted(PLACEHOLDER.findall(values.get(lang, ""))) for lang in LANGUAGES}
         if len({tuple(p) for p in placeholders.values()}) > 1:
             errors.append(f"{key}: placeholder mismatch {placeholders}")
+        # Templates with arguments go through String(format:): a literal percent sign must be written %%.
+        for lang in LANGUAGES:
+            value = values.get(lang, "")
+            if PLACEHOLDER.search(value) and "%" in PLACEHOLDER.sub("", value).replace("%%", ""):
+                errors.append(f"{key}: unescaped % in a formatted {lang} template (use %%)")
 
     used = set()
     for directory in [ROOT / "InvestiQ", ROOT / "InvestiQKit" / "Sources"]:

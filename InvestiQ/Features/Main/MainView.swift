@@ -47,6 +47,8 @@ struct SectionContainer: View {
             OverviewView()
         case .portfolio:
             PortfolioView()
+        case .risk:
+            RiskView()
         default:
             SectionPlaceholderView(section: section)
         }
@@ -85,7 +87,7 @@ extension AppSection {
         case .news: return "newspaper"
         case .risk: return "shield.lefthalf.filled"
         case .planner: return "list.bullet.clipboard"
-        case .simulator: return "gamecontroller"
+        case .simulator: return "testtube.2"
         case .brokers: return "building.columns"
         case .learn: return "graduationcap"
         case .settings: return "gearshape"

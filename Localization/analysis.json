@@ -1,0 +1,1042 @@
+{
+  "analysis.status.title": {
+    "en": "Analytical status",
+    "ru": "Аналитический статус",
+    "cs": "Analytický stav"
+  },
+  "analysis.status.help": {
+    "en": "Neutral statuses derived from published rules. They show what deserves closer attention, not whether to buy or sell.",
+    "ru": "Нейтральные статусы по опубликованным правилам. Они показывают, на что стоит обратить внимание, а не покупать или продавать.",
+    "cs": "Neutrální stavy odvozené z publikovaných pravidel. Ukazují, co si zaslouží pozornost, nikoli zda nakoupit či prodat."
+  },
+  "analysis.status.notAdvice": {
+    "en": "Statuses are not buy, sell or hold recommendations.",
+    "ru": "Статусы не являются рекомендациями покупать, продавать или держать.",
+    "cs": "Stavy nejsou doporučením k nákupu, prodeji ani držení."
+  },
+  "analysis.completeness": {
+    "en": "Data completeness: %@ of key metrics available",
+    "ru": "Полнота данных: доступно %@ ключевых показателей",
+    "cs": "Úplnost dat: k dispozici %@ klíčových ukazatelů"
+  },
+  "rule.insufficientData": {
+    "en": "Only %@ of the key metrics are available, so conclusions are limited.",
+    "ru": "Доступно только %@ ключевых показателей, поэтому выводы ограничены.",
+    "cs": "K dispozici je jen %@ klíčových ukazatelů, závěry jsou proto omezené."
+  },
+  "rule.highVolatility": {
+    "en": "Annualised volatility of %@ is above the 35 %% threshold.",
+    "ru": "Годовая волатильность %@ выше порога 35 %%.",
+    "cs": "Roční volatilita %@ je nad prahem 35 %%."
+  },
+  "rule.deepDrawdown": {
+    "en": "The maximum drawdown in the period was %@ (threshold 50 %%).",
+    "ru": "Максимальная просадка за период составила %@ (порог 50 %%).",
+    "cs": "Maximální propad v období byl %@ (práh 50 %%)."
+  },
+  "rule.conflictingSources": {
+    "en": "Data sources disagree about at least one value.",
+    "ru": "Источники данных расходятся как минимум в одном значении.",
+    "cs": "Zdroje dat se liší alespoň v jedné hodnotě."
+  },
+  "rule.staleData": {
+    "en": "Some of the data is outdated.",
+    "ru": "Часть данных устарела.",
+    "cs": "Část dat je zastaralá."
+  },
+  "rule.highLeverage": {
+    "en": "Debt-to-equity of %@ is above the threshold of 2.0.",
+    "ru": "Отношение долга к капиталу %@ выше порога 2,0.",
+    "cs": "Poměr dluhu k vlastnímu kapitálu %@ je nad prahem 2,0."
+  },
+  "rule.negativeEarnings": {
+    "en": "Net income over the last 12 months is negative.",
+    "ru": "Чистая прибыль за последние 12 месяцев отрицательная.",
+    "cs": "Čistý zisk za posledních 12 měsíců je záporný."
+  },
+  "rule.payoutAboveEarnings": {
+    "en": "Dividends per share exceed earnings per share.",
+    "ru": "Дивиденд на акцию превышает прибыль на акцию.",
+    "cs": "Dividenda na akcii převyšuje zisk na akcii."
+  },
+  "rule.negativeFCFTwoYears": {
+    "en": "Free cash flow was negative in each of the last two fiscal years.",
+    "ru": "Свободный денежный поток был отрицательным в каждом из двух последних финансовых лет.",
+    "cs": "Volné peněžní toky byly záporné v každém z posledních dvou účetních let."
+  },
+  "rule.marginDecline": {
+    "en": "Operating margin fell by more than 5 percentage points year on year.",
+    "ru": "Операционная маржа снизилась более чем на 5 процентных пунктов за год.",
+    "cs": "Provozní marže meziročně klesla o více než 5 procentních bodů."
+  },
+  "rule.default": {
+    "en": "No rule was triggered. As with any instrument, your own research is still required.",
+    "ru": "Ни одно правило не сработало. Как и для любого инструмента, нужно собственное изучение.",
+    "cs": "Žádné pravidlo se nespustilo. Jako u každého nástroje je stále potřeba vlastní průzkum."
+  },
+  "rule.unratedBond": {
+    "en": "The bond has no credit rating in the available data.",
+    "ru": "В доступных данных у облигации нет кредитного рейтинга.",
+    "cs": "Dluhopis nemá v dostupných datech úvěrový rating."
+  },
+  "rule.belowInvestmentGrade": {
+    "en": "The credit rating is below investment grade (below BBB−).",
+    "ru": "Кредитный рейтинг ниже инвестиционного уровня (ниже BBB−).",
+    "cs": "Úvěrový rating je pod investičním stupněm (pod BBB−)."
+  },
+  "rule.etfFactsMissing": {
+    "en": "Key fund facts (costs, holdings or replication method) are missing.",
+    "ru": "Отсутствуют ключевые сведения о фонде (расходы, состав или метод репликации).",
+    "cs": "Chybí klíčové údaje o fondu (náklady, složení nebo metoda replikace)."
+  },
+  "rule.syntheticReplication": {
+    "en": "The fund replicates its index synthetically through swaps, which adds counterparty risk.",
+    "ru": "Фонд воспроизводит индекс синтетически через свопы, что добавляет риск контрагента.",
+    "cs": "Fond replikuje index synteticky pomocí swapů, což přidává riziko protistrany."
+  },
+  "thesis.title": {
+    "en": "Investment thesis worksheet",
+    "ru": "Рабочий лист инвестиционного тезиса",
+    "cs": "Pracovní list investiční teze"
+  },
+  "thesis.help": {
+    "en": "A structure for your own thinking. The points are generated from data by published rules; they are not a verdict.",
+    "ru": "Структура для ваших собственных размышлений. Пункты сформированы из данных по опубликованным правилам и не являются вердиктом.",
+    "cs": "Struktura pro vaše vlastní úvahy. Body jsou z dat odvozeny publikovanými pravidly a nejsou verdiktem."
+  },
+  "thesis.section.for": {
+    "en": "Arguments for",
+    "ru": "Аргументы «за»",
+    "cs": "Argumenty pro"
+  },
+  "thesis.section.against": {
+    "en": "Arguments against",
+    "ru": "Аргументы «против»",
+    "cs": "Argumenty proti"
+  },
+  "thesis.section.pricedIn": {
+    "en": "What the price may already reflect",
+    "ru": "Что, возможно, уже заложено в цену",
+    "cs": "Co už cena možná zohledňuje"
+  },
+  "thesis.section.invalidation": {
+    "en": "What would invalidate a positive view",
+    "ru": "Что опровергло бы позитивный взгляд",
+    "cs": "Co by vyvrátilo pozitivní pohled"
+  },
+  "thesis.section.missing": {
+    "en": "Missing data",
+    "ru": "Отсутствующие данные",
+    "cs": "Chybějící data"
+  },
+  "thesis.section.questions": {
+    "en": "Questions to research",
+    "ru": "Вопросы для изучения",
+    "cs": "Otázky k prozkoumání"
+  },
+  "thesis.none": {
+    "en": "Nothing derived from the available data.",
+    "ru": "Из доступных данных ничего не выведено.",
+    "cs": "Z dostupných dat nic nevyplývá."
+  },
+  "thesis.for.lowLeverage": {
+    "en": "Low debt relative to equity (debt-to-equity %@).",
+    "ru": "Низкий долг относительно капитала (долг/капитал %@).",
+    "cs": "Nízký dluh vůči vlastnímu kapitálu (dluh/kapitál %@)."
+  },
+  "thesis.for.revenueGrowth": {
+    "en": "Revenue grew by %@ year on year.",
+    "ru": "Выручка выросла на %@ за год.",
+    "cs": "Tržby meziročně vzrostly o %@."
+  },
+  "thesis.for.margin": {
+    "en": "Operating margin of %@ is above 15 %%.",
+    "ru": "Операционная маржа %@ выше 15 %%.",
+    "cs": "Provozní marže %@ je nad 15 %%."
+  },
+  "thesis.for.cashFlow": {
+    "en": "Free cash flow over the last 12 months is positive.",
+    "ru": "Свободный денежный поток за последние 12 месяцев положительный.",
+    "cs": "Volné peněžní toky za posledních 12 měsíců jsou kladné."
+  },
+  "thesis.against.leverage": {
+    "en": "Debt-to-equity of %@: high debt increases sensitivity to interest rates and downturns.",
+    "ru": "Долг/капитал %@: высокий долг повышает чувствительность к ставкам и спадам.",
+    "cs": "Dluh/kapitál %@: vysoký dluh zvyšuje citlivost na úrokové sazby a poklesy."
+  },
+  "thesis.against.losses": {
+    "en": "The company is currently loss-making.",
+    "ru": "Компания сейчас убыточна.",
+    "cs": "Společnost je v současnosti ztrátová."
+  },
+  "thesis.against.revenueDecline": {
+    "en": "Revenue changed by %@ year on year.",
+    "ru": "Выручка изменилась на %@ за год.",
+    "cs": "Tržby se meziročně změnily o %@."
+  },
+  "thesis.against.cashBurn": {
+    "en": "Free cash flow over the last 12 months is negative.",
+    "ru": "Свободный денежный поток за последние 12 месяцев отрицательный.",
+    "cs": "Volné peněžní toky za posledních 12 měsíců jsou záporné."
+  },
+  "thesis.against.volatility": {
+    "en": "High price volatility (%@ per year).",
+    "ru": "Высокая волатильность цены (%@ в год).",
+    "cs": "Vysoká volatilita ceny (%@ ročně)."
+  },
+  "thesis.pricedIn.high": {
+    "en": "P/E of %@: the price already assumes strong future growth.",
+    "ru": "P/E %@: цена уже предполагает сильный будущий рост.",
+    "cs": "P/E %@: cena už předpokládá silný budoucí růst."
+  },
+  "thesis.pricedIn.low": {
+    "en": "P/E of %@: the market may expect low growth or see elevated risk.",
+    "ru": "P/E %@: рынок, возможно, ожидает слабого роста или видит повышенный риск.",
+    "cs": "P/E %@: trh možná očekává nízký růst nebo vidí zvýšené riziko."
+  },
+  "thesis.pricedIn.highBook": {
+    "en": "P/B of %@: the price is far above the accounting book value.",
+    "ru": "P/B %@: цена намного выше балансовой стоимости.",
+    "cs": "P/B %@: cena je výrazně nad účetní hodnotou."
+  },
+  "thesis.invalidation.leverage": {
+    "en": "Debt rises significantly without matching earnings growth.",
+    "ru": "Долг значительно растёт без соответствующего роста прибыли.",
+    "cs": "Dluh výrazně roste bez odpovídajícího růstu zisku."
+  },
+  "thesis.invalidation.growth": {
+    "en": "Revenue growth stalls or turns negative.",
+    "ru": "Рост выручки останавливается или становится отрицательным.",
+    "cs": "Růst tržeb se zastaví nebo změní v pokles."
+  },
+  "thesis.invalidation.margin": {
+    "en": "Operating margin falls materially.",
+    "ru": "Операционная маржа существенно снижается.",
+    "cs": "Provozní marže podstatně klesne."
+  },
+  "thesis.question.business": {
+    "en": "How does the company make money, and who are its customers?",
+    "ru": "Как компания зарабатывает и кто её клиенты?",
+    "cs": "Jak společnost vydělává a kdo jsou její zákazníci?"
+  },
+  "thesis.question.revenue": {
+    "en": "Which products or regions drive revenue, and how stable are they?",
+    "ru": "Какие продукты или регионы дают выручку и насколько они стабильны?",
+    "cs": "Které produkty nebo regiony tvoří tržby a jak jsou stabilní?"
+  },
+  "thesis.question.advantage": {
+    "en": "What could protect the company from competitors?",
+    "ru": "Что может защитить компанию от конкурентов?",
+    "cs": "Co může společnost chránit před konkurencí?"
+  },
+  "thesis.question.risks": {
+    "en": "Which main risks does the annual report name?",
+    "ru": "Какие основные риски названы в годовом отчёте?",
+    "cs": "Jaká hlavní rizika uvádí výroční zpráva?"
+  },
+  "thesis.question.management": {
+    "en": "How has management allocated capital in the past?",
+    "ru": "Как руководство распределяло капитал в прошлом?",
+    "cs": "Jak vedení v minulosti alokovalo kapitál?"
+  },
+  "asset.bondQuote": {
+    "en": "%@ %% of face value",
+    "ru": "%@ %% от номинала",
+    "cs": "%@ %% jmenovité hodnoty"
+  },
+  "bond.analysis.title": {
+    "en": "Bond analytics",
+    "ru": "Аналитика облигации",
+    "cs": "Analýza dluhopisu"
+  },
+  "bond.analysis.help": {
+    "en": "Computed from the contractual terms and the current clean price. Yields assume the bond is held to maturity and all payments are made in full and on time.",
+    "ru": "Рассчитано по условиям выпуска и текущей чистой цене. Доходности предполагают удержание до погашения и полную своевременную выплату всех платежей.",
+    "cs": "Vypočteno ze smluvních podmínek a aktuální čisté ceny. Výnosy předpokládají držbu do splatnosti a úplné a včasné splacení všech plateb."
+  },
+  "bond.analysis.per100": {
+    "en": "Prices and accrued interest per 100 of face value.",
+    "ru": "Цены и НКД указаны на 100 единиц номинала.",
+    "cs": "Ceny a alikvótní úrok na 100 jednotek jmenovité hodnoty."
+  },
+  "bond.ytm": {
+    "en": "Yield to maturity",
+    "ru": "Доходность к погашению",
+    "cs": "Výnos do splatnosti"
+  },
+  "bond.currentYield": {
+    "en": "Current yield",
+    "ru": "Текущая доходность",
+    "cs": "Běžný výnos"
+  },
+  "bond.yieldToCall": {
+    "en": "Yield to first call",
+    "ru": "Доходность к первому отзыву",
+    "cs": "Výnos k prvnímu splacení na výzvu"
+  },
+  "bond.accruedInterest": {
+    "en": "Accrued interest",
+    "ru": "Накопленный купонный доход",
+    "cs": "Alikvótní úrokový výnos"
+  },
+  "bond.dirtyPrice": {
+    "en": "Dirty price",
+    "ru": "Грязная цена",
+    "cs": "Špinavá cena"
+  },
+  "bond.yearsToMaturity": {
+    "en": "Years to maturity",
+    "ru": "Лет до погашения",
+    "cs": "Let do splatnosti"
+  },
+  "bond.macaulay": {
+    "en": "Macaulay duration (years)",
+    "ru": "Дюрация Маколея (лет)",
+    "cs": "Macaulayova durace (roky)"
+  },
+  "bond.modified": {
+    "en": "Modified duration",
+    "ru": "Модифицированная дюрация",
+    "cs": "Modifikovaná durace"
+  },
+  "bond.convexity": {
+    "en": "Convexity",
+    "ru": "Выпуклость",
+    "cs": "Konvexita"
+  },
+  "bond.priceChange100bp": {
+    "en": "Price change if yields rise by 1 percentage point",
+    "ru": "Изменение цены при росте доходностей на 1 п. п.",
+    "cs": "Změna ceny při růstu výnosů o 1 procentní bod"
+  },
+  "bond.investmentGrade": {
+    "en": "Investment grade",
+    "ru": "Инвестиционный рейтинг",
+    "cs": "Investiční stupeň"
+  },
+  "etf.analysis.title": {
+    "en": "Fund analysis",
+    "ru": "Анализ фонда",
+    "cs": "Analýza fondu"
+  },
+  "etf.analysis.help": {
+    "en": "Illustrations based on the fund's published facts. They are examples, not forecasts.",
+    "ru": "Иллюстрации на основе опубликованных сведений о фонде. Это примеры, а не прогнозы.",
+    "cs": "Ilustrace na základě zveřejněných údajů o fondu. Jsou to příklady, nikoli prognózy."
+  },
+  "etf.analysis.costDrag": {
+    "en": "Cost illustration: 10 000 growing at an assumed 5 %% a year for 10 years becomes %@ without costs and %@ after the fund's ongoing charges.",
+    "ru": "Иллюстрация расходов: 10 000 при условном росте 5 %% в год за 10 лет превратятся в %@ без расходов и в %@ с учётом текущих расходов фонда.",
+    "cs": "Ilustrace nákladů: 10 000 při předpokládaném růstu 5 %% ročně za 10 let vzroste na %@ bez nákladů a na %@ po průběžných nákladech fondu."
+  },
+  "etf.analysis.foreignCurrency": {
+    "en": "%@ of the fund's holdings are in currencies other than your base currency.",
+    "ru": "%@ активов фонда приходится на валюты, отличные от вашей базовой.",
+    "cs": "%@ aktiv fondu je v jiných měnách než ve vaší základní měně."
+  },
+  "etf.kid.expected": {
+    "en": "A Key Information Document (KID) should be available for EU investors. Read it before investing.",
+    "ru": "Для инвесторов из ЕС должен быть доступен документ с ключевой информацией (KID). Прочитайте его перед инвестированием.",
+    "cs": "Pro investory z EU by měl být k dispozici sdělení klíčových informací (KID). Přečtěte si jej před investováním."
+  },
+  "etf.kid.nonEU": {
+    "en": "This fund is not UCITS and not EU-domiciled. Retail investors in the EU may be unable to buy it, and no KID may exist.",
+    "ru": "Фонд не соответствует UCITS и зарегистрирован вне ЕС. Розничные инвесторы в ЕС могут не иметь доступа к нему, а KID может отсутствовать.",
+    "cs": "Fond nesplňuje UCITS a nemá sídlo v EU. Drobní investoři v EU jej možná nebudou moci koupit a KID nemusí existovat."
+  },
+  "etf.kid.unknown": {
+    "en": "UCITS status and domicile are unknown. Check the fund documents.",
+    "ru": "Статус UCITS и страна регистрации неизвестны. Проверьте документы фонда.",
+    "cs": "Stav UCITS a sídlo nejsou známy. Ověřte dokumenty fondu."
+  },
+  "scenario.title": {
+    "en": "Historical scenario ranges",
+    "ru": "Исторические диапазоны сценариев",
+    "cs": "Historická rozpětí scénářů"
+  },
+  "scenario.help": {
+    "en": "Pessimistic, base and optimistic = 20th, 50th and 80th percentiles of all past rolling returns of this instrument over the chosen horizon (price only, without dividends). They describe the past, not the future.",
+    "ru": "Пессимистичный, базовый и оптимистичный = 20-й, 50-й и 80-й процентили всех прошлых скользящих доходностей инструмента за выбранный горизонт (только цена, без дивидендов). Они описывают прошлое, а не будущее.",
+    "cs": "Pesimistický, základní a optimistický = 20., 50. a 80. percentil všech minulých klouzavých výnosů nástroje za zvolený horizont (jen cena, bez dividend). Popisují minulost, ne budoucnost."
+  },
+  "scenario.horizon": {
+    "en": "Horizon",
+    "ru": "Горизонт",
+    "cs": "Horizont"
+  },
+  "scenario.horizon.oneYear": {
+    "en": "1 year",
+    "ru": "1 год",
+    "cs": "1 rok"
+  },
+  "scenario.horizon.threeYears": {
+    "en": "3 years",
+    "ru": "3 года",
+    "cs": "3 roky"
+  },
+  "scenario.amount": {
+    "en": "Example amount",
+    "ru": "Пример суммы",
+    "cs": "Příklad částky"
+  },
+  "scenario.kind.pessimistic": {
+    "en": "Pessimistic (20th percentile)",
+    "ru": "Пессимистичный (20-й процентиль)",
+    "cs": "Pesimistický (20. percentil)"
+  },
+  "scenario.kind.base": {
+    "en": "Base (median)",
+    "ru": "Базовый (медиана)",
+    "cs": "Základní (medián)"
+  },
+  "scenario.kind.optimistic": {
+    "en": "Optimistic (80th percentile)",
+    "ru": "Оптимистичный (80-й процентиль)",
+    "cs": "Optimistický (80. percentil)"
+  },
+  "scenario.noProbabilities": {
+    "en": "No probability is attached to any scenario. Outcomes outside this range have happened and can happen again.",
+    "ru": "Ни одному сценарию не присваивается вероятность. Результаты за пределами диапазона случались и могут повториться.",
+    "cs": "Žádnému scénáři není přiřazena pravděpodobnost. Výsledky mimo toto rozpětí nastaly a mohou nastat znovu."
+  },
+  "scenario.insufficientHistory": {
+    "en": "Not enough history for this horizon: %@ observations available, %@ needed.",
+    "ru": "Недостаточно истории для этого горизонта: доступно %@ наблюдений, нужно %@.",
+    "cs": "Pro tento horizont není dost historie: k dispozici %@ pozorování, potřeba %@."
+  },
+  "scenario.sensitivity.title": {
+    "en": "Sensitivity to the return assumption",
+    "ru": "Чувствительность к допущению о доходности",
+    "cs": "Citlivost na předpoklad výnosu"
+  },
+  "scenario.sensitivity.rate": {
+    "en": "Annual return",
+    "ru": "Годовая доходность",
+    "cs": "Roční výnos"
+  },
+  "scenario.sensitivity.years": {
+    "en": "%@ y",
+    "ru": "%@ г.",
+    "cs": "%@ r."
+  },
+  "scenario.sensitivity.note": {
+    "en": "Constant annual returns around the historical median, ±2 and ±4 percentage points. Real returns are never constant.",
+    "ru": "Постоянная годовая доходность вокруг исторической медианы, ±2 и ±4 процентных пункта. Реальная доходность никогда не бывает постоянной.",
+    "cs": "Konstantní roční výnos kolem historického mediánu, ±2 a ±4 procentní body. Skutečné výnosy nikdy nejsou konstantní."
+  },
+  "forecast.title": {
+    "en": "Statistical forecast and validation",
+    "ru": "Статистический прогноз и проверка",
+    "cs": "Statistická prognóza a ověření"
+  },
+  "forecast.help": {
+    "en": "Simple statistical models with prediction intervals. Each model is first tested on this instrument's own history (walk-forward, without future data) against a naive baseline that assumes no change.",
+    "ru": "Простые статистические модели с интервалами прогноза. Каждая модель сначала проверяется на истории инструмента (walk-forward, без будущих данных) против наивного базового прогноза «без изменений».",
+    "cs": "Jednoduché statistické modely s predikčními intervaly. Každý model se nejprve testuje na historii nástroje (walk-forward, bez budoucích dat) proti naivnímu základu, který předpokládá beze změny."
+  },
+  "forecast.model": {
+    "en": "Model",
+    "ru": "Модель",
+    "cs": "Model"
+  },
+  "forecast.model.FC-NAIVE": {
+    "en": "Naive (no change)",
+    "ru": "Наивная (без изменений)",
+    "cs": "Naivní (beze změny)"
+  },
+  "forecast.model.FC-DRIFT": {
+    "en": "Drift (historical trend)",
+    "ru": "Дрейф (исторический тренд)",
+    "cs": "Drift (historický trend)"
+  },
+  "forecast.model.FC-BOOT": {
+    "en": "Bootstrap simulation",
+    "ru": "Бутстреп-симуляция",
+    "cs": "Bootstrap simulace"
+  },
+  "forecast.horizon": {
+    "en": "Forecast horizon",
+    "ru": "Горизонт прогноза",
+    "cs": "Horizont prognózy"
+  },
+  "forecast.horizon.oneMonth": {
+    "en": "1 month",
+    "ru": "1 месяц",
+    "cs": "1 měsíc"
+  },
+  "forecast.horizon.threeMonths": {
+    "en": "3 months",
+    "ru": "3 месяца",
+    "cs": "3 měsíce"
+  },
+  "forecast.validate": {
+    "en": "Test models on history",
+    "ru": "Проверить модели на истории",
+    "cs": "Otestovat modely na historii"
+  },
+  "forecast.record": {
+    "en": "Record forecast for later evaluation",
+    "ru": "Записать прогноз для последующей проверки",
+    "cs": "Zaznamenat prognózu k pozdějšímu vyhodnocení"
+  },
+  "forecast.recordAnyway": {
+    "en": "Record with outdated data anyway",
+    "ru": "Всё равно записать с устаревшими данными",
+    "cs": "Přesto zaznamenat se zastaralými daty"
+  },
+  "forecast.validation.unavailable": {
+    "en": "Not enough history to test the models (at least one year plus the horizon is needed).",
+    "ru": "Недостаточно истории для проверки моделей (нужен минимум год плюс горизонт).",
+    "cs": "Pro otestování modelů není dost historie (je potřeba alespoň rok plus horizont)."
+  },
+  "forecast.metric.evaluations": {
+    "en": "Tests",
+    "ru": "Проверок",
+    "cs": "Testů"
+  },
+  "forecast.metric.relativeMAE": {
+    "en": "Error vs naive",
+    "ru": "Ошибка к наивной",
+    "cs": "Chyba vůči naivní"
+  },
+  "forecast.metric.mase": {
+    "en": "MASE",
+    "ru": "MASE",
+    "cs": "MASE"
+  },
+  "forecast.metric.directional": {
+    "en": "Direction right",
+    "ru": "Верное направление",
+    "cs": "Správný směr"
+  },
+  "forecast.metric.coverage80": {
+    "en": "In 80 % interval",
+    "ru": "В 80 % интервале",
+    "cs": "V 80 % intervalu"
+  },
+  "forecast.metric.coverage95": {
+    "en": "In 95 % interval",
+    "ru": "В 95 % интервале",
+    "cs": "V 95 % intervalu"
+  },
+  "forecast.verdict.useful": {
+    "en": "%@: beat the naive baseline in this test and its intervals were reasonably calibrated. Past accuracy does not guarantee future accuracy.",
+    "ru": "%@: в этой проверке превзошла наивный прогноз, интервалы были достаточно откалиброваны. Прошлая точность не гарантирует будущую.",
+    "cs": "%@: v tomto testu překonal naivní základ a jeho intervaly byly přiměřeně kalibrované. Minulá přesnost nezaručuje budoucí."
+  },
+  "forecast.verdict.notUseful": {
+    "en": "%@: did not outperform the naive baseline. Do not use it as an investment signal.",
+    "ru": "%@: не превзошла наивный прогноз. Не используйте её как инвестиционный сигнал.",
+    "cs": "%@: nepřekonal naivní základ. Nepoužívejte jej jako investiční signál."
+  },
+  "forecast.recorded": {
+    "en": "Forecast recorded. It will be evaluated after %@.",
+    "ru": "Прогноз записан. Он будет проверен после %@.",
+    "cs": "Prognóza zaznamenána. Bude vyhodnocena po %@."
+  },
+  "forecast.interval80": {
+    "en": "80 %% interval: %@ – %@",
+    "ru": "80 %% интервал: %@ – %@",
+    "cs": "80 %% interval: %@ – %@"
+  },
+  "forecast.interval95": {
+    "en": "95 %% interval: %@ – %@",
+    "ru": "95 %% интервал: %@ – %@",
+    "cs": "95 %% interval: %@ – %@"
+  },
+  "forecast.median": {
+    "en": "Central value: %@ (a range matters more than this number)",
+    "ru": "Центральное значение: %@ (важнее диапазон, а не это число)",
+    "cs": "Střední hodnota: %@ (důležitější je rozpětí než toto číslo)"
+  },
+  "forecast.staleFlag": {
+    "en": "Recorded with outdated input data.",
+    "ru": "Записан с устаревшими входными данными.",
+    "cs": "Zaznamenáno se zastaralými vstupními daty."
+  },
+  "forecast.disclaimer": {
+    "en": "Forecasts are statistical estimates with wide uncertainty, not predictions or advice. Every recorded forecast stays in the accuracy record, including the ones that miss.",
+    "ru": "Прогнозы — статистические оценки с большой неопределённостью, а не предсказания и не советы. Каждый записанный прогноз остаётся в журнале точности, включая неудачные.",
+    "cs": "Prognózy jsou statistické odhady s velkou nejistotou, nikoli předpovědi ani rady. Každá zaznamenaná prognóza zůstává v záznamu přesnosti, včetně těch nepřesných."
+  },
+  "forecast.error.staleInput": {
+    "en": "The latest price is from %@, so the data is outdated. A forecast from outdated data is flagged.",
+    "ru": "Последняя цена от %@, данные устарели. Прогноз по устаревшим данным будет помечен.",
+    "cs": "Poslední cena je z %@, data jsou zastaralá. Prognóza ze zastaralých dat bude označena."
+  },
+  "forecast.error.insufficientHistory": {
+    "en": "Not enough history: %@ observations available, %@ needed.",
+    "ru": "Недостаточно истории: доступно %@ наблюдений, нужно %@.",
+    "cs": "Nedostatek historie: k dispozici %@ pozorování, potřeba %@."
+  },
+  "forecast.error.noHistory": {
+    "en": "No price history is available for this instrument.",
+    "ru": "Для этого инструмента нет истории цен.",
+    "cs": "Pro tento nástroj není k dispozici cenová historie."
+  },
+  "forecast.error.saveFailed": {
+    "en": "The forecast could not be recorded.",
+    "ru": "Не удалось записать прогноз.",
+    "cs": "Prognózu se nepodařilo zaznamenat."
+  },
+  "forecast.error.loadFailed": {
+    "en": "The forecast record could not be loaded.",
+    "ru": "Не удалось загрузить журнал прогнозов.",
+    "cs": "Záznam prognóz se nepodařilo načíst."
+  },
+  "forecast.record.intro": {
+    "en": "Every forecast you record is kept unchanged and compared with what actually happened once its date has passed. This shows how reliable the models really are.",
+    "ru": "Каждый записанный прогноз хранится без изменений и сравнивается с фактическим результатом после наступления даты. Так видно, насколько надёжны модели на самом деле.",
+    "cs": "Každá zaznamenaná prognóza se uchovává beze změn a po uplynutí data se porovná se skutečností. Ukazuje to, jak spolehlivé modely skutečně jsou."
+  },
+  "forecast.record.empty.title": {
+    "en": "No recorded forecasts",
+    "ru": "Нет записанных прогнозов",
+    "cs": "Žádné zaznamenané prognózy"
+  },
+  "forecast.record.empty.description": {
+    "en": "Record a forecast on an instrument's page to start the accuracy record.",
+    "ru": "Запишите прогноз на странице инструмента, чтобы начать журнал точности.",
+    "cs": "Zaznamenejte prognózu na stránce nástroje a začněte záznam přesnosti."
+  },
+  "forecast.record.accuracy": {
+    "en": "Accuracy by model",
+    "ru": "Точность по моделям",
+    "cs": "Přesnost podle modelu"
+  },
+  "forecast.record.accuracy.help": {
+    "en": "Average absolute error as a share of the starting price, next to the error of the naive no-change forecast for the same cases.",
+    "ru": "Средняя абсолютная ошибка в доле от начальной цены рядом с ошибкой наивного прогноза «без изменений» для тех же случаев.",
+    "cs": "Průměrná absolutní chyba jako podíl výchozí ceny vedle chyby naivní prognózy beze změny pro stejné případy."
+  },
+  "forecast.record.evaluated": {
+    "en": "Evaluated",
+    "ru": "Проверено",
+    "cs": "Vyhodnoceno"
+  },
+  "forecast.record.pending": {
+    "en": "Pending",
+    "ru": "Ожидают",
+    "cs": "Čeká"
+  },
+  "forecast.record.mape": {
+    "en": "Avg. error",
+    "ru": "Ср. ошибка",
+    "cs": "Prům. chyba"
+  },
+  "forecast.record.naiveMape": {
+    "en": "Naive avg. error",
+    "ru": "Ср. ошибка наивной",
+    "cs": "Prům. chyba naivní"
+  },
+  "forecast.record.smallSample": {
+    "en": "With few evaluated forecasts these figures are mostly noise.",
+    "ru": "При малом числе проверенных прогнозов эти цифры в основном шум.",
+    "cs": "Při malém počtu vyhodnocených prognóz jsou tato čísla převážně šum."
+  },
+  "forecast.record.period": {
+    "en": "Made %@ · target %@",
+    "ru": "Сделан %@ · целевая дата %@",
+    "cs": "Vytvořeno %@ · cílové datum %@"
+  },
+  "forecast.record.inside": {
+    "en": "Actual %@: inside the 80 %% interval",
+    "ru": "Факт %@: внутри 80 %% интервала",
+    "cs": "Skutečnost %@: uvnitř 80 %% intervalu"
+  },
+  "forecast.record.outside": {
+    "en": "Actual %@: outside the 80 %% interval",
+    "ru": "Факт %@: вне 80 %% интервала",
+    "cs": "Skutečnost %@: mimo 80 %% interval"
+  },
+  "forecast.record.awaiting": {
+    "en": "Waiting for the target date",
+    "ru": "Ожидает целевой даты",
+    "cs": "Čeká na cílové datum"
+  },
+  "risk.tabs": {
+    "en": "View",
+    "ru": "Вид",
+    "cs": "Zobrazení"
+  },
+  "risk.tab.categories": {
+    "en": "Risk categories",
+    "ru": "Категории риска",
+    "cs": "Kategorie rizik"
+  },
+  "risk.tab.exposures": {
+    "en": "Exposures",
+    "ru": "Структура",
+    "cs": "Expozice"
+  },
+  "risk.tab.stress": {
+    "en": "Stress tests",
+    "ru": "Стресс-тесты",
+    "cs": "Zátěžové testy"
+  },
+  "risk.tab.forecasts": {
+    "en": "Forecast record",
+    "ru": "Журнал прогнозов",
+    "cs": "Záznam prognóz"
+  },
+  "risk.portfolio": {
+    "en": "Portfolio",
+    "ru": "Портфель",
+    "cs": "Portfolio"
+  },
+  "risk.portfolio.virtual": {
+    "en": "%@ (virtual)",
+    "ru": "%@ (виртуальный)",
+    "cs": "%@ (virtuální)"
+  },
+  "risk.empty.title": {
+    "en": "No positions to analyse",
+    "ru": "Нет позиций для анализа",
+    "cs": "Žádné pozice k analýze"
+  },
+  "risk.empty.description": {
+    "en": "Add transactions to a portfolio to see its risk profile.",
+    "ru": "Добавьте сделки в портфель, чтобы увидеть его профиль риска.",
+    "cs": "Přidejte do portfolia transakce, abyste viděli jeho rizikový profil."
+  },
+  "risk.error.loadFailed": {
+    "en": "The risk analysis could not be computed.",
+    "ru": "Не удалось рассчитать анализ риска.",
+    "cs": "Analýzu rizik se nepodařilo vypočítat."
+  },
+  "risk.qualitative": {
+    "en": "Qualitative assessment based on the portfolio's composition.",
+    "ru": "Качественная оценка на основе состава портфеля.",
+    "cs": "Kvalitativní posouzení podle složení portfolia."
+  },
+  "risk.methodNote": {
+    "en": "Levels follow published thresholds (Financial methodology §6). They describe the portfolio's composition and history, not its future, and are not recommendations.",
+    "ru": "Уровни следуют опубликованным порогам (Методология, §6). Они описывают состав и историю портфеля, а не его будущее, и не являются рекомендациями.",
+    "cs": "Úrovně se řídí publikovanými prahy (Metodika, §6). Popisují složení a historii portfolia, ne jeho budoucnost, a nejsou doporučením."
+  },
+  "risk.category.market": {
+    "en": "Market risk",
+    "ru": "Рыночный риск",
+    "cs": "Tržní riziko"
+  },
+  "risk.category.credit": {
+    "en": "Credit risk",
+    "ru": "Кредитный риск",
+    "cs": "Úvěrové riziko"
+  },
+  "risk.category.liquidity": {
+    "en": "Liquidity risk",
+    "ru": "Риск ликвидности",
+    "cs": "Riziko likvidity"
+  },
+  "risk.category.currency": {
+    "en": "Currency risk",
+    "ru": "Валютный риск",
+    "cs": "Měnové riziko"
+  },
+  "risk.category.inflation": {
+    "en": "Inflation risk",
+    "ru": "Инфляционный риск",
+    "cs": "Inflační riziko"
+  },
+  "risk.category.concentration": {
+    "en": "Concentration risk",
+    "ru": "Риск концентрации",
+    "cs": "Riziko koncentrace"
+  },
+  "risk.category.interestRate": {
+    "en": "Interest rate risk",
+    "ru": "Процентный риск",
+    "cs": "Úrokové riziko"
+  },
+  "risk.category.political": {
+    "en": "Political and country risk",
+    "ru": "Политический и страновой риск",
+    "cs": "Politické a zemské riziko"
+  },
+  "risk.category.regulatory": {
+    "en": "Regulatory risk",
+    "ru": "Регуляторный риск",
+    "cs": "Regulatorní riziko"
+  },
+  "risk.category.counterparty": {
+    "en": "Counterparty risk",
+    "ru": "Риск контрагента",
+    "cs": "Riziko protistrany"
+  },
+  "risk.level.low": {
+    "en": "Low",
+    "ru": "Низкий",
+    "cs": "Nízké"
+  },
+  "risk.level.moderate": {
+    "en": "Moderate",
+    "ru": "Умеренный",
+    "cs": "Mírné"
+  },
+  "risk.level.elevated": {
+    "en": "Elevated",
+    "ru": "Повышенный",
+    "cs": "Zvýšené"
+  },
+  "risk.level.high": {
+    "en": "High",
+    "ru": "Высокий",
+    "cs": "Vysoké"
+  },
+  "risk.level.unknown": {
+    "en": "Unknown",
+    "ru": "Неизвестно",
+    "cs": "Neznámé"
+  },
+  "risk.market.explanation": {
+    "en": "Based on the annualised volatility of daily portfolio returns over the last year at current weights (thresholds 8 / 15 / 25 %).",
+    "ru": "На основе годовой волатильности дневных доходностей портфеля за последний год при текущих весах (пороги 8 / 15 / 25 %).",
+    "cs": "Podle roční volatility denních výnosů portfolia za poslední rok při současných vahách (prahy 8 / 15 / 25 %)."
+  },
+  "risk.credit.explanation": {
+    "en": "Share of the portfolio in individual bonds rated below investment grade or unrated (thresholds 0 / 10 / 30 %).",
+    "ru": "Доля портфеля в облигациях с рейтингом ниже инвестиционного или без рейтинга (пороги 0 / 10 / 30 %).",
+    "cs": "Podíl portfolia v dluhopisech s ratingem pod investičním stupněm nebo bez ratingu (prahy 0 / 10 / 30 %)."
+  },
+  "risk.credit.noBonds": {
+    "en": "The portfolio holds no individual bonds. Bond funds carry credit risk that depends on their holdings.",
+    "ru": "В портфеле нет отдельных облигаций. Облигационные фонды несут кредитный риск в зависимости от своего состава.",
+    "cs": "Portfolio neobsahuje jednotlivé dluhopisy. Dluhopisové fondy nesou úvěrové riziko podle svého složení."
+  },
+  "risk.liquidity.explanation": {
+    "en": "Share of positions that would take more than five trading days to sell at 20 % of average daily traded value; individual bonds count as less liquid (thresholds 10 / 30 / 60 %).",
+    "ru": "Доля позиций, продажа которых при 20 % среднедневного оборота заняла бы более пяти торговых дней; отдельные облигации считаются менее ликвидными (пороги 10 / 30 / 60 %).",
+    "cs": "Podíl pozic, jejichž prodej při 20 % průměrného denního objemu by trval déle než pět obchodních dní; jednotlivé dluhopisy se počítají jako méně likvidní (prahy 10 / 30 / 60 %)."
+  },
+  "risk.currency.explanation": {
+    "en": "Share of the portfolio in currencies other than the base currency, with fund look-through where known (thresholds 10 / 40 / 70 %).",
+    "ru": "Доля портфеля в валютах, отличных от базовой, с учётом состава фондов, где он известен (пороги 10 / 40 / 70 %).",
+    "cs": "Podíl portfolia v jiných měnách než základní, s rozpadem fondů tam, kde je znám (prahy 10 / 40 / 70 %)."
+  },
+  "risk.inflation.explanation": {
+    "en": "Share in bonds, bond funds and cash, whose fixed nominal payments lose purchasing power when inflation rises (thresholds 20 / 50 / 80 %).",
+    "ru": "Доля облигаций, облигационных фондов и денежных средств, чьи фиксированные номинальные выплаты теряют покупательную способность при росте инфляции (пороги 20 / 50 / 80 %).",
+    "cs": "Podíl dluhopisů, dluhopisových fondů a hotovosti, jejichž pevné nominální platby ztrácejí kupní sílu při růstu inflace (prahy 20 / 50 / 80 %)."
+  },
+  "risk.concentration.explanation": {
+    "en": "Weight of the largest issuer and the Herfindahl index of weights (high above 40 % or 0.25, elevated above 20 % or 0.15).",
+    "ru": "Вес крупнейшего эмитента и индекс Херфиндаля весов (высокий — выше 40 % или 0,25, повышенный — выше 20 % или 0,15).",
+    "cs": "Váha největšího emitenta a Herfindahlův index vah (vysoké nad 40 % nebo 0,25, zvýšené nad 20 % nebo 0,15)."
+  },
+  "risk.interestRate.explanation": {
+    "en": "Value-weighted modified duration of bonds; bond ETFs use an assumed duration of 7 years (thresholds 1 / 3 / 6).",
+    "ru": "Взвешенная по стоимости модифицированная дюрация облигаций; для облигационных ETF принята условная дюрация 7 лет (пороги 1 / 3 / 6).",
+    "cs": "Hodnotou vážená modifikovaná durace dluhopisů; u dluhopisových ETF se předpokládá durace 7 let (prahy 1 / 3 / 6)."
+  },
+  "risk.political.explanation": {
+    "en": "Share of holdings from countries outside developed markets (thresholds 10 / 30 / 60 %). A rough indicator only.",
+    "ru": "Доля активов из стран вне развитых рынков (пороги 10 / 30 / 60 %). Только приблизительный индикатор.",
+    "cs": "Podíl aktiv ze zemí mimo rozvinuté trhy (prahy 10 / 30 / 60 %). Jen hrubý ukazatel."
+  },
+  "risk.regulatory.explanation": {
+    "en": "Funds without UCITS status may offer less investor protection in the EU and may have no KID.",
+    "ru": "Фонды без статуса UCITS могут давать меньшую защиту инвесторов в ЕС и не иметь KID.",
+    "cs": "Fondy bez statusu UCITS mohou v EU poskytovat menší ochranu investorů a nemusí mít KID."
+  },
+  "risk.counterparty.explanation": {
+    "en": "Synthetic ETFs depend on swap counterparties; a large cash share depends on the bank or broker that holds it.",
+    "ru": "Синтетические ETF зависят от контрагентов по свопам; большая доля денежных средств зависит от банка или брокера, где они хранятся.",
+    "cs": "Syntetické ETF závisí na protistranách swapů; velký podíl hotovosti závisí na bance nebo brokerovi, který ji drží."
+  },
+  "risk.metric.volatility": {
+    "en": "Volatility (annualised)",
+    "ru": "Волатильность (годовая)",
+    "cs": "Volatilita (roční)"
+  },
+  "risk.metric.volatility.help": {
+    "en": "Standard deviation of daily portfolio returns over the last year, scaled to a year, using current weights. Higher means larger swings in both directions.",
+    "ru": "Стандартное отклонение дневных доходностей портфеля за последний год, приведённое к году, при текущих весах. Чем выше, тем сильнее колебания в обе стороны.",
+    "cs": "Směrodatná odchylka denních výnosů portfolia za poslední rok převedená na rok při současných vahách. Vyšší znamená větší výkyvy oběma směry."
+  },
+  "risk.metric.var95": {
+    "en": "Historical VaR 95 % (1 day)",
+    "ru": "Исторический VaR 95 % (1 день)",
+    "cs": "Historický VaR 95 % (1 den)"
+  },
+  "risk.metric.var95.help": {
+    "en": "On 95 % of days in the last year the one-day loss at current weights was smaller than this. It is not the maximum possible loss: larger losses can and do occur.",
+    "ru": "В 95 % дней за последний год дневной убыток при текущих весах был меньше этой величины. Это не максимально возможный убыток: бывают и большие потери.",
+    "cs": "V 95 % dní za poslední rok byla jednodenní ztráta při současných vahách menší než tato hodnota. Není to maximální možná ztráta: větší ztráty mohou nastat a nastávají."
+  },
+  "risk.metric.cvar95": {
+    "en": "Expected shortfall 95 % (1 day)",
+    "ru": "Ожидаемые потери 95 % (1 день)",
+    "cs": "Očekávaný schodek 95 % (1 den)"
+  },
+  "risk.metric.cvar95.help": {
+    "en": "Average one-day loss on the worst 5 % of days in the last year. Also not a maximum loss.",
+    "ru": "Средний дневной убыток в худшие 5 % дней за последний год. Тоже не максимальный убыток.",
+    "cs": "Průměrná jednodenní ztráta v nejhorších 5 % dní za poslední rok. Také nejde o maximální ztrátu."
+  },
+  "risk.metric.effectivePositions": {
+    "en": "Effective number of positions",
+    "ru": "Эффективное число позиций",
+    "cs": "Efektivní počet pozic"
+  },
+  "risk.metric.effectivePositions.help": {
+    "en": "1 divided by the Herfindahl index of weights. Ten equal positions give 10; one dominant position pushes it towards 1.",
+    "ru": "1, делённая на индекс Херфиндаля весов. Десять равных позиций дают 10; одна доминирующая позиция приближает значение к 1.",
+    "cs": "1 dělená Herfindahlovým indexem vah. Deset stejných pozic dává 10; jedna dominantní pozice tlačí hodnotu k 1."
+  },
+  "risk.metric.duration": {
+    "en": "Weighted modified duration",
+    "ru": "Взвешенная модифицированная дюрация",
+    "cs": "Vážená modifikovaná durace"
+  },
+  "risk.metric.duration.help": {
+    "en": "Approximate percentage change of the portfolio value for a 1 percentage point change in yields, from bonds and bond ETFs (7 years assumed for bond ETFs).",
+    "ru": "Приблизительное процентное изменение стоимости портфеля при изменении доходностей на 1 п. п. за счёт облигаций и облигационных ETF (для ETF принято 7 лет).",
+    "cs": "Přibližná procentní změna hodnoty portfolia při změně výnosů o 1 procentní bod, z dluhopisů a dluhopisových ETF (u ETF předpoklad 7 let)."
+  },
+  "risk.exposure.assetType": {
+    "en": "By asset type",
+    "ru": "По типам активов",
+    "cs": "Podle typu aktiv"
+  },
+  "risk.exposure.issuer": {
+    "en": "By issuer",
+    "ru": "По эмитентам",
+    "cs": "Podle emitenta"
+  },
+  "risk.exposure.sector": {
+    "en": "By sector",
+    "ru": "По секторам",
+    "cs": "Podle sektoru"
+  },
+  "risk.exposure.country": {
+    "en": "By country",
+    "ru": "По странам",
+    "cs": "Podle země"
+  },
+  "risk.exposure.currency": {
+    "en": "By currency",
+    "ru": "По валютам",
+    "cs": "Podle měny"
+  },
+  "risk.exposure.cash": {
+    "en": "Cash (%@)",
+    "ru": "Денежные средства (%@)",
+    "cs": "Hotovost (%@)"
+  },
+  "risk.assetType.bondETF": {
+    "en": "Bond ETF",
+    "ru": "Облигационный ETF",
+    "cs": "Dluhopisový ETF"
+  },
+  "risk.correlations.title": {
+    "en": "Correlations of daily returns",
+    "ru": "Корреляции дневных доходностей",
+    "cs": "Korelace denních výnosů"
+  },
+  "risk.correlations.help": {
+    "en": "Pearson correlation of daily returns over the last year for pairs of holdings. Correlations change over time and tend to rise in crises.",
+    "ru": "Корреляция Пирсона дневных доходностей за последний год для пар позиций. Корреляции меняются со временем и обычно растут в кризисы.",
+    "cs": "Pearsonova korelace denních výnosů za poslední rok pro dvojice pozic. Korelace se v čase mění a v krizích obvykle rostou."
+  },
+  "stress.banner": {
+    "en": "Stress tests are hypothetical. They show how the current portfolio would react to an assumed shock, not what will happen.",
+    "ru": "Стресс-тесты гипотетические. Они показывают, как текущий портфель отреагировал бы на условный шок, а не то, что произойдёт.",
+    "cs": "Zátěžové testy jsou hypotetické. Ukazují, jak by současné portfolio reagovalo na předpokládaný šok, ne co se stane."
+  },
+  "stress.details": {
+    "en": "Details and assumptions",
+    "ru": "Подробности и допущения",
+    "cs": "Podrobnosti a předpoklady"
+  },
+  "stress.assumed": {
+    "en": "assumed",
+    "ru": "допущение",
+    "cs": "předpoklad"
+  },
+  "stress.hypothetical": {
+    "en": "Hypothetical scenario: not a forecast, and no probability is attached.",
+    "ru": "Гипотетический сценарий: не прогноз, вероятность не присваивается.",
+    "cs": "Hypotetický scénář: nejde o prognózu a není mu přiřazena pravděpodobnost."
+  },
+  "stress.assumption.beta": {
+    "en": "Stocks and equity ETFs fall by the shock multiplied by their beta; a beta of 1 is assumed where it is unknown (marked).",
+    "ru": "Акции и фондовые ETF падают на величину шока, умноженную на их бету; где бета неизвестна, принимается 1 (помечено).",
+    "cs": "Akcie a akciové ETF klesnou o šok vynásobený jejich betou; kde beta není známa, předpokládá se 1 (označeno)."
+  },
+  "stress.assumption.rates": {
+    "en": "Bonds are fully repriced at the shifted yield; bond ETFs use an assumed duration of 7 years (marked).",
+    "ru": "Облигации полностью переоцениваются по сдвинутой доходности; для облигационных ETF принята дюрация 7 лет (помечено).",
+    "cs": "Dluhopisy se plně přecení při posunutém výnosu; u dluhopisových ETF se předpokládá durace 7 let (označeno)."
+  },
+  "stress.assumption.inflation": {
+    "en": "Shows the loss of purchasing power of nominal bonds and cash; the effect on stocks is not modelled.",
+    "ru": "Показывает потерю покупательной способности номинальных облигаций и денежных средств; влияние на акции не моделируется.",
+    "cs": "Ukazuje ztrátu kupní síly nominálních dluhopisů a hotovosti; dopad na akcie se nemodeluje."
+  },
+  "stress.assumption.currency": {
+    "en": "Assets in foreign currencies lose the shock in base-currency terms; fund currency look-through is used where known.",
+    "ru": "Активы в иностранных валютах теряют величину шока в базовой валюте; где известно, учитывается валютный состав фондов.",
+    "cs": "Aktiva v cizích měnách ztratí v základní měně velikost šoku; kde je znám, použije se měnový rozpad fondů."
+  },
+  "stress.assumption.credit": {
+    "en": "Corporate bond yields rise by the spread shock; government bonds are unchanged.",
+    "ru": "Доходности корпоративных облигаций растут на величину шока спреда; государственные облигации не меняются.",
+    "cs": "Výnosy podnikových dluhopisů vzrostou o šok spreadu; státní dluhopisy se nemění."
+  },
+  "stress.assumption.default": {
+    "en": "Bonds of the issuer recover 40 % of their value; shares of the issuer are lost entirely.",
+    "ru": "Облигации эмитента возмещают 40 % стоимости; акции эмитента теряются полностью.",
+    "cs": "Dluhopisy emitenta získají zpět 40 % hodnoty; akcie emitenta se ztratí úplně."
+  },
+  "stress.preset.equityMinus20": {
+    "en": "Stock markets fall 20 %",
+    "ru": "Фондовые рынки падают на 20 %",
+    "cs": "Akciové trhy klesnou o 20 %"
+  },
+  "stress.preset.equityMinus40": {
+    "en": "Stock markets fall 40 %",
+    "ru": "Фондовые рынки падают на 40 %",
+    "cs": "Akciové trhy klesnou o 40 %"
+  },
+  "stress.preset.ratesPlus1": {
+    "en": "Interest rates +1 percentage point",
+    "ru": "Процентные ставки +1 п. п.",
+    "cs": "Úrokové sazby +1 procentní bod"
+  },
+  "stress.preset.ratesPlus2": {
+    "en": "Interest rates +2 percentage points",
+    "ru": "Процентные ставки +2 п. п.",
+    "cs": "Úrokové sazby +2 procentní body"
+  },
+  "stress.preset.ratesMinus1": {
+    "en": "Interest rates −1 percentage point",
+    "ru": "Процентные ставки −1 п. п.",
+    "cs": "Úrokové sazby −1 procentní bod"
+  },
+  "stress.preset.inflation5For3Years": {
+    "en": "Inflation of 5 % a year for 3 years",
+    "ru": "Инфляция 5 % в год в течение 3 лет",
+    "cs": "Inflace 5 % ročně po dobu 3 let"
+  },
+  "stress.preset.baseCurrencyPlus10": {
+    "en": "Base currency strengthens by 10 %",
+    "ru": "Базовая валюта укрепляется на 10 %",
+    "cs": "Základní měna posílí o 10 %"
+  },
+  "stress.preset.creditSpreadPlus2": {
+    "en": "Corporate credit spreads +2 percentage points",
+    "ru": "Кредитные спреды корпоративных облигаций +2 п. п.",
+    "cs": "Úvěrové spready podnikových dluhopisů +2 procentní body"
+  },
+  "stress.preset.largestIssuerDefault": {
+    "en": "Default of the largest issuer",
+    "ru": "Дефолт крупнейшего эмитента",
+    "cs": "Úpadek největšího emitenta"
+  },
+  "stress.preset.largestIssuerMinus50": {
+    "en": "Largest issuer falls 50 %",
+    "ru": "Крупнейший эмитент падает на 50 %",
+    "cs": "Největší emitent klesne o 50 %"
+  }
+}

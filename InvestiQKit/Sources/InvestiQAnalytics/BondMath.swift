@@ -23,11 +23,19 @@ public struct BondMath: Sendable {
             var d1 = start.day, d2 = end.day
             if d1 == 31 { d1 = 30 }
             if d2 == 31 && d1 >= 30 { d2 = 30 }
-            return Double(360 * (end.year - start.year) + 30 * (end.month - start.month) + (d2 - d1)) / 360
+            return thirty360Days(start, end, d1, d2) / 360
         case .thirtyE360:
-            let d1 = min(start.day, 30), d2 = min(end.day, 30)
-            return Double(360 * (end.year - start.year) + 30 * (end.month - start.month) + (d2 - d1)) / 360
+            return thirty360Days(start, end, min(start.day, 30), min(end.day, 30)) / 360
         }
+    }
+
+    /// 360·ΔY + 30·ΔM + ΔD with already-adjusted day numbers (split up for the type checker).
+    private static func thirty360Days(_ start: LocalDate, _ end: LocalDate, _ d1: Int, _ d2: Int) -> Double {
+        let years: Int = end.year - start.year
+        let months: Int = end.month - start.month
+        let days: Int = d2 - d1
+        let total: Int = 360 * years + 30 * months + days
+        return Double(total)
     }
 
     // MARK: Schedule

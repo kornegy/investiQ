@@ -87,6 +87,8 @@ public struct CorrelationPair: Sendable, Hashable {
 
 public struct RiskEngine: Sendable {
     public static let methodVersion = "risk-1"
+    /// Exposure labels for cash are `cash:<ISO code>`; the UI localises them.
+    public static let cashLabelPrefix = "cash:"
     /// Developed markets for the political-risk heuristic (ISO 3166-1 alpha-2).
     static let developedMarkets: Set<String> = [
         "AT", "BE", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GR", "HR", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT",
@@ -114,7 +116,7 @@ public struct RiskEngine: Sendable {
             return sums.map { ExposureItem(label: $0.key, valueBase: $0.value, weight: $0.value / total) }.sorted { $0.valueBase > $1.valueBase }
         }
         let byIssuer = exposures { [($0.issuer ?? $0.name, $0.valueBase)] }
-        let byCurrency = exposures(currencyLookThrough) + (cashBase > 0 ? [ExposureItem(label: baseCurrency.rawValue + " cash", valueBase: cashBase, weight: total > 0 ? cashBase / total : 0)] : [])
+        let byCurrency = exposures(currencyLookThrough) + (cashBase > 0 ? [ExposureItem(label: Self.cashLabelPrefix + baseCurrency.rawValue, valueBase: cashBase, weight: total > 0 ? cashBase / total : 0)] : [])
         let weights = holdings.map { total > 0 ? $0.valueBase / total : 0 }
         let hhi = total > 0 && !holdings.isEmpty ? weights.reduce(0) { $0 + $1 * $1 } : nil
         let volatility = portfolioDailyReturns.count >= Performance.minimumReturns
@@ -201,7 +203,7 @@ public struct RiskEngine: Sendable {
         }
         let bonds = holdings.filter { $0.bond != nil }
         let belowInvestmentGrade = share { h in h.bond != nil && !Self.investmentGrade.contains(h.bond?.creditRating ?? "") }
-        let foreignCurrency = total > 0 ? report.byCurrency.filter { !$0.label.hasPrefix(baseCurrency.rawValue) }.reduce(0) { $0 + $1.valueBase } / total : 0
+        let foreignCurrency = total > 0 ? report.byCurrency.filter { $0.label != baseCurrency.rawValue && $0.label != Self.cashLabelPrefix + baseCurrency.rawValue }.reduce(0) { $0 + $1.valueBase } / total : 0
         let fixedIncomeAndCash = share { $0.bond != nil || $0.isBondETF } + (total > 0 ? max(0, cashBase) / total : 0)
         let illiquid = share { h in
             if let adv = h.averageDailyValueBase, adv > 0 { return h.valueBase / (0.2 * adv) > 5 }
@@ -302,7 +304,7 @@ public struct RiskEngine: Sendable {
             // Real (purchasing-power) loss of nominal fixed-income and cash; equities are not modelled.
             let factor = 1 - 1 / pow(1 + rate, Double(years))
             for holding in holdings where holding.bond != nil || holding.isBondETF { add(holding, -holding.valueBase * factor) }
-            if cashBase > 0 { lines.append(StressLine(name: "cash", changeBase: -cashBase * factor, usedAssumption: false)) }
+            if cashBase > 0 { lines.append(StressLine(name: Self.cashLabelPrefix + baseCurrency.rawValue, changeBase: -cashBase * factor, usedAssumption: false)) }
             assumptions.append(Message("stress.assumption.inflation"))
         case .baseCurrencyAppreciation(let move):
             for holding in holdings {

@@ -218,3 +218,14 @@ public struct ETFDetails: Hashable, Codable, Sendable {
         self.source = source
     }
 }
+
+extension BondDetails {
+    /// Bond quotes follow the market convention: clean price in percent of face value (e.g. 101.20).
+    /// The ledger records the price of one bond, so `unit = percent / 100 × face` (M-VAL-1).
+    public var quoteToUnitFactor: Decimal { faceValue / 100 }
+
+    public func unitPrice(fromPercentOfFace percent: Decimal) -> Decimal { percent * quoteToUnitFactor }
+
+    /// Clean price per 100 of face value from the price of one bond; `nil` without a face value.
+    public func percentOfFace(fromUnitPrice unit: Decimal) -> Decimal? { faceValue > 0 ? unit / quoteToUnitFactor : nil }
+}

@@ -231,6 +231,98 @@
         }
       }
     },
+    "analysis.completeness": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úplnost dat: k dispozici %@ klíčových ukazatelů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data completeness: %@ of key metrics available"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Полнота данных: доступно %@ ключевых показателей"
+          }
+        }
+      }
+    },
+    "analysis.status.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neutrální stavy odvozené z publikovaných pravidel. Ukazují, co si zaslouží pozornost, nikoli zda nakoupit či prodat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neutral statuses derived from published rules. They show what deserves closer attention, not whether to buy or sell."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нейтральные статусы по опубликованным правилам. Они показывают, на что стоит обратить внимание, а не покупать или продавать."
+          }
+        }
+      }
+    },
+    "analysis.status.notAdvice": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stavy nejsou doporučením k nákupu, prodeji ani držení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statuses are not buy, sell or hold recommendations."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статусы не являются рекомендациями покупать, продавать или держать."
+          }
+        }
+      }
+    },
+    "analysis.status.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analytický stav"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analytical status"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Аналитический статус"
+          }
+        }
+      }
+    },
     "analytics.drawdown.explanation": {
       "extractionState": "manual",
       "localizations": {
@@ -526,6 +618,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Что-то пошло не так"
+          }
+        }
+      }
+    },
+    "asset.bondQuote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %% jmenovité hodnoty"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %% of face value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %% от номинала"
           }
         }
       }
@@ -1312,6 +1427,98 @@
         }
       }
     },
+    "bond.accruedInterest": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alikvótní úrokový výnos"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accrued interest"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Накопленный купонный доход"
+          }
+        }
+      }
+    },
+    "bond.analysis.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypočteno ze smluvních podmínek a aktuální čisté ceny. Výnosy předpokládají držbu do splatnosti a úplné a včasné splacení všech plateb."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Computed from the contractual terms and the current clean price. Yields assume the bond is held to maturity and all payments are made in full and on time."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рассчитано по условиям выпуска и текущей чистой цене. Доходности предполагают удержание до погашения и полную своевременную выплату всех платежей."
+          }
+        }
+      }
+    },
+    "bond.analysis.per100": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceny a alikvótní úrok na 100 jednotek jmenovité hodnoty."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prices and accrued interest per 100 of face value."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цены и НКД указаны на 100 единиц номинала."
+          }
+        }
+      }
+    },
+    "bond.analysis.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analýza dluhopisu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bond analytics"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Аналитика облигации"
+          }
+        }
+      }
+    },
     "bond.callable": {
       "extractionState": "manual",
       "localizations": {
@@ -1331,6 +1538,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Досрочный выкуп эмитентом"
+          }
+        }
+      }
+    },
+    "bond.convexity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konvexita"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convexity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выпуклость"
           }
         }
       }
@@ -1377,6 +1607,52 @@
           "stringUnit": {
             "state": "translated",
             "value": "Купонная ставка"
+          }
+        }
+      }
+    },
+    "bond.currentYield": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Běžný výnos"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current yield"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Текущая доходность"
+          }
+        }
+      }
+    },
+    "bond.dirtyPrice": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Špinavá cena"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dirty price"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Грязная цена"
           }
         }
       }
@@ -1519,6 +1795,52 @@
         }
       }
     },
+    "bond.investmentGrade": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Investiční stupeň"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Investment grade"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Инвестиционный рейтинг"
+          }
+        }
+      }
+    },
+    "bond.macaulay": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Macaulayova durace (roky)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Macaulay duration (years)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дюрация Маколея (лет)"
+          }
+        }
+      }
+    },
     "bond.maturity": {
       "extractionState": "manual",
       "localizations": {
@@ -1561,6 +1883,52 @@
           "stringUnit": {
             "state": "translated",
             "value": "Минимальный номинал"
+          }
+        }
+      }
+    },
+    "bond.modified": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifikovaná durace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modified duration"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Модифицированная дюрация"
+          }
+        }
+      }
+    },
+    "bond.priceChange100bp": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změna ceny při růstu výnosů o 1 procentní bod"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price change if yields rise by 1 percentage point"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение цены при росте доходностей на 1 п. п."
           }
         }
       }
@@ -1630,6 +1998,75 @@
           "stringUnit": {
             "state": "translated",
             "value": "Условия облигации"
+          }
+        }
+      }
+    },
+    "bond.yearsToMaturity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let do splatnosti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Years to maturity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лет до погашения"
+          }
+        }
+      }
+    },
+    "bond.yieldToCall": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výnos k prvnímu splacení na výzvu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yield to first call"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доходность к первому отзыву"
+          }
+        }
+      }
+    },
+    "bond.ytm": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výnos do splatnosti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yield to maturity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доходность к погашению"
           }
         }
       }
@@ -2347,6 +2784,98 @@
         }
       }
     },
+    "etf.analysis.costDrag": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ilustrace nákladů: 10 000 při předpokládaném růstu 5 %% ročně za 10 let vzroste na %@ bez nákladů a na %@ po průběžných nákladech fondu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cost illustration: 10 000 growing at an assumed 5 %% a year for 10 years becomes %@ without costs and %@ after the fund's ongoing charges."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Иллюстрация расходов: 10 000 при условном росте 5 %% в год за 10 лет превратятся в %@ без расходов и в %@ с учётом текущих расходов фонда."
+          }
+        }
+      }
+    },
+    "etf.analysis.foreignCurrency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ aktiv fondu je v jiných měnách než ve vaší základní měně."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ of the fund's holdings are in currencies other than your base currency."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ активов фонда приходится на валюты, отличные от вашей базовой."
+          }
+        }
+      }
+    },
+    "etf.analysis.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ilustrace na základě zveřejněných údajů o fondu. Jsou to příklady, nikoli prognózy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Illustrations based on the fund's published facts. They are examples, not forecasts."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Иллюстрации на основе опубликованных сведений о фонде. Это примеры, а не прогнозы."
+          }
+        }
+      }
+    },
+    "etf.analysis.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analýza fondu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fund analysis"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Анализ фонда"
+          }
+        }
+      }
+    },
     "etf.currencyNote": {
       "extractionState": "manual",
       "localizations": {
@@ -2531,6 +3060,75 @@
         }
       }
     },
+    "etf.kid.expected": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro investory z EU by měl být k dispozici sdělení klíčových informací (KID). Přečtěte si jej před investováním."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Key Information Document (KID) should be available for EU investors. Read it before investing."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для инвесторов из ЕС должен быть доступен документ с ключевой информацией (KID). Прочитайте его перед инвестированием."
+          }
+        }
+      }
+    },
+    "etf.kid.nonEU": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fond nesplňuje UCITS a nemá sídlo v EU. Drobní investoři v EU jej možná nebudou moci koupit a KID nemusí existovat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This fund is not UCITS and not EU-domiciled. Retail investors in the EU may be unable to buy it, and no KID may exist."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фонд не соответствует UCITS и зарегистрирован вне ЕС. Розничные инвесторы в ЕС могут не иметь доступа к нему, а KID может отсутствовать."
+          }
+        }
+      }
+    },
+    "etf.kid.unknown": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stav UCITS a sídlo nejsou známy. Ověřte dokumenty fondu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UCITS status and domicile are unknown. Check the fund documents."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статус UCITS и страна регистрации неизвестны. Проверьте документы фонда."
+          }
+        }
+      }
+    },
     "etf.manager": {
       "extractionState": "manual",
       "localizations": {
@@ -2688,6 +3286,1064 @@
           "stringUnit": {
             "state": "translated",
             "value": "UCITS"
+          }
+        }
+      }
+    },
+    "forecast.disclaimer": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prognózy jsou statistické odhady s velkou nejistotou, nikoli předpovědi ani rady. Každá zaznamenaná prognóza zůstává v záznamu přesnosti, včetně těch nepřesných."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forecasts are statistical estimates with wide uncertainty, not predictions or advice. Every recorded forecast stays in the accuracy record, including the ones that miss."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прогнозы — статистические оценки с большой неопределённостью, а не предсказания и не советы. Каждый записанный прогноз остаётся в журнале точности, включая неудачные."
+          }
+        }
+      }
+    },
+    "forecast.error.insufficientHistory": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedostatek historie: k dispozici %@ pozorování, potřeba %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not enough history: %@ observations available, %@ needed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недостаточно истории: доступно %@ наблюдений, нужно %@."
+          }
+        }
+      }
+    },
+    "forecast.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam prognóz se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The forecast record could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить журнал прогнозов."
+          }
+        }
+      }
+    },
+    "forecast.error.noHistory": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro tento nástroj není k dispozici cenová historie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No price history is available for this instrument."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для этого инструмента нет истории цен."
+          }
+        }
+      }
+    },
+    "forecast.error.saveFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prognózu se nepodařilo zaznamenat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The forecast could not be recorded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось записать прогноз."
+          }
+        }
+      }
+    },
+    "forecast.error.staleInput": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poslední cena je z %@, data jsou zastaralá. Prognóza ze zastaralých dat bude označena."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The latest price is from %@, so the data is outdated. A forecast from outdated data is flagged."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Последняя цена от %@, данные устарели. Прогноз по устаревшим данным будет помечен."
+          }
+        }
+      }
+    },
+    "forecast.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jednoduché statistické modely s predikčními intervaly. Každý model se nejprve testuje na historii nástroje (walk-forward, bez budoucích dat) proti naivnímu základu, který předpokládá beze změny."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simple statistical models with prediction intervals. Each model is first tested on this instrument's own history (walk-forward, without future data) against a naive baseline that assumes no change."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Простые статистические модели с интервалами прогноза. Каждая модель сначала проверяется на истории инструмента (walk-forward, без будущих данных) против наивного базового прогноза «без изменений»."
+          }
+        }
+      }
+    },
+    "forecast.horizon": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Horizont prognózy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forecast horizon"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Горизонт прогноза"
+          }
+        }
+      }
+    },
+    "forecast.horizon.oneMonth": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 měsíc"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 month"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 месяц"
+          }
+        }
+      }
+    },
+    "forecast.horizon.threeMonths": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 měsíce"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 months"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 месяца"
+          }
+        }
+      }
+    },
+    "forecast.interval80": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80 %% interval: %@ – %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80 %% interval: %@ – %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80 %% интервал: %@ – %@"
+          }
+        }
+      }
+    },
+    "forecast.interval95": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 %% interval: %@ – %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 %% interval: %@ – %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "95 %% интервал: %@ – %@"
+          }
+        }
+      }
+    },
+    "forecast.median": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Střední hodnota: %@ (důležitější je rozpětí než toto číslo)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central value: %@ (a range matters more than this number)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Центральное значение: %@ (важнее диапазон, а не это число)"
+          }
+        }
+      }
+    },
+    "forecast.metric.coverage80": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V 80 % intervalu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In 80 % interval"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В 80 % интервале"
+          }
+        }
+      }
+    },
+    "forecast.metric.coverage95": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V 95 % intervalu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In 95 % interval"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В 95 % интервале"
+          }
+        }
+      }
+    },
+    "forecast.metric.directional": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Správný směr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direction right"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Верное направление"
+          }
+        }
+      }
+    },
+    "forecast.metric.evaluations": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tests"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверок"
+          }
+        }
+      }
+    },
+    "forecast.metric.mase": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MASE"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MASE"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MASE"
+          }
+        }
+      }
+    },
+    "forecast.metric.relativeMAE": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chyba vůči naivní"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error vs naive"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ошибка к наивной"
+          }
+        }
+      }
+    },
+    "forecast.model": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Model"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Model"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Модель"
+          }
+        }
+      }
+    },
+    "forecast.model.FC-BOOT": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bootstrap simulace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bootstrap simulation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бутстреп-симуляция"
+          }
+        }
+      }
+    },
+    "forecast.model.FC-DRIFT": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drift (historický trend)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drift (historical trend)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дрейф (исторический тренд)"
+          }
+        }
+      }
+    },
+    "forecast.model.FC-NAIVE": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naivní (beze změny)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naive (no change)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Наивная (без изменений)"
+          }
+        }
+      }
+    },
+    "forecast.record": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznamenat prognózu k pozdějšímu vyhodnocení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record forecast for later evaluation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Записать прогноз для последующей проверки"
+          }
+        }
+      }
+    },
+    "forecast.record.accuracy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přesnost podle modelu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy by model"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Точность по моделям"
+          }
+        }
+      }
+    },
+    "forecast.record.accuracy.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Průměrná absolutní chyba jako podíl výchozí ceny vedle chyby naivní prognózy beze změny pro stejné případy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average absolute error as a share of the starting price, next to the error of the naive no-change forecast for the same cases."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Средняя абсолютная ошибка в доле от начальной цены рядом с ошибкой наивного прогноза «без изменений» для тех же случаев."
+          }
+        }
+      }
+    },
+    "forecast.record.awaiting": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čeká na cílové datum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for the target date"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ожидает целевой даты"
+          }
+        }
+      }
+    },
+    "forecast.record.empty.description": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznamenejte prognózu na stránce nástroje a začněte záznam přesnosti."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record a forecast on an instrument's page to start the accuracy record."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запишите прогноз на странице инструмента, чтобы начать журнал точности."
+          }
+        }
+      }
+    },
+    "forecast.record.empty.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné zaznamenané prognózy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No recorded forecasts"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет записанных прогнозов"
+          }
+        }
+      }
+    },
+    "forecast.record.evaluated": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyhodnoceno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evaluated"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверено"
+          }
+        }
+      }
+    },
+    "forecast.record.inside": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skutečnost %@: uvnitř 80 %% intervalu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actual %@: inside the 80 %% interval"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Факт %@: внутри 80 %% интервала"
+          }
+        }
+      }
+    },
+    "forecast.record.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Každá zaznamenaná prognóza se uchovává beze změn a po uplynutí data se porovná se skutečností. Ukazuje to, jak spolehlivé modely skutečně jsou."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every forecast you record is kept unchanged and compared with what actually happened once its date has passed. This shows how reliable the models really are."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Каждый записанный прогноз хранится без изменений и сравнивается с фактическим результатом после наступления даты. Так видно, насколько надёжны модели на самом деле."
+          }
+        }
+      }
+    },
+    "forecast.record.mape": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prům. chyba"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avg. error"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ср. ошибка"
+          }
+        }
+      }
+    },
+    "forecast.record.naiveMape": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prům. chyba naivní"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naive avg. error"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ср. ошибка наивной"
+          }
+        }
+      }
+    },
+    "forecast.record.outside": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skutečnost %@: mimo 80 %% interval"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actual %@: outside the 80 %% interval"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Факт %@: вне 80 %% интервала"
+          }
+        }
+      }
+    },
+    "forecast.record.pending": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čeká"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pending"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ожидают"
+          }
+        }
+      }
+    },
+    "forecast.record.period": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytvořeno %@ · cílové datum %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Made %@ · target %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сделан %@ · целевая дата %@"
+          }
+        }
+      }
+    },
+    "forecast.record.smallSample": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Při malém počtu vyhodnocených prognóz jsou tato čísla převážně šum."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With few evaluated forecasts these figures are mostly noise."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При малом числе проверенных прогнозов эти цифры в основном шум."
+          }
+        }
+      }
+    },
+    "forecast.recordAnyway": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přesto zaznamenat se zastaralými daty"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record with outdated data anyway"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всё равно записать с устаревшими данными"
+          }
+        }
+      }
+    },
+    "forecast.recorded": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prognóza zaznamenána. Bude vyhodnocena po %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forecast recorded. It will be evaluated after %@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прогноз записан. Он будет проверен после %@."
+          }
+        }
+      }
+    },
+    "forecast.staleFlag": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaznamenáno se zastaralými vstupními daty."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recorded with outdated input data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Записан с устаревшими входными данными."
+          }
+        }
+      }
+    },
+    "forecast.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistická prognóza a ověření"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistical forecast and validation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статистический прогноз и проверка"
+          }
+        }
+      }
+    },
+    "forecast.validate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otestovat modely na historii"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test models on history"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить модели на истории"
+          }
+        }
+      }
+    },
+    "forecast.validation.unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro otestování modelů není dost historie (je potřeba alespoň rok plus horizont)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not enough history to test the models (at least one year plus the horizon is needed)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недостаточно истории для проверки моделей (нужен минимум год плюс горизонт)."
+          }
+        }
+      }
+    },
+    "forecast.verdict.notUseful": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: nepřekonal naivní základ. Nepoužívejte jej jako investiční signál."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: did not outperform the naive baseline. Do not use it as an investment signal."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: не превзошла наивный прогноз. Не используйте её как инвестиционный сигнал."
+          }
+        }
+      }
+    },
+    "forecast.verdict.useful": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: v tomto testu překonal naivní základ a jeho intervaly byly přiměřeně kalibrované. Minulá přesnost nezaručuje budoucí."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: beat the naive baseline in this test and its intervals were reasonably calibrated. Past accuracy does not guarantee future accuracy."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: в этой проверке превзошла наивный прогноз, интервалы были достаточно откалиброваны. Прошлая точность не гарантирует будущую."
           }
         }
       }
@@ -10121,6 +11777,1662 @@
         }
       }
     },
+    "risk.assetType.bondETF": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluhopisový ETF"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bond ETF"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облигационный ETF"
+          }
+        }
+      }
+    },
+    "risk.category.concentration": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riziko koncentrace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concentration risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Риск концентрации"
+          }
+        }
+      }
+    },
+    "risk.category.counterparty": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riziko protistrany"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Counterparty risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Риск контрагента"
+          }
+        }
+      }
+    },
+    "risk.category.credit": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úvěrové riziko"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Credit risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кредитный риск"
+          }
+        }
+      }
+    },
+    "risk.category.currency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měnové riziko"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currency risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Валютный риск"
+          }
+        }
+      }
+    },
+    "risk.category.inflation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflační riziko"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflation risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Инфляционный риск"
+          }
+        }
+      }
+    },
+    "risk.category.interestRate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úrokové riziko"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interest rate risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Процентный риск"
+          }
+        }
+      }
+    },
+    "risk.category.liquidity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riziko likvidity"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liquidity risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Риск ликвидности"
+          }
+        }
+      }
+    },
+    "risk.category.market": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tržní riziko"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Market risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рыночный риск"
+          }
+        }
+      }
+    },
+    "risk.category.political": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Politické a zemské riziko"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Political and country risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Политический и страновой риск"
+          }
+        }
+      }
+    },
+    "risk.category.regulatory": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regulatorní riziko"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regulatory risk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Регуляторный риск"
+          }
+        }
+      }
+    },
+    "risk.concentration.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váha největšího emitenta a Herfindahlův index vah (vysoké nad 40 % nebo 0,25, zvýšené nad 20 % nebo 0,15)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weight of the largest issuer and the Herfindahl index of weights (high above 40 % or 0.25, elevated above 20 % or 0.15)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вес крупнейшего эмитента и индекс Херфиндаля весов (высокий — выше 40 % или 0,25, повышенный — выше 20 % или 0,15)."
+          }
+        }
+      }
+    },
+    "risk.correlations.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pearsonova korelace denních výnosů za poslední rok pro dvojice pozic. Korelace se v čase mění a v krizích obvykle rostou."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pearson correlation of daily returns over the last year for pairs of holdings. Correlations change over time and tend to rise in crises."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Корреляция Пирсона дневных доходностей за последний год для пар позиций. Корреляции меняются со временем и обычно растут в кризисы."
+          }
+        }
+      }
+    },
+    "risk.correlations.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Korelace denních výnosů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correlations of daily returns"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Корреляции дневных доходностей"
+          }
+        }
+      }
+    },
+    "risk.counterparty.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Syntetické ETF závisí na protistranách swapů; velký podíl hotovosti závisí na bance nebo brokerovi, který ji drží."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synthetic ETFs depend on swap counterparties; a large cash share depends on the bank or broker that holds it."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Синтетические ETF зависят от контрагентов по свопам; большая доля денежных средств зависит от банка или брокера, где они хранятся."
+          }
+        }
+      }
+    },
+    "risk.credit.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podíl portfolia v dluhopisech s ratingem pod investičním stupněm nebo bez ratingu (prahy 0 / 10 / 30 %)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share of the portfolio in individual bonds rated below investment grade or unrated (thresholds 0 / 10 / 30 %)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доля портфеля в облигациях с рейтингом ниже инвестиционного или без рейтинга (пороги 0 / 10 / 30 %)."
+          }
+        }
+      }
+    },
+    "risk.credit.noBonds": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portfolio neobsahuje jednotlivé dluhopisy. Dluhopisové fondy nesou úvěrové riziko podle svého složení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The portfolio holds no individual bonds. Bond funds carry credit risk that depends on their holdings."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В портфеле нет отдельных облигаций. Облигационные фонды несут кредитный риск в зависимости от своего состава."
+          }
+        }
+      }
+    },
+    "risk.currency.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podíl portfolia v jiných měnách než základní, s rozpadem fondů tam, kde je znám (prahy 10 / 40 / 70 %)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share of the portfolio in currencies other than the base currency, with fund look-through where known (thresholds 10 / 40 / 70 %)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доля портфеля в валютах, отличных от базовой, с учётом состава фондов, где он известен (пороги 10 / 40 / 70 %)."
+          }
+        }
+      }
+    },
+    "risk.empty.description": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přidejte do portfolia transakce, abyste viděli jeho rizikový profil."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add transactions to a portfolio to see its risk profile."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте сделки в портфель, чтобы увидеть его профиль риска."
+          }
+        }
+      }
+    },
+    "risk.empty.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné pozice k analýze"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No positions to analyse"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет позиций для анализа"
+          }
+        }
+      }
+    },
+    "risk.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analýzu rizik se nepodařilo vypočítat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The risk analysis could not be computed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось рассчитать анализ риска."
+          }
+        }
+      }
+    },
+    "risk.exposure.assetType": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podle typu aktiv"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By asset type"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По типам активов"
+          }
+        }
+      }
+    },
+    "risk.exposure.cash": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hotovost (%@)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cash (%@)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Денежные средства (%@)"
+          }
+        }
+      }
+    },
+    "risk.exposure.country": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podle země"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By country"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По странам"
+          }
+        }
+      }
+    },
+    "risk.exposure.currency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podle měny"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By currency"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По валютам"
+          }
+        }
+      }
+    },
+    "risk.exposure.issuer": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podle emitenta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By issuer"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По эмитентам"
+          }
+        }
+      }
+    },
+    "risk.exposure.sector": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podle sektoru"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By sector"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По секторам"
+          }
+        }
+      }
+    },
+    "risk.inflation.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podíl dluhopisů, dluhopisových fondů a hotovosti, jejichž pevné nominální platby ztrácejí kupní sílu při růstu inflace (prahy 20 / 50 / 80 %)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share in bonds, bond funds and cash, whose fixed nominal payments lose purchasing power when inflation rises (thresholds 20 / 50 / 80 %)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доля облигаций, облигационных фондов и денежных средств, чьи фиксированные номинальные выплаты теряют покупательную способность при росте инфляции (пороги 20 / 50 / 80 %)."
+          }
+        }
+      }
+    },
+    "risk.interestRate.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodnotou vážená modifikovaná durace dluhopisů; u dluhopisových ETF se předpokládá durace 7 let (prahy 1 / 3 / 6)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Value-weighted modified duration of bonds; bond ETFs use an assumed duration of 7 years (thresholds 1 / 3 / 6)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Взвешенная по стоимости модифицированная дюрация облигаций; для облигационных ETF принята условная дюрация 7 лет (пороги 1 / 3 / 6)."
+          }
+        }
+      }
+    },
+    "risk.level.elevated": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zvýšené"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elevated"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Повышенный"
+          }
+        }
+      }
+    },
+    "risk.level.high": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vysoké"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "High"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Высокий"
+          }
+        }
+      }
+    },
+    "risk.level.low": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nízké"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Низкий"
+          }
+        }
+      }
+    },
+    "risk.level.moderate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mírné"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moderate"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Умеренный"
+          }
+        }
+      }
+    },
+    "risk.level.unknown": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neznámé"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Неизвестно"
+          }
+        }
+      }
+    },
+    "risk.liquidity.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podíl pozic, jejichž prodej při 20 % průměrného denního objemu by trval déle než pět obchodních dní; jednotlivé dluhopisy se počítají jako méně likvidní (prahy 10 / 30 / 60 %)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share of positions that would take more than five trading days to sell at 20 % of average daily traded value; individual bonds count as less liquid (thresholds 10 / 30 / 60 %)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доля позиций, продажа которых при 20 % среднедневного оборота заняла бы более пяти торговых дней; отдельные облигации считаются менее ликвидными (пороги 10 / 30 / 60 %)."
+          }
+        }
+      }
+    },
+    "risk.market.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podle roční volatility denních výnosů portfolia za poslední rok při současných vahách (prahy 8 / 15 / 25 %)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on the annualised volatility of daily portfolio returns over the last year at current weights (thresholds 8 / 15 / 25 %)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "На основе годовой волатильности дневных доходностей портфеля за последний год при текущих весах (пороги 8 / 15 / 25 %)."
+          }
+        }
+      }
+    },
+    "risk.methodNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úrovně se řídí publikovanými prahy (Metodika, §6). Popisují složení a historii portfolia, ne jeho budoucnost, a nejsou doporučením."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Levels follow published thresholds (Financial methodology §6). They describe the portfolio's composition and history, not its future, and are not recommendations."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уровни следуют опубликованным порогам (Методология, §6). Они описывают состав и историю портфеля, а не его будущее, и не являются рекомендациями."
+          }
+        }
+      }
+    },
+    "risk.metric.cvar95": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Očekávaný schodek 95 % (1 den)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expected shortfall 95 % (1 day)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ожидаемые потери 95 % (1 день)"
+          }
+        }
+      }
+    },
+    "risk.metric.cvar95.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Průměrná jednodenní ztráta v nejhorších 5 % dní za poslední rok. Také nejde o maximální ztrátu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average one-day loss on the worst 5 % of days in the last year. Also not a maximum loss."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Средний дневной убыток в худшие 5 % дней за последний год. Тоже не максимальный убыток."
+          }
+        }
+      }
+    },
+    "risk.metric.duration": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vážená modifikovaná durace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weighted modified duration"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Взвешенная модифицированная дюрация"
+          }
+        }
+      }
+    },
+    "risk.metric.duration.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přibližná procentní změna hodnoty portfolia při změně výnosů o 1 procentní bod, z dluhopisů a dluhopisových ETF (u ETF předpoklad 7 let)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approximate percentage change of the portfolio value for a 1 percentage point change in yields, from bonds and bond ETFs (7 years assumed for bond ETFs)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приблизительное процентное изменение стоимости портфеля при изменении доходностей на 1 п. п. за счёт облигаций и облигационных ETF (для ETF принято 7 лет)."
+          }
+        }
+      }
+    },
+    "risk.metric.effectivePositions": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Efektivní počet pozic"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Effective number of positions"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Эффективное число позиций"
+          }
+        }
+      }
+    },
+    "risk.metric.effectivePositions.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 dělená Herfindahlovým indexem vah. Deset stejných pozic dává 10; jedna dominantní pozice tlačí hodnotu k 1."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 divided by the Herfindahl index of weights. Ten equal positions give 10; one dominant position pushes it towards 1."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1, делённая на индекс Херфиндаля весов. Десять равных позиций дают 10; одна доминирующая позиция приближает значение к 1."
+          }
+        }
+      }
+    },
+    "risk.metric.var95": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historický VaR 95 % (1 den)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historical VaR 95 % (1 day)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исторический VaR 95 % (1 день)"
+          }
+        }
+      }
+    },
+    "risk.metric.var95.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V 95 % dní za poslední rok byla jednodenní ztráta při současných vahách menší než tato hodnota. Není to maximální možná ztráta: větší ztráty mohou nastat a nastávají."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On 95 % of days in the last year the one-day loss at current weights was smaller than this. It is not the maximum possible loss: larger losses can and do occur."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В 95 % дней за последний год дневной убыток при текущих весах был меньше этой величины. Это не максимально возможный убыток: бывают и большие потери."
+          }
+        }
+      }
+    },
+    "risk.metric.volatility": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volatilita (roční)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volatility (annualised)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Волатильность (годовая)"
+          }
+        }
+      }
+    },
+    "risk.metric.volatility.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Směrodatná odchylka denních výnosů portfolia za poslední rok převedená na rok při současných vahách. Vyšší znamená větší výkyvy oběma směry."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard deviation of daily portfolio returns over the last year, scaled to a year, using current weights. Higher means larger swings in both directions."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стандартное отклонение дневных доходностей портфеля за последний год, приведённое к году, при текущих весах. Чем выше, тем сильнее колебания в обе стороны."
+          }
+        }
+      }
+    },
+    "risk.political.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podíl aktiv ze zemí mimo rozvinuté trhy (prahy 10 / 30 / 60 %). Jen hrubý ukazatel."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share of holdings from countries outside developed markets (thresholds 10 / 30 / 60 %). A rough indicator only."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доля активов из стран вне развитых рынков (пороги 10 / 30 / 60 %). Только приблизительный индикатор."
+          }
+        }
+      }
+    },
+    "risk.portfolio": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portfolio"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portfolio"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Портфель"
+          }
+        }
+      }
+    },
+    "risk.portfolio.virtual": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (virtuální)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (virtual)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (виртуальный)"
+          }
+        }
+      }
+    },
+    "risk.qualitative": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kvalitativní posouzení podle složení portfolia."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qualitative assessment based on the portfolio's composition."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Качественная оценка на основе состава портфеля."
+          }
+        }
+      }
+    },
+    "risk.regulatory.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fondy bez statusu UCITS mohou v EU poskytovat menší ochranu investorů a nemusí mít KID."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funds without UCITS status may offer less investor protection in the EU and may have no KID."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фонды без статуса UCITS могут давать меньшую защиту инвесторов в ЕС и не иметь KID."
+          }
+        }
+      }
+    },
+    "risk.tab.categories": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kategorie rizik"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risk categories"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Категории риска"
+          }
+        }
+      }
+    },
+    "risk.tab.exposures": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expozice"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exposures"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Структура"
+          }
+        }
+      }
+    },
+    "risk.tab.forecasts": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam prognóz"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forecast record"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Журнал прогнозов"
+          }
+        }
+      }
+    },
+    "risk.tab.stress": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zátěžové testy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stress tests"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стресс-тесты"
+          }
+        }
+      }
+    },
+    "risk.tabs": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вид"
+          }
+        }
+      }
+    },
+    "rule.belowInvestmentGrade": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úvěrový rating je pod investičním stupněm (pod BBB−)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The credit rating is below investment grade (below BBB−)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кредитный рейтинг ниже инвестиционного уровня (ниже BBB−)."
+          }
+        }
+      }
+    },
+    "rule.conflictingSources": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdroje dat se liší alespoň v jedné hodnotě."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data sources disagree about at least one value."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Источники данных расходятся как минимум в одном значении."
+          }
+        }
+      }
+    },
+    "rule.deepDrawdown": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximální propad v období byl %@ (práh 50 %%)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The maximum drawdown in the period was %@ (threshold 50 %%)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Максимальная просадка за период составила %@ (порог 50 %%)."
+          }
+        }
+      }
+    },
+    "rule.default": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné pravidlo se nespustilo. Jako u každého nástroje je stále potřeba vlastní průzkum."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No rule was triggered. As with any instrument, your own research is still required."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ни одно правило не сработало. Как и для любого инструмента, нужно собственное изучение."
+          }
+        }
+      }
+    },
+    "rule.etfFactsMissing": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chybí klíčové údaje o fondu (náklady, složení nebo metoda replikace)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key fund facts (costs, holdings or replication method) are missing."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отсутствуют ключевые сведения о фонде (расходы, состав или метод репликации)."
+          }
+        }
+      }
+    },
+    "rule.highLeverage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poměr dluhu k vlastnímu kapitálu %@ je nad prahem 2,0."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debt-to-equity of %@ is above the threshold of 2.0."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отношение долга к капиталу %@ выше порога 2,0."
+          }
+        }
+      }
+    },
+    "rule.highVolatility": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roční volatilita %@ je nad prahem 35 %%."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annualised volatility of %@ is above the 35 %% threshold."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Годовая волатильность %@ выше порога 35 %%."
+          }
+        }
+      }
+    },
+    "rule.insufficientData": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K dispozici je jen %@ klíčových ukazatelů, závěry jsou proto omezené."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only %@ of the key metrics are available, so conclusions are limited."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доступно только %@ ключевых показателей, поэтому выводы ограничены."
+          }
+        }
+      }
+    },
+    "rule.marginDecline": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provozní marže meziročně klesla o více než 5 procentních bodů."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operating margin fell by more than 5 percentage points year on year."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операционная маржа снизилась более чем на 5 процентных пунктов за год."
+          }
+        }
+      }
+    },
+    "rule.negativeEarnings": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čistý zisk za posledních 12 měsíců je záporný."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Net income over the last 12 months is negative."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чистая прибыль за последние 12 месяцев отрицательная."
+          }
+        }
+      }
+    },
+    "rule.negativeFCFTwoYears": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volné peněžní toky byly záporné v každém z posledních dvou účetních let."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free cash flow was negative in each of the last two fiscal years."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свободный денежный поток был отрицательным в каждом из двух последних финансовых лет."
+          }
+        }
+      }
+    },
+    "rule.payoutAboveEarnings": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividenda na akcii převyšuje zisk na akcii."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividends per share exceed earnings per share."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дивиденд на акцию превышает прибыль на акцию."
+          }
+        }
+      }
+    },
+    "rule.staleData": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Část dat je zastaralá."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some of the data is outdated."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Часть данных устарела."
+          }
+        }
+      }
+    },
+    "rule.syntheticReplication": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fond replikuje index synteticky pomocí swapů, což přidává riziko protistrany."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The fund replicates its index synthetically through swaps, which adds counterparty risk."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фонд воспроизводит индекс синтетически через свопы, что добавляет риск контрагента."
+          }
+        }
+      }
+    },
+    "rule.unratedBond": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluhopis nemá v dostupných datech úvěrový rating."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The bond has no credit rating in the available data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В доступных данных у облигации нет кредитного рейтинга."
+          }
+        }
+      }
+    },
     "safety.debtDifficulty.body": {
       "extractionState": "manual",
       "localizations": {
@@ -10485,6 +13797,351 @@
           "stringUnit": {
             "state": "translated",
             "value": "Нестабильный доход"
+          }
+        }
+      }
+    },
+    "scenario.amount": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příklad částky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Example amount"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пример суммы"
+          }
+        }
+      }
+    },
+    "scenario.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesimistický, základní a optimistický = 20., 50. a 80. percentil všech minulých klouzavých výnosů nástroje za zvolený horizont (jen cena, bez dividend). Popisují minulost, ne budoucnost."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pessimistic, base and optimistic = 20th, 50th and 80th percentiles of all past rolling returns of this instrument over the chosen horizon (price only, without dividends). They describe the past, not the future."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пессимистичный, базовый и оптимистичный = 20-й, 50-й и 80-й процентили всех прошлых скользящих доходностей инструмента за выбранный горизонт (только цена, без дивидендов). Они описывают прошлое, а не будущее."
+          }
+        }
+      }
+    },
+    "scenario.horizon": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Horizont"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Horizon"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Горизонт"
+          }
+        }
+      }
+    },
+    "scenario.horizon.oneYear": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 rok"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 year"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 год"
+          }
+        }
+      }
+    },
+    "scenario.horizon.threeYears": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 roky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 years"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 года"
+          }
+        }
+      }
+    },
+    "scenario.insufficientHistory": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro tento horizont není dost historie: k dispozici %@ pozorování, potřeba %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not enough history for this horizon: %@ observations available, %@ needed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недостаточно истории для этого горизонта: доступно %@ наблюдений, нужно %@."
+          }
+        }
+      }
+    },
+    "scenario.kind.base": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Základní (medián)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Base (median)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Базовый (медиана)"
+          }
+        }
+      }
+    },
+    "scenario.kind.optimistic": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimistický (80. percentil)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimistic (80th percentile)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оптимистичный (80-й процентиль)"
+          }
+        }
+      }
+    },
+    "scenario.kind.pessimistic": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesimistický (20. percentil)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pessimistic (20th percentile)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пессимистичный (20-й процентиль)"
+          }
+        }
+      }
+    },
+    "scenario.noProbabilities": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádnému scénáři není přiřazena pravděpodobnost. Výsledky mimo toto rozpětí nastaly a mohou nastat znovu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No probability is attached to any scenario. Outcomes outside this range have happened and can happen again."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ни одному сценарию не присваивается вероятность. Результаты за пределами диапазона случались и могут повториться."
+          }
+        }
+      }
+    },
+    "scenario.sensitivity.note": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konstantní roční výnos kolem historického mediánu, ±2 a ±4 procentní body. Skutečné výnosy nikdy nejsou konstantní."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Constant annual returns around the historical median, ±2 and ±4 percentage points. Real returns are never constant."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Постоянная годовая доходность вокруг исторической медианы, ±2 и ±4 процентных пункта. Реальная доходность никогда не бывает постоянной."
+          }
+        }
+      }
+    },
+    "scenario.sensitivity.rate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roční výnos"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annual return"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Годовая доходность"
+          }
+        }
+      }
+    },
+    "scenario.sensitivity.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Citlivost na předpoklad výnosu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensitivity to the return assumption"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чувствительность к допущению о доходности"
+          }
+        }
+      }
+    },
+    "scenario.sensitivity.years": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ r."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ y"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ г."
+          }
+        }
+      }
+    },
+    "scenario.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historická rozpětí scénářů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historical scenario ranges"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исторические диапазоны сценариев"
           }
         }
       }
@@ -11428,6 +15085,1133 @@
           "stringUnit": {
             "state": "translated",
             "value": "Финансовые показатели требуют дополнительной проверки"
+          }
+        }
+      }
+    },
+    "stress.assumed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "předpoklad"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "assumed"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "допущение"
+          }
+        }
+      }
+    },
+    "stress.assumption.beta": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akcie a akciové ETF klesnou o šok vynásobený jejich betou; kde beta není známa, předpokládá se 1 (označeno)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stocks and equity ETFs fall by the shock multiplied by their beta; a beta of 1 is assumed where it is unknown (marked)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Акции и фондовые ETF падают на величину шока, умноженную на их бету; где бета неизвестна, принимается 1 (помечено)."
+          }
+        }
+      }
+    },
+    "stress.assumption.credit": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výnosy podnikových dluhopisů vzrostou o šok spreadu; státní dluhopisy se nemění."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corporate bond yields rise by the spread shock; government bonds are unchanged."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доходности корпоративных облигаций растут на величину шока спреда; государственные облигации не меняются."
+          }
+        }
+      }
+    },
+    "stress.assumption.currency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktiva v cizích měnách ztratí v základní měně velikost šoku; kde je znám, použije se měnový rozpad fondů."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assets in foreign currencies lose the shock in base-currency terms; fund currency look-through is used where known."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Активы в иностранных валютах теряют величину шока в базовой валюте; где известно, учитывается валютный состав фондов."
+          }
+        }
+      }
+    },
+    "stress.assumption.default": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluhopisy emitenta získají zpět 40 % hodnoty; akcie emitenta se ztratí úplně."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonds of the issuer recover 40 % of their value; shares of the issuer are lost entirely."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облигации эмитента возмещают 40 % стоимости; акции эмитента теряются полностью."
+          }
+        }
+      }
+    },
+    "stress.assumption.inflation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukazuje ztrátu kupní síly nominálních dluhopisů a hotovosti; dopad na akcie se nemodeluje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows the loss of purchasing power of nominal bonds and cash; the effect on stocks is not modelled."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показывает потерю покупательной способности номинальных облигаций и денежных средств; влияние на акции не моделируется."
+          }
+        }
+      }
+    },
+    "stress.assumption.rates": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluhopisy se plně přecení při posunutém výnosu; u dluhopisových ETF se předpokládá durace 7 let (označeno)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonds are fully repriced at the shifted yield; bond ETFs use an assumed duration of 7 years (marked)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облигации полностью переоцениваются по сдвинутой доходности; для облигационных ETF принята дюрация 7 лет (помечено)."
+          }
+        }
+      }
+    },
+    "stress.banner": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zátěžové testy jsou hypotetické. Ukazují, jak by současné portfolio reagovalo na předpokládaný šok, ne co se stane."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stress tests are hypothetical. They show how the current portfolio would react to an assumed shock, not what will happen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стресс-тесты гипотетические. Они показывают, как текущий портфель отреагировал бы на условный шок, а не то, что произойдёт."
+          }
+        }
+      }
+    },
+    "stress.details": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podrobnosti a předpoklady"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Details and assumptions"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подробности и допущения"
+          }
+        }
+      }
+    },
+    "stress.hypothetical": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypotetický scénář: nejde o prognózu a není mu přiřazena pravděpodobnost."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypothetical scenario: not a forecast, and no probability is attached."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Гипотетический сценарий: не прогноз, вероятность не присваивается."
+          }
+        }
+      }
+    },
+    "stress.preset.baseCurrencyPlus10": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Základní měna posílí o 10 %"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Base currency strengthens by 10 %"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Базовая валюта укрепляется на 10 %"
+          }
+        }
+      }
+    },
+    "stress.preset.creditSpreadPlus2": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úvěrové spready podnikových dluhopisů +2 procentní body"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corporate credit spreads +2 percentage points"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кредитные спреды корпоративных облигаций +2 п. п."
+          }
+        }
+      }
+    },
+    "stress.preset.equityMinus20": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akciové trhy klesnou o 20 %"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stock markets fall 20 %"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фондовые рынки падают на 20 %"
+          }
+        }
+      }
+    },
+    "stress.preset.equityMinus40": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akciové trhy klesnou o 40 %"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stock markets fall 40 %"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фондовые рынки падают на 40 %"
+          }
+        }
+      }
+    },
+    "stress.preset.inflation5For3Years": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflace 5 % ročně po dobu 3 let"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflation of 5 % a year for 3 years"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Инфляция 5 % в год в течение 3 лет"
+          }
+        }
+      }
+    },
+    "stress.preset.largestIssuerDefault": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úpadek největšího emitenta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default of the largest issuer"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дефолт крупнейшего эмитента"
+          }
+        }
+      }
+    },
+    "stress.preset.largestIssuerMinus50": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Největší emitent klesne o 50 %"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Largest issuer falls 50 %"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Крупнейший эмитент падает на 50 %"
+          }
+        }
+      }
+    },
+    "stress.preset.ratesMinus1": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úrokové sazby −1 procentní bod"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interest rates −1 percentage point"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Процентные ставки −1 п. п."
+          }
+        }
+      }
+    },
+    "stress.preset.ratesPlus1": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úrokové sazby +1 procentní bod"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interest rates +1 percentage point"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Процентные ставки +1 п. п."
+          }
+        }
+      }
+    },
+    "stress.preset.ratesPlus2": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úrokové sazby +2 procentní body"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interest rates +2 percentage points"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Процентные ставки +2 п. п."
+          }
+        }
+      }
+    },
+    "thesis.against.cashBurn": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volné peněžní toky za posledních 12 měsíců jsou záporné."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free cash flow over the last 12 months is negative."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свободный денежный поток за последние 12 месяцев отрицательный."
+          }
+        }
+      }
+    },
+    "thesis.against.leverage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluh/kapitál %@: vysoký dluh zvyšuje citlivost na úrokové sazby a poklesy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debt-to-equity of %@: high debt increases sensitivity to interest rates and downturns."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Долг/капитал %@: высокий долг повышает чувствительность к ставкам и спадам."
+          }
+        }
+      }
+    },
+    "thesis.against.losses": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Společnost je v současnosti ztrátová."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The company is currently loss-making."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Компания сейчас убыточна."
+          }
+        }
+      }
+    },
+    "thesis.against.revenueDecline": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tržby se meziročně změnily o %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revenue changed by %@ year on year."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выручка изменилась на %@ за год."
+          }
+        }
+      }
+    },
+    "thesis.against.volatility": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vysoká volatilita ceny (%@ ročně)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "High price volatility (%@ per year)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Высокая волатильность цены (%@ в год)."
+          }
+        }
+      }
+    },
+    "thesis.for.cashFlow": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volné peněžní toky za posledních 12 měsíců jsou kladné."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free cash flow over the last 12 months is positive."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свободный денежный поток за последние 12 месяцев положительный."
+          }
+        }
+      }
+    },
+    "thesis.for.lowLeverage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nízký dluh vůči vlastnímu kapitálu (dluh/kapitál %@)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low debt relative to equity (debt-to-equity %@)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Низкий долг относительно капитала (долг/капитал %@)."
+          }
+        }
+      }
+    },
+    "thesis.for.margin": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provozní marže %@ je nad 15 %%."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operating margin of %@ is above 15 %%."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операционная маржа %@ выше 15 %%."
+          }
+        }
+      }
+    },
+    "thesis.for.revenueGrowth": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tržby meziročně vzrostly o %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revenue grew by %@ year on year."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выручка выросла на %@ за год."
+          }
+        }
+      }
+    },
+    "thesis.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Struktura pro vaše vlastní úvahy. Body jsou z dat odvozeny publikovanými pravidly a nejsou verdiktem."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A structure for your own thinking. The points are generated from data by published rules; they are not a verdict."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Структура для ваших собственных размышлений. Пункты сформированы из данных по опубликованным правилам и не являются вердиктом."
+          }
+        }
+      }
+    },
+    "thesis.invalidation.growth": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Růst tržeb se zastaví nebo změní v pokles."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revenue growth stalls or turns negative."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рост выручки останавливается или становится отрицательным."
+          }
+        }
+      }
+    },
+    "thesis.invalidation.leverage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluh výrazně roste bez odpovídajícího růstu zisku."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debt rises significantly without matching earnings growth."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Долг значительно растёт без соответствующего роста прибыли."
+          }
+        }
+      }
+    },
+    "thesis.invalidation.margin": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provozní marže podstatně klesne."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operating margin falls materially."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операционная маржа существенно снижается."
+          }
+        }
+      }
+    },
+    "thesis.none": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z dostupných dat nic nevyplývá."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing derived from the available data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Из доступных данных ничего не выведено."
+          }
+        }
+      }
+    },
+    "thesis.pricedIn.high": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/E %@: cena už předpokládá silný budoucí růst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/E of %@: the price already assumes strong future growth."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/E %@: цена уже предполагает сильный будущий рост."
+          }
+        }
+      }
+    },
+    "thesis.pricedIn.highBook": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/B %@: cena je výrazně nad účetní hodnotou."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/B of %@: the price is far above the accounting book value."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/B %@: цена намного выше балансовой стоимости."
+          }
+        }
+      }
+    },
+    "thesis.pricedIn.low": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/E %@: trh možná očekává nízký růst nebo vidí zvýšené riziko."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/E of %@: the market may expect low growth or see elevated risk."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P/E %@: рынок, возможно, ожидает слабого роста или видит повышенный риск."
+          }
+        }
+      }
+    },
+    "thesis.question.advantage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Co může společnost chránit před konkurencí?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What could protect the company from competitors?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что может защитить компанию от конкурентов?"
+          }
+        }
+      }
+    },
+    "thesis.question.business": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jak společnost vydělává a kdo jsou její zákazníci?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How does the company make money, and who are its customers?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Как компания зарабатывает и кто её клиенты?"
+          }
+        }
+      }
+    },
+    "thesis.question.management": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jak vedení v minulosti alokovalo kapitál?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How has management allocated capital in the past?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Как руководство распределяло капитал в прошлом?"
+          }
+        }
+      }
+    },
+    "thesis.question.revenue": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Které produkty nebo regiony tvoří tržby a jak jsou stabilní?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which products or regions drive revenue, and how stable are they?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Какие продукты или регионы дают выручку и насколько они стабильны?"
+          }
+        }
+      }
+    },
+    "thesis.question.risks": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaká hlavní rizika uvádí výroční zpráva?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which main risks does the annual report name?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Какие основные риски названы в годовом отчёте?"
+          }
+        }
+      }
+    },
+    "thesis.section.against": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Argumenty proti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arguments against"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Аргументы «против»"
+          }
+        }
+      }
+    },
+    "thesis.section.for": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Argumenty pro"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arguments for"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Аргументы «за»"
+          }
+        }
+      }
+    },
+    "thesis.section.invalidation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Co by vyvrátilo pozitivní pohled"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What would invalidate a positive view"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что опровергло бы позитивный взгляд"
+          }
+        }
+      }
+    },
+    "thesis.section.missing": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chybějící data"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Missing data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отсутствующие данные"
+          }
+        }
+      }
+    },
+    "thesis.section.pricedIn": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Co už cena možná zohledňuje"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What the price may already reflect"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что, возможно, уже заложено в цену"
+          }
+        }
+      }
+    },
+    "thesis.section.questions": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otázky k prozkoumání"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questions to research"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вопросы для изучения"
+          }
+        }
+      }
+    },
+    "thesis.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pracovní list investiční teze"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Investment thesis worksheet"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рабочий лист инвестиционного тезиса"
           }
         }
       }

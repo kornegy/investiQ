@@ -144,13 +144,14 @@ public actor PortfolioService {
     // MARK: Valuation
 
     public func snapshot(_ portfolioID: PortfolioID) async throws -> PortfolioSnapshot {
-        let (portfolio, transactions, instruments, listings) = try await store.read { db -> (Portfolio, [Transaction], [Instrument], [Listing]) in
+        let (portfolio, transactions, instruments, listings, bonds) = try await store.read {
+            db -> (Portfolio, [Transaction], [Instrument], [Listing], [InstrumentID: BondDetails]) in
             guard let portfolio = try PortfolioRecords.portfolio(portfolioID, in: db) else { throw PortfolioServiceError.portfolioNotFound }
             let transactions = try TransactionRecords.all(portfolio: portfolioID, in: db)
             let ids = Set(transactions.compactMap(\.instrumentID))
             let instruments = try ids.compactMap { try InstrumentRecords.instrument($0, in: db) }
             let listings = try ids.flatMap { try InstrumentRecords.listings(for: $0, in: db) }
-            return (portfolio, transactions, instruments, listings)
+            return (portfolio, transactions, instruments, listings, try Self.bondTerms(for: instruments, in: db))
         }
         let base = portfolio.baseCurrency
         let ledger: LedgerResult
@@ -167,7 +168,8 @@ public actor PortfolioService {
             guard let listing = candidates.first(where: { $0.tradingCurrency == position.key.currency }) ?? candidates.first,
                   listing.tradingCurrency == position.key.currency else { continue }
             if let quote = await marketData.quote(for: listing).value {
-                inputs.prices[position.key] = quote.map(\.price)
+                let factor = bonds[position.key.instrumentID]?.quoteToUnitFactor ?? 1
+                inputs.prices[position.key] = quote.map { $0.price * factor }
             }
         }
         let today = clock.today()
@@ -179,6 +181,15 @@ public actor PortfolioService {
         return PortfolioSnapshot(portfolio: portfolio, ledger: ledger, valuation: valuation,
                                  instruments: Dictionary(uniqueKeysWithValues: instruments.map { ($0.id, $0) }),
                                  ledgerHash: Self.ledgerHash(transactions), computedAt: clock.now())
+    }
+
+    /// Bond terms of the bonds among `instruments` (their quotes are percent of face value).
+    static func bondTerms(for instruments: [Instrument], in db: SQLiteDatabase) throws -> [InstrumentID: BondDetails] {
+        var terms: [InstrumentID: BondDetails] = [:]
+        for instrument in instruments where instrument.kind.isBond {
+            terms[instrument.id] = try InstrumentRecords.bondDetails(for: instrument.id, in: db)
+        }
+        return terms
     }
 
     /// Rates for transactions without a stored rate, fetched once per (currency, date).
@@ -200,11 +211,14 @@ public actor PortfolioService {
     /// Value series on sampled dates (daily up to 3 months, weekly up to 1 year, monthly beyond) so that
     /// charts stay light and FX lookups bounded (docs/ARCHITECTURE.md §6).
     public func performance(_ portfolioID: PortfolioID, from start: LocalDate?, to end: LocalDate) async throws -> PerformanceSeries {
-        let (portfolio, transactions, listings) = try await store.read { db -> (Portfolio, [Transaction], [Listing]) in
+        let (portfolio, transactions, listings, bonds) = try await store.read {
+            db -> (Portfolio, [Transaction], [Listing], [InstrumentID: BondDetails]) in
             guard let portfolio = try PortfolioRecords.portfolio(portfolioID, in: db) else { throw PortfolioServiceError.portfolioNotFound }
             let transactions = try TransactionRecords.all(portfolio: portfolioID, in: db)
             let ids = Set(transactions.compactMap(\.instrumentID))
-            return (portfolio, transactions, try ids.flatMap { try InstrumentRecords.listings(for: $0, in: db) })
+            let instruments = try ids.compactMap { try InstrumentRecords.instrument($0, in: db) }
+            return (portfolio, transactions, try ids.flatMap { try InstrumentRecords.listings(for: $0, in: db) },
+                    try Self.bondTerms(for: instruments, in: db))
         }
         guard let first = transactions.map(\.tradeDate).min() else {
             return PerformanceSeries(points: [], timeWeightedReturn: nil, moneyWeightedReturn: nil, hasGaps: false)
@@ -218,7 +232,7 @@ public actor PortfolioService {
         for key in Set(ledger.positions.keys) {
             guard let listing = listings.first(where: { $0.instrumentID == key.instrumentID && $0.tradingCurrency == key.currency }) else { continue }
             if let series = await marketData.history(for: listing, range: DateRange(start: rangeStart.adding(days: -10), end: end)).value {
-                prices[key] = series.value
+                prices[key] = series.value.scaled(by: bonds[key.instrumentID]?.quoteToUnitFactor ?? 1)
             }
         }
         var fxTable: [String: Decimal] = [:]

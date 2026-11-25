@@ -26,6 +26,10 @@ public final class TransactionEditorViewModel {
     public var splitDenominatorText = ""
     public var notes = ""
     public private(set) var instruments: [InstrumentEntry] = []
+    /// Bond prices are usually quoted in percent of face value; when on, the entered price is converted
+    /// to the price of one bond (`percent / 100 × face`) before saving.
+    public var bondPriceInPercent = true
+    public private(set) var bondTerms: [InstrumentID: BondDetails] = [:]
     public private(set) var error: Message?
     public private(set) var saved = false
 
@@ -49,6 +53,10 @@ public final class TransactionEditorViewModel {
 
     public func load() async {
         instruments = (try? await app.services?.instruments.library()) ?? []
+        guard let services = app.services else { return }
+        for entry in instruments where entry.instrument.kind.isBond {
+            if let terms = try? await services.instruments.bondDetails(entry.id) { bondTerms[entry.id] = terms }
+        }
     }
 
     /// Which fields the current type uses.
@@ -60,6 +68,12 @@ public final class TransactionEditorViewModel {
     public var usesCounter: Bool { type == .fxConversion }
     public var usesAccruedInterest: Bool {
         usesQuantityAndPrice && instruments.first { $0.id == instrumentID }?.instrument.kind.isBond == true
+    }
+
+    /// Face value of the selected bond, when known (enables percent-of-face price entry).
+    public var selectedBondFaceValue: Decimal? {
+        guard usesAccruedInterest, let instrumentID else { return nil }
+        return bondTerms[instrumentID]?.faceValue
     }
 
     private func parse(_ text: String) -> Decimal?? {
@@ -76,6 +90,10 @@ public final class TransactionEditorViewModel {
                              ("tax", taxText), ("accrued", accruedInterestText), ("fx", fxRateText), ("counter", counterAmountText)] {
             guard let value = parse(text) else { return .failure(Message("transaction.error.invalidNumber", [.key("transaction.field.\(name)")])) }
             parsed[name] = value
+        }
+        if bondPriceInPercent, let instrumentID, let terms = bondTerms[instrumentID], usesAccruedInterest,
+           let percent = parsed["price"] ?? nil {
+            parsed["price"] = terms.unitPrice(fromPercentOfFace: percent)
         }
         let tradeDate = LocalDate(date, timeZone: .current)
         guard tradeDate <= app.environment.clock.today() else { return .failure(Message("transaction.error.futureDate")) }
@@ -144,6 +162,8 @@ public final class TransactionEditorViewModel {
         currency = t.currency
         func text(_ value: Decimal?) -> String { value.map { $0.formatted(.number.locale(locale).grouping(.never)) } ?? "" }
         quantityText = text(t.quantity)
+        // Stored prices are per bond; editing shows them as stored.
+        bondPriceInPercent = false
         priceText = text(t.price)
         amountText = text(t.amount)
         feesText = t.fees == 0 ? "" : text(t.fees)

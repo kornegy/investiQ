@@ -127,6 +127,8 @@ public struct ValidationMetrics: Sendable, Equatable {
     public var rmse: Double
     /// MAE relative to the in-sample naive h-step MAE (< 1 = better than naive).
     public var mase: Double?
+    /// MAE relative to the naive forecast's MAE at the same origins (out of sample; naive = 1 by construction).
+    public var relativeMAE: Double?
     public var directionalAccuracy: Double?
     public var coverage80: Double
     public var coverage95: Double
@@ -135,8 +137,9 @@ public struct ValidationMetrics: Sendable, Equatable {
 
     /// Usefulness gate (FINANCIAL_METHODOLOGY §8): beats naive clearly and intervals are calibrated.
     public var isUsefulSignal: Bool {
-        guard model != .naive, evaluations >= WalkForwardValidator.minimumEvaluations, let mase else { return false }
-        return mase < WalkForwardValidator.maseThreshold && (0.70...0.90).contains(coverage80)
+        guard model != .naive, evaluations >= WalkForwardValidator.minimumEvaluations, let mase, let relativeMAE else { return false }
+        return mase < WalkForwardValidator.maseThreshold && relativeMAE < WalkForwardValidator.maseThreshold
+            && (0.70...0.90).contains(coverage80)
     }
 }
 
@@ -160,7 +163,7 @@ public struct WalkForwardValidator: Sendable {
     public func validate(_ model: ForecastModelID, series: PriceSeries) -> ValidationMetrics? {
         let bars = series.bars
         guard bars.count >= Forecaster.minimumTraining + horizon + 1 else { return nil }
-        var errors: [Double] = [], squared: [Double] = [], naiveErrors: [Double] = []
+        var errors: [Double] = [], squared: [Double] = [], naiveErrors: [Double] = [], naiveOutOfSample: [Double] = []
         var hits = 0, directional = 0, in80 = 0, in95 = 0
         var calibrationHits = Array(repeating: 0, count: 9)
         var count = 0
@@ -177,6 +180,7 @@ public struct WalkForwardValidator: Sendable {
             let error = abs(forecast.point - actual)
             errors.append(error)
             squared.append(error * error)
+            naiveOutOfSample.append(abs(forecast.originValue - actual))
             // In-sample naive h-step MAE on the training window (MASE denominator).
             let train = visible
             if train.count > horizon {
@@ -203,9 +207,17 @@ public struct WalkForwardValidator: Sendable {
         let scale = naiveErrors.isEmpty ? nil : naiveErrors.reduce(0, +) / Double(naiveErrors.count)
         return ValidationMetrics(model: model, evaluations: count, mae: mae, rmse: (squared.reduce(0, +) / Double(count)).squareRoot(),
                                  mase: scale.flatMap { $0 > 0 ? mae / $0 : nil },
+                                 relativeMAE: Self.ratio(mae, naiveOutOfSample),
                                  directionalAccuracy: directional > 0 ? Double(hits) / Double(directional) : nil,
                                  coverage80: Double(in80) / Double(count), coverage95: Double(in95) / Double(count),
                                  calibration: calibrationHits.map { Double($0) / Double(count) })
+    }
+
+    /// `mae / mean(baseline)`, or `nil` when the baseline error is zero or missing.
+    static func ratio(_ mae: Double, _ baseline: [Double]) -> Double? {
+        guard !baseline.isEmpty else { return nil }
+        let mean = baseline.reduce(0, +) / Double(baseline.count)
+        return mean > 0 ? mae / mean : nil
     }
 
     /// Interval at a nominal level assuming a symmetric log-normal shape fitted to the 80 % band.

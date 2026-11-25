@@ -11,26 +11,41 @@ struct AssetDetailView: View {
     let instrumentID: InstrumentID
     @Environment(AppModel.self) private var app
     @State private var model: AssetDetailsViewModel?
+    @State private var analysis: AssetAnalysisViewModel?
 
     var body: some View {
         Group {
-            if let model { AssetDetailContent(model: model) } else { ProgressView() }
+            if let model, let analysis {
+                AssetDetailContent(model: model, analysis: analysis)
+            } else {
+                ProgressView()
+            }
         }
         .task(id: instrumentID) {
-            if model?.instrumentID != instrumentID { model = AssetDetailsViewModel(app: app, instrumentID: instrumentID) }
+            if model?.instrumentID != instrumentID {
+                model = AssetDetailsViewModel(app: app, instrumentID: instrumentID)
+                analysis = AssetAnalysisViewModel(app: app)
+            }
             await model?.load()
+            if let model { analysis?.update(from: model) }
         }
     }
 }
 
 private struct AssetDetailContent: View {
     @Bindable var model: AssetDetailsViewModel
+    let analysis: AssetAnalysisViewModel
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: Spacing.l) {
                 if let entry = model.entry {
-                    AssetHeader(entry: entry, quote: model.quote, refresh: { Task { await model.load(forceRefresh: true) } })
+                    AssetHeader(entry: entry, quote: model.quote, refresh: {
+                        Task {
+                            await model.load(forceRefresh: true)
+                            analysis.update(from: model)
+                        }
+                    })
                 }
                 Picker("asset.range", selection: Binding(get: { model.range }, set: { model.setRange($0) })) {
                     ForEach(ChartRange.allCases) { Text(LocalizedStringKey("range.\($0.rawValue)")).tag($0) }
@@ -41,6 +56,7 @@ private struct AssetDetailContent: View {
                 if model.entry?.instrument.kind == .stock { FundamentalsCard(outcome: model.fundamentals) }
                 if let bond = model.bond { BondTermsCard(bond: bond) }
                 if let etf = model.etf { ETFFactsCard(etf: etf) }
+                AssetAnalysisCards(model: analysis, kind: model.entry?.instrument.kind)
                 DataSourcesCard(model: model)
                 GeneralInformationNote()
             }
@@ -65,7 +81,13 @@ private struct AssetHeader: View {
             Spacer()
             VStack(alignment: .trailing, spacing: Spacing.xs) {
                 if let quote = quote?.value {
-                    Text(Formatters.money(Money(quote.value.price, quote.value.currency))).font(.title.monospacedDigit().bold())
+                    if entry.instrument.kind.isBond {
+                        // Bond quotes are clean prices in percent of face value (market convention).
+                        Text(L10n.string(Message("asset.bondQuote", [.decimal(quote.value.price, fractionDigits: 2)])))
+                            .font(.title.monospacedDigit().bold())
+                    } else {
+                        Text(Formatters.money(Money(quote.value.price, quote.value.currency))).font(.title.monospacedDigit().bold())
+                    }
                     if let change = quote.value.change, let percent = quote.value.changePercent {
                         ChangeLabel(direction: ChangeDirection(change),
                                     text: "\(Formatters.decimal(change)) (\(Formatters.percent((percent / 100).doubleValue)))")

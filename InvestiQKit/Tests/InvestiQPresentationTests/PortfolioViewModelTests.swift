@@ -70,6 +70,25 @@ final class PortfolioViewModelTests: XCTestCase {
         XCTAssertEqual(sell.error?.key, "transaction.error.insufficientQuantity")
     }
 
+    func testBondPriceEnteredInPercentOfFaceIsStoredPerBond() async throws {
+        let app = try await demoApp()
+        let services = try XCTUnwrap(app.services)
+        let portfolio = try await services.portfolios.createPortfolio(name: "Bonds", kind: .real, baseCurrency: .czk)
+        let editor = TransactionEditorViewModel(app: app, portfolio: portfolio, locale: Locale(identifier: "en_US"))
+        await editor.load()
+        let bond = DemoUniverse.all[10]
+        editor.instrumentID = bond.instrument.id
+        editor.currency = .czk
+        editor.quantityText = "2"
+        editor.priceText = "101.2"
+        XCTAssertEqual(editor.selectedBondFaceValue, 10_000)
+        XCTAssertTrue(editor.bondPriceInPercent)
+        let transaction = try editor.makeTransaction().get()
+        XCTAssertEqual(transaction.price, 10_120, "101.2 % of 10 000 CZK face value")
+        editor.bondPriceInPercent = false
+        XCTAssertEqual(try editor.makeTransaction().get().price, Decimal(string: "101.2"))
+    }
+
     func testVirtualPortfolioTransactionsAreMarkedSimulator() async throws {
         let app = try await demoApp()
         let model = PortfolioViewModel(app: app)
