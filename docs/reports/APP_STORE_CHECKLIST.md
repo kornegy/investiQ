@@ -43,5 +43,5 @@ Legend: ✅ done in the project · ⬜ to do · ⚖️ needs a legal/business de
   (drafts in `docs/legal/`) reviewed by a lawyer for CZ/EU (MiFID II, consumer law, GDPR).
 - ⚖️ Data provider terms permit use in a distributed app with user-supplied keys and local caching (see
   LEGAL_AND_LICENSING_REVIEW.md).
-- ⬜ Third-party licences (swift-sodium ISC/libsodium ISC; swift-crypto Apache-2.0 Linux-only) listed in
-  an acknowledgements screen or file.
+- ✅ Third-party licences listed in `THIRD_PARTY_NOTICES.md`; ⬜ show them in an in-app acknowledgements
+  screen with full licence texts.
