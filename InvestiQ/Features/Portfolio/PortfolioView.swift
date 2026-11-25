@@ -147,7 +147,7 @@ private struct PortfolioContent: View {
 
 struct EditorRequest: Identifiable {
     let id = UUID()
-    let transaction: Transaction?
+    let transaction: LedgerTransaction?
 }
 
 struct ImportRequest: Identifiable {
@@ -192,8 +192,8 @@ private struct HoldingsList: View {
 
 private struct TransactionsList: View {
     let model: PortfolioViewModel
-    let edit: (Transaction) -> Void
-    @State private var pendingDeletion: Transaction?
+    let edit: (LedgerTransaction) -> Void
+    @State private var pendingDeletion: LedgerTransaction?
 
     var body: some View {
         List {
@@ -225,7 +225,7 @@ private struct TransactionsList: View {
         }
     }
 
-    private func summary(_ t: Transaction) -> String {
+    private func summary(_ t: LedgerTransaction) -> String {
         if let quantity = t.quantity, let price = t.price {
             return "\(Formatters.decimal(quantity, fractionDigits: 4)) × \(Formatters.money(price, t.currency))"
         }

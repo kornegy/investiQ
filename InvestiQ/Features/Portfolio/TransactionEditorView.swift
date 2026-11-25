@@ -5,7 +5,7 @@ import InvestiQPresentation
 /// Manual transaction entry. Fields adapt to the transaction type; numbers use the user's locale.
 struct TransactionEditorView: View {
     let portfolio: Portfolio
-    let editing: Transaction?
+    let editing: LedgerTransaction?
     let done: () -> Void
     @Environment(AppModel.self) private var app
     @State private var model: TransactionEditorViewModel?
