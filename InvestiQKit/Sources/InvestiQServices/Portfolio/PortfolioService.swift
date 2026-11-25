@@ -133,12 +133,11 @@ public actor PortfolioService {
     }
 
     /// SHA-256 over the canonical transaction list; stored with cached snapshots so stale caches are detectable.
-    public static func ledgerHash(_ transactions: [Transaction]) -> String {
+    public static func ledgerHash(_ transactions: [Transaction]) throws -> String {
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.sortedKeys]
         encoder.dateEncodingStrategy = .secondsSince1970
-        let data = (try? encoder.encode(PortfolioLedger.ordered(transactions))) ?? Data()
-        return CryptoBox.sha256Hex(data)
+        return CryptoBox.sha256Hex(try encoder.encode(PortfolioLedger.ordered(transactions)))
     }
 
     // MARK: Valuation
@@ -190,7 +189,7 @@ public actor PortfolioService {
         let valuation = PortfolioValuer.value(ledger, inputs: inputs)
         return PortfolioSnapshot(portfolio: portfolio, ledger: ledger, valuation: valuation,
                                  instruments: Dictionary(uniqueKeysWithValues: instruments.map { ($0.id, $0) }),
-                                 ledgerHash: Self.ledgerHash(transactions), computedAt: clock.now())
+                                 ledgerHash: try Self.ledgerHash(transactions), computedAt: clock.now())
     }
 
     /// Historical valuation carries a close forward at most this many days (weekends and holidays).
@@ -258,7 +257,7 @@ public actor PortfolioService {
             }
         }
         let lookup = TableRateLookup(table: fxTable.merging(rates.table) { a, _ in a })
-        let points = ValueSeriesBuilder.build(transactions: transactions, baseCurrency: base, dates: dates, prices: prices,
+        let points = try ValueSeriesBuilder.build(transactions: transactions, baseCurrency: base, dates: dates, prices: prices,
                                               fx: { lookup.rate(from: $0, to: base, on: $1) }, rates: rates)
         // XIRR over a window starts from the value at the window start, treated as an inflow; that value
         // already contains the flows of the start day, so only later flows are added.

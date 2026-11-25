@@ -52,10 +52,14 @@ public final class TransactionEditorViewModel {
     public var isVirtual: Bool { portfolio.kind == .virtual }
 
     public func load() async {
-        instruments = (try? await app.services?.instruments.library()) ?? []
         guard let services = app.services else { return }
-        for entry in instruments where entry.instrument.kind.isBond {
-            if let terms = try? await services.instruments.bondDetails(entry.id) { bondTerms[entry.id] = terms }
+        do {
+            instruments = try await services.instruments.library()
+            for entry in instruments where entry.instrument.kind.isBond {
+                if let terms = try await services.instruments.bondDetails(entry.id) { bondTerms[entry.id] = terms }
+            }
+        } catch {
+            self.error = Message("transaction.error.loadFailed")
         }
     }
 

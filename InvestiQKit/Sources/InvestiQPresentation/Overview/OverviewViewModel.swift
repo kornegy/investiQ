@@ -88,7 +88,12 @@ public final class OverviewViewModel {
     private func loadPerformance() async {
         guard let services = app.services, let id = selectedPortfolioID else { return }
         let today = app.environment.clock.today()
-        performance = try? await services.portfolios.performance(id, from: range.start(endingAt: today), to: today)
+        do {
+            performance = try await services.portfolios.performance(id, from: range.start(endingAt: today), to: today)
+        } catch {
+            performance = nil
+            self.error = Message("overview.error.performanceFailed")
+        }
     }
 
     public var chartPoints: [ChartPoint] {

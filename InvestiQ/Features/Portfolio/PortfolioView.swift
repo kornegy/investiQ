@@ -27,6 +27,7 @@ private struct PortfolioContent: View {
     @State private var newPortfolioName = ""
     @State private var editorTransaction: EditorRequest?
     @State private var showImporter = false
+    @State private var fileUnreadable = false
     @State private var importData: Data?
     @State private var exportDocument: CSVDocument?
     @State private var confirmDeletePortfolio = false
@@ -61,7 +62,7 @@ private struct PortfolioContent: View {
             if let portfolio = model.portfolios.first(where: { $0.id == model.selectedPortfolioID }) {
                 TransactionEditorView(portfolio: portfolio, editing: request.transaction) {
                     editorTransaction = nil
-                    Task { try? await model.reloadSelected() }
+                    Task { await model.reloadAfterChange() }
                 }
             }
         }
@@ -69,15 +70,20 @@ private struct PortfolioContent: View {
             if let id = model.selectedPortfolioID {
                 CSVImportView(portfolioID: id, data: request.data) {
                     importData = nil
-                    Task { try? await model.reloadSelected() }
+                    Task { await model.reloadAfterChange() }
                 }
             }
         }
+        .alert("portfolio.error.fileUnreadable", isPresented: $fileUnreadable) { Button("common.ok") {} }
         .fileImporter(isPresented: $showImporter, allowedContentTypes: [.commaSeparatedText, .plainText]) { result in
             guard case .success(let url) = result else { return }
             let accessing = url.startAccessingSecurityScopedResource()
             defer { if accessing { url.stopAccessingSecurityScopedResource() } }
-            importData = try? Data(contentsOf: url)
+            do {
+                importData = try Data(contentsOf: url)
+            } catch {
+                fileUnreadable = true
+            }
         }
         .fileExporter(isPresented: Binding(get: { exportDocument != nil }, set: { if !$0 { exportDocument = nil } }),
                       document: exportDocument, contentType: .commaSeparatedText, defaultFilename: "investiq-transactions") { _ in

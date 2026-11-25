@@ -179,10 +179,11 @@ public enum ValueSeriesBuilder {
 
     public static func build(transactions: [Transaction], baseCurrency: CurrencyCode, dates: [LocalDate],
                              prices: [PositionKey: PriceSeries], fx: (CurrencyCode, LocalDate) -> Decimal?,
-                             rates: any HistoricalRateLookup = NoRateLookup()) -> [ValuePoint] {
+                             rates: any HistoricalRateLookup = NoRateLookup()) throws -> [ValuePoint] {
         let ledger = PortfolioLedger(baseCurrency: baseCurrency, rates: rates)
         let splits = transactions.filter { $0.type == .split }
-        guard let full = try? ledger.replay(transactions) else { return [] }
+        // The stored ledger is validated on every change, so a replay error means damaged data: surface it.
+        let full = try ledger.replay(transactions)
         let flowsByDate = Dictionary(full.flows.map { ($0.date, $0) }, uniquingKeysWith: { a, _ in a })
         return dates.map { date in
             let flow = flowsByDate[date]

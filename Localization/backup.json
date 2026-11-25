@@ -163,5 +163,25 @@
     "en": "The cache could not be cleared.",
     "ru": "Не удалось очистить кэш.",
     "cs": "Mezipaměť se nepodařilo vymazat."
+  },
+  "portfolio.error.exportFailed": {
+    "en": "The CSV export could not be created.",
+    "ru": "Не удалось создать экспорт CSV.",
+    "cs": "Export CSV se nepodařilo vytvořit."
+  },
+  "portfolio.error.fileUnreadable": {
+    "en": "The selected file could not be read.",
+    "ru": "Не удалось прочитать выбранный файл.",
+    "cs": "Vybraný soubor se nepodařilo přečíst."
+  },
+  "overview.error.performanceFailed": {
+    "en": "The value history could not be calculated.",
+    "ru": "Не удалось рассчитать историю стоимости.",
+    "cs": "Historii hodnoty se nepodařilo vypočítat."
+  },
+  "transaction.error.loadFailed": {
+    "en": "Instruments could not be loaded.",
+    "ru": "Не удалось загрузить инструменты.",
+    "cs": "Nástroje se nepodařilo načíst."
   }
 }

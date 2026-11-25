@@ -28,12 +28,20 @@ struct SettingsView: View {
 
 private struct GeneralSettingsView: View {
     @Environment(AppModel.self) private var app
+    @State private var saveFailed = false
+
+    private func update(_ change: @escaping (inout UserPreferences) -> Void) {
+        Task {
+            do { try await app.updatePreferences(change) } catch { saveFailed = true }
+        }
+    }
 
     var body: some View {
         Form {
+            if saveFailed { InlineMessage(message: Message("settings.error.saveFailed")) }
             Picker("settings.language", selection: Binding(
                 get: { app.preferences.languageOverride ?? "" },
-                set: { value in Task { try? await app.updatePreferences { $0.languageOverride = value.isEmpty ? nil : value } } })) {
+                set: { value in update { $0.languageOverride = value.isEmpty ? nil : value } })) {
                 Text("settings.language.system").tag("")
                 Text(verbatim: "Русский").tag("ru")
                 Text(verbatim: "English").tag("en")
@@ -41,12 +49,12 @@ private struct GeneralSettingsView: View {
             }
             Picker("settings.baseCurrency", selection: Binding(
                 get: { app.preferences.baseCurrency },
-                set: { value in Task { try? await app.updatePreferences { $0.baseCurrency = value } } })) {
+                set: { value in update { $0.baseCurrency = value } })) {
                 ForEach(CurrencyCode.supportedBaseCurrencies, id: \.self) { Text($0.rawValue).tag($0) }
             }
             Toggle("settings.colorBlindPalette", isOn: Binding(
                 get: { app.preferences.colorBlindSafePalette },
-                set: { value in Task { try? await app.updatePreferences { $0.colorBlindSafePalette = value } } }))
+                set: { value in update { $0.colorBlindSafePalette = value } }))
             Text("settings.colorBlindPalette.help").font(.caption).foregroundStyle(.secondary)
         }
         .formStyle(.grouped)

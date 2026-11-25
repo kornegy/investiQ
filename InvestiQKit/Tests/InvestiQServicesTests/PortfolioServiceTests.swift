@@ -172,7 +172,7 @@ final class PortfolioServiceTests: XCTestCase {
         let a = Transaction(portfolioID: p, type: .deposit, tradeDate: .d("2026-01-01"), amount: 1, currency: .czk, createdAt: fixedNow)
         var b = a
         b.amount = 2
-        XCTAssertNotEqual(PortfolioService.ledgerHash([a]), PortfolioService.ledgerHash([b]))
-        XCTAssertEqual(PortfolioService.ledgerHash([a]), PortfolioService.ledgerHash([a]))
+        XCTAssertNotEqual(try PortfolioService.ledgerHash([a]), try PortfolioService.ledgerHash([b]))
+        XCTAssertEqual(try PortfolioService.ledgerHash([a]), try PortfolioService.ledgerHash([a]))
     }
 }

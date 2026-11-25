@@ -15894,6 +15894,29 @@
         }
       }
     },
+    "overview.error.performanceFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historii hodnoty se nepodařilo vypočítat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The value history could not be calculated."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось рассчитать историю стоимости."
+          }
+        }
+      }
+    },
     "overview.freshness.oldest": {
       "extractionState": "manual",
       "localizations": {
@@ -18581,6 +18604,52 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось удалить."
+          }
+        }
+      }
+    },
+    "portfolio.error.exportFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export CSV se nepodařilo vytvořit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The CSV export could not be created."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось создать экспорт CSV."
+          }
+        }
+      }
+    },
+    "portfolio.error.fileUnreadable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vybraný soubor se nepodařilo přečíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The selected file could not be read."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось прочитать выбранный файл."
           }
         }
       }
@@ -27597,6 +27666,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Введите коэффициент сплита из двух разных положительных целых чисел."
+          }
+        }
+      }
+    },
+    "transaction.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nástroje se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instruments could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить инструменты."
           }
         }
       }

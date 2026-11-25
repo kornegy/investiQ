@@ -39,6 +39,15 @@ public final class PortfolioViewModel {
         }
     }
 
+    /// Reload after an edit or import; a failure is shown instead of being swallowed.
+    public func reloadAfterChange() async {
+        do {
+            try await reloadSelected()
+        } catch {
+            self.error = Message("portfolio.error.loadFailed")
+        }
+    }
+
     public func reloadSelected() async throws {
         guard let services = app.services, let id = selectedPortfolioID else {
             snapshot = nil
@@ -94,7 +103,12 @@ public final class PortfolioViewModel {
 
     public func exportCSV() async -> String? {
         guard let services = app.services, let id = selectedPortfolioID else { return nil }
-        return try? await services.portfolios.exportCSV(id)
+        do {
+            return try await services.portfolios.exportCSV(id)
+        } catch {
+            self.error = Message("portfolio.error.exportFailed")
+            return nil
+        }
     }
 
     public func instrumentName(_ id: InstrumentID?) -> String? {

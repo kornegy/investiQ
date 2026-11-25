@@ -66,7 +66,7 @@ final class PortfolioValuationTests: XCTestCase {
                     bars: closes.map { PriceBar(date: .d($0.0), close: $0.1) })
     }
 
-    func testValueSeriesIsContinuousAcrossSplitsForAdjustedAndRawPrices() {
+    func testValueSeriesIsContinuousAcrossSplitsForAdjustedAndRawPrices() throws {
         // Buy 10 @ 400; 4:1 split on 2024-01-12. True value stays 4 000 on all days.
         let transactions = [tx(.buy, "2024-01-10", quantity: 10, price: 400), tx(.split, "2024-01-12", split: (4, 1))]
         let dates: [LocalDate] = [.d("2024-01-10"), .d("2024-01-11"), .d("2024-01-12")]
@@ -74,7 +74,7 @@ final class PortfolioValuationTests: XCTestCase {
         let adjusted = seriesFor([("2024-01-10", 100), ("2024-01-11", 100), ("2024-01-12", 100)], adjustment: .split)
         let raw = seriesFor([("2024-01-10", 400), ("2024-01-11", 400), ("2024-01-12", 100)], adjustment: .unadjusted)
         for series in [adjusted, raw] {
-            let points = ValueSeriesBuilder.build(transactions: transactions, baseCurrency: .czk, dates: dates, prices: [key: series], fx: { _, _ in nil })
+            let points = try ValueSeriesBuilder.build(transactions: transactions, baseCurrency: .czk, dates: dates, prices: [key: series], fx: { _, _ in nil })
             XCTAssertEqual(points.map(\.value), [4_000, 4_000, 4_000], "\(series.adjustment)")
         }
     }
@@ -84,7 +84,7 @@ final class PortfolioValuationTests: XCTestCase {
         let transactions = [tx(.buy, "2024-01-01", quantity: 10, price: 100)]
         let key = PositionKey(instrumentID: stock, currency: .czk)
         let series = seriesFor([("2024-01-01", 100), ("2024-07-01", 110), ("2025-01-01", 121)], adjustment: .split)
-        let points = ValueSeriesBuilder.build(transactions: transactions, baseCurrency: .czk,
+        let points = try ValueSeriesBuilder.build(transactions: transactions, baseCurrency: .czk,
                                               dates: [.d("2024-01-01"), .d("2024-07-01"), .d("2025-01-01")], prices: [key: series], fx: { _, _ in nil })
         XCTAssertEqual(points.map(\.value), [1_000, 1_100, 1_210])
         XCTAssertEqual(try XCTUnwrap(ValueSeriesBuilder.timeWeightedReturn(points)), 0.21, accuracy: 1e-12)
@@ -93,7 +93,7 @@ final class PortfolioValuationTests: XCTestCase {
         let xirr = try XCTUnwrap(ValueSeriesBuilder.moneyWeightedReturn(flows: ledger.flows, terminalValue: 1_210, terminalDate: .d("2025-01-01")))
         XCTAssertEqual(xirr, pow(1.21, 365.0 / 366.0) - 1, accuracy: 1e-9)
 
-        let gap = ValueSeriesBuilder.build(transactions: transactions, baseCurrency: .czk, dates: [.d("2024-03-01")],
+        let gap = try ValueSeriesBuilder.build(transactions: transactions, baseCurrency: .czk, dates: [.d("2024-03-01")],
                                            prices: [key: seriesFor([("2024-01-01", 100)], adjustment: .split)], fx: { _, _ in nil })
         XCTAssertNil(gap.first?.value, "prices older than the carry window are not used")
     }

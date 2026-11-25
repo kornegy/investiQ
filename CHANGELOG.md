@@ -5,12 +5,19 @@ SemVer once releases start.
 
 ## [Unreleased]
 
-### Phase 7 — Production preparation (in progress)
+### Phase 7 — Production preparation
 - Encrypted backups (`.iqbackup`: authenticated header with Argon2id parameters, AES-256-GCM payload,
   separate passphrase, API keys never included); restore validates integrity and foreign keys, migrates
   older backups, refuses newer ones, keeps the previous encrypted generation, and only then switches.
   Crafted KDF parameters are refused.
 - JSON export of all user-entered data (clearly marked as unencrypted); clearing of the market-data cache.
+- Internal security audit: silent `try?` on user-data paths removed (ledger hash, value series, CSV export,
+  performance chart, transaction editor, file import, settings saves now report failures).
+- Performance benchmarks with regression ceilings (ledger, encryption, Argon2id, validation, risk,
+  back-test, news).
+- Reports: testing, security, performance, accessibility, known limitations, App Store checklist, legal &
+  data-licensing review, release/signing/sandbox; README with build, launch, API, AI and backup
+  instructions.
 
 ### Phase 6 — Optional AI
 - `AIProvider` with Apple on-device (macOS 26+), local Ollama (loopback only) and Claude Messages API

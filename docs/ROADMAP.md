@@ -12,9 +12,16 @@ Status legend: ✅ done · 🟡 in progress · ⬜ not started · ⚠️ done wi
 | 4 Analytics & risk | Stock/ETF/bond analysis, risk engine, scenarios, forecast validation | Analytics/forecast tests green | ✅ |
 | 5 News & education | News, calendar, classification, education, planner, simulator, broker directory | Tests green; content complete in ru/en/cs | ✅ |
 | 6 Optional AI | AIProvider, Ollama/external/Apple FM adapters, privacy controls, AI security tests | Tests green; app fully functional with AI off | ✅ |
-| 7 Production prep | Security audit, performance profiling, accessibility, migration tests, release config, signing prep, sandbox verification, legal & licensing checklists | Reports written; known limitations listed | ⬜ |
+| 7 Production prep | Security audit, performance profiling, accessibility, migration tests, release config, signing prep, sandbox verification, legal & licensing checklists | Reports written; known limitations listed | ✅ internal (external reviews pending) |
 
 ## Future (post-v1)
+
+Order reflects the project priorities (safety and reliability first).
+
+* External security, legal, data-licensing and App Store reviews; fix findings (required for production).
+* Manual accessibility pass (VoiceOver, keyboard) and Instruments profiling on Apple Silicon.
+* Process for refreshing the bundled economic calendar and broker directory (with verification dates).
+* Dividend calendar from a licensed provider; licensed EU bond and UCITS data.
 
 * iOS/iPadOS app reusing `InvestiQKit` (only the app target and adapters are platform-specific).
 * FIFO / specific-lot cost basis and Czech tax-time-test helper (requires professional tax review).
