@@ -12,9 +12,24 @@ final class SQLiteAndSchemaTests: XCTestCase {
 
     func testMigrationIsIdempotentAndRecorded() throws {
         let db = try migratedUserDatabase()
-        XCTAssertEqual(db.userVersion, 1)
+        XCTAssertEqual(db.userVersion, Self.latestVersion)
         XCTAssertEqual(try Migrator.migrate(db, migrations: UserSchema.migrations, now: fixedNow), [])
-        XCTAssertEqual(try db.scalarInt("SELECT COUNT(*) FROM schema_migrations"), 1)
+        XCTAssertEqual(try db.scalarInt("SELECT COUNT(*) FROM schema_migrations"), Int64(UserSchema.migrations.count))
+        XCTAssertEqual(try db.integrityCheck(), [])
+    }
+
+    static var latestVersion: Int { UserSchema.migrations.map(\.version).max() ?? 0 }
+
+    /// A database created by the first release upgrades in place and keeps its data.
+    func testUpgradeFromVersion1KeepsData() throws {
+        let db = try SQLiteDatabase()
+        try Migrator.migrate(db, migrations: Array(UserSchema.migrations.prefix(1)), now: fixedNow)
+        XCTAssertEqual(db.userVersion, 1)
+        _ = try insertPortfolio(db)
+        let applied = try Migrator.migrate(db, migrations: UserSchema.migrations, now: fixedNow)
+        XCTAssertEqual(applied, Array(2...Self.latestVersion))
+        XCTAssertEqual(try db.scalarInt("SELECT COUNT(*) FROM portfolios"), 1)
+        XCTAssertEqual(try db.scalarInt("SELECT COUNT(*) FROM notification_log"), 0)
         XCTAssertEqual(try db.integrityCheck(), [])
     }
 
@@ -22,7 +37,7 @@ final class SQLiteAndSchemaTests: XCTestCase {
         let db = try migratedUserDatabase()
         try db.setUserVersion(99)
         XCTAssertThrowsError(try Migrator.migrate(db, migrations: UserSchema.migrations, now: fixedNow)) {
-            XCTAssertEqual($0 as? MigrationError, .databaseNewerThanApp(databaseVersion: 99, supportedVersion: 1))
+            XCTAssertEqual($0 as? MigrationError, .databaseNewerThanApp(databaseVersion: 99, supportedVersion: Self.latestVersion))
         }
     }
 
@@ -109,7 +124,7 @@ final class SQLiteAndSchemaTests: XCTestCase {
         _ = try insertPortfolio(db)
         let image = try db.serialize()
         let restored = try SQLiteDatabase(image: image)
-        XCTAssertEqual(restored.userVersion, 1)
+        XCTAssertEqual(restored.userVersion, Self.latestVersion)
         XCTAssertEqual(try restored.scalarInt("SELECT COUNT(*) FROM portfolios"), 1)
         // Foreign keys are re-enabled after deserialisation.
         XCTAssertThrowsError(try restored.run("INSERT INTO watchlist_items (watchlist_id, instrument_id, added_at) VALUES ('nope','nope','x')"))

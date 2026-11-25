@@ -19,7 +19,8 @@ enum AppDependencies {
                               secureStore: KeychainSecureStore(servicePrefix: bundleID),
                               biometricStore: KeychainBiometricKeyStore(servicePrefix: bundleID),
                               passwordDerivation: Argon2idKeyDerivation(),
-                              clock: SystemTimeProvider())
+                              clock: SystemTimeProvider(),
+                              notificationDelivery: UserNotificationDelivery())
     }
 
     private static func applicationSupportPaths() -> ProfilePaths {

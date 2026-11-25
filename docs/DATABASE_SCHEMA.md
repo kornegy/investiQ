@@ -110,3 +110,12 @@ valuations and carries the ledger hash, so every cached value is verifiable.
 Migration rules: append-only list, never edit a released migration, each migration runs inside a
 transaction, `PRAGMA foreign_key_check` after each step, migration tests create a database at version N
 with fixture data and verify data survives migration to N+1.
+
+### Migration v2 — notification delivery log
+
+| Table | Columns | Notes |
+|---|---|---|
+| `notification_log` | `dedup_key TEXT PK` (1–200 chars), `kind TEXT`, `sent_at` | Keys such as `price:<instrument>:<date>` or `event:<event id>` so a fact is notified once; no texts or amounts. Entries older than 120 days are purged. |
+
+Upgrades from v1 run in place (`SQLiteAndSchemaTests.testUpgradeFromVersion1KeepsData`).
+

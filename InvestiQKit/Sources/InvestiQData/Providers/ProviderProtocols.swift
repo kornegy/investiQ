@@ -201,6 +201,12 @@ public struct EarningsEvent: Sendable, Hashable, Codable {
     }
 }
 
+/// Upcoming dividend dates (ex-date and payment date). No v1 free adapter supplies future payment dates;
+/// the demo provider does (synthetic).
+public protocol DividendCalendarProvider: DataProvider {
+    func upcomingDividends(_ symbol: ProviderSymbol, range: DateRange) async throws -> [DividendEvent]
+}
+
 public protocol EarningsCalendarProvider: DataProvider {
     func earnings(range: DateRange) async throws -> [EarningsEvent]
 }

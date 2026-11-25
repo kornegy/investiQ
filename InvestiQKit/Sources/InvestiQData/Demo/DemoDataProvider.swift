@@ -4,7 +4,7 @@ import InvestiQCore
 /// Serves the synthetic demo universe through the regular provider protocols, so demo mode exercises
 /// the same code paths as real data. Every value is labelled `.synthetic` with source "demo".
 /// Never registered for real profiles (ADR-008).
-public struct DemoDataProvider: MarketDataProvider, FundamentalsProvider, ExchangeRateProvider, BondDataProvider,
+public struct DemoDataProvider: DividendCalendarProvider, MarketDataProvider, FundamentalsProvider, ExchangeRateProvider, BondDataProvider,
                                 ETFDataProvider, MacroeconomicDataProvider {
     public static let id = DataSourceInfo.demo.id
 
@@ -65,6 +65,21 @@ public struct DemoDataProvider: MarketDataProvider, FundamentalsProvider, Exchan
         let bars = DemoUniverse.history(for: demo, through: min(range.end, clock.today())).filter { $0.date >= range.start }
         let series = PriceSeries(listing: demo.listing.key, currency: demo.listing.tradingCurrency, adjustment: .split, bars: bars)
         return Sourced(series, metadata: metadata(currency: demo.listing.tradingCurrency, marketDate: series.lastDate))
+    }
+
+    /// Synthetic quarterly dividends for demo instruments with a dividend yield (payment ~3 weeks after the ex-date).
+    public func upcomingDividends(_ symbol: ProviderSymbol, range: DateRange) async throws -> [DividendEvent] {
+        let demo = try demo(symbol)
+        guard demo.dividendYield > 0, let price = DemoUniverse.history(for: demo, through: clock.today()).last?.close else { return [] }
+        let amount = (price * (Decimal(finite: demo.dividendYield / 4) ?? 0)).rounded(scale: 2)
+        var events: [DividendEvent] = []
+        var exDate = LocalDate(year: range.start.year, month: ((range.start.month - 1) / 3) * 3 + 2, day: 15) ?? range.start
+        while exDate <= range.end {
+            let payDate = exDate.adding(days: 21)
+            if payDate >= range.start { events.append(DividendEvent(exDate: exDate, payDate: payDate, amountPerShare: amount, currency: demo.listing.tradingCurrency)) }
+            exDate = exDate.adding(months: 3)
+        }
+        return events
     }
 
     public func fundamentals(_ symbol: ProviderSymbol) async throws -> Sourced<FundamentalsSnapshot> {

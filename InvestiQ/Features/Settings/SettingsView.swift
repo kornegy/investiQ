@@ -13,6 +13,8 @@ struct SettingsView: View {
                 .tabItem { Label("settings.tab.security", systemImage: "lock.shield") }
             DataProvidersSettingsView()
                 .tabItem { Label("settings.tab.providers", systemImage: "network") }
+            NotificationSettingsView()
+                .tabItem { Label("settings.tab.notifications", systemImage: "bell") }
             LegalSettingsView()
                 .tabItem { Label("settings.tab.legal", systemImage: "doc.text") }
         }

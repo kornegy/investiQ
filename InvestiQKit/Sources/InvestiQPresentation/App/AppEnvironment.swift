@@ -13,10 +13,13 @@ public struct AppEnvironment: Sendable {
     public var passwordDerivation: any PasswordKeyDerivation
     public var clock: any TimeProvider
     public var httpClient: any HTTPClient
+    public var notificationDelivery: any NotificationDelivering
 
     public init(paths: ProfilePaths, secureStore: any SecureStore, biometricStore: any BiometricKeyStore,
                 passwordDerivation: any PasswordKeyDerivation, clock: any TimeProvider,
-                httpClient: any HTTPClient = URLSessionHTTPClient()) {
+                httpClient: any HTTPClient = URLSessionHTTPClient(),
+                notificationDelivery: any NotificationDelivering = NoNotificationDelivery()) {
+        self.notificationDelivery = notificationDelivery
         self.paths = paths
         self.secureStore = secureStore
         self.biometricStore = biometricStore
@@ -24,6 +27,25 @@ public struct AppEnvironment: Sendable {
         self.clock = clock
         self.httpClient = httpClient
     }
+}
+
+/// Delivers local notifications (UserNotifications in the app; a no-op in tests and on Linux).
+@MainActor
+public protocol NotificationDelivering: AnyObject, Sendable {
+    func isAuthorized() async -> Bool
+    func requestAuthorization() async -> Bool
+    func deliver(_ notifications: [NotificationCandidate]) async
+}
+
+@MainActor
+public final class NoNotificationDelivery: NotificationDelivering {
+    public private(set) var delivered: [NotificationCandidate] = []
+    public var authorized: Bool
+
+    public nonisolated init(authorized: Bool = false) { self.authorized = authorized }
+    public func isAuthorized() async -> Bool { authorized }
+    public func requestAuthorization() async -> Bool { authorized }
+    public func deliver(_ notifications: [NotificationCandidate]) async { delivered += notifications }
 }
 
 /// Services bound to one open session (real profile or demo). Rebuilt when provider settings change.
@@ -41,6 +63,7 @@ public struct SessionServices: Sendable {
     public let learning: LearningService
     public let news: NewsService
     public let calendar: CalendarService
+    public let notifications: NotificationService
     public let profileData: ProfileDataService
     /// `nil` in demo mode (no keys are ever used there).
     public let credentials: KeychainCredentials?
@@ -63,6 +86,7 @@ public struct SessionServices: Sendable {
         let exchangeRates = ExchangeRateService(providers: registry.exchangeRates, cache: session.cacheStore, clock: clock)
         let instruments = InstrumentService(store: session.userStore, clock: clock)
         let portfolios = PortfolioService(store: session.userStore, marketData: marketData, exchangeRates: exchangeRates, clock: clock)
+        let calendarService = CalendarService(registry: registry, instruments: instruments, clock: clock)
         return SessionServices(mode: session.mode, registry: registry, instruments: instruments,
                                marketData: marketData, exchangeRates: exchangeRates, portfolios: portfolios,
                                forecasts: ForecastService(store: session.userStore, marketData: marketData, clock: clock),
@@ -73,7 +97,10 @@ public struct SessionServices: Sendable {
                                                            marketData: marketData, exchangeRates: exchangeRates, clock: clock),
                                learning: LearningService(store: session.userStore, clock: clock),
                                news: NewsService(registry: registry, cache: session.cacheStore, instruments: instruments, clock: clock),
-                               calendar: CalendarService(registry: registry, instruments: instruments, clock: clock),
+                               calendar: calendarService,
+                               notifications: NotificationService(userStore: session.userStore, cacheStore: session.cacheStore, registry: registry,
+                                                                  portfolios: portfolios, instruments: instruments, marketData: marketData,
+                                                                  calendar: calendarService, clock: clock),
                                profileData: ProfileDataService(session: session),
                                credentials: credentials)
     }

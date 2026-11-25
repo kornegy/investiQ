@@ -168,6 +168,24 @@ public final class AppModel {
 }
 
 /// Sidebar sections (docs/UI_UX.md §2).
+extension AppModel {
+    /// Checks notification rules and delivers new notifications. Runs only while InvestiQ is open and only
+    /// when the user has allowed notifications in macOS (otherwise nothing is evaluated or logged).
+    @discardableResult
+    public func checkNotifications() async -> Int {
+        guard let services, state == .unlocked || isDemo else { return 0 }
+        let delivery = environment.notificationDelivery
+        guard await delivery.isAuthorized() else { return 0 }
+        do {
+            let pending = try await services.notifications.pendingNotifications()
+            if !pending.isEmpty { await delivery.deliver(pending) }
+            return pending.count
+        } catch {
+            return 0
+        }
+    }
+}
+
 public enum AppSection: String, CaseIterable, Identifiable, Sendable {
     case overview, market, portfolio, news, risk, planner, simulator, brokers, learn, settings
     public var id: String { rawValue }

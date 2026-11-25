@@ -31,6 +31,10 @@ SemVer once releases start.
   licence type, presence in Czechia, investor-compensation scheme and limits where documented, deposit
   insurance shown separately), sources and verification date; unverified facts shown as "not verified";
   alphabetical, no ranking or referral links; broker websites hidden in educational mode.
+- Notifications: nine rule types (price moves above a user threshold, earnings, economic events,
+  dividends, coupons, bond maturity, risk-level changes, outdated data, provider problems) with lead
+  times; factual wording; delivered through macOS notifications only while InvestiQ runs, only after the
+  user allows them; each fact is notified once (delivery log, schema v2).
 
 ### Phase 4 — Analytics and risk
 - Bond analytics (schedules, five day counts, accrued interest, YTM/YTC, durations, convexity, full

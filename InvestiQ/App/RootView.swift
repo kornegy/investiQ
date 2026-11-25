@@ -3,6 +3,9 @@ import InvestiQCore
 import InvestiQPresentation
 
 /// Switches between the top-level states of `AppModel` (docs/ARCHITECTURE.md §3.1).
+/// Notification rules are evaluated at most this often while the app is open (seconds).
+private let notificationCheckInterval: TimeInterval = 30 * 60
+
 struct RootView: View {
     @Environment(AppModel.self) private var app
     @State private var monitor = SystemEventMonitor()
@@ -39,10 +42,19 @@ struct RootView: View {
             L10n.languageOverride = app.preferences.languageOverride
             await app.bootstrap()
             monitor.start(app: app)
+            var lastNotificationCheck = Date.distantPast
             while !Task.isCancelled {
                 try? await Task.sleep(for: autoLockCheckInterval)
                 await app.checkAutoLock()
+                // Notifications are checked only while InvestiQ runs (no background monitoring).
+                if Date().timeIntervalSince(lastNotificationCheck) >= notificationCheckInterval {
+                    lastNotificationCheck = Date()
+                    await app.checkNotifications()
+                }
             }
+        }
+        .onChange(of: app.state) { _, state in
+            if state == .unlocked { Task { await app.checkNotifications() } }
         }
         .onChange(of: app.preferences.languageOverride) { _, newValue in L10n.languageOverride = newValue }
     }

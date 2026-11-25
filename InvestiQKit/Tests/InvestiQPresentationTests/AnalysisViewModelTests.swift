@@ -238,3 +238,48 @@ final class NewsViewModelTests: XCTestCase {
         XCTAssertEqual(calendar.title(calendar.filtered[0]).key, "calendar.title.centralBankDecision")
     }
 }
+
+@MainActor
+final class NotificationFlowTests: XCTestCase {
+    func makeApp(authorized: Bool) async throws -> (AppModel, NoNotificationDelivery) {
+        let context = try TestContext()
+        let delivery = NoNotificationDelivery(authorized: authorized)
+        let app = AppModel(environment: AppEnvironment(paths: context.paths, secureStore: context.secureStore,
+                                                       biometricStore: context.biometrics,
+                                                       passwordDerivation: Argon2idKeyDerivation.testing, clock: context.clock,
+                                                       httpClient: OfflineHTTPClient(), notificationDelivery: delivery))
+        await app.startDemo()
+        return (app, delivery)
+    }
+
+    func testNothingIsEvaluatedWithoutPermission() async throws {
+        let (app, delivery) = try await makeApp(authorized: false)
+        let count = await app.checkNotifications()
+        XCTAssertEqual(count, 0)
+        XCTAssertTrue(delivery.delivered.isEmpty)
+    }
+
+    func testDemoNotificationsAreDeliveredOnce() async throws {
+        let (app, delivery) = try await makeApp(authorized: true)
+        let settings = NotificationSettingsViewModel(app: app)
+        await settings.load()
+        // Test clock: 24 Nov 2026. With a 20-day lead time the Fed decision of 9 Dec 2026 is due.
+        await settings.setLeadDays(.economicEvent, days: 20)
+        XCTAssertEqual(settings.leadDays(.economicEvent), 20)
+        let first = await app.checkNotifications()
+        XCTAssertGreaterThan(first, 0)
+        XCTAssertEqual(delivery.delivered.count, first)
+        XCTAssertTrue(delivery.delivered.contains { $0.dedupKey == "event:fed-2026-12-09" })
+        let second = await app.checkNotifications()
+        XCTAssertEqual(second, 0, "the same facts are never notified twice")
+
+        XCTAssertEqual(settings.rules.count, NotificationKind.allCases.count)
+        XCTAssertEqual(settings.priceThresholdPercent, 5)
+        await settings.setPriceThreshold(percent: 10)
+        await settings.setEnabled(.staleData, false)
+        let reloaded = NotificationSettingsViewModel(app: app)
+        await reloaded.load()
+        XCTAssertEqual(reloaded.priceThresholdPercent, 10)
+        XCTAssertEqual(reloaded.rules.first { $0.kind == .staleData }?.enabled, false)
+    }
+}

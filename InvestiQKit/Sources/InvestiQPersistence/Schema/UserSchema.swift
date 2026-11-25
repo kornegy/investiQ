@@ -2,7 +2,17 @@ import Foundation
 
 /// Migrations of the user database (docs/DATABASE_SCHEMA.md §1).
 public enum UserSchema {
-    public static let migrations: [Migration] = [v1]
+    public static let migrations: [Migration] = [v1, v2]
+
+    /// v2: delivery log so the same notification is never sent twice (dedup keys only — no amounts or texts).
+    static let v2 = Migration(version: 2, name: "notification delivery log", sql: """
+    CREATE TABLE notification_log (
+        dedup_key TEXT PRIMARY KEY CHECK (length(dedup_key) BETWEEN 1 AND 200),
+        kind TEXT NOT NULL,
+        sent_at TEXT NOT NULL
+    );
+    CREATE INDEX idx_notification_log_sent ON notification_log(sent_at);
+    """)
 
     static let ageCategories = "'under18','from18to25','from26to35','from36to50','from51to65','over65'"
     static let transactionTypes = "'buy','sell','dividend','coupon','interest','fee','tax','deposit','withdrawal','split','fxConversion','bondRedemption'"

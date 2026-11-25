@@ -11133,6 +11133,926 @@
         }
       }
     },
+    "notification.coupon.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum příštího kuponu: %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next coupon date: %@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата следующего купона: %@."
+          }
+        }
+      }
+    },
+    "notification.coupon.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: výplata kuponu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: coupon payment"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: выплата купона"
+          }
+        }
+      }
+    },
+    "notification.dividend.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum výplaty: %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Payment date: %@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата выплаты: %@."
+          }
+        }
+      }
+    },
+    "notification.dividend.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: výplata dividendy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: dividend payment"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: выплата дивидендов"
+          }
+        }
+      }
+    },
+    "notification.earnings.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výsledky se očekávají %@ (datum od poskytovatele dat, může se změnit)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Results are expected on %@ (date from your data provider, may change)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Результаты ожидаются %@ (дата от поставщика данных, может измениться)."
+          }
+        }
+      }
+    },
+    "notification.earnings.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: plánované výsledky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: financial report scheduled"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: запланирована отчётность"
+          }
+        }
+      }
+    },
+    "notification.event.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naplánováno na %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheduled for %@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запланировано на %@."
+          }
+        }
+      }
+    },
+    "notification.maturity.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluhopis je splatný %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The bond matures on %@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облигация погашается %@."
+          }
+        }
+      }
+    },
+    "notification.maturity.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: blíží se splatnost"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: maturity approaching"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: приближается погашение"
+          }
+        }
+      }
+    },
+    "notification.outage.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ v poslední době neodpovídal. InvestiQ podle možností použije jiné poskytovatele nebo uložená data."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ did not respond recently. InvestiQ uses other providers or saved data where possible."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ недавно не отвечал. InvestiQ по возможности использует других поставщиков или сохранённые данные."
+          }
+        }
+      }
+    },
+    "notification.outage.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potíže poskytovatele dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data provider problem"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проблема с поставщиком данных"
+          }
+        }
+      }
+    },
+    "notification.priceMove.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnešní změna: %1$@ (váš práh: %2$@). Data mohou být zpožděná."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changed by %1$@ today (your threshold: %2$@). Data may be delayed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение за сегодня: %1$@ (ваш порог: %2$@). Данные могут быть с задержкой."
+          }
+        }
+      }
+    },
+    "notification.priceMove.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: změna ceny"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: price change"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: изменение цены"
+          }
+        }
+      }
+    },
+    "notification.risk.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: z „%2$@“ na „%3$@“."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: from %2$@ to %3$@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: с «%2$@» на «%3$@»."
+          }
+        }
+      }
+    },
+    "notification.risk.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: změnila se úroveň rizika"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: risk level changed"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: изменился уровень риска"
+          }
+        }
+      }
+    },
+    "notification.stale.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceny %@ nástrojů se nepodařilo aktualizovat a zobrazují se z mezipaměti."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prices of %@ instruments could not be updated and are shown from the cache."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цены %@ инструментов не удалось обновить, они показаны из кэша."
+          }
+        }
+      }
+    },
+    "notification.stale.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Část dat je zastaralá"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some data is outdated"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Часть данных устарела"
+          }
+        }
+      }
+    },
+    "notifications.allow": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povolit oznámení…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow notifications…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешить уведомления…"
+          }
+        }
+      }
+    },
+    "notifications.allowed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oznámení jsou v macOS povolena."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications are allowed in macOS."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомления разрешены в macOS."
+          }
+        }
+      }
+    },
+    "notifications.checkNow": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zkontrolovat nyní"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check now"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить сейчас"
+          }
+        }
+      }
+    },
+    "notifications.checked": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nová oznámení: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New notifications: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новых уведомлений: %@"
+          }
+        }
+      }
+    },
+    "notifications.dividendDataUnavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyžaduje zdroj s budoucími daty dividend; bezplatní poskytovatelé v této verzi je neposkytují."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Needs a data source with future dividend dates; the free providers supported in this version do not supply them."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужен источник с будущими датами дивидендов; бесплатные поставщики этой версии их не предоставляют."
+          }
+        }
+      }
+    },
+    "notifications.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavení oznámení se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notification settings could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить настройки уведомлений."
+          }
+        }
+      }
+    },
+    "notifications.error.saveFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavení oznámení se nepodařilo uložit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notification settings could not be saved."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось сохранить настройки уведомлений."
+          }
+        }
+      }
+    },
+    "notifications.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informativní oznámení o vašich nástrojích, plánovaných událostech a kvalitě dat. Sdělují fakta a nikdy nevybízejí k nákupu ani prodeji."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informative notifications about your instruments, scheduled events and data quality. They report facts; they never suggest buying or selling."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информационные уведомления о ваших инструментах, запланированных событиях и качестве данных. Они сообщают факты и никогда не предлагают покупать или продавать."
+          }
+        }
+      }
+    },
+    "notifications.kind.bondMaturity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blížící se splatnost dluhopisů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approaching bond maturity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приближение погашения облигаций"
+          }
+        }
+      }
+    },
+    "notifications.kind.couponPayment": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výplaty kuponů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon payments"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выплаты купонов"
+          }
+        }
+      }
+    },
+    "notifications.kind.dividendPayment": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výplaty dividend"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividend payments"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выплаты дивидендов"
+          }
+        }
+      }
+    },
+    "notifications.kind.earningsReport": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plánované finanční výsledky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheduled financial reports"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запланированная отчётность"
+          }
+        }
+      }
+    },
+    "notifications.kind.economicEvent": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Důležité ekonomické události"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Important economic events"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Важные экономические события"
+          }
+        }
+      }
+    },
+    "notifications.kind.priceMove": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výrazné pohyby ceny"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Significant price moves"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Значительные изменения цены"
+          }
+        }
+      }
+    },
+    "notifications.kind.providerOutage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potíže poskytovatelů dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data provider problems"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проблемы с поставщиками данных"
+          }
+        }
+      }
+    },
+    "notifications.kind.riskChange": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změny úrovní rizika portfolia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changes in portfolio risk levels"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменения уровней риска портфеля"
+          }
+        }
+      }
+    },
+    "notifications.kind.staleData": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastaralá data"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Outdated data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Устаревшие данные"
+          }
+        }
+      }
+    },
+    "notifications.leadDays": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upozornit %@ dní předem"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notify %@ days ahead"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сообщать за %@ дн."
+          }
+        }
+      }
+    },
+    "notifications.notAllowed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokud oznámení nepovolíte, nic se nekontroluje ani neposílá. Změnit to lze v Nastavení systému → Oznámení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Until you allow notifications, nothing is checked or sent. You can change this later in System Settings → Notifications."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пока уведомления не разрешены, ничего не проверяется и не отправляется. Это можно изменить в Системных настройках → Уведомления."
+          }
+        }
+      }
+    },
+    "notifications.privacy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oznámení se mohou zobrazit na zamčené obrazovce. Obsahují názvy nástrojů a procenta, nikdy částky ani velikost pozic."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications can appear on the lock screen. They contain instrument names and percentages, never amounts or holdings."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомления могут появляться на экране блокировки. В них есть названия инструментов и проценты, но никогда суммы или размеры позиций."
+          }
+        }
+      }
+    },
+    "notifications.runningOnly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ kontroluje oznámení jen tehdy, když je otevřený (po odemčení a přibližně každých 30 minut). Když je zavřený nebo Mac spí, nic nesleduje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ checks for notifications only while it is open (on unlock and about every 30 minutes). It does not monitor anything when it is closed or your Mac is asleep."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ проверяет уведомления только когда открыт (при разблокировке и примерно каждые 30 минут). Когда приложение закрыто или Mac спит, ничего не отслеживается."
+          }
+        }
+      }
+    },
+    "notifications.threshold": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práh: denní změna %@ %%"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Threshold: %@ %% daily change"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Порог: изменение за день %@ %%"
+          }
+        }
+      }
+    },
+    "notifications.types": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Types"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Типы"
+          }
+        }
+      }
+    },
     "onboarding.age.from18to25": {
       "extractionState": "manual",
       "localizations": {
@@ -20697,6 +21617,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Правовая информация"
+          }
+        }
+      }
+    },
+    "settings.tab.notifications": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oznámení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомления"
           }
         }
       }
