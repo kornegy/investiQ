@@ -123,18 +123,32 @@ public final class AppModel {
         updated.baseCurrency = profile.primaryCurrency
         try await data.savePreferences(updated)
         preferences = updated
-        if profile.isMinor, let unlocked = unlockedProfile, !unlocked.summary.educationalMode {
-            var summary = unlocked.summary
-            summary.educationalMode = true
-            try await profileService.updateSummary(summary)
-            if var stored = try await data.profile() {
-                stored.educationalMode = true
-                stored.ageCategory = profile.ageCategory
-                try await data.saveProfile(stored)
-            }
-            educationalMode = true
-        }
+        try await applyEducationalModeIfMinor(profile, data: data)
         state = .unlocked
+    }
+
+    /// Minors get educational mode; it is never switched off automatically.
+    private func applyEducationalModeIfMinor(_ profile: FinancialProfile, data: ProfileDataService) async throws {
+        guard profile.isMinor, let unlocked = unlockedProfile, !unlocked.summary.educationalMode else { return }
+        var summary = unlocked.summary
+        summary.educationalMode = true
+        try await profileService.updateSummary(summary)
+        if var stored = try await data.profile() {
+            stored.educationalMode = true
+            stored.ageCategory = profile.ageCategory
+            try await data.saveProfile(stored)
+        }
+        educationalMode = true
+    }
+
+    /// After a restore the database content changed: reload preferences, re-apply educational mode and
+    /// rebuild services.
+    public func reloadAfterRestore() async throws {
+        guard let session else { return }
+        let data = ProfileDataService(session: session)
+        preferences = try await data.preferences()
+        if let profile = try await data.financialProfile() { try await applyEducationalModeIfMinor(profile, data: data) }
+        reloadServices()
     }
 
     public func updatePreferences(_ transform: (inout UserPreferences) -> Void) async throws {

@@ -1,0 +1,167 @@
+{
+  "settings.tab.data": {
+    "en": "Backup & data",
+    "ru": "Резервные копии и данные",
+    "cs": "Zálohy a data"
+  },
+  "backup.title": {
+    "en": "Encrypted backup",
+    "ru": "Зашифрованная резервная копия",
+    "cs": "Šifrovaná záloha"
+  },
+  "backup.intro": {
+    "en": "A backup contains all data of this profile (portfolios, transactions, plans, progress, settings) encrypted with a backup passphrase you choose. API keys are not included; they stay in the Keychain.",
+    "ru": "Резервная копия содержит все данные этого профиля (портфели, сделки, планы, прогресс, настройки), зашифрованные выбранной вами парольной фразой. API-ключи не включаются — они остаются в Связке ключей.",
+    "cs": "Záloha obsahuje všechna data tohoto profilu (portfolia, transakce, plány, pokrok, nastavení) šifrovaná záložním heslem, které si zvolíte. API klíče se nezahrnují; zůstávají v Klíčence."
+  },
+  "backup.passphrase": {
+    "en": "Backup passphrase",
+    "ru": "Парольная фраза копии",
+    "cs": "Heslo zálohy"
+  },
+  "backup.confirmation": {
+    "en": "Repeat passphrase",
+    "ru": "Повторите парольную фразу",
+    "cs": "Zopakujte heslo"
+  },
+  "backup.passphraseNote": {
+    "en": "At least 10 characters. It cannot be recovered: without it the backup cannot be opened.",
+    "ru": "Не менее 10 символов. Её нельзя восстановить: без неё копию не открыть.",
+    "cs": "Alespoň 10 znaků. Nelze ho obnovit: bez něj zálohu neotevřete."
+  },
+  "backup.create": {
+    "en": "Create backup…",
+    "ru": "Создать копию…",
+    "cs": "Vytvořit zálohu…"
+  },
+  "backup.restore": {
+    "en": "Restore from backup…",
+    "ru": "Восстановить из копии…",
+    "cs": "Obnovit ze zálohy…"
+  },
+  "backup.restoreNote": {
+    "en": "To restore, enter the backup's passphrase above and choose the file. The backup is checked before anything is replaced, and the previous data is kept until the restore succeeds.",
+    "ru": "Для восстановления введите парольную фразу копии выше и выберите файл. Копия проверяется до любой замены, а прежние данные сохраняются до успешного восстановления.",
+    "cs": "Pro obnovení zadejte výše heslo zálohy a vyberte soubor. Záloha se zkontroluje dříve, než se cokoli nahradí, a předchozí data zůstanou zachována až do úspěšného obnovení."
+  },
+  "backup.summary": {
+    "en": "Backup from %1$@: %2$@ portfolios, %3$@ transactions.",
+    "ru": "Копия от %1$@: портфелей — %2$@, сделок — %3$@.",
+    "cs": "Záloha z %1$@: portfolií %2$@, transakcí %3$@."
+  },
+  "backup.replaceWarning": {
+    "en": "Restoring replaces all current data of this profile with the backup.",
+    "ru": "Восстановление заменит все текущие данные этого профиля данными из копии.",
+    "cs": "Obnovení nahradí všechna současná data tohoto profilu daty ze zálohy."
+  },
+  "backup.confirmRestore": {
+    "en": "Replace data with backup",
+    "ru": "Заменить данные копией",
+    "cs": "Nahradit data zálohou"
+  },
+  "backup.created": {
+    "en": "Backup created. Store the file and the passphrase separately.",
+    "ru": "Копия создана. Храните файл и парольную фразу раздельно.",
+    "cs": "Záloha vytvořena. Soubor a heslo uchovávejte odděleně."
+  },
+  "backup.restored": {
+    "en": "Backup restored.",
+    "ru": "Копия восстановлена.",
+    "cs": "Záloha obnovena."
+  },
+  "backup.demoNote": {
+    "en": "Demo data is not saved, so there is nothing to back up.",
+    "ru": "Демо-данные не сохраняются, поэтому резервировать нечего.",
+    "cs": "Ukázková data se neukládají, takže není co zálohovat."
+  },
+  "backup.error.weakPassphrase": {
+    "en": "Choose a passphrase of at least 10 characters and repeat it exactly.",
+    "ru": "Выберите парольную фразу не короче 10 символов и точно повторите её.",
+    "cs": "Zvolte heslo o alespoň 10 znacích a přesně ho zopakujte."
+  },
+  "backup.error.demo": {
+    "en": "Backups are not available in demo mode.",
+    "ru": "Резервные копии недоступны в демо-режиме.",
+    "cs": "Zálohy nejsou v ukázkovém režimu k dispozici."
+  },
+  "backup.error.wrongPassphrase": {
+    "en": "The passphrase is wrong or the file is damaged.",
+    "ru": "Неверная парольная фраза или файл повреждён.",
+    "cs": "Heslo je chybné nebo je soubor poškozený."
+  },
+  "backup.error.notABackup": {
+    "en": "This file is not an InvestiQ backup.",
+    "ru": "Этот файл не является резервной копией InvestiQ.",
+    "cs": "Tento soubor není záloha InvestiQ."
+  },
+  "backup.error.newer": {
+    "en": "The backup was made by a newer version of InvestiQ. Update the app first.",
+    "ru": "Копия создана более новой версией InvestiQ. Сначала обновите приложение.",
+    "cs": "Záloha byla vytvořena novější verzí InvestiQ. Nejprve aplikaci aktualizujte."
+  },
+  "backup.error.damaged": {
+    "en": "The backup failed the integrity check; nothing was changed.",
+    "ru": "Копия не прошла проверку целостности; ничего не изменено.",
+    "cs": "Záloha neprošla kontrolou integrity; nic nebylo změněno."
+  },
+  "backup.error.failed": {
+    "en": "The backup operation failed; nothing was changed.",
+    "ru": "Операция с копией не удалась; ничего не изменено.",
+    "cs": "Operace se zálohou selhala; nic nebylo změněno."
+  },
+  "export.title": {
+    "en": "Export your data",
+    "ru": "Экспорт данных",
+    "cs": "Export dat"
+  },
+  "export.intro": {
+    "en": "A readable JSON file with everything you entered: portfolios, transactions, plans, goals, learning progress and forecasts.",
+    "ru": "Читаемый JSON-файл со всем, что вы ввели: портфели, сделки, планы, цели, прогресс обучения и прогнозы.",
+    "cs": "Čitelný soubor JSON se vším, co jste zadali: portfolia, transakce, plány, cíle, pokrok ve studiu a prognózy."
+  },
+  "export.json": {
+    "en": "Export as JSON…",
+    "ru": "Экспортировать в JSON…",
+    "cs": "Exportovat jako JSON…"
+  },
+  "export.unencryptedWarning": {
+    "en": "The export is not encrypted. Anyone with the file can read your financial data.",
+    "ru": "Экспорт не зашифрован. Любой, у кого есть файл, сможет прочитать ваши финансовые данные.",
+    "cs": "Export není šifrovaný. Kdokoli se souborem si může přečíst vaše finanční údaje."
+  },
+  "export.error.failed": {
+    "en": "The export could not be created.",
+    "ru": "Не удалось создать экспорт.",
+    "cs": "Export se nepodařilo vytvořit."
+  },
+  "data.cache": {
+    "en": "Cached market data",
+    "ru": "Кэш рыночных данных",
+    "cs": "Mezipaměť tržních dat"
+  },
+  "data.cacheIntro": {
+    "en": "Quotes, price histories and news are cached (encrypted) to save provider requests and to work offline. Clearing the cache does not touch your own data.",
+    "ru": "Котировки, история цен и новости кэшируются (в зашифрованном виде), чтобы экономить запросы и работать офлайн. Очистка кэша не затрагивает ваши данные.",
+    "cs": "Kotace, cenové historie a zprávy se ukládají do mezipaměti (šifrovaně), aby se šetřily požadavky a fungoval offline režim. Vymazání mezipaměti vaše data neovlivní."
+  },
+  "data.clearCache": {
+    "en": "Clear cached market data",
+    "ru": "Очистить кэш рыночных данных",
+    "cs": "Vymazat mezipaměť tržních dat"
+  },
+  "data.clearCacheConfirm": {
+    "en": "Clear cached market data? It will be downloaded again when needed.",
+    "ru": "Очистить кэш рыночных данных? При необходимости он будет загружен снова.",
+    "cs": "Vymazat mezipaměť tržních dat? V případě potřeby se znovu stáhne."
+  },
+  "data.cacheCleared": {
+    "en": "Cached market data was cleared.",
+    "ru": "Кэш рыночных данных очищен.",
+    "cs": "Mezipaměť tržních dat byla vymazána."
+  },
+  "data.error.cacheClearFailed": {
+    "en": "The cache could not be cleared.",
+    "ru": "Не удалось очистить кэш.",
+    "cs": "Mezipaměť se nepodařilo vymazat."
+  }
+}

@@ -69,6 +69,9 @@ public struct SessionServices: Sendable {
     public let calendar: CalendarService
     public let notifications: NotificationService
     public let ai: AIService
+    public let backup: BackupService
+    public let dataExport: DataExportService
+    public let cacheMaintenance: CacheMaintenance
     public let profileData: ProfileDataService
     /// `nil` in demo mode (no keys are ever used there).
     public let credentials: KeychainCredentials?
@@ -127,6 +130,10 @@ public struct SessionServices: Sendable {
                                                                   portfolios: portfolios, instruments: instruments, marketData: marketData,
                                                                   calendar: calendarService, clock: clock),
                                ai: makeAI(session: session, preferences: preferences, environment: environment, credentials: credentials),
+                               backup: BackupService(store: session.userStore, derivation: environment.passwordDerivation,
+                                                     isDemo: session.mode == .demo, clock: clock),
+                               dataExport: DataExportService(store: session.userStore, clock: clock),
+                               cacheMaintenance: CacheMaintenance(store: session.cacheStore),
                                profileData: ProfileDataService(session: session),
                                credentials: credentials)
     }

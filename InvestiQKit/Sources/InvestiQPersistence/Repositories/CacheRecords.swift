@@ -106,4 +106,12 @@ public enum CacheRecords {
                            lastFailure: $0.optionalInstant("last_failure_at"), lastFailureKind: $0.optionalString("last_failure_kind"))
         }
     }
+
+    /// Removes all cached market data, news and HTTP responses (user data is in another database).
+    public static func clearAll(in db: SQLiteDatabase) throws {
+        for table in ["market_quotes", "price_series", "fundamentals_snapshot", "financial_statements", "dividends", "corporate_actions",
+                      "exchange_rates", "news_articles", "economic_events", "http_cache", "provider_metadata"] {
+            try db.run("DELETE FROM \(table)")
+        }
+    }
 }

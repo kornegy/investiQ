@@ -13,7 +13,7 @@ public actor DatabaseStore {
         case inMemoryOnly
     }
 
-    private let database: SQLiteDatabase
+    private var database: SQLiteDatabase
     private let file: EncryptedDatabaseFile?
     private let policy: PersistencePolicy
     private var pendingSave: Task<Void, Never>?
@@ -93,7 +93,28 @@ public actor DatabaseStore {
 
     public func image() throws -> Data { try database.serialize() }
 
+    /// Replaces the whole database with `image` (restore). The candidate is checked (integrity, foreign
+    /// keys), migrated if older and refused if newer, then written atomically — the previous encrypted
+    /// generation stays on disk as `.bak` — and only then swapped in. Nothing changes if any step fails.
+    public func replaceContents(with image: Data, migrations: [Migration], now: Date) throws {
+        let candidate = try SQLiteDatabase(image: image)
+        guard try candidate.integrityCheck().isEmpty else { throw RestoreValidationError.integrityCheckFailed }
+        _ = try Migrator.migrate(candidate, migrations: migrations, now: now)
+        guard try candidate.query("PRAGMA foreign_key_check").isEmpty else { throw RestoreValidationError.foreignKeyViolation }
+        if let file {
+            try file.write(image: try candidate.serialize(), schemaVersion: candidate.userVersion)
+        }
+        pendingSave?.cancel()
+        dirty = false
+        database = candidate
+    }
+
     public func schemaVersion() -> Int { database.userVersion }
 
     public func integrityCheck() throws -> [String] { try database.integrityCheck() }
+}
+
+public enum RestoreValidationError: Error, Equatable, Sendable {
+    case integrityCheckFailed
+    case foreignKeyViolation
 }

@@ -1,7 +1,7 @@
 import Foundation
 
 /// A stored forecast (append-only ledger; enforced by triggers — docs/DATABASE_SCHEMA.md §1).
-public struct ForecastRow: Sendable, Hashable, Identifiable {
+public struct ForecastRow: Sendable, Hashable, Identifiable, Codable {
     public var id: ForecastID
     public var instrumentID: InstrumentID
     public var listingKey: String
@@ -36,7 +36,7 @@ public struct ForecastRow: Sendable, Hashable, Identifiable {
     }
 }
 
-public struct ForecastEvaluationRow: Sendable, Hashable {
+public struct ForecastEvaluationRow: Sendable, Hashable, Codable {
     public var evaluatedAt: Date
     public var actual: Double
     public var absoluteError: Double

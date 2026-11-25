@@ -2600,6 +2600,489 @@
         }
       }
     },
+    "backup.confirmRestore": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nahradit data zálohou"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replace data with backup"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заменить данные копией"
+          }
+        }
+      }
+    },
+    "backup.confirmation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zopakujte heslo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repeat passphrase"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Повторите парольную фразу"
+          }
+        }
+      }
+    },
+    "backup.create": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytvořit zálohu…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create backup…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создать копию…"
+          }
+        }
+      }
+    },
+    "backup.created": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záloha vytvořena. Soubor a heslo uchovávejte odděleně."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup created. Store the file and the passphrase separately."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копия создана. Храните файл и парольную фразу раздельно."
+          }
+        }
+      }
+    },
+    "backup.demoNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukázková data se neukládají, takže není co zálohovat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo data is not saved, so there is nothing to back up."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Демо-данные не сохраняются, поэтому резервировать нечего."
+          }
+        }
+      }
+    },
+    "backup.error.damaged": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záloha neprošla kontrolou integrity; nic nebylo změněno."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The backup failed the integrity check; nothing was changed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копия не прошла проверку целостности; ничего не изменено."
+          }
+        }
+      }
+    },
+    "backup.error.demo": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zálohy nejsou v ukázkovém režimu k dispozici."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backups are not available in demo mode."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервные копии недоступны в демо-режиме."
+          }
+        }
+      }
+    },
+    "backup.error.failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operace se zálohou selhala; nic nebylo změněno."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The backup operation failed; nothing was changed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операция с копией не удалась; ничего не изменено."
+          }
+        }
+      }
+    },
+    "backup.error.newer": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záloha byla vytvořena novější verzí InvestiQ. Nejprve aplikaci aktualizujte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The backup was made by a newer version of InvestiQ. Update the app first."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копия создана более новой версией InvestiQ. Сначала обновите приложение."
+          }
+        }
+      }
+    },
+    "backup.error.notABackup": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento soubor není záloha InvestiQ."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file is not an InvestiQ backup."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Этот файл не является резервной копией InvestiQ."
+          }
+        }
+      }
+    },
+    "backup.error.weakPassphrase": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zvolte heslo o alespoň 10 znacích a přesně ho zopakujte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a passphrase of at least 10 characters and repeat it exactly."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите парольную фразу не короче 10 символов и точно повторите её."
+          }
+        }
+      }
+    },
+    "backup.error.wrongPassphrase": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heslo je chybné nebo je soubor poškozený."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The passphrase is wrong or the file is damaged."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Неверная парольная фраза или файл повреждён."
+          }
+        }
+      }
+    },
+    "backup.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záloha obsahuje všechna data tohoto profilu (portfolia, transakce, plány, pokrok, nastavení) šifrovaná záložním heslem, které si zvolíte. API klíče se nezahrnují; zůstávají v Klíčence."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A backup contains all data of this profile (portfolios, transactions, plans, progress, settings) encrypted with a backup passphrase you choose. API keys are not included; they stay in the Keychain."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервная копия содержит все данные этого профиля (портфели, сделки, планы, прогресс, настройки), зашифрованные выбранной вами парольной фразой. API-ключи не включаются — они остаются в Связке ключей."
+          }
+        }
+      }
+    },
+    "backup.passphrase": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heslo zálohy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup passphrase"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Парольная фраза копии"
+          }
+        }
+      }
+    },
+    "backup.passphraseNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alespoň 10 znaků. Nelze ho obnovit: bez něj zálohu neotevřete."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At least 10 characters. It cannot be recovered: without it the backup cannot be opened."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не менее 10 символов. Её нельзя восстановить: без неё копию не открыть."
+          }
+        }
+      }
+    },
+    "backup.replaceWarning": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovení nahradí všechna současná data tohoto profilu daty ze zálohy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restoring replaces all current data of this profile with the backup."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Восстановление заменит все текущие данные этого профиля данными из копии."
+          }
+        }
+      }
+    },
+    "backup.restore": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovit ze zálohy…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore from backup…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Восстановить из копии…"
+          }
+        }
+      }
+    },
+    "backup.restoreNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro obnovení zadejte výše heslo zálohy a vyberte soubor. Záloha se zkontroluje dříve, než se cokoli nahradí, a předchozí data zůstanou zachována až do úspěšného obnovení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To restore, enter the backup's passphrase above and choose the file. The backup is checked before anything is replaced, and the previous data is kept until the restore succeeds."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для восстановления введите парольную фразу копии выше и выберите файл. Копия проверяется до любой замены, а прежние данные сохраняются до успешного восстановления."
+          }
+        }
+      }
+    },
+    "backup.restored": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záloha obnovena."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup restored."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копия восстановлена."
+          }
+        }
+      }
+    },
+    "backup.summary": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záloha z %1$@: portfolií %2$@, transakcí %3$@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup from %1$@: %2$@ portfolios, %3$@ transactions."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копия от %1$@: портфелей — %2$@, сделок — %3$@."
+          }
+        }
+      }
+    },
+    "backup.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šifrovaná záloha"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encrypted backup"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зашифрованная резервная копия"
+          }
+        }
+      }
+    },
     "bond.accruedInterest": {
       "extractionState": "manual",
       "localizations": {
@@ -5406,6 +5889,144 @@
         }
       }
     },
+    "data.cache": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mezipaměť tržních dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cached market data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кэш рыночных данных"
+          }
+        }
+      }
+    },
+    "data.cacheCleared": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mezipaměť tržních dat byla vymazána."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cached market data was cleared."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кэш рыночных данных очищен."
+          }
+        }
+      }
+    },
+    "data.cacheIntro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kotace, cenové historie a zprávy se ukládají do mezipaměti (šifrovaně), aby se šetřily požadavky a fungoval offline režim. Vymazání mezipaměti vaše data neovlivní."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quotes, price histories and news are cached (encrypted) to save provider requests and to work offline. Clearing the cache does not touch your own data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Котировки, история цен и новости кэшируются (в зашифрованном виде), чтобы экономить запросы и работать офлайн. Очистка кэша не затрагивает ваши данные."
+          }
+        }
+      }
+    },
+    "data.clearCache": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vymazat mezipaměť tržních dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear cached market data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Очистить кэш рыночных данных"
+          }
+        }
+      }
+    },
+    "data.clearCacheConfirm": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vymazat mezipaměť tržních dat? V případě potřeby se znovu stáhne."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear cached market data? It will be downloaded again when needed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Очистить кэш рыночных данных? При необходимости он будет загружен снова."
+          }
+        }
+      }
+    },
+    "data.error.cacheClearFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mezipaměť se nepodařilo vymazat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The cache could not be cleared."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось очистить кэш."
+          }
+        }
+      }
+    },
     "delay.cached": {
       "extractionState": "manual",
       "localizations": {
@@ -6230,6 +6851,121 @@
           "stringUnit": {
             "state": "translated",
             "value": "UCITS"
+          }
+        }
+      }
+    },
+    "export.error.failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export se nepodařilo vytvořit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The export could not be created."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось создать экспорт."
+          }
+        }
+      }
+    },
+    "export.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čitelný soubor JSON se vším, co jste zadali: portfolia, transakce, plány, cíle, pokrok ve studiu a prognózy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A readable JSON file with everything you entered: portfolios, transactions, plans, goals, learning progress and forecasts."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Читаемый JSON-файл со всем, что вы ввели: портфели, сделки, планы, цели, прогресс обучения и прогнозы."
+          }
+        }
+      }
+    },
+    "export.json": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportovat jako JSON…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export as JSON…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экспортировать в JSON…"
+          }
+        }
+      }
+    },
+    "export.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export your data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экспорт данных"
+          }
+        }
+      }
+    },
+    "export.unencryptedWarning": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export není šifrovaný. Kdokoli se souborem si může přečíst vaše finanční údaje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The export is not encrypted. Anyone with the file can read your financial data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экспорт не зашифрован. Любой, у кого есть файл, сможет прочитать ваши финансовые данные."
           }
         }
       }
@@ -22767,6 +23503,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "ИИ"
+          }
+        }
+      }
+    },
+    "settings.tab.data": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zálohy a data"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup & data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервные копии и данные"
           }
         }
       }
