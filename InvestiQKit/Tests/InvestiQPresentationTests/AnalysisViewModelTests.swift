@@ -206,3 +206,35 @@ final class LearnViewModelTests: XCTestCase {
         XCTAssertEqual(model.compoundPoints.count, model.compoundYears)
     }
 }
+
+@MainActor
+final class NewsViewModelTests: XCTestCase {
+    func testDemoNewsFiltersEffectsAndCalendar() async throws {
+        let context = try TestContext()
+        let app = AppModel(environment: AppEnvironment(paths: context.paths, secureStore: context.secureStore,
+                                                       biometricStore: context.biometrics,
+                                                       passwordDerivation: Argon2idKeyDerivation.testing, clock: context.clock,
+                                                       httpClient: OfflineHTTPClient()))
+        await app.startDemo()
+        let news = NewsViewModel(app: app)
+        await news.load()
+        XCTAssertFalse(news.articles.isEmpty)
+        XCTAssertTrue(news.articles.allSatisfy { !news.canOpen($0) }, "demo links are never opened")
+        news.typeFilter = .rumour
+        XCTAssertEqual(news.filtered.count, 1)
+        news.typeFilter = nil
+        news.categoryFilter = .inflation
+        let inflation = try XCTUnwrap(news.filtered.first)
+        XCTAssertEqual(news.possibleEffects(inflation).last, Message("news.effect.caveat"), "effects always end with the caveat")
+        news.categoryFilter = nil
+        news.onlyMyInstruments = true
+        XCTAssertTrue(news.filtered.allSatisfy { !$0.relatedInstrumentIDs.isEmpty })
+
+        let calendar = CalendarViewModel(app: app)
+        await calendar.load()
+        XCTAssertFalse(calendar.days.isEmpty)
+        calendar.kindFilter = .centralBankDecision
+        XCTAssertTrue(calendar.filtered.allSatisfy { $0.kind == .centralBankDecision })
+        XCTAssertEqual(calendar.title(calendar.filtered[0]).key, "calendar.title.centralBankDecision")
+    }
+}

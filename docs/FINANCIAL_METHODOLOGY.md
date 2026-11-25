@@ -289,3 +289,23 @@ results). Outputs: value and contributions series, TWR (daily returns net of the
 annualised volatility, maximum drawdown, costs, number of rebalancings; benchmark = the same
 contributions into one instrument, never rebalanced. Double precision (statistics); results never enter
 a ledger.
+
+## 12. News classification (M-NEWS)
+
+* **Categories (M-NEWS-1):** the 13 categories of spec §16 by keyword lists (English and Czech) matched
+  at word starts in the headline and summary (a trailing space in a keyword requires a whole word, so
+  "war" does not match "warning"). An item can have several categories or none.
+* **Statement type:** items from official feeds are `officialRelease` (uncertainty low). Otherwise the
+  first matching cue decides: rumour cues ("reportedly", "people familiar", "údajně"…) → `rumour`;
+  opinion cues ("opinion", "column", "komentář"…) → `opinion`; forecast cues ("expect", "outlook",
+  "prognóz"…) → `forecast` (all three: uncertainty high); else `reported` (medium). The matching cue is
+  shown with the item.
+* **Deduplication (M-NEWS-2):** same canonical URL (https, lower-case host without `www.`, no query or
+  fragment, no trailing slash), or within 48 hours headlines with word-set Jaccard ≥ 0.6, or containment
+  ≥ 0.85 with ≥ 5 shared words. The earliest item is kept and the other outlets are listed.
+* **Related instruments:** provider symbols, or the instrument name without legal suffixes (≥ 4
+  characters) as whole words. Related sectors come from matched instruments and from the categories.
+* **Possible effects:** fixed, reviewed texts per category describing channels (rates → borrowing costs,
+  valuations, existing bond prices…), always followed by the caveat that the actual reaction depends on
+  expectations and other circumstances. No direction is ever predicted and no score is computed.
+

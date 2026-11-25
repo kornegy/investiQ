@@ -2071,6 +2071,788 @@
         }
       }
     },
+    "calendar.earnings.amc": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po uzavření trhu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After market close"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "После закрытия торгов"
+          }
+        }
+      }
+    },
+    "calendar.earnings.bmo": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Před otevřením trhu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Before market open"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "До открытия торгов"
+          }
+        }
+      }
+    },
+    "calendar.earnings.dmh": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Během obchodování"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "During market hours"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Во время торгов"
+          }
+        }
+      }
+    },
+    "calendar.error.earningsUnavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data výsledků teď nejsou k dispozici."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earnings dates are not available right now."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Даты отчётности сейчас недоступны."
+          }
+        }
+      }
+    },
+    "calendar.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalendář se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The calendar could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить календарь."
+          }
+        }
+      }
+    },
+    "calendar.filter.kind": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тип"
+          }
+        }
+      }
+    },
+    "calendar.filter.region": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Region"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Region"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Регион"
+          }
+        }
+      }
+    },
+    "calendar.footnote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ kontroluje kalendář jen za běhu. Data výsledků pocházejí od vašich poskytovatelů dat a bývají předběžná."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ checks the calendar only while it is running. Earnings dates come from your data providers and are often preliminary."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ проверяет календарь только во время работы. Даты отчётности поступают от ваших поставщиков данных и часто предварительные."
+          }
+        }
+      }
+    },
+    "calendar.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plánovaná rozhodnutí centrálních bank, zveřejnění statistik a výsledky firem z vaší knihovny. Data se mohou změnit; u každé události je odkaz na zdroj."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheduled central bank decisions, statistics releases and earnings reports of instruments in your library. Dates can change; the source is linked for each event."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запланированные решения центральных банков, публикации статистики и отчёты компаний из вашей библиотеки. Даты могут меняться; у каждого события указан источник."
+          }
+        }
+      }
+    },
+    "calendar.kind.centralBankDecision": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozhodnutí centrální banky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central bank decision"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Решение центрального банка"
+          }
+        }
+      }
+    },
+    "calendar.kind.earningsReport": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hospodářské výsledky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earnings report"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отчётность компании"
+          }
+        }
+      }
+    },
+    "calendar.kind.employmentReport": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zpráva o zaměstnanosti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Employment report"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отчёт о занятости"
+          }
+        }
+      }
+    },
+    "calendar.kind.inflationRelease": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zveřejnění inflace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflation release"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Публикация инфляции"
+          }
+        }
+      }
+    },
+    "calendar.kind.other": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatní"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Другое"
+          }
+        }
+      }
+    },
+    "calendar.note.flash": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Předběžný (rychlý) odhad."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flash (preliminary) estimate."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предварительная (флэш) оценка."
+          }
+        }
+      }
+    },
+    "calendar.note.movedFromDecember": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přesunuto dříve: původně plánováno na prosinec."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moved forward: originally planned for December."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перенесено на более ранний срок: первоначально планировалось на декабрь."
+          }
+        }
+      }
+    },
+    "calendar.note.strategyOnly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pouze diskuse o strategii — na tomto zasedání se o sazbách nerozhoduje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strategy discussion only — no policy decision is scheduled at this meeting."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только обсуждение стратегии — решение по ставке на этом заседании не запланировано."
+          }
+        }
+      }
+    },
+    "calendar.previousDate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Původně plánováno na %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Originally scheduled for %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Первоначально назначено на %@"
+          }
+        }
+      }
+    },
+    "calendar.referencePeriod": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referenční období: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reference period: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отчётный период: %@"
+          }
+        }
+      }
+    },
+    "calendar.source": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdroj"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Source"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Источник"
+          }
+        }
+      }
+    },
+    "calendar.status.cancelled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrušeno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelled"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отменено"
+          }
+        }
+      }
+    },
+    "calendar.status.released": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zveřejněno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Released"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Опубликовано"
+          }
+        }
+      }
+    },
+    "calendar.status.rescheduled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přesunuto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rescheduled"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перенесено"
+          }
+        }
+      }
+    },
+    "calendar.status.scheduled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naplánováno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheduled"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запланировано"
+          }
+        }
+      }
+    },
+    "calendar.status.tentative": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Předběžně"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tentative"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предварительно"
+          }
+        }
+      }
+    },
+    "calendar.timeNotPublished": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čas zdroj neuvádí"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time not given by the source"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Время в источнике не указано"
+          }
+        }
+      }
+    },
+    "calendar.timeWithZone": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ váš čas (%2$@ %3$@)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ your time (%2$@ %3$@)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ по вашему времени (%2$@ %3$@)"
+          }
+        }
+      }
+    },
+    "calendar.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekonomický kalendář"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Economic calendar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экономический календарь"
+          }
+        }
+      }
+    },
+    "calendar.title.centralBankDecision": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: měnověpolitické rozhodnutí"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: monetary policy decision"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: решение по денежно-кредитной политике"
+          }
+        }
+      }
+    },
+    "calendar.title.earningsReport": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: hospodářské výsledky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: earnings report"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: финансовые результаты"
+          }
+        }
+      }
+    },
+    "calendar.title.employmentReport": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: zpráva o zaměstnanosti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: employment report"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: отчёт о занятости"
+          }
+        }
+      }
+    },
+    "calendar.title.inflationRelease": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: údaje o inflaci"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: inflation data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: данные по инфляции"
+          }
+        }
+      }
+    },
+    "calendar.title.other": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: zasedání"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: meeting"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: заседание"
+          }
+        }
+      }
+    },
+    "calendar.verifiedOn": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data centrálních bank a statistik ověřena %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central bank and statistics dates verified on %@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Даты центральных банков и статистики проверены %@."
+          }
+        }
+      }
+    },
     "chart.noHistory": {
       "extractionState": "manual",
       "localizations": {
@@ -2711,6 +3493,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Выйти из демо"
+          }
+        }
+      }
+    },
+    "demo.label": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Демо"
           }
         }
       }
@@ -8074,6 +8879,1317 @@
         }
       }
     },
+    "news.alsoReported": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· informovali také: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· also reported by %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· также сообщили: %@"
+          }
+        }
+      }
+    },
+    "news.category.centralBanks": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centrální banky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central banks"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Центральные банки"
+          }
+        }
+      }
+    },
+    "news.category.corporateEarnings": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hospodářské výsledky firem"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corporate earnings"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отчётность компаний"
+          }
+        }
+      }
+    },
+    "news.category.czechEconomy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Česká ekonomika"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech economy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экономика Чехии"
+          }
+        }
+      }
+    },
+    "news.category.employment": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaměstnanost"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Employment"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Занятость"
+          }
+        }
+      }
+    },
+    "news.category.energy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Energetika"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Energy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Энергетика"
+          }
+        }
+      }
+    },
+    "news.category.europeanMarkets": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evropské trhy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "European markets"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Европейские рынки"
+          }
+        }
+      }
+    },
+    "news.category.geopolitics": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geopolitika"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geopolitics"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Геополитика"
+          }
+        }
+      }
+    },
+    "news.category.globalEconomy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světová ekonomika"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Global economy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мировая экономика"
+          }
+        }
+      }
+    },
+    "news.category.inflation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Инфляция"
+          }
+        }
+      }
+    },
+    "news.category.interestRates": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úrokové sazby"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interest rates"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Процентные ставки"
+          }
+        }
+      }
+    },
+    "news.category.regulation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regulace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regulation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Регулирование"
+          }
+        }
+      }
+    },
+    "news.category.technology": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Technologie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Technology"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Технологии"
+          }
+        }
+      }
+    },
+    "news.category.usMarkets": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trhy USA"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "US markets"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рынки США"
+          }
+        }
+      }
+    },
+    "news.classifiedBecause": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zařazeno, protože text obsahuje „%@“."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classified because the text contains “%@”."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Классифицировано, так как текст содержит «%@»."
+          }
+        }
+      }
+    },
+    "news.copyrightNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazují se jen titulky a krátká shrnutí; celý text si přečtěte u zdroje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only headlines and short summaries are shown; read the full text at the source."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показаны только заголовки и краткие описания; полный текст читайте в источнике."
+          }
+        }
+      }
+    },
+    "news.effect.caveat": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jde o možné kanály vlivu, ne o předpovědi. Stejná zpráva může vyvolat různou reakci trhu podle očekávání a dalších okolností."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These are possible channels, not predictions. The same news can lead to different market reactions depending on expectations and other circumstances."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Это возможные каналы влияния, а не прогнозы. Одна и та же новость может вызвать разную реакцию рынка в зависимости от ожиданий и других обстоятельств."
+          }
+        }
+      }
+    },
+    "news.effect.centralBanks": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozhodnutí a prohlášení centrálních bank ovlivňují úrokové sazby, náklady půjček a měnové kurzy. Trhy často reagují spíše na rozdíl oproti očekávání než na samotné rozhodnutí."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central bank decisions and statements influence interest rates, borrowing costs and exchange rates. Markets often react more to the difference from expectations than to the decision itself."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Решения и заявления центральных банков влияют на ставки, стоимость заимствований и курсы валют. Рынки часто реагируют скорее на отличие от ожиданий, чем на само решение."
+          }
+        }
+      }
+    },
+    "news.effect.corporateEarnings": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výsledky firmy mohou změnit pohled investorů na budoucí zisky; reakce ceny závisí na srovnání s očekáváním, nejen na tom, zda vypadají dobře či špatně."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Company results can change investors' view of future profits; the price reaction depends on how results compare with expectations, not only on whether they look good or bad."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Результаты компании могут изменить взгляд инвесторов на будущую прибыль; реакция цены зависит от сравнения с ожиданиями, а не только от того, хороши ли результаты."
+          }
+        }
+      }
+    },
+    "news.effect.czechEconomy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "České ekonomické údaje a rozhodnutí ČNB mohou ovlivnit kurz koruny, české úrokové sazby a firmy zaměřené na domácí trh."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech economic data and ČNB decisions can affect the koruna exchange rate, Czech interest rates and companies focused on the domestic market."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чешские экономические данные и решения ЧНБ могут влиять на курс кроны, чешские ставки и компании, ориентированные на внутренний рынок."
+          }
+        }
+      }
+    },
+    "news.effect.employment": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Údaje z trhu práce mohou ovlivnit očekávání ohledně spotřeby, mezd a politiky centrálních bank."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Labour market data can influence expectations about consumer spending, wages and central bank policy."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Данные рынка труда могут влиять на ожидания относительно потребительских расходов, зарплат и политики центральных банков."
+          }
+        }
+      }
+    },
+    "news.effect.energy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceny energií různě ovlivňují náklady firem a domácností, inflaci a zisky výrobců energie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Energy prices affect costs for companies and households, inflation and the profits of energy producers in different ways."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цены на энергию по-разному влияют на расходы компаний и домохозяйств, инфляцию и прибыль производителей энергии."
+          }
+        }
+      }
+    },
+    "news.effect.europeanMarkets": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dění v Evropě může ovlivnit investice s evropskou expozicí včetně fondů a kurz eura."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Developments in Europe can affect investments with European exposure, including funds, and the euro exchange rate."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "События в Европе могут влиять на вложения с европейской экспозицией, включая фонды, и на курс евро."
+          }
+        }
+      }
+    },
+    "news.effect.geopolitics": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Politické události mohou ovlivnit obchod, ceny energií, měny a ochotu riskovat. Dopady jsou často nejisté a mohou se rychle obrátit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Political events can affect trade, energy prices, currencies and willingness to take risk. Effects are often uncertain and can reverse quickly."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Политические события могут влиять на торговлю, цены на энергию, валюты и готовность рисковать. Последствия часто неопределённы и могут быстро меняться на противоположные."
+          }
+        }
+      }
+    },
+    "news.effect.globalEconomy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změny hospodářského růstu mohou ovlivnit tržby a zisky firem a poptávku po surovinách."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changes in economic growth can affect company sales and profits and the demand for raw materials."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменения экономического роста могут влиять на продажи и прибыль компаний и на спрос на сырьё."
+          }
+        }
+      }
+    },
+    "news.effect.inflation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Údaje o inflaci mohou změnit očekávání ohledně sazeb a reálnou hodnotu pevných plateb, například kuponů."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inflation data can change expectations about interest rates and the real value of fixed payments such as bond coupons."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Данные об инфляции могут менять ожидания по ставкам и реальную стоимость фиксированных выплат, например купонов."
+          }
+        }
+      }
+    },
+    "news.effect.interestRates": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změny úrokových sazeb mohou ovlivnit náklady půjček, ocenění firem a ceny existujících dluhopisů, které se obvykle pohybují opačně než výnosy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changes in interest rates can affect borrowing costs, company valuations and the prices of existing bonds, which tend to move opposite to yields."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменения ставок могут влиять на стоимость заимствований, оценку компаний и цены уже выпущенных облигаций, которые обычно движутся противоположно доходностям."
+          }
+        }
+      }
+    },
+    "news.effect.regulation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nová pravidla mohou změnit náklady, konkurenci nebo způsob prodeje produktů; dopad závisí na podrobnostech a jejich zavedení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New rules can change costs, competition or how products may be sold; the effect depends on the details and their implementation."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новые правила могут менять расходы, конкуренцию или порядок продажи продуктов; эффект зависит от деталей и их применения."
+          }
+        }
+      }
+    },
+    "news.effect.technology": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Technologický vývoj může změnit konkurenci a očekávání růstu v odvětví; tato očekávání už často jsou v cenách."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Technology developments can change competition and growth expectations in the sector; such expectations are often already reflected in prices."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Технологические изменения могут менять конкуренцию и ожидания роста в отрасли; такие ожидания часто уже учтены в ценах."
+          }
+        }
+      }
+    },
+    "news.effect.usMarkets": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dění v USA může ovlivnit investice s americkou expozicí — včetně mnoha světových fondů — a kurz dolaru."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Developments in the United States can affect investments with US exposure — including many world funds — and the dollar exchange rate."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "События в США могут влиять на вложения с американской экспозицией, включая многие мировые фонды, и на курс доллара."
+          }
+        }
+      }
+    },
+    "news.effects": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Možné souvislosti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Possible connections"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Возможные связи"
+          }
+        }
+      }
+    },
+    "news.empty.description": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapněte zdroj zpráv v Nastavení → Poskytovatelé dat nebo změňte filtry."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable a news source in Settings → Data Providers, or change the filters."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включите источник новостей в Настройках → Поставщики данных или измените фильтры."
+          }
+        }
+      }
+    },
+    "news.empty.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné zprávy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No news"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет новостей"
+          }
+        }
+      }
+    },
+    "news.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložené zprávy se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved news could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить сохранённые новости."
+          }
+        }
+      }
+    },
+    "news.error.refreshFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zprávy se nepodařilo obnovit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "News could not be refreshed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось обновить новости."
+          }
+        }
+      }
+    },
+    "news.eventDate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· datum události %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· event date %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· дата события %@"
+          }
+        }
+      }
+    },
+    "news.filter.all": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vše"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все"
+          }
+        }
+      }
+    },
+    "news.filter.category": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kategorie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Category"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Категория"
+          }
+        }
+      }
+    },
+    "news.filter.mine": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jen moje nástroje"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only my instruments"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только мои инструменты"
+          }
+        }
+      }
+    },
+    "news.filter.type": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тип"
+          }
+        }
+      }
+    },
+    "news.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titulky od vašich poskytovatelů zpráv a oficiální tiskové zprávy. U každé zprávy je zdroj, způsob klasifikace a míra nejistoty. Zpráva není signál k jednání."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Headlines from your news providers and official press releases. Each item shows its source, how it was classified and how uncertain it is. News is not a signal to act."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заголовки от ваших поставщиков новостей и официальные пресс-релизы. У каждой новости указаны источник, классификация и степень неопределённости. Новость — не сигнал к действию."
+          }
+        }
+      }
+    },
+    "news.offline": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatelé zpráv nejsou dostupní. Zobrazují se uložené zprávy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "News providers could not be reached. Showing saved items."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось связаться с поставщиками новостей. Показаны сохранённые новости."
+          }
+        }
+      }
+    },
+    "news.openOriginal": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otevřít původní článek"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open the original article"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть оригинал"
+          }
+        }
+      }
+    },
+    "news.refresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обновить"
+          }
+        }
+      }
+    },
+    "news.related": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Souvisí: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Related: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Связано: %@"
+          }
+        }
+      }
+    },
+    "news.search": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hledat v titulcích"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search headlines"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поиск по заголовкам"
+          }
+        }
+      }
+    },
+    "news.tab.calendar": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekonomický kalendář"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Economic calendar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экономический календарь"
+          }
+        }
+      }
+    },
+    "news.tab.news": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zprávy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "News"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новости"
+          }
+        }
+      }
+    },
+    "news.tabs": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вид"
+          }
+        }
+      }
+    },
+    "news.type.forecast": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prognóza"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forecast"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прогноз"
+          }
+        }
+      }
+    },
+    "news.type.officialRelease": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oficiální zpráva"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official release"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Официальный релиз"
+          }
+        }
+      }
+    },
+    "news.type.opinion": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Názor"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opinion"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мнение"
+          }
+        }
+      }
+    },
+    "news.type.reported": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zpráva médií"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reported"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сообщение СМИ"
+          }
+        }
+      }
+    },
+    "news.type.rumour": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepotvrzená zpráva"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unconfirmed report"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Неподтверждённые сведения"
+          }
+        }
+      }
+    },
+    "news.uncertainty.high": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vysoká nejistota"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "High uncertainty"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Высокая неопределённость"
+          }
+        }
+      }
+    },
+    "news.uncertainty.low": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nízká nejistota"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low uncertainty"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Низкая неопределённость"
+          }
+        }
+      }
+    },
+    "news.uncertainty.medium": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Střední nejistota"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medium uncertainty"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Средняя неопределённость"
+          }
+        }
+      }
+    },
     "onboarding.age.from18to25": {
       "extractionState": "manual",
       "localizations": {
@@ -13429,6 +15545,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Только акции США: цены на конец дня и два года истории на бесплатном тарифе."
+          }
+        }
+      }
+    },
+    "provider.coverage.official": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiskové zprávy ECB, Fedu a České národní banky (veřejné RSS kanály, bez klíče). Stahují se jen při otevření nebo obnovení zpráv."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press releases of the ECB, the Federal Reserve and the Czech National Bank (public RSS feeds, no key). Fetched only when you open or refresh News."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пресс-релизы ЕЦБ, ФРС и Чешского национального банка (публичные RSS-ленты, без ключа). Загружаются только при открытии или обновлении новостей."
           }
         }
       }

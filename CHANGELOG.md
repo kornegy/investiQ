@@ -22,6 +22,11 @@ SemVer once releases start.
   interest, inflation, fees, currency, diversification); progress stored encrypted; finishing the course
   is explicitly not presented as readiness to invest. Lessons are generated from `Content/lessons`, so the
   languages cannot drift apart (checked in CI).
+- News: official press releases (ECB, Fed, ČNB RSS) and Finnhub news; explainable classification into 13
+  categories and five statement types with uncertainty; deduplication; related instruments and sectors;
+  cautious cause-and-effect notes; only headlines and short summaries are kept; demo news.
+- Economic calendar: central-bank decisions and statistics releases verified against official pages with
+  source links, time zones, tentative/rescheduled status; earnings dates for library instruments.
 
 ### Phase 4 — Analytics and risk
 - Bond analytics (schedules, five day counts, accrued interest, YTM/YTC, durations, convexity, full

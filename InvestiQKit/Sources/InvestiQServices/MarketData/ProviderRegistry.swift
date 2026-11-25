@@ -32,7 +32,9 @@ public struct ProviderRegistry: Sendable {
     /// Demo sessions only ever see the synthetic provider (ADR-008).
     public static func demo(clock: any TimeProvider) -> ProviderRegistry {
         let demo = DemoDataProvider(clock: clock)
-        return ProviderRegistry(marketData: [demo], fundamentals: [demo], exchangeRates: [demo], macro: [demo], bonds: [demo], etfs: [demo])
+        let news = DemoNewsProvider(clock: clock)
+        return ProviderRegistry(marketData: [demo], fundamentals: [demo], exchangeRates: [demo], macro: [demo], news: [news],
+                                earnings: [news], bonds: [demo], etfs: [demo])
     }
 
     public var isEmpty: Bool { marketData.isEmpty && exchangeRates.isEmpty }
@@ -42,9 +44,10 @@ public struct ProviderRegistry: Sendable {
 public enum ProviderCatalog {
     public static let marketProviderIDs = [TwelveDataProvider.id, AlphaVantageProvider.id, FinnhubProvider.id,
                                            MassiveProvider.id, FinancialModelingPrepProvider.id]
-    public static let allProviderIDs = marketProviderIDs + [SECEdgarProvider.id, FREDProvider.id, ECBExchangeRateProvider.id, CNBExchangeRateProvider.id]
-    /// Providers that need no key and are enabled by default (public central-bank data).
-    public static let enabledByDefault: Set<String> = [ECBExchangeRateProvider.id, CNBExchangeRateProvider.id]
+    public static let allProviderIDs = marketProviderIDs + [SECEdgarProvider.id, FREDProvider.id, ECBExchangeRateProvider.id,
+                                                            CNBExchangeRateProvider.id, OfficialNewsProvider.providerID]
+    /// Providers that need no key and are enabled by default (public central-bank data and press releases).
+    public static let enabledByDefault: Set<String> = [ECBExchangeRateProvider.id, CNBExchangeRateProvider.id, OfficialNewsProvider.providerID]
     public static let requiresKey: Set<String> = [TwelveDataProvider.id, AlphaVantageProvider.id, FinnhubProvider.id, MassiveProvider.id,
                                                   FinancialModelingPrepProvider.id, FREDProvider.id]
 
@@ -79,6 +82,7 @@ public enum ProviderCatalog {
             case SECEdgarProvider.id where preferences.secContactEmail != nil:
                 fundamentals.append(SECEdgarProvider(gateway: gateway, clock: clock, contactEmail: preferences.secContactEmail))
             case FREDProvider.id: macro.append(FREDProvider(gateway: gateway, credentials: credentials, clock: clock))
+            case OfficialNewsProvider.providerID: news.append(OfficialNewsProvider(gateway: gateway))
             default: break
             }
         }

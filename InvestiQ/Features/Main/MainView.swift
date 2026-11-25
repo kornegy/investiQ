@@ -55,6 +55,8 @@ struct SectionContainer: View {
             SimulatorView()
         case .learn:
             LearnView()
+        case .news:
+            NewsView()
         default:
             SectionPlaceholderView(section: section)
         }

@@ -39,6 +39,8 @@ public struct SessionServices: Sendable {
     public let planner: PlannerService
     public let simulator: SimulatorService
     public let learning: LearningService
+    public let news: NewsService
+    public let calendar: CalendarService
     public let profileData: ProfileDataService
     /// `nil` in demo mode (no keys are ever used there).
     public let credentials: KeychainCredentials?
@@ -70,6 +72,8 @@ public struct SessionServices: Sendable {
                                simulator: SimulatorService(store: session.userStore, portfolios: portfolios, instruments: instruments,
                                                            marketData: marketData, exchangeRates: exchangeRates, clock: clock),
                                learning: LearningService(store: session.userStore, clock: clock),
+                               news: NewsService(registry: registry, cache: session.cacheStore, instruments: instruments, clock: clock),
+                               calendar: CalendarService(registry: registry, instruments: instruments, clock: clock),
                                profileData: ProfileDataService(session: session),
                                credentials: credentials)
     }

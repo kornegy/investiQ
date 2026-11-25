@@ -44,6 +44,7 @@ public final class DataProvidersViewModel {
         FREDProvider.id: ("FRED", "provider.coverage.fred", "https://fred.stlouisfed.org/docs/api/terms_of_use.html", "https://fred.stlouisfed.org/docs/api/api_key.html"),
         ECBExchangeRateProvider.id: ("European Central Bank", "provider.coverage.ecb", "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html", nil),
         CNBExchangeRateProvider.id: ("Czech National Bank", "provider.coverage.cnb", "https://www.cnb.cz/en/terms-of-use/", nil),
+        OfficialNewsProvider.providerID: ("Official press releases (ECB, Fed, ČNB)", "provider.coverage.official", nil, nil),
     ]
 
     public func load() async {

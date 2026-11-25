@@ -101,3 +101,35 @@ provider's terms forbid local caching, its adapter sets `cachePolicy = .memoryOn
 Settings → Data Providers: enable/disable, priority order, API key entry (stored in Keychain, masked,
 never displayed again), SEC contact e-mail (explicit explanation that it is sent to the SEC in the
 User-Agent header), connection test, and a link to each provider's terms page.
+
+## 6. News and economic calendar
+
+**Official press releases** (provider `official`, no key, enabled by default, fetched only when the user
+opens or refreshes News; verified 2026-11-25):
+
+| Institution | Feed |
+|---|---|
+| European Central Bank | `https://www.ecb.europa.eu/rss/press.xml` |
+| Federal Reserve Board | `https://www.federalreserve.gov/feeds/press_all.xml` (listed as "All Press Releases" on https://www.federalreserve.gov/feeds/feeds.htm) |
+| Česká národní banka | `https://www.cnb.cz/cs/.content/rss-feed/rss-feed_tz.rss` (listed on https://www.cnb.cz/cs/obecne/rss/) |
+
+Feeds are untrusted input: markup is stripped, entities decoded, only `https` links kept, at most 200
+items per feed, descriptions cut to 300 characters; nothing is rendered as HTML. Finnhub (with a key)
+adds market and company news. Demo sessions use synthetic items whose links (`.invalid`) are never opened.
+
+**Economic calendar.** `InvestiQContent/Resources/calendar/events.json` contains only dates checked
+against the institutions' own pages on 2026-11-25, each with its source URL:
+ECB monetary policy meetings (17 Dec 2026; 2027: 4 Feb, 18 Mar, 29 Apr, 10 Jun, 22 Jul, 9 Sep, 28 Oct,
+16 Dec — https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html); FOMC (8–9 Dec 2026;
+2027 per the revised tentative schedule of 12 Nov 2026: 26–27 Jan, 16–17 Mar, 27–28 Apr, 8–9 Jun,
+27–28 Jul, 14–15 Sep, 26–27 Oct strategy discussion only, 16–17 Nov moved from December —
+https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm); ČNB monetary policy
+meetings (17 Dec 2026; 2027: 4 Feb, 25 Mar, 6 May, 23 Jun, 5 Aug, 23 Sep, 4 Nov, 16 Dec); ČSÚ CPI flash
+and final for November 2026 (4 and 10 Dec 2026); Eurostat HICP flash and final for December 2026
+(6 and 19 Jan 2027, per the ECB statistical calendar); selected BLS CPI and Employment Situation
+releases in 2027 (https://www.bls.gov/schedule/2027/home.htm). Times are stored only where the source
+states them (FOMC statement 14:00 and BLS releases 08:30, New York time); the ECB, ČNB, ČSÚ and Eurostat
+entries are date-only. Events carry `tentative` / `rescheduled` status and the previous date. Earnings
+dates come from Finnhub (or the demo provider) for instruments in the user's library. **Limitation:** the
+bundled list must be refreshed with each release (see docs/reports/KNOWN_LIMITATIONS.md); dates after
+the listed ones are not shown rather than guessed.
