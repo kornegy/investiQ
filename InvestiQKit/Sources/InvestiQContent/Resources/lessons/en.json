@@ -1,0 +1,1203 @@
+{
+ "version": 1,
+ "language": "en",
+ "lessons": [
+  {
+   "id": "what-is-investing",
+   "order": 1,
+   "stage": 1,
+   "minutes": 4,
+   "calculator": null,
+   "title": "What investing is",
+   "summary": "Investing means putting money into assets that may earn a return over time, accepting that the value can also fall.",
+   "sections": [
+    {
+     "heading": "Saving, investing and spending",
+     "body": "Saving keeps money safe and available, usually in a bank account. Investing buys a share of something — a company, a loan to a government, a fund — that may grow or pay income. In exchange for that possibility you accept uncertainty: the value moves up and down, and you can get back less than you put in."
+    },
+    {
+     "heading": "Why people invest",
+     "body": "Over long periods, money left in cash tends to lose purchasing power because of inflation. Investing aims to grow wealth faster than prices rise, for goals that are years away, such as retirement. Money needed soon, or for essentials, usually stays in savings."
+    }
+   ],
+   "analogy": "Saving is like storing seeds in a jar; investing is planting them. A planted seed can grow — or be eaten by birds.",
+   "keyPoints": [
+    "Investing accepts uncertainty in exchange for possible growth.",
+    "It suits money you will not need for several years.",
+    "An emergency fund and the repayment of expensive debt usually come first."
+   ],
+   "quiz": [
+    {
+     "question": "What is the main trade-off in investing?",
+     "options": [
+      "No risk and a certain profit",
+      "Possible growth in exchange for accepting that value can fall",
+      "Higher fees for more safety"
+     ],
+     "correctIndex": 1,
+     "explanation": "Investments can grow, but their value can also fall below what you paid."
+    },
+    {
+     "question": "Which money is usually not invested?",
+     "options": [
+      "Money for a goal in 15 years",
+      "Spare money after all bills",
+      "Money needed next month for rent"
+     ],
+     "correctIndex": 2,
+     "explanation": "Money for essentials or near-term needs should not depend on market prices."
+    },
+    {
+     "question": "Why does cash lose value over time?",
+     "options": [
+      "Inflation reduces what money can buy",
+      "Banks charge you to hold it",
+      "It is converted into shares"
+     ],
+     "correctIndex": 0,
+     "explanation": "Rising prices mean the same amount buys less in future."
+    }
+   ]
+  },
+  {
+   "id": "stock-exchange",
+   "order": 2,
+   "stage": 1,
+   "minutes": 4,
+   "calculator": null,
+   "title": "What a stock exchange is",
+   "summary": "A stock exchange is a regulated marketplace where buyers and sellers of securities meet under common rules.",
+   "sections": [
+    {
+     "heading": "A marketplace with rules",
+     "body": "Exchanges such as the Prague Stock Exchange, Xetra or the New York Stock Exchange list securities and match buy and sell orders. Listed companies must publish information regularly, and trading follows published rules and opening hours. This makes prices visible and trading fairer than private deals."
+    },
+    {
+     "heading": "Who takes part",
+     "body": "Private investors do not trade on the exchange directly; they send orders through a broker who is a member or has access. Market makers and other professionals often provide quotes. Supervisors such as the Czech National Bank in Czechia oversee the market."
+    }
+   ],
+   "analogy": "An exchange is like a well-lit farmers' market with an official notice board: everyone sees the prices, and stallholders must follow the market rules.",
+   "keyPoints": [
+    "Exchanges bring buyers and sellers together under common rules.",
+    "Listed companies must publish regular information.",
+    "Individuals trade through brokers, not directly."
+   ],
+   "quiz": [
+    {
+     "question": "What does a stock exchange do?",
+     "options": [
+      "Matches buy and sell orders under common rules",
+      "Guarantees that prices rise",
+      "Lends money to investors"
+     ],
+     "correctIndex": 0,
+     "explanation": "It is a regulated marketplace; it does not promise any price movement."
+    },
+    {
+     "question": "How does a private investor usually buy a listed share?",
+     "options": [
+      "By phoning the company",
+      "By visiting the exchange",
+      "Through a broker"
+     ],
+     "correctIndex": 2,
+     "explanation": "Brokers route orders to the exchange for their clients."
+    },
+    {
+     "question": "Why must listed companies publish information?",
+     "options": [
+      "To advertise their products",
+      "So that investors can make informed decisions",
+      "To set the share price"
+     ],
+     "correctIndex": 1,
+     "explanation": "Disclosure rules help all investors see the same important facts."
+    }
+   ]
+  },
+  {
+   "id": "how-a-broker-works",
+   "order": 3,
+   "stage": 1,
+   "minutes": 5,
+   "calculator": null,
+   "title": "How a broker works",
+   "summary": "A broker is a licensed firm that passes your orders to the market, holds your securities and reports to you.",
+   "sections": [
+    {
+     "heading": "What a broker does",
+     "body": "A broker opens an account for you after checking your identity, accepts your orders, sends them to an exchange or another trading venue, and records the securities you own. In the EU, brokers need a licence from a supervisor and must follow rules on client protection, costs disclosure and best execution."
+    },
+    {
+     "heading": "Safety and costs",
+     "body": "Client securities are normally held separately from the broker's own assets. If a broker fails, investor compensation schemes may cover missing client assets up to a limit — this protects against the broker's failure, not against falling prices. Check the licence in the supervisor's official register and read the full price list: commissions, currency conversion, custody and inactivity fees."
+    }
+   ],
+   "analogy": "A broker is like a licensed estate agent and safe-deposit box in one: it arranges the deal and keeps your property in your name.",
+   "keyPoints": [
+    "Check a broker's licence in the official register of the supervisor.",
+    "Investor compensation covers a failed intermediary, not market losses.",
+    "Read the complete fee list, including currency conversion."
+   ],
+   "quiz": [
+    {
+     "question": "What does investor compensation protect against?",
+     "options": [
+      "Falling share prices",
+      "Bad investment choices",
+      "Missing client assets if the intermediary fails"
+     ],
+     "correctIndex": 2,
+     "explanation": "It concerns the failure of the firm, never market losses."
+    },
+    {
+     "question": "Where should you verify a broker's licence?",
+     "options": [
+      "In the supervisor's official register",
+      "In the broker's advertisement",
+      "On social media reviews"
+     ],
+     "correctIndex": 0,
+     "explanation": "Only the regulator's register is authoritative."
+    },
+    {
+     "question": "Which cost is often overlooked?",
+     "options": [
+      "The share price",
+      "Currency conversion fees",
+      "The company's revenue"
+     ],
+     "correctIndex": 1,
+     "explanation": "Converting currencies can cost more than the commission itself."
+    }
+   ]
+  },
+  {
+   "id": "what-is-a-stock",
+   "order": 4,
+   "stage": 2,
+   "minutes": 5,
+   "calculator": null,
+   "title": "What a stock is",
+   "summary": "A share (stock) is a small piece of ownership in a company, with a claim on part of its future profits.",
+   "sections": [
+    {
+     "heading": "Owning part of a business",
+     "body": "When you buy a share, you become a co-owner of the company. Shareholders may receive dividends, can usually vote at the general meeting, and benefit if the business becomes more valuable. But they are paid last: if the company fails, lenders are repaid first and shareholders often lose everything they invested."
+    },
+    {
+     "heading": "Why share prices move",
+     "body": "The price reflects what buyers and sellers think the company's future profits are worth today. New results, interest rates, competition and the general mood all change that view. Prices can move a lot even when the business itself changes little."
+    }
+   ],
+   "analogy": "Owning a share is like owning one slice of a pizzeria: you share in its success, but if it closes, the bank that lent it money is repaid before you.",
+   "keyPoints": [
+    "A share is part ownership of a company.",
+    "Shareholders benefit from growth but are paid last in a bankruptcy.",
+    "Prices reflect expectations and can swing strongly."
+   ],
+   "quiz": [
+    {
+     "question": "What does a share represent?",
+     "options": [
+      "A loan to the company",
+      "Part ownership of the company",
+      "A guaranteed dividend"
+     ],
+     "correctIndex": 1,
+     "explanation": "Shareholders are co-owners; dividends are never guaranteed."
+    },
+    {
+     "question": "Who is repaid first if a company fails?",
+     "options": [
+      "Lenders and creditors",
+      "Shareholders",
+      "Whoever bought most recently"
+     ],
+     "correctIndex": 0,
+     "explanation": "Shareholders rank last and often recover nothing."
+    },
+    {
+     "question": "What mainly drives a share price?",
+     "options": [
+      "The number of employees",
+      "The colour of the logo",
+      "Expectations about future profits"
+     ],
+     "correctIndex": 2,
+     "explanation": "Prices reflect what investors expect the business to earn."
+    }
+   ]
+  },
+  {
+   "id": "what-is-a-bond",
+   "order": 5,
+   "stage": 2,
+   "minutes": 5,
+   "calculator": null,
+   "title": "What a bond is",
+   "summary": "A bond is a loan you make to a government or company in exchange for interest (coupons) and repayment at maturity.",
+   "sections": [
+    {
+     "heading": "Lending instead of owning",
+     "body": "A bond has a face value, a coupon rate and a maturity date. The issuer promises to pay the coupons and return the face value at maturity. Bondholders do not own the issuer; they are creditors and are repaid before shareholders if the issuer gets into trouble."
+    },
+    {
+     "heading": "Risks of bonds",
+     "body": "The main risks are default (the issuer cannot pay), interest rates (when market rates rise, existing bonds with lower coupons fall in price), inflation (fixed payments buy less) and liquidity. Credit ratings summarise default risk but can be wrong or change. If you hold a high-quality bond to maturity, interim price swings do not change the payments you were promised."
+    }
+   ],
+   "analogy": "Buying a bond is like lending money to a friend with a written promise: regular interest and the full amount back on a set date — as long as the friend can pay.",
+   "keyPoints": [
+    "Bondholders are lenders, not owners.",
+    "Bond prices fall when market interest rates rise.",
+    "Default risk depends on the issuer; ratings summarise it imperfectly."
+   ],
+   "quiz": [
+    {
+     "question": "What happens to existing bond prices when market interest rates rise?",
+     "options": [
+      "They usually fall",
+      "They usually rise",
+      "Nothing"
+     ],
+     "correctIndex": 0,
+     "explanation": "New bonds pay more, so older bonds with lower coupons become less attractive."
+    },
+    {
+     "question": "What does a credit rating describe?",
+     "options": [
+      "The expected share price",
+      "The coupon rate",
+      "An agency's view of default risk"
+     ],
+     "correctIndex": 2,
+     "explanation": "Ratings are opinions about the issuer's ability to pay."
+    },
+    {
+     "question": "Who is repaid first if a company fails?",
+     "options": [
+      "Shareholders",
+      "Bondholders",
+      "Both equally"
+     ],
+     "correctIndex": 1,
+     "explanation": "Creditors such as bondholders rank ahead of shareholders."
+    }
+   ]
+  },
+  {
+   "id": "what-is-an-etf",
+   "order": 6,
+   "stage": 2,
+   "minutes": 5,
+   "calculator": null,
+   "title": "What an ETF is",
+   "summary": "An exchange-traded fund (ETF) is a fund that holds many securities and trades on an exchange like a share.",
+   "sections": [
+    {
+     "heading": "Many securities in one",
+     "body": "Most ETFs track an index, for example a world stock index or a government bond index. One purchase gives you a small slice of hundreds or thousands of securities, which spreads company-specific risk. In the EU, funds sold to private investors are usually UCITS funds with a Key Information Document (KID)."
+    },
+    {
+     "heading": "What to check",
+     "body": "Look at the ongoing charges (TER), what the index contains, the fund's currency exposure (often different from its trading currency), whether it distributes or accumulates income, the replication method (physical or synthetic) and the fund size. An ETF still falls when its market falls — diversification reduces some risks but not market risk."
+    }
+   ],
+   "analogy": "An ETF is like a ready-made fruit basket: instead of choosing every fruit yourself, you buy a basket assembled by a published recipe.",
+   "keyPoints": [
+    "An ETF spreads money across many securities in one trade.",
+    "It still carries the risk of its whole market.",
+    "Costs, index, currency exposure and replication method matter."
+   ],
+   "quiz": [
+    {
+     "question": "What risk does an ETF on a broad index reduce?",
+     "options": [
+      "Market risk",
+      "Inflation risk",
+      "The risk of a single company failing"
+     ],
+     "correctIndex": 2,
+     "explanation": "Spreading across many companies reduces company-specific risk, not the risk of the whole market."
+    },
+    {
+     "question": "What is the TER?",
+     "options": [
+      "The fund's tax rate",
+      "The fund's ongoing annual costs",
+      "The trading hours"
+     ],
+     "correctIndex": 1,
+     "explanation": "The total expense ratio is deducted from the fund every year."
+    },
+    {
+     "question": "Which document describes an EU retail fund's key facts?",
+     "options": [
+      "The KID",
+      "The annual tax return",
+      "The broker's advert"
+     ],
+     "correctIndex": 0,
+     "explanation": "UCITS funds must provide a Key Information Document."
+    }
+   ]
+  },
+  {
+   "id": "how-prices-form",
+   "order": 7,
+   "stage": 2,
+   "minutes": 4,
+   "calculator": null,
+   "title": "How stock prices are determined",
+   "summary": "Prices come from orders: a trade happens when a buyer's price meets a seller's price.",
+   "sections": [
+    {
+     "heading": "Supply, demand and the order book",
+     "body": "The exchange keeps an order book of bids (prices buyers offer) and asks (prices sellers want). The gap between the best bid and the best ask is the spread. When more people want to buy than sell at current prices, the price tends to rise until enough sellers appear — and the reverse."
+    },
+    {
+     "heading": "Information and expectations",
+     "body": "Investors buy or sell when their view of a company's future changes: results, interest rates, news, or simply mood. Because prices already include what is widely known, a good piece of news may not move the price if it was expected. Short-term moves are often noise; nobody can reliably predict them."
+    }
+   ],
+   "analogy": "It works like an auction that never ends: the price is wherever the most eager buyer and the most eager seller currently agree.",
+   "keyPoints": [
+    "Prices form where buyers' and sellers' orders meet.",
+    "The spread is the gap between the best buy and sell prices.",
+    "Expected news is often already in the price."
+   ],
+   "quiz": [
+    {
+     "question": "What is the spread?",
+     "options": [
+      "The commission of the broker",
+      "The difference between the best bid and the best ask",
+      "The daily price change"
+     ],
+     "correctIndex": 1,
+     "explanation": "A wide spread is an extra cost when you trade."
+    },
+    {
+     "question": "Why might a share not rise after good results?",
+     "options": [
+      "The results were already expected and priced in",
+      "Exchanges forbid rises after results",
+      "Good results always lower prices"
+     ],
+     "correctIndex": 0,
+     "explanation": "Prices reflect expectations, not only news."
+    },
+    {
+     "question": "Can short-term price moves be predicted reliably?",
+     "options": [
+      "Yes, with chart patterns",
+      "Yes, by experts",
+      "No, they are largely unpredictable"
+     ],
+     "correctIndex": 2,
+     "explanation": "Short-term moves are dominated by new information and noise."
+    }
+   ]
+  },
+  {
+   "id": "dividends",
+   "order": 8,
+   "stage": 2,
+   "minutes": 4,
+   "calculator": null,
+   "title": "What dividends are",
+   "summary": "A dividend is a share of profits that a company may pay to its shareholders — it is never guaranteed.",
+   "sections": [
+    {
+     "heading": "How dividends work",
+     "body": "The company's management proposes a dividend and shareholders approve it. To receive it you must own the share before the ex-dividend date. On that date the share price usually drops by roughly the dividend amount, because cash leaves the company. Taxes are often withheld in the company's country."
+    },
+    {
+     "heading": "What dividends do not mean",
+     "body": "A high dividend yield can be a warning sign: the price may have fallen because investors expect problems, and the dividend may be cut. A company paying more than it earns cannot do so for long. Companies that pay no dividend may reinvest profits instead."
+    }
+   ],
+   "analogy": "A dividend is like an orchard owner handing out some of the harvest: the orchard is worth a little less right after, and a bad year can mean no fruit to share.",
+   "keyPoints": [
+    "Dividends are decided by the company and can be cut.",
+    "The price usually falls by about the dividend on the ex-dividend date.",
+    "A very high yield deserves extra scrutiny."
+   ],
+   "quiz": [
+    {
+     "question": "Are dividends guaranteed?",
+     "options": [
+      "No, the company can reduce or stop them",
+      "Yes, by law",
+      "Yes, if the company is large"
+     ],
+     "correctIndex": 0,
+     "explanation": "Dividends depend on the company's decisions and finances."
+    },
+    {
+     "question": "What usually happens to the share price on the ex-dividend date?",
+     "options": [
+      "It doubles",
+      "It is unaffected",
+      "It drops by about the dividend"
+     ],
+     "correctIndex": 2,
+     "explanation": "Cash leaves the company, so its value falls by about that amount."
+    },
+    {
+     "question": "Why can a very high dividend yield be a warning sign?",
+     "options": [
+      "High yields are illegal",
+      "The price may have fallen because problems are expected",
+      "It means the company is growing fast"
+     ],
+     "correctIndex": 1,
+     "explanation": "Yield = dividend / price; a falling price raises the yield."
+    }
+   ]
+  },
+  {
+   "id": "coupons",
+   "order": 9,
+   "stage": 2,
+   "minutes": 4,
+   "calculator": null,
+   "title": "What a coupon is",
+   "summary": "A coupon is the interest a bond pays, usually once or twice a year, as a percentage of its face value.",
+   "sections": [
+    {
+     "heading": "Coupon, price and yield",
+     "body": "A bond with a face value of 1 000 and a 4 % annual coupon pays 40 a year. If you buy it below face value, your yield to maturity is higher than 4 %; above face value, lower. The coupon is fixed for most bonds, but the price — and therefore the yield for a new buyer — changes every day."
+    },
+    {
+     "heading": "Accrued interest",
+     "body": "Between coupon dates, interest builds up day by day. When you buy a bond, you usually pay the seller the interest accrued since the last coupon, and you receive the whole next coupon. Quoted bond prices are usually 'clean' (without accrued interest) and in percent of face value."
+    }
+   ],
+   "analogy": "A coupon is like rent paid by a tenant: a fixed amount on fixed dates, as long as the tenant can pay.",
+   "keyPoints": [
+    "Coupon = interest in percent of face value.",
+    "Yield depends on the price you pay, not only the coupon.",
+    "Buyers usually pay the seller accrued interest."
+   ],
+   "quiz": [
+    {
+     "question": "A bond with face value 1 000 has a 4 % annual coupon. How much does it pay per year?",
+     "options": [
+      "4",
+      "40",
+      "400"
+     ],
+     "correctIndex": 1,
+     "explanation": "4 % of 1 000 is 40."
+    },
+    {
+     "question": "If you buy a bond below face value, how does your yield compare to the coupon rate?",
+     "options": [
+      "Higher",
+      "Lower",
+      "Always equal"
+     ],
+     "correctIndex": 0,
+     "explanation": "You also gain the difference up to face value at maturity."
+    },
+    {
+     "question": "What is accrued interest?",
+     "options": [
+      "A penalty for late payment",
+      "The bond's credit rating",
+      "Interest built up since the last coupon"
+     ],
+     "correctIndex": 2,
+     "explanation": "Buyers compensate sellers for the interest earned so far."
+    }
+   ]
+  },
+  {
+   "id": "compound-interest",
+   "order": 10,
+   "stage": 3,
+   "minutes": 5,
+   "calculator": "compoundInterest",
+   "title": "What compound interest is",
+   "summary": "Compounding means earning returns on earlier returns, so growth accelerates over long periods.",
+   "sections": [
+    {
+     "heading": "Returns on returns",
+     "body": "If 1 000 earns 5 % in a year, you have 1 050. In the second year, 5 % is earned on 1 050, giving 1 102.50 — the extra 2.50 is interest on interest. Over decades this effect becomes large: at a constant 5 %, money roughly doubles in about 14 years."
+    },
+    {
+     "heading": "Time matters, and so do costs",
+     "body": "Compounding rewards starting early and leaving money invested. It works against you too: fees and inflation compound as well, and debt with high interest compounds quickly. Real investments do not grow at a constant rate; the calculator shows the arithmetic, not a forecast."
+    }
+   ],
+   "analogy": "Compounding is like a snowball rolling downhill: the bigger it gets, the more snow it picks up with each turn.",
+   "keyPoints": [
+    "Compounding means earning on earlier earnings.",
+    "Time is the most powerful factor.",
+    "Costs, inflation and debt interest compound too."
+   ],
+   "quiz": [
+    {
+     "question": "1 000 grows 10 % a year for two years. What is the result?",
+     "options": [
+      "1 200",
+      "1 100",
+      "1 210"
+     ],
+     "correctIndex": 2,
+     "explanation": "1 000 × 1.1 × 1.1 = 1 210; the extra 10 is interest on interest."
+    },
+    {
+     "question": "Which factor makes compounding most powerful?",
+     "options": [
+      "A long time horizon",
+      "Checking prices daily",
+      "Frequent trading"
+     ],
+     "correctIndex": 0,
+     "explanation": "The longer money compounds, the larger the effect."
+    },
+    {
+     "question": "Does compounding also apply to costs?",
+     "options": [
+      "No, only to returns",
+      "Yes, fees and debt interest compound too",
+      "Only for bonds"
+     ],
+     "correctIndex": 1,
+     "explanation": "A yearly fee reduces the base on which all later returns are earned."
+    }
+   ]
+  },
+  {
+   "id": "inflation",
+   "order": 11,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": "inflation",
+   "title": "What inflation is",
+   "summary": "Inflation is the general rise in prices; it reduces what a fixed amount of money can buy.",
+   "sections": [
+    {
+     "heading": "Purchasing power",
+     "body": "If inflation is 3 % a year, something costing 100 today costs about 103 next year. Money kept in cash earning less than inflation loses real value. Over 20 years at 3 %, the purchasing power of 100 shrinks to about 55."
+    },
+    {
+     "heading": "Nominal and real returns",
+     "body": "A nominal return is the change in money terms; a real return subtracts inflation. A savings account paying 2 % while inflation is 4 % has a real return of about −2 %. Central banks such as the Czech National Bank and the European Central Bank aim for inflation of around 2 % and use interest rates to influence it."
+    }
+   ],
+   "analogy": "Inflation is like a slow leak in a tyre: you hardly notice it day to day, but over a long journey it matters a lot.",
+   "keyPoints": [
+    "Inflation reduces the purchasing power of money.",
+    "Real return ≈ nominal return − inflation.",
+    "Cash and fixed payments are most exposed."
+   ],
+   "quiz": [
+    {
+     "question": "Savings earn 2 % while inflation is 4 %. What is the approximate real return?",
+     "options": [
+      "−2 %",
+      "6 %",
+      "2 %"
+     ],
+     "correctIndex": 0,
+     "explanation": "Real ≈ 2 % − 4 % = −2 %: you can buy less than before."
+    },
+    {
+     "question": "Who is most exposed to inflation?",
+     "options": [
+      "Owners of companies that can raise prices",
+      "Holders of a fixed income",
+      "Nobody"
+     ],
+     "correctIndex": 1,
+     "explanation": "Fixed payments lose purchasing power when prices rise."
+    },
+    {
+     "question": "What do central banks usually use to influence inflation?",
+     "options": [
+      "Share buybacks",
+      "Interest rates",
+      "Exchange opening hours"
+     ],
+     "correctIndex": 1,
+     "explanation": "Higher rates tend to slow borrowing and spending."
+    }
+   ]
+  },
+  {
+   "id": "diversification",
+   "order": 12,
+   "stage": 3,
+   "minutes": 5,
+   "calculator": "diversification",
+   "title": "What diversification is",
+   "summary": "Diversification means spreading money across many investments so that one failure does less damage.",
+   "sections": [
+    {
+     "heading": "Why spreading works",
+     "body": "Different companies, sectors and countries do not all move together. When some fall, others may hold up. Combining assets that are not perfectly correlated lowers the ups and downs of the whole portfolio without necessarily lowering the expected return."
+    },
+    {
+     "heading": "Its limits",
+     "body": "Diversification reduces company-specific risk but cannot remove market risk: in a broad crisis most shares fall together, and correlations often rise exactly then. Owning ten technology companies is less diversified than it looks. Diversification also does not guarantee a profit or protect against all loss."
+    }
+   ],
+   "analogy": "Don't carry all your eggs in one basket — but remember that if you trip, several baskets can still fall at once.",
+   "keyPoints": [
+    "Spreading across uncorrelated assets reduces portfolio swings.",
+    "It reduces company risk, not market risk.",
+    "Correlations tend to rise in crises."
+   ],
+   "quiz": [
+    {
+     "question": "Which risk can diversification reduce most?",
+     "options": [
+      "The risk of the whole market falling",
+      "The risk of a single company failing",
+      "Inflation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Company-specific risk shrinks as you add more independent holdings."
+    },
+    {
+     "question": "Ten technology companies are…",
+     "options": [
+      "Fully diversified",
+      "Risk-free",
+      "Concentrated in one sector"
+     ],
+     "correctIndex": 2,
+     "explanation": "They often react to the same news and move together."
+    },
+    {
+     "question": "What often happens to correlations in a crisis?",
+     "options": [
+      "They tend to rise",
+      "They become zero",
+      "They always fall"
+     ],
+     "correctIndex": 0,
+     "explanation": "Many assets fall together when fear spreads."
+    }
+   ]
+  },
+  {
+   "id": "volatility",
+   "order": 13,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": null,
+   "title": "What volatility is",
+   "summary": "Volatility measures how strongly a price swings up and down; it is a common measure of risk.",
+   "sections": [
+    {
+     "heading": "Measuring swings",
+     "body": "Volatility is usually the standard deviation of returns, often expressed per year. A broad stock index has historically had annual volatility of roughly 15–20 %, single shares often much more, and short-term government bonds much less. Higher volatility means a wider range of possible outcomes over short periods."
+    },
+    {
+     "heading": "What it does and does not tell you",
+     "body": "Volatility describes the past size of swings, not their direction, and it changes over time — it jumps in crises. It does not show the largest possible loss. For money needed soon, high volatility is a real problem; for very long horizons, it matters mainly if you might be forced to sell at a bad moment."
+    }
+   ],
+   "analogy": "Volatility is like the waves on a lake: it tells you how rough the water has been, not where the boat will end up.",
+   "keyPoints": [
+    "Volatility measures the size of price swings.",
+    "It describes the past and changes over time.",
+    "It is not the maximum possible loss."
+   ],
+   "quiz": [
+    {
+     "question": "What does volatility measure?",
+     "options": [
+      "Whether a price will rise",
+      "The company's profits",
+      "How strongly the price swings"
+     ],
+     "correctIndex": 2,
+     "explanation": "It is about the size of moves, not their direction."
+    },
+    {
+     "question": "Is volatility constant over time?",
+     "options": [
+      "No, it often jumps in crises",
+      "Yes, always",
+      "Only for bonds"
+     ],
+     "correctIndex": 0,
+     "explanation": "Calm periods can be followed by very turbulent ones."
+    },
+    {
+     "question": "Why does volatility matter most for money needed soon?",
+     "options": [
+      "It increases fees",
+      "You might have to sell after a fall",
+      "It changes the currency"
+     ],
+     "correctIndex": 1,
+     "explanation": "Short horizons leave no time to recover from a drop."
+    }
+   ]
+  },
+  {
+   "id": "market-risk",
+   "order": 14,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": null,
+   "title": "What market risk is",
+   "summary": "Market risk is the risk that a whole market falls, taking most investments in it down together.",
+   "sections": [
+    {
+     "heading": "Risk you cannot diversify away",
+     "body": "Recessions, interest-rate shocks, pandemics or financial crises can push almost all shares down at once. Broad stock markets have fallen by 30–50 % several times in the last hundred years, and recoveries have sometimes taken many years. No selection of shares within the same market avoids this."
+    },
+    {
+     "heading": "Living with market risk",
+     "body": "What helps is matching risk to time: money for the long term can ride out downturns more easily than money needed soon. Mixing different asset types (for example shares and high-quality bonds) and keeping an emergency fund reduce the chance of being forced to sell at a low point."
+    }
+   ],
+   "analogy": "Market risk is the weather: you can choose your clothes and your route, but you cannot stop the rain.",
+   "keyPoints": [
+    "Market risk affects most investments in a market at once.",
+    "It cannot be removed by picking more shares.",
+    "Time horizon and asset mix are the main tools to live with it."
+   ],
+   "quiz": [
+    {
+     "question": "Can buying more shares in the same market remove market risk?",
+     "options": [
+      "No",
+      "Yes",
+      "Only with ETFs"
+     ],
+     "correctIndex": 0,
+     "explanation": "Market risk is shared by nearly all investments in the market."
+    },
+    {
+     "question": "Which helps most to avoid selling in a downturn?",
+     "options": [
+      "Following social media tips",
+      "An emergency fund and a suitable time horizon",
+      "Checking prices more often"
+     ],
+     "correctIndex": 1,
+     "explanation": "If you don't need the money now, you are not forced to sell."
+    },
+    {
+     "question": "Have broad stock markets fallen by 30–50 % in the past?",
+     "options": [
+      "Never",
+      "Only once",
+      "Several times"
+     ],
+     "correctIndex": 2,
+     "explanation": "Large declines have happened repeatedly and can happen again."
+    }
+   ]
+  },
+  {
+   "id": "fees",
+   "order": 15,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": "feeDrag",
+   "title": "What fees are",
+   "summary": "Fees are the costs of investing — commissions, fund charges, currency conversion and more — and they compound against you.",
+   "sections": [
+    {
+     "heading": "Where costs hide",
+     "body": "Typical costs are trading commissions, the bid–ask spread, currency conversion, fund ongoing charges (TER), custody or account fees, and taxes. Some are visible on each trade; others are taken quietly from the fund's value every day. EU rules require firms to show costs in advance and in an annual statement."
+    },
+    {
+     "heading": "Why small percentages matter",
+     "body": "A 1 % yearly fee looks small, but over 30 years it can take a large share of the final amount, because the fee is charged on the growing total every year. Costs are one of the few things an investor fully controls. Frequent trading multiplies commissions and spreads."
+    }
+   ],
+   "analogy": "Fees are like a small hole in a bucket you fill for decades: each day only a few drops escape, but at the end the bucket is noticeably lighter.",
+   "keyPoints": [
+    "Costs include commissions, spreads, FX conversion, fund charges and taxes.",
+    "Yearly percentage fees compound over time.",
+    "Costs are one of the few things investors control."
+   ],
+   "quiz": [
+    {
+     "question": "Which of these is a cost of investing?",
+     "options": [
+      "The dividend",
+      "The currency conversion fee",
+      "The coupon"
+     ],
+     "correctIndex": 1,
+     "explanation": "Converting currency usually costs a fee or a worse rate."
+    },
+    {
+     "question": "Why can a 1 % yearly fee matter a lot over 30 years?",
+     "options": [
+      "It is charged only once",
+      "It is refunded at the end",
+      "It is charged every year on a growing amount"
+     ],
+     "correctIndex": 2,
+     "explanation": "The fee compounds just like returns do."
+    },
+    {
+     "question": "What multiplies trading costs?",
+     "options": [
+      "Frequent trading",
+      "Long holding periods",
+      "Reading the KID"
+     ],
+     "correctIndex": 0,
+     "explanation": "Every trade pays commission and spread again."
+    }
+   ]
+  },
+  {
+   "id": "currency-risk",
+   "order": 16,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": "currency",
+   "title": "What currency risk is",
+   "summary": "Currency risk is the chance that exchange-rate moves change the value of foreign investments in your own currency.",
+   "sections": [
+    {
+     "heading": "Two returns in one",
+     "body": "If you live in Czechia and buy a US share, your result in koruna depends on the share price in dollars and on the USD/CZK rate. A share that gains 10 % in dollars can still lose money in koruna if the dollar weakens enough against the koruna — and the reverse."
+    },
+    {
+     "heading": "What determines exposure",
+     "body": "What matters is the currency of the underlying assets, not the currency you trade in. A world equity ETF traded in euros still holds mostly US-dollar assets. Some funds hedge currency risk, which reduces it at a cost. Currency moves can be large over a few years and are hard to predict."
+    }
+   ],
+   "analogy": "Currency risk is like shopping abroad with your card: the price on the shelf is only half the story — the exchange rate decides what you really pay.",
+   "keyPoints": [
+    "Foreign investments carry the share's return and the exchange-rate change.",
+    "Exposure depends on the underlying assets' currencies.",
+    "Currency hedging reduces this risk at a cost."
+   ],
+   "quiz": [
+    {
+     "question": "A US share rises 10 % in dollars while the dollar falls 10 % against the koruna. Roughly what is the result in koruna?",
+     "options": [
+      "+20 %",
+      "+10 %",
+      "About −1 %"
+     ],
+     "correctIndex": 2,
+     "explanation": "1.10 × 0.90 = 0.99, so about −1 %."
+    },
+    {
+     "question": "A world ETF trades in euros. Which currencies drive its currency risk?",
+     "options": [
+      "Those of the assets it holds",
+      "Only the euro",
+      "None"
+     ],
+     "correctIndex": 0,
+     "explanation": "Exposure follows the holdings, not the trading currency."
+    },
+    {
+     "question": "What does currency hedging do?",
+     "options": [
+      "Doubles currency risk",
+      "Reduces currency risk, at a cost",
+      "Removes market risk"
+     ],
+     "correctIndex": 1,
+     "explanation": "Hedging offsets currency moves but has costs and is never perfect."
+    }
+   ]
+  },
+  {
+   "id": "orders",
+   "order": 17,
+   "stage": 4,
+   "minutes": 4,
+   "calculator": null,
+   "title": "How market and limit orders work",
+   "summary": "A market order trades at the best available price now; a limit order trades only at your price or better.",
+   "sections": [
+    {
+     "heading": "Market orders",
+     "body": "A market order is executed immediately against the best opposite offers in the order book. You know it will be filled but not the exact price: in fast markets or with thinly traded securities, the fill can be noticeably worse than the last price you saw."
+    },
+    {
+     "heading": "Limit orders",
+     "body": "A limit order sets the maximum price you will pay (buy) or the minimum you will accept (sell). You control the price but not whether the order is executed at all; it may wait or expire. For less liquid securities, limit orders protect against unexpectedly bad prices. This lesson explains the concepts only — InvestiQ does not place real orders."
+    }
+   ],
+   "analogy": "A market order is like saying 'I'll take it at whatever it costs'; a limit order is like saying 'only if it costs at most this much'.",
+   "keyPoints": [
+    "Market order: certain execution, uncertain price.",
+    "Limit order: certain price limit, uncertain execution.",
+    "With thinly traded securities, limit orders reduce surprises."
+   ],
+   "quiz": [
+    {
+     "question": "What does a limit buy order guarantee?",
+     "options": [
+      "That it will be executed",
+      "That you won't pay more than your limit",
+      "A profit"
+     ],
+     "correctIndex": 1,
+     "explanation": "The price is capped, but execution is not guaranteed."
+    },
+    {
+     "question": "When can a market order fill at a surprising price?",
+     "options": [
+      "In fast or thinly traded markets",
+      "Never",
+      "Only on Fridays"
+     ],
+     "correctIndex": 0,
+     "explanation": "Few offers or fast moves mean the best available price can jump."
+    },
+    {
+     "question": "Does InvestiQ send orders to brokers?",
+     "options": [
+      "Yes, automatically",
+      "Yes, after confirmation",
+      "No, never"
+     ],
+     "correctIndex": 2,
+     "explanation": "InvestiQ is an educational and analytical tool without trade execution."
+    }
+   ]
+  },
+  {
+   "id": "investing-vs-speculation",
+   "order": 18,
+   "stage": 4,
+   "minutes": 4,
+   "calculator": null,
+   "title": "How investing differs from speculation",
+   "summary": "Investing relies on the long-term value of assets; speculation tries to profit from short-term price moves.",
+   "sections": [
+    {
+     "heading": "Different questions",
+     "body": "An investor asks what an asset is likely to produce over many years — profits, interest, rents — and what is a reasonable price for that. A speculator asks where the price will be next week. Speculation is not illegal, but its results depend heavily on timing and luck, and costs from frequent trading add up."
+    },
+    {
+     "heading": "Warning signs of speculation",
+     "body": "Buying because a price 'is going up', borrowing to invest, trading many times a week, using leveraged products, or chasing tips from social media are typical signs. Studies of private investors have repeatedly found that those who trade most tend to earn less after costs."
+    }
+   ],
+   "analogy": "Investing is like planting an orchard for its fruit; speculating is like betting on what the orchard will sell for at next week's auction.",
+   "keyPoints": [
+    "Investing focuses on long-term value and income.",
+    "Speculation depends on short-term price moves and timing.",
+    "Frequent trading and leverage raise costs and risk."
+   ],
+   "quiz": [
+    {
+     "question": "What question does an investor mainly ask?",
+     "options": [
+      "Where will the price be tomorrow?",
+      "What did my friend buy?",
+      "What will this asset produce over many years?"
+     ],
+     "correctIndex": 2,
+     "explanation": "Investors focus on long-term value and income."
+    },
+    {
+     "question": "Which is a typical sign of speculation?",
+     "options": [
+      "Holding a diversified fund for years",
+      "Trading many times a week on tips",
+      "Reading the annual report"
+     ],
+     "correctIndex": 1,
+     "explanation": "Frequent tip-driven trading depends on timing and luck."
+    },
+    {
+     "question": "What do studies often find about private investors who trade most?",
+     "options": [
+      "They tend to earn less after costs",
+      "They always earn more",
+      "They pay no fees"
+     ],
+     "correctIndex": 0,
+     "explanation": "Costs and poor timing reduce their results."
+    }
+   ]
+  },
+  {
+   "id": "risk-and-return",
+   "order": 19,
+   "stage": 4,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Why higher returns usually come with higher risk",
+   "summary": "Investors demand a higher expected return for accepting more uncertainty — so an offer of high returns without risk is a red flag.",
+   "sections": [
+    {
+     "heading": "The risk premium",
+     "body": "Lending to a stable government for a short time is relatively safe, so it pays little. Owning shares in companies is more uncertain, so investors expect more in return over long periods. This extra expected return is the risk premium. 'Expected' is important: higher risk means the range of outcomes is wider, including worse ones."
+    },
+    {
+     "heading": "Risk is not a guarantee of reward",
+     "body": "Taking more risk does not guarantee a higher return; it only makes a higher return possible on average, over long periods and across many investments. Some risks are not rewarded at all, such as concentrating everything in one company. Any product promising high returns with no risk deserves deep suspicion."
+    }
+   ],
+   "analogy": "It is like choosing a route over the mountains: the higher path may be faster, but the weather up there can turn quickly.",
+   "keyPoints": [
+    "Higher expected returns are compensation for accepting more uncertainty.",
+    "More risk widens the range of outcomes — in both directions.",
+    "'High return, no risk' is a warning sign."
+   ],
+   "quiz": [
+    {
+     "question": "Why do shares have a higher expected return than short-term government bonds?",
+     "options": [
+      "Investors demand compensation for greater uncertainty",
+      "Shares have lower fees",
+      "Governments forbid high interest"
+     ],
+     "correctIndex": 0,
+     "explanation": "This compensation is called the risk premium."
+    },
+    {
+     "question": "Does taking more risk guarantee a higher return?",
+     "options": [
+      "Yes, always",
+      "Yes, after one year",
+      "No, it only makes it possible on average"
+     ],
+     "correctIndex": 2,
+     "explanation": "Risky investments can also end with large losses."
+    },
+    {
+     "question": "A product promises 15 % a year with no risk. What is the right reaction?",
+     "options": [
+      "Invest quickly",
+      "Treat it as a serious warning sign",
+      "Borrow to invest more"
+     ],
+     "correctIndex": 1,
+     "explanation": "Such promises are typical of fraud."
+    }
+   ]
+  },
+  {
+   "id": "past-performance",
+   "order": 20,
+   "stage": 4,
+   "minutes": 3,
+   "calculator": null,
+   "title": "Why past performance does not guarantee future results",
+   "summary": "Past returns describe what happened under past conditions; the future can be very different.",
+   "sections": [
+    {
+     "heading": "Why the past misleads",
+     "body": "Markets change: interest rates, valuations, technology, competition and regulation shift. Funds and shares that did best in one period often do not repeat it. Charts of past winners also suffer from survivorship bias — the ones that failed are no longer shown."
+    },
+    {
+     "heading": "How to use history sensibly",
+     "body": "History is useful for understanding ranges: how deep falls have been, how long recoveries took, how volatile an asset class is. It is not a forecast. InvestiQ shows historical ranges and validated statistical models with wide intervals, and compares them with a simple 'no change' forecast — and says so when a model is no better."
+    }
+   ],
+   "analogy": "Driving by looking only in the rear-view mirror tells you where the road has been, not where the next bend is.",
+   "keyPoints": [
+    "Past returns depend on past conditions that may not repeat.",
+    "Survivorship bias makes the past look better than it was.",
+    "History helps understand ranges, not to predict."
+   ],
+   "quiz": [
+    {
+     "question": "Why do yesterday's best funds often not stay the best?",
+     "options": [
+      "Rules forbid it",
+      "Conditions change and success rarely repeats reliably",
+      "Funds stop publishing results"
+     ],
+     "correctIndex": 1,
+     "explanation": "Performance persistence is weak in most studies."
+    },
+    {
+     "question": "What is survivorship bias?",
+     "options": [
+      "Looking only at investments that still exist, ignoring the failed ones",
+      "A tax on old funds",
+      "A type of bond"
+     ],
+     "correctIndex": 0,
+     "explanation": "Excluding failures makes the past look better."
+    },
+    {
+     "question": "What is history most useful for?",
+     "options": [
+      "Predicting next month's price",
+      "Guaranteeing returns",
+      "Understanding the range of possible outcomes"
+     ],
+     "correctIndex": 2,
+     "explanation": "It shows how large falls and recoveries have been."
+    }
+   ]
+  },
+  {
+   "id": "recognising-fraud",
+   "order": 21,
+   "stage": 4,
+   "minutes": 5,
+   "calculator": null,
+   "title": "How to recognise financial fraud",
+   "summary": "Fraudsters promise high, safe returns and pressure you to act fast; checking the firm in the official register is the first defence.",
+   "sections": [
+    {
+     "heading": "Typical warning signs",
+     "body": "Guaranteed high returns, pressure to decide quickly, unsolicited contact by phone or social media, celebrity endorsements, requests to install remote-access software, payment in crypto-assets or to private accounts, and difficulty withdrawing money are classic signs. 'Recovery' services that promise to get lost money back for an upfront fee are often a second fraud."
+    },
+    {
+     "heading": "How to protect yourself",
+     "body": "Check whether the firm is authorised in the supervisor's register (in Czechia, the Czech National Bank's list of regulated entities; across the EU, ESMA's registers) and whether it appears on warning lists. Never share passwords or one-time codes, and never let anyone control your computer. If something feels urgent and too good to be true, stop and ask someone you trust."
+    }
+   ],
+   "analogy": "A fraudster is like a stranger selling a 'gold' watch in a dark alley: the rush and the too-good price are the clues.",
+   "keyPoints": [
+    "Guaranteed high returns and time pressure are red flags.",
+    "Always check the official register and warning lists.",
+    "Never share passwords, codes or remote access."
+   ],
+   "quiz": [
+    {
+     "question": "Which offer is a typical fraud sign?",
+     "options": [
+      "A fund with a published KID",
+      "A licensed bank account",
+      "Guaranteed 20 % a month, decide today"
+     ],
+     "correctIndex": 2,
+     "explanation": "Promised high returns plus urgency are classic fraud signs."
+    },
+    {
+     "question": "Where should you check whether a firm is authorised?",
+     "options": [
+      "In the supervisor's official register",
+      "In the firm's own reviews",
+      "In a social media group"
+     ],
+     "correctIndex": 0,
+     "explanation": "Only the regulator's register is reliable."
+    },
+    {
+     "question": "Someone offers to recover your lost money for an upfront fee. What is it likely to be?",
+     "options": [
+      "A government service",
+      "Often another fraud",
+      "A tax refund"
+     ],
+     "correctIndex": 1,
+     "explanation": "'Recovery' scams target people who were already defrauded."
+    }
+   ]
+  }
+ ]
+}

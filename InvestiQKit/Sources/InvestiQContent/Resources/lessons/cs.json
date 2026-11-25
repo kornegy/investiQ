@@ -1,0 +1,1203 @@
+{
+ "version": 1,
+ "language": "cs",
+ "lessons": [
+  {
+   "id": "what-is-investing",
+   "order": 1,
+   "stage": 1,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Co je investování",
+   "summary": "Investovat znamená vložit peníze do aktiv, která mohou časem přinést výnos, a přijmout, že jejich hodnota může i klesnout.",
+   "sections": [
+    {
+     "heading": "Spoření, investování a utrácení",
+     "body": "Spoření drží peníze v bezpečí a k dispozici, obvykle na bankovním účtu. Investice je nákup podílu na něčem — firmě, půjčce státu, fondu — co může růst nebo vyplácet příjem. Za tuto možnost přijímáte nejistotu: hodnota kolísá a můžete dostat zpět méně, než jste vložili."
+    },
+    {
+     "heading": "Proč lidé investují",
+     "body": "Peníze v hotovosti v dlouhém období obvykle ztrácejí kupní sílu kvůli inflaci. Investování usiluje o to, aby majetek rostl rychleji než ceny — pro cíle za mnoho let, například na důchod. Peníze potřebné brzy nebo na nezbytnosti obvykle zůstávají v úsporách."
+    }
+   ],
+   "analogy": "Spoření je jako uchovávat semínka ve sklenici, investování jako je zasadit. Zasazené může vyrůst — nebo ho sezobou ptáci.",
+   "keyPoints": [
+    "Investování přijímá nejistotu výměnou za možný růst.",
+    "Hodí se pro peníze, které nebudete několik let potřebovat.",
+    "Finanční rezerva a splacení drahých dluhů obvykle mají přednost."
+   ],
+   "quiz": [
+    {
+     "question": "Jaký je hlavní kompromis investování?",
+     "options": [
+      "Žádné riziko a zaručený zisk",
+      "Možný růst výměnou za přijetí, že hodnota může klesnout",
+      "Vyšší poplatky za větší bezpečí"
+     ],
+     "correctIndex": 1,
+     "explanation": "Investice mohou růst, ale jejich hodnota může klesnout pod nákupní cenu."
+    },
+    {
+     "question": "Které peníze se obvykle neinvestují?",
+     "options": [
+      "Peníze na cíl za 15 let",
+      "Volné peníze po zaplacení všech účtů",
+      "Peníze na nájem v příštím měsíci"
+     ],
+     "correctIndex": 2,
+     "explanation": "Peníze na nezbytnosti nebo blízké potřeby by neměly záviset na tržních cenách."
+    },
+    {
+     "question": "Proč hotovost časem ztrácí hodnotu?",
+     "options": [
+      "Inflace snižuje, co za peníze koupíte",
+      "Banka si účtuje za úschovu",
+      "Mění se na akcie"
+     ],
+     "correctIndex": 0,
+     "explanation": "Rostoucí ceny znamenají, že stejná částka v budoucnu koupí méně."
+    }
+   ]
+  },
+  {
+   "id": "stock-exchange",
+   "order": 2,
+   "stage": 1,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Co je burza",
+   "summary": "Burza je regulované tržiště, kde se kupující a prodávající cenných papírů setkávají podle společných pravidel.",
+   "sections": [
+    {
+     "heading": "Tržiště s pravidly",
+     "body": "Burzy jako Burza cenných papírů Praha, Xetra nebo Newyorská burza přijímají cenné papíry k obchodování a párují nákupní a prodejní pokyny. Kótované firmy musí pravidelně zveřejňovat informace a obchoduje se podle zveřejněných pravidel a v daných hodinách. Ceny jsou tak vidět a obchodování je férovější než soukromé dohody."
+    },
+    {
+     "heading": "Kdo se účastní",
+     "body": "Drobní investoři neobchodují na burze přímo; pokyny zadávají přes brokera, který má k obchodování přístup. Kotace často zajišťují tvůrci trhu a další profesionálové. Trh dozorují úřady — v Česku Česká národní banka."
+    }
+   ],
+   "analogy": "Burza je jako dobře osvětlené tržiště s oficiální nástěnkou: všichni vidí ceny a stánkaři musí dodržovat tržní řád.",
+   "keyPoints": [
+    "Burza spojuje kupující a prodávající podle společných pravidel.",
+    "Kótované firmy musí pravidelně zveřejňovat informace.",
+    "Jednotlivci obchodují přes brokery, ne přímo."
+   ],
+   "quiz": [
+    {
+     "question": "Co dělá burza?",
+     "options": [
+      "Páruje nákupní a prodejní pokyny podle společných pravidel",
+      "Zaručuje růst cen",
+      "Půjčuje investorům peníze"
+     ],
+     "correctIndex": 0,
+     "explanation": "Je to regulované tržiště; žádný pohyb cen neslibuje."
+    },
+    {
+     "question": "Jak drobný investor obvykle koupí kótovanou akcii?",
+     "options": [
+      "Zavolá firmě",
+      "Zajde na burzu",
+      "Přes brokera"
+     ],
+     "correctIndex": 2,
+     "explanation": "Brokeři předávají pokyny klientů na burzu."
+    },
+    {
+     "question": "Proč musí kótované firmy zveřejňovat informace?",
+     "options": [
+      "Aby propagovaly své výrobky",
+      "Aby se investoři mohli informovaně rozhodovat",
+      "Aby stanovily cenu akcie"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pravidla zveřejňování pomáhají všem investorům vidět stejná důležitá fakta."
+    }
+   ]
+  },
+  {
+   "id": "how-a-broker-works",
+   "order": 3,
+   "stage": 1,
+   "minutes": 5,
+   "calculator": null,
+   "title": "Jak funguje broker",
+   "summary": "Broker je licencovaná firma, která předává vaše pokyny na trh, drží vaše cenné papíry a podává vám výpisy.",
+   "sections": [
+    {
+     "heading": "Co broker dělá",
+     "body": "Broker vám po ověření totožnosti otevře účet, přijímá pokyny, posílá je na burzu nebo jiné obchodní místo a eviduje cenné papíry, které vlastníte. V EU potřebuje broker licenci od dohledového orgánu a musí dodržovat pravidla ochrany klientů, zveřejňování nákladů a nejlepšího provedení."
+    },
+    {
+     "heading": "Bezpečnost a náklady",
+     "body": "Cenné papíry klientů jsou obvykle drženy odděleně od majetku brokera. Pokud broker zkrachuje, systémy odškodnění investorů mohou chybějící majetek klientů pokrýt do limitu — chrání před selháním zprostředkovatele, ne před poklesem cen. Ověřte licenci v oficiálním registru dohledu a přečtěte si celý ceník: provize, převod měn, úschovu i poplatky za neaktivitu."
+    }
+   ],
+   "analogy": "Broker je jako licencovaný realitní makléř a bezpečnostní schránka v jednom: zařídí obchod a drží váš majetek na vaše jméno.",
+   "keyPoints": [
+    "Licenci brokera ověřte v oficiálním registru dohledového orgánu.",
+    "Odškodnění investorů kryje selhání zprostředkovatele, ne tržní ztráty.",
+    "Čtěte celý ceník včetně převodu měn."
+   ],
+   "quiz": [
+    {
+     "question": "Před čím chrání odškodnění investorů?",
+     "options": [
+      "Před poklesem cen akcií",
+      "Před špatnou volbou investic",
+      "Před chybějícím majetkem klientů při selhání zprostředkovatele"
+     ],
+     "correctIndex": 2,
+     "explanation": "Jde o selhání firmy, nikdy o tržní ztráty."
+    },
+    {
+     "question": "Kde ověřit licenci brokera?",
+     "options": [
+      "V oficiálním registru dohledového orgánu",
+      "V reklamě brokera",
+      "V recenzích na sociálních sítích"
+     ],
+     "correctIndex": 0,
+     "explanation": "Rozhodující je pouze registr regulátora."
+    },
+    {
+     "question": "Který náklad se často přehlíží?",
+     "options": [
+      "Cena akcie",
+      "Poplatky za převod měn",
+      "Tržby firmy"
+     ],
+     "correctIndex": 1,
+     "explanation": "Převod měn může stát víc než samotná provize."
+    }
+   ]
+  },
+  {
+   "id": "what-is-a-stock",
+   "order": 4,
+   "stage": 2,
+   "minutes": 5,
+   "calculator": null,
+   "title": "Co je akcie",
+   "summary": "Akcie je malý podíl na vlastnictví firmy s nárokem na část jejích budoucích zisků.",
+   "sections": [
+    {
+     "heading": "Vlastníte kus podniku",
+     "body": "Koupí akcie se stáváte spoluvlastníkem firmy. Akcionáři mohou dostávat dividendy, obvykle hlasují na valné hromadě a vydělávají, pokud podnik zhodnocuje. Platí se jim ale až nakonec: když firma zkrachuje, nejdřív se splácí věřitelům a akcionáři často přijdou o vše."
+    },
+    {
+     "heading": "Proč se cena hýbe",
+     "body": "Cena odráží, kolik podle kupujících a prodávajících dnes stojí budoucí zisky firmy. Nové výsledky, úrokové sazby, konkurence i celková nálada tento pohled mění. Ceny se mohou výrazně pohybovat, i když se samotný podnik mění málo."
+    }
+   ],
+   "analogy": "Vlastnit akcii je jako vlastnit jeden dílek pizzerie: podílíte se na jejím úspěchu, ale když zavře, banka, která jí půjčila, dostane peníze dřív než vy.",
+   "keyPoints": [
+    "Akcie je podíl na vlastnictví firmy.",
+    "Akcionáři těží z růstu, ale při úpadku jsou na řadě poslední.",
+    "Ceny odrážejí očekávání a mohou silně kolísat."
+   ],
+   "quiz": [
+    {
+     "question": "Co představuje akcie?",
+     "options": [
+      "Půjčku firmě",
+      "Podíl na vlastnictví firmy",
+      "Zaručenou dividendu"
+     ],
+     "correctIndex": 1,
+     "explanation": "Akcionáři jsou spoluvlastníci; dividendy nejsou nikdy zaručené."
+    },
+    {
+     "question": "Kdo dostane peníze první, když firma zkrachuje?",
+     "options": [
+      "Věřitelé",
+      "Akcionáři",
+      "Ten, kdo koupil naposledy"
+     ],
+     "correctIndex": 0,
+     "explanation": "Akcionáři jsou v pořadí poslední a často nedostanou nic."
+    },
+    {
+     "question": "Co hlavně určuje cenu akcie?",
+     "options": [
+      "Počet zaměstnanců",
+      "Barva loga",
+      "Očekávání budoucích zisků"
+     ],
+     "correctIndex": 2,
+     "explanation": "Ceny odrážejí, co investoři od podniku očekávají."
+    }
+   ]
+  },
+  {
+   "id": "what-is-a-bond",
+   "order": 5,
+   "stage": 2,
+   "minutes": 5,
+   "calculator": null,
+   "title": "Co je dluhopis",
+   "summary": "Dluhopis je půjčka státu nebo firmě výměnou za úroky (kupony) a splacení jmenovité hodnoty při splatnosti.",
+   "sections": [
+    {
+     "heading": "Půjčujete, nevlastníte",
+     "body": "Dluhopis má jmenovitou hodnotu, kupónovou sazbu a datum splatnosti. Emitent slibuje vyplácet kupony a vrátit jmenovitou hodnotu při splatnosti. Držitelé dluhopisů emitenta nevlastní; jsou to věřitelé a dostanou zaplaceno před akcionáři, pokud má emitent potíže."
+    },
+    {
+     "heading": "Rizika dluhopisů",
+     "body": "Hlavní rizika jsou úpadek (emitent nemůže platit), úrokové riziko (když tržní sazby rostou, starší dluhopisy s nižším kuponem zlevní), inflace (pevné platby mají menší kupní sílu) a likvidita. Ratingy shrnují riziko úpadku, ale mohou se mýlit nebo změnit. Pokud kvalitní dluhopis držíte do splatnosti, průběžné výkyvy ceny nemění slíbené platby."
+    }
+   ],
+   "analogy": "Koupit dluhopis je jako půjčit kamarádovi peníze na dlužní úpis: pravidelné úroky a celá částka zpět v daný den — pokud kamarád bude mít z čeho platit.",
+   "keyPoints": [
+    "Držitelé dluhopisů jsou věřitelé, ne vlastníci.",
+    "Ceny dluhopisů klesají, když rostou tržní úrokové sazby.",
+    "Riziko úpadku závisí na emitentovi; ratingy ho shrnují nedokonale."
+   ],
+   "quiz": [
+    {
+     "question": "Co se stane s cenami existujících dluhopisů, když tržní sazby vzrostou?",
+     "options": [
+      "Obvykle klesnou",
+      "Obvykle vzrostou",
+      "Nic"
+     ],
+     "correctIndex": 0,
+     "explanation": "Nové dluhopisy platí víc, takže starší s nižším kuponem jsou méně atraktivní."
+    },
+    {
+     "question": "Co popisuje úvěrový rating?",
+     "options": [
+      "Očekávanou cenu akcie",
+      "Kupónovou sazbu",
+      "Názor agentury na riziko úpadku"
+     ],
+     "correctIndex": 2,
+     "explanation": "Ratingy jsou názory na schopnost emitenta platit."
+    },
+    {
+     "question": "Kdo dostane peníze první, když firma zkrachuje?",
+     "options": [
+      "Akcionáři",
+      "Držitelé dluhopisů",
+      "Oba stejně"
+     ],
+     "correctIndex": 1,
+     "explanation": "Věřitelé, jako držitelé dluhopisů, mají přednost před akcionáři."
+    }
+   ]
+  },
+  {
+   "id": "what-is-an-etf",
+   "order": 6,
+   "stage": 2,
+   "minutes": 5,
+   "calculator": null,
+   "title": "Co je ETF",
+   "summary": "Burzovně obchodovaný fond (ETF) drží mnoho cenných papírů a obchoduje se na burze jako akcie.",
+   "sections": [
+    {
+     "heading": "Mnoho cenných papírů v jednom",
+     "body": "Většina ETF sleduje index, například světový akciový index nebo index státních dluhopisů. Jedním nákupem získáte malý podíl na stovkách až tisících cenných papírů, což rozkládá riziko jednotlivých firem. V EU jsou fondy pro drobné investory obvykle fondy UCITS se sdělením klíčových informací (KID)."
+    },
+    {
+     "heading": "Co ověřit",
+     "body": "Sledujte průběžné náklady (TER), složení indexu, měnovou expozici fondu (často jinou než měna obchodování), zda výnosy vyplácí nebo reinvestuje, metodu replikace (fyzická nebo syntetická) a velikost fondu. ETF přesto klesá, když klesá jeho trh — diverzifikace snižuje některá rizika, ale ne tržní riziko."
+    }
+   ],
+   "analogy": "ETF je jako hotový koš ovoce: místo výběru každého kusu koupíte koš sestavený podle zveřejněného receptu.",
+   "keyPoints": [
+    "ETF rozloží peníze do mnoha cenných papírů jedním obchodem.",
+    "Stále nese riziko celého svého trhu.",
+    "Záleží na nákladech, indexu, měnové expozici a metodě replikace."
+   ],
+   "quiz": [
+    {
+     "question": "Jaké riziko snižuje ETF na široký index?",
+     "options": [
+      "Tržní riziko",
+      "Inflační riziko",
+      "Riziko krachu jedné firmy"
+     ],
+     "correctIndex": 2,
+     "explanation": "Rozložení do mnoha firem snižuje riziko jednotlivé firmy, ne riziko celého trhu."
+    },
+    {
+     "question": "Co je TER?",
+     "options": [
+      "Daňová sazba fondu",
+      "Průběžné roční náklady fondu",
+      "Obchodní hodiny"
+     ],
+     "correctIndex": 1,
+     "explanation": "Celková nákladovost se z fondu strhává každý rok."
+    },
+    {
+     "question": "Který dokument popisuje klíčové údaje fondu pro drobné investory v EU?",
+     "options": [
+      "KID",
+      "Roční daňové přiznání",
+      "Reklama brokera"
+     ],
+     "correctIndex": 0,
+     "explanation": "Fondy UCITS musí poskytovat sdělení klíčových informací."
+    }
+   ]
+  },
+  {
+   "id": "how-prices-form",
+   "order": 7,
+   "stage": 2,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Jak vznikají ceny akcií",
+   "summary": "Ceny vznikají z pokynů: obchod proběhne, když se cena kupujícího setká s cenou prodávajícího.",
+   "sections": [
+    {
+     "heading": "Nabídka, poptávka a kniha pokynů",
+     "body": "Burza vede knihu pokynů s nákupními nabídkami (bid — ceny, které nabízejí kupující) a prodejními (ask — ceny, které chtějí prodávající). Rozdíl mezi nejlepší nákupní a prodejní cenou je spread. Když chce za současné ceny víc lidí koupit než prodat, cena obvykle roste, dokud se neobjeví prodávající — a naopak."
+    },
+    {
+     "heading": "Informace a očekávání",
+     "body": "Investoři nakupují nebo prodávají, když se změní jejich pohled na budoucnost firmy: výsledky, úrokové sazby, zprávy nebo jen nálada. Protože ceny už obsahují, co je obecně známo, dobrá zpráva cenu nemusí pohnout, pokud se čekala. Krátkodobé pohyby jsou často šum; nikdo je spolehlivě nepředpoví."
+    }
+   ],
+   "analogy": "Funguje to jako nekonečná aukce: cena je tam, kde se právě dohodl nejochotnější kupující s nejochotnějším prodávajícím.",
+   "keyPoints": [
+    "Ceny vznikají tam, kde se potkají pokyny kupujících a prodávajících.",
+    "Spread je rozdíl mezi nejlepší nákupní a prodejní cenou.",
+    "Očekávané zprávy už často jsou v ceně."
+   ],
+   "quiz": [
+    {
+     "question": "Co je spread?",
+     "options": [
+      "Provize brokera",
+      "Rozdíl mezi nejlepší nákupní a prodejní cenou",
+      "Denní změna ceny"
+     ],
+     "correctIndex": 1,
+     "explanation": "Široký spread je při obchodu dodatečný náklad."
+    },
+    {
+     "question": "Proč akcie nemusí po dobrých výsledcích vzrůst?",
+     "options": [
+      "Výsledky se čekaly a už byly v ceně",
+      "Burzy po výsledcích růst zakazují",
+      "Dobré výsledky vždy snižují cenu"
+     ],
+     "correctIndex": 0,
+     "explanation": "Ceny odrážejí očekávání, ne jen zprávy."
+    },
+    {
+     "question": "Lze krátkodobé pohyby cen spolehlivě předpovědět?",
+     "options": [
+      "Ano, podle grafických formací",
+      "Ano, umí to experti",
+      "Ne, jsou z velké části nepředvídatelné"
+     ],
+     "correctIndex": 2,
+     "explanation": "Krátkodobé pohyby určují nové informace a šum."
+    }
+   ]
+  },
+  {
+   "id": "dividends",
+   "order": 8,
+   "stage": 2,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Co jsou dividendy",
+   "summary": "Dividenda je podíl na zisku, který firma může vyplatit akcionářům — nikdy není zaručená.",
+   "sections": [
+    {
+     "heading": "Jak dividendy fungují",
+     "body": "Vedení firmy navrhne dividendu a akcionáři ji schválí. Abyste ji dostali, musíte akcii vlastnit před rozhodným dnem (ex-dividendovým dnem). V ten den cena akcie obvykle klesne přibližně o výši dividendy, protože z firmy odcházejí peníze. Daň se často sráží v zemi firmy."
+    },
+    {
+     "heading": "Co dividendy neznamenají",
+     "body": "Vysoký dividendový výnos může být varováním: cena mohla klesnout, protože investoři čekají problémy, a dividenda může být snížena. Firma nemůže dlouho vyplácet víc, než vydělává. Firmy bez dividend mohou zisky místo toho reinvestovat."
+    }
+   ],
+   "analogy": "Dividenda je jako když majitel sadu rozdá část úrody: sad má hned potom o něco menší hodnotu a ve špatném roce nemusí být co rozdávat.",
+   "keyPoints": [
+    "O dividendách rozhoduje firma a mohou být sníženy.",
+    "V ex-dividendový den cena obvykle klesne přibližně o dividendu.",
+    "Velmi vysoký výnos si zaslouží zvláštní prověření."
+   ],
+   "quiz": [
+    {
+     "question": "Jsou dividendy zaručené?",
+     "options": [
+      "Ne, firma je může snížit nebo zastavit",
+      "Ano, ze zákona",
+      "Ano, pokud je firma velká"
+     ],
+     "correctIndex": 0,
+     "explanation": "Dividendy závisejí na rozhodnutích a financích firmy."
+    },
+    {
+     "question": "Co se obvykle stane s cenou akcie v ex-dividendový den?",
+     "options": [
+      "Zdvojnásobí se",
+      "Nezmění se",
+      "Klesne přibližně o dividendu"
+     ],
+     "correctIndex": 2,
+     "explanation": "Z firmy odcházejí peníze, takže její hodnota klesne přibližně o tuto částku."
+    },
+    {
+     "question": "Proč může být velmi vysoký dividendový výnos varováním?",
+     "options": [
+      "Vysoké výnosy jsou nezákonné",
+      "Cena mohla klesnout kvůli očekávaným problémům",
+      "Znamená, že firma rychle roste"
+     ],
+     "correctIndex": 1,
+     "explanation": "Výnos = dividenda / cena; klesající cena výnos zvyšuje."
+    }
+   ]
+  },
+  {
+   "id": "coupons",
+   "order": 9,
+   "stage": 2,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Co je kupon",
+   "summary": "Kupon je úrok, který dluhopis vyplácí, obvykle jednou nebo dvakrát ročně, v procentech jmenovité hodnoty.",
+   "sections": [
+    {
+     "heading": "Kupon, cena a výnos",
+     "body": "Dluhopis s jmenovitou hodnotou 1 000 a ročním kuponem 4 % vyplácí 40 ročně. Když ho koupíte pod jmenovitou hodnotou, je váš výnos do splatnosti vyšší než 4 %; nad ní nižší. Kupon je u většiny dluhopisů pevný, ale cena — a tím i výnos pro nového kupujícího — se mění každý den."
+    },
+    {
+     "heading": "Alikvótní úrokový výnos",
+     "body": "Mezi výplatami kuponu se úrok načítá den po dni. Při koupi dluhopisu obvykle zaplatíte prodávajícímu úrok naběhlý od posledního kuponu a dostanete celý příští kupon. Ceny dluhopisů se obvykle uvádějí „čisté“ (bez AÚV) a v procentech jmenovité hodnoty."
+    }
+   ],
+   "analogy": "Kupon je jako nájem placený nájemníkem: pevná částka v pevné dny, dokud má nájemník z čeho platit.",
+   "keyPoints": [
+    "Kupon = úrok v procentech jmenovité hodnoty.",
+    "Výnos závisí na ceně, kterou zaplatíte, ne jen na kuponu.",
+    "Kupující obvykle platí prodávajícímu alikvótní úrok."
+   ],
+   "quiz": [
+    {
+     "question": "Dluhopis s jmenovitou hodnotou 1 000 má roční kupon 4 %. Kolik vyplatí za rok?",
+     "options": [
+      "4",
+      "40",
+      "400"
+     ],
+     "correctIndex": 1,
+     "explanation": "4 % z 1 000 je 40."
+    },
+    {
+     "question": "Když dluhopis koupíte pod jmenovitou hodnotou, jak je výnos oproti kupónové sazbě?",
+     "options": [
+      "Vyšší",
+      "Nižší",
+      "Vždy stejný"
+     ],
+     "correctIndex": 0,
+     "explanation": "Při splatnosti navíc získáte rozdíl do jmenovité hodnoty."
+    },
+    {
+     "question": "Co je alikvótní úrokový výnos?",
+     "options": [
+      "Pokuta za pozdní platbu",
+      "Rating dluhopisu",
+      "Úrok naběhlý od posledního kuponu"
+     ],
+     "correctIndex": 2,
+     "explanation": "Kupující kompenzuje prodávajícímu dosud naběhlý úrok."
+    }
+   ]
+  },
+  {
+   "id": "compound-interest",
+   "order": 10,
+   "stage": 3,
+   "minutes": 5,
+   "calculator": "compoundInterest",
+   "title": "Co je složené úročení",
+   "summary": "Složené úročení znamená výnos z dřívějších výnosů, takže v dlouhém období růst zrychluje.",
+   "sections": [
+    {
+     "heading": "Výnosy z výnosů",
+     "body": "Když 1 000 vynese za rok 5 %, máte 1 050. Ve druhém roce se 5 % počítá z 1 050, takže máte 1 102,50 — oněch 2,50 navíc je úrok z úroku. Za desetiletí je efekt velký: při stálých 5 % se peníze zdvojnásobí přibližně za 14 let."
+    },
+    {
+     "heading": "Záleží na čase i nákladech",
+     "body": "Složené úročení odměňuje brzký začátek a ponechání peněz investovaných. Funguje i proti vám: poplatky a inflace se také skládají a drahý dluh roste rychle. Skutečné investice nerostou stálým tempem; kalkulačka ukazuje aritmetiku, ne prognózu."
+    }
+   ],
+   "analogy": "Složené úročení je jako sněhová koule kutálející se z kopce: čím je větší, tím víc sněhu nabalí při každé otáčce.",
+   "keyPoints": [
+    "Složené úročení znamená výnos z dřívějších výnosů.",
+    "Nejsilnějším faktorem je čas.",
+    "Poplatky, inflace a úroky z dluhů se také skládají."
+   ],
+   "quiz": [
+    {
+     "question": "1 000 roste dva roky o 10 % ročně. Jaký je výsledek?",
+     "options": [
+      "1 200",
+      "1 100",
+      "1 210"
+     ],
+     "correctIndex": 2,
+     "explanation": "1 000 × 1,1 × 1,1 = 1 210; oněch 10 navíc je úrok z úroku."
+    },
+    {
+     "question": "Co dělá složené úročení nejsilnějším?",
+     "options": [
+      "Dlouhý časový horizont",
+      "Denní kontrola cen",
+      "Časté obchodování"
+     ],
+     "correctIndex": 0,
+     "explanation": "Čím déle se peníze úročí, tím větší je efekt."
+    },
+    {
+     "question": "Platí složené úročení i pro náklady?",
+     "options": [
+      "Ne, jen pro výnosy",
+      "Ano, poplatky a úroky z dluhů se také skládají",
+      "Jen u dluhopisů"
+     ],
+     "correctIndex": 1,
+     "explanation": "Roční poplatek zmenšuje základ, ze kterého se počítají všechny další výnosy."
+    }
+   ]
+  },
+  {
+   "id": "inflation",
+   "order": 11,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": "inflation",
+   "title": "Co je inflace",
+   "summary": "Inflace je celkový růst cen; snižuje, co lze koupit za pevnou částku peněz.",
+   "sections": [
+    {
+     "heading": "Kupní síla",
+     "body": "Při inflaci 3 % ročně věc, která dnes stojí 100, bude za rok stát asi 103. Peníze v hotovosti s výnosem nižším než inflace ztrácejí reálnou hodnotu. Za 20 let při 3 % klesne kupní síla 100 přibližně na 55."
+    },
+    {
+     "heading": "Nominální a reálný výnos",
+     "body": "Nominální výnos je změna v penězích; reálný výnos odečítá inflaci. Spořicí účet s 2 % při inflaci 4 % má reálný výnos asi −2 %. Centrální banky, například Česká národní banka a Evropská centrální banka, cílují inflaci kolem 2 % a ovlivňují ji úrokovými sazbami."
+    }
+   ],
+   "analogy": "Inflace je jako pomalu ucházející pneumatika: den po dni si toho skoro nevšimnete, ale na dlouhé cestě na tom hodně záleží.",
+   "keyPoints": [
+    "Inflace snižuje kupní sílu peněz.",
+    "Reálný výnos ≈ nominální výnos − inflace.",
+    "Nejvíce jsou ohroženy hotovost a pevné platby."
+   ],
+   "quiz": [
+    {
+     "question": "Úspory vynášejí 2 %, inflace je 4 %. Jaký je přibližně reálný výnos?",
+     "options": [
+      "−2 %",
+      "6 %",
+      "2 %"
+     ],
+     "correctIndex": 0,
+     "explanation": "Reálný ≈ 2 % − 4 % = −2 %: koupíte méně než dřív."
+    },
+    {
+     "question": "Kdo je inflaci vystaven nejvíc?",
+     "options": [
+      "Vlastníci firem, které mohou zvyšovat ceny",
+      "Příjemci pevného příjmu",
+      "Nikdo"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pevné platby ztrácejí kupní sílu, když ceny rostou."
+    },
+    {
+     "question": "Čím centrální banky obvykle ovlivňují inflaci?",
+     "options": [
+      "Zpětným odkupem akcií",
+      "Úrokovými sazbami",
+      "Otevírací dobou burzy"
+     ],
+     "correctIndex": 1,
+     "explanation": "Vyšší sazby obvykle zpomalují úvěry a výdaje."
+    }
+   ]
+  },
+  {
+   "id": "diversification",
+   "order": 12,
+   "stage": 3,
+   "minutes": 5,
+   "calculator": "diversification",
+   "title": "Co je diverzifikace",
+   "summary": "Diverzifikace znamená rozložit peníze do mnoha investic, aby selhání jedné napáchalo menší škodu.",
+   "sections": [
+    {
+     "heading": "Proč rozložení funguje",
+     "body": "Různé firmy, odvětví a země se nepohybují stejně. Když jedny klesají, jiné mohou držet. Kombinace aktiv, která nejsou dokonale korelovaná, snižuje výkyvy celého portfolia, aniž by nutně snížila očekávaný výnos."
+    },
+    {
+     "heading": "Její meze",
+     "body": "Diverzifikace snižuje riziko jednotlivých firem, ale neodstraní tržní riziko: v široké krizi klesá většina akcií společně a korelace často rostou právě tehdy. Deset technologických firem je méně diverzifikovaných, než se zdá. Diverzifikace také nezaručuje zisk ani nechrání před každou ztrátou."
+    }
+   ],
+   "analogy": "Nedávejte všechna vejce do jednoho košíku — ale pamatujte, že když zakopnete, může spadnout několik košíků najednou.",
+   "keyPoints": [
+    "Rozložení do málo korelovaných aktiv snižuje výkyvy portfolia.",
+    "Snižuje riziko firem, ne tržní riziko.",
+    "Korelace v krizích obvykle rostou."
+   ],
+   "quiz": [
+    {
+     "question": "Které riziko diverzifikace snižuje nejvíc?",
+     "options": [
+      "Riziko poklesu celého trhu",
+      "Riziko krachu jedné firmy",
+      "Inflaci"
+     ],
+     "correctIndex": 1,
+     "explanation": "Riziko jednotlivých firem klesá s přibývajícími nezávislými pozicemi."
+    },
+    {
+     "question": "Deset technologických firem je…",
+     "options": [
+      "Plně diverzifikovaných",
+      "Bez rizika",
+      "Soustředěných do jednoho odvětví"
+     ],
+     "correctIndex": 2,
+     "explanation": "Často reagují na stejné zprávy a pohybují se spolu."
+    },
+    {
+     "question": "Co se s korelacemi často děje v krizi?",
+     "options": [
+      "Obvykle rostou",
+      "Klesnou na nulu",
+      "Vždy klesají"
+     ],
+     "correctIndex": 0,
+     "explanation": "Když se šíří strach, mnoho aktiv klesá společně."
+    }
+   ]
+  },
+  {
+   "id": "volatility",
+   "order": 13,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Co je volatilita",
+   "summary": "Volatilita měří, jak silně cena kolísá nahoru a dolů; je to běžné měřítko rizika.",
+   "sections": [
+    {
+     "heading": "Měření výkyvů",
+     "body": "Volatilita je obvykle směrodatná odchylka výnosů, často přepočtená na rok. Široký akciový index měl historicky roční volatilitu zhruba 15–20 %, jednotlivé akcie často mnohem víc a krátkodobé státní dluhopisy mnohem méně. Vyšší volatilita znamená širší rozpětí možných výsledků v krátkém období."
+    },
+    {
+     "heading": "Co říká a co ne",
+     "body": "Volatilita popisuje velikost minulých výkyvů, ne jejich směr, a v čase se mění — v krizích prudce roste. Neukazuje největší možnou ztrátu. U peněz potřebných brzy je vysoká volatilita skutečný problém; u velmi dlouhých horizontů vadí hlavně tehdy, pokud byste museli prodat ve špatnou chvíli."
+    }
+   ],
+   "analogy": "Volatilita je jako vlny na jezeře: řekne, jak rozbouřená voda byla, ne kde loďka skončí.",
+   "keyPoints": [
+    "Volatilita měří velikost cenových výkyvů.",
+    "Popisuje minulost a v čase se mění.",
+    "Není to největší možná ztráta."
+   ],
+   "quiz": [
+    {
+     "question": "Co měří volatilita?",
+     "options": [
+      "Zda cena vzroste",
+      "Zisky firmy",
+      "Jak silně cena kolísá"
+     ],
+     "correctIndex": 2,
+     "explanation": "Jde o velikost pohybů, ne o jejich směr."
+    },
+    {
+     "question": "Je volatilita v čase stálá?",
+     "options": [
+      "Ne, v krizích často prudce roste",
+      "Ano, vždy",
+      "Jen u dluhopisů"
+     ],
+     "correctIndex": 0,
+     "explanation": "Po klidných obdobích mohou přijít velmi bouřlivá."
+    },
+    {
+     "question": "Proč vadí volatilita nejvíc u peněz potřebných brzy?",
+     "options": [
+      "Zvyšuje poplatky",
+      "Možná budete muset prodat po poklesu",
+      "Mění měnu"
+     ],
+     "correctIndex": 1,
+     "explanation": "Krátký horizont nedává čas zotavit se z poklesu."
+    }
+   ]
+  },
+  {
+   "id": "market-risk",
+   "order": 14,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Co je tržní riziko",
+   "summary": "Tržní riziko je riziko, že klesne celý trh a stáhne s sebou většinu investic na něm.",
+   "sections": [
+    {
+     "heading": "Riziko, které diverzifikace neodstraní",
+     "body": "Recese, šoky úrokových sazeb, pandemie nebo finanční krize mohou srazit téměř všechny akcie najednou. Široké akciové trhy za posledních sto let několikrát klesly o 30–50 % a zotavení někdy trvalo mnoho let. Žádný výběr akcií na stejném trhu se tomu nevyhne."
+    },
+    {
+     "heading": "Jak s tržním rizikem žít",
+     "body": "Pomáhá sladit riziko s časem: peníze na dlouhou dobu přečkají poklesy snáz než peníze potřebné brzy. Kombinace různých typů aktiv (například akcií a kvalitních dluhopisů) a finanční rezerva snižují šanci, že budete muset prodat na dně."
+    }
+   ],
+   "analogy": "Tržní riziko je počasí: můžete si vybrat oblečení a trasu, ale déšť nezastavíte.",
+   "keyPoints": [
+    "Tržní riziko zasahuje většinu investic na trhu najednou.",
+    "Nákupem více akcií ho neodstraníte.",
+    "Hlavními nástroji jsou časový horizont a skladba aktiv."
+   ],
+   "quiz": [
+    {
+     "question": "Lze odstranit tržní riziko nákupem více akcií na stejném trhu?",
+     "options": [
+      "Ne",
+      "Ano",
+      "Jen přes ETF"
+     ],
+     "correctIndex": 0,
+     "explanation": "Tržní riziko sdílejí téměř všechny investice na trhu."
+    },
+    {
+     "question": "Co nejvíc pomáhá neprodávat v poklesu?",
+     "options": [
+      "Tipy ze sociálních sítí",
+      "Finanční rezerva a vhodný horizont",
+      "Častější kontrola cen"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pokud peníze teď nepotřebujete, nic vás nenutí prodat."
+    },
+    {
+     "question": "Klesly široké akciové trhy v minulosti o 30–50 %?",
+     "options": [
+      "Nikdy",
+      "Jen jednou",
+      "Několikrát"
+     ],
+     "correctIndex": 2,
+     "explanation": "Velké poklesy nastaly opakovaně a mohou nastat znovu."
+    }
+   ]
+  },
+  {
+   "id": "fees",
+   "order": 15,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": "feeDrag",
+   "title": "Co jsou poplatky",
+   "summary": "Poplatky jsou náklady investování — provize, náklady fondů, převod měn a další — a skládají se proti vám.",
+   "sections": [
+    {
+     "heading": "Kde se náklady skrývají",
+     "body": "Typické náklady jsou provize za obchod, spread, převod měn, průběžné náklady fondu (TER), poplatky za úschovu nebo účet a daně. Některé jsou vidět u každého obchodu, jiné se tiše strhávají z hodnoty fondu každý den. Pravidla EU vyžadují ukázat náklady předem i v ročním výpisu."
+    },
+    {
+     "heading": "Proč na malých procentech záleží",
+     "body": "Poplatek 1 % ročně vypadá malý, ale za 30 let může vzít velkou část konečné částky, protože se každý rok účtuje z rostoucí sumy. Náklady jsou jednou z mála věcí, které má investor plně pod kontrolou. Časté obchodování provize a spready násobí."
+    }
+   ],
+   "analogy": "Poplatky jsou jako malá dírka v kbelíku, který plníte desítky let: denně uteče jen pár kapek, ale nakonec je kbelík znatelně lehčí.",
+   "keyPoints": [
+    "Náklady zahrnují provize, spready, převod měn, náklady fondů a daně.",
+    "Roční procentní poplatky se v čase skládají.",
+    "Náklady jsou jednou z mála věcí, které investor ovládá."
+   ],
+   "quiz": [
+    {
+     "question": "Co z toho je náklad investování?",
+     "options": [
+      "Dividenda",
+      "Poplatek za převod měny",
+      "Kupon"
+     ],
+     "correctIndex": 1,
+     "explanation": "Převod měny obvykle stojí poplatek nebo horší kurz."
+    },
+    {
+     "question": "Proč může poplatek 1 % ročně za 30 let hodně znamenat?",
+     "options": [
+      "Účtuje se jen jednou",
+      "Na konci se vrací",
+      "Účtuje se každý rok z rostoucí částky"
+     ],
+     "correctIndex": 2,
+     "explanation": "Poplatek se skládá stejně jako výnosy."
+    },
+    {
+     "question": "Co násobí náklady obchodování?",
+     "options": [
+      "Časté obchodování",
+      "Dlouhé držení",
+      "Čtení KID"
+     ],
+     "correctIndex": 0,
+     "explanation": "Každý obchod znovu platí provizi a spread."
+    }
+   ]
+  },
+  {
+   "id": "currency-risk",
+   "order": 16,
+   "stage": 3,
+   "minutes": 4,
+   "calculator": "currency",
+   "title": "Co je měnové riziko",
+   "summary": "Měnové riziko je možnost, že pohyby kurzů změní hodnotu zahraničních investic ve vaší měně.",
+   "sections": [
+    {
+     "heading": "Dva výnosy v jednom",
+     "body": "Pokud žijete v Česku a koupíte americkou akcii, výsledek v korunách závisí na ceně akcie v dolarech a na kurzu USD/CZK. Akcie, která v dolarech získá 10 %, může v korunách prodělat, pokud dolar vůči koruně dost oslabí — a naopak."
+    },
+    {
+     "heading": "Co určuje expozici",
+     "body": "Rozhoduje měna podkladových aktiv, ne měna, ve které obchodujete. Světový ETF obchodovaný v eurech stále drží převážně dolarová aktiva. Některé fondy měnové riziko zajišťují, což ho snižuje za určitou cenu. Kurzy se mohou za pár let výrazně pohnout a těžko se předpovídají."
+    }
+   ],
+   "analogy": "Měnové riziko je jako nakupování v zahraničí kartou: cena v regálu je jen polovina příběhu — kolik opravdu zaplatíte, rozhodne kurz.",
+   "keyPoints": [
+    "Zahraniční investice nese výnos aktiva i změnu kurzu.",
+    "Expozice závisí na měnách podkladových aktiv.",
+    "Měnové zajištění riziko snižuje za cenu nákladů."
+   ],
+   "quiz": [
+    {
+     "question": "Americká akcie vzroste o 10 % v dolarech a dolar oslabí vůči koruně o 10 %. Jaký je přibližně výsledek v korunách?",
+     "options": [
+      "+20 %",
+      "+10 %",
+      "Asi −1 %"
+     ],
+     "correctIndex": 2,
+     "explanation": "1,10 × 0,90 = 0,99, tedy asi −1 %."
+    },
+    {
+     "question": "Světový ETF se obchoduje v eurech. Které měny určují jeho měnové riziko?",
+     "options": [
+      "Měny aktiv, která drží",
+      "Jen euro",
+      "Žádné"
+     ],
+     "correctIndex": 0,
+     "explanation": "Expozice se řídí držbami, ne měnou obchodování."
+    },
+    {
+     "question": "Co dělá měnové zajištění?",
+     "options": [
+      "Zdvojnásobí měnové riziko",
+      "Snižuje měnové riziko za cenu nákladů",
+      "Odstraní tržní riziko"
+     ],
+     "correctIndex": 1,
+     "explanation": "Zajištění vyrovnává pohyby kurzů, ale něco stojí a nikdy není dokonalé."
+    }
+   ]
+  },
+  {
+   "id": "orders",
+   "order": 17,
+   "stage": 4,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Jak fungují tržní a limitní pokyny",
+   "summary": "Tržní pokyn se provede hned za nejlepší dostupnou cenu; limitní jen za vaši cenu nebo lepší.",
+   "sections": [
+    {
+     "heading": "Tržní pokyny",
+     "body": "Tržní pokyn se provede okamžitě proti nejlepším protinabídkám v knize pokynů. Víte, že se provede, ale ne přesně za kolik: na rychlém trhu nebo u málo obchodovaných titulů může být cena znatelně horší než poslední, kterou jste viděli."
+    },
+    {
+     "heading": "Limitní pokyny",
+     "body": "Limitní pokyn určuje nejvyšší cenu, kterou zaplatíte (nákup), nebo nejnižší, kterou přijmete (prodej). Ovládáte cenu, ale ne to, zda se pokyn vůbec provede; může čekat nebo vypršet. U méně likvidních titulů limitní pokyny chrání před nečekaně špatnými cenami. Lekce vysvětluje jen pojmy — InvestiQ skutečné pokyny nezadává."
+    }
+   ],
+   "analogy": "Tržní pokyn je jako říct „vezmu to za kolik to bude“; limitní jako „jen pokud to stojí nejvýš tolik“.",
+   "keyPoints": [
+    "Tržní pokyn: jisté provedení, nejistá cena.",
+    "Limitní pokyn: jistý cenový limit, nejisté provedení.",
+    "U málo obchodovaných titulů limitní pokyny snižují překvapení."
+   ],
+   "quiz": [
+    {
+     "question": "Co zaručuje limitní nákupní pokyn?",
+     "options": [
+      "Že se provede",
+      "Že nezaplatíte víc než limit",
+      "Zisk"
+     ],
+     "correctIndex": 1,
+     "explanation": "Cena je omezena, ale provedení zaručené není."
+    },
+    {
+     "question": "Kdy se tržní pokyn může provést za překvapivou cenu?",
+     "options": [
+      "Na rychlém nebo málo likvidním trhu",
+      "Nikdy",
+      "Jen v pátek"
+     ],
+     "correctIndex": 0,
+     "explanation": "Málo nabídek nebo rychlé pohyby znamenají, že nejlepší cena může poskočit."
+    },
+    {
+     "question": "Posílá InvestiQ pokyny brokerům?",
+     "options": [
+      "Ano, automaticky",
+      "Ano, po potvrzení",
+      "Ne, nikdy"
+     ],
+     "correctIndex": 2,
+     "explanation": "InvestiQ je vzdělávací a analytický nástroj bez provádění obchodů."
+    }
+   ]
+  },
+  {
+   "id": "investing-vs-speculation",
+   "order": 18,
+   "stage": 4,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Jak se investování liší od spekulace",
+   "summary": "Investování stojí na dlouhodobé hodnotě aktiv; spekulace se snaží vydělat na krátkodobých pohybech cen.",
+   "sections": [
+    {
+     "heading": "Jiné otázky",
+     "body": "Investor se ptá, co aktivum pravděpodobně přinese za mnoho let — zisky, úroky, nájmy — a jaká cena je za to rozumná. Spekulant se ptá, kde bude cena příští týden. Spekulace není nezákonná, ale její výsledky silně závisejí na načasování a štěstí a náklady častého obchodování se sčítají."
+    },
+    {
+     "heading": "Varovné znaky spekulace",
+     "body": "Nákup, protože cena „roste“, investování na dluh, obchodování mnohokrát týdně, pákové produkty nebo honba za tipy ze sociálních sítí jsou typické znaky. Studie drobných investorů opakovaně zjistily, že ti, kdo obchodují nejvíc, mají po nákladech obvykle horší výsledky."
+    }
+   ],
+   "analogy": "Investovat je jako zasadit sad kvůli ovoci; spekulovat je jako sázet se, za kolik se sad prodá v aukci příští týden.",
+   "keyPoints": [
+    "Investování se zaměřuje na dlouhodobou hodnotu a příjem.",
+    "Spekulace závisí na krátkodobých pohybech a načasování.",
+    "Časté obchodování a páka zvyšují náklady a riziko."
+   ],
+   "quiz": [
+    {
+     "question": "Na co se investor hlavně ptá?",
+     "options": [
+      "Kde bude cena zítra?",
+      "Co koupil můj kamarád?",
+      "Co toto aktivum přinese za mnoho let?"
+     ],
+     "correctIndex": 2,
+     "explanation": "Investoři se zaměřují na dlouhodobou hodnotu a příjem."
+    },
+    {
+     "question": "Co je typický znak spekulace?",
+     "options": [
+      "Držení diverzifikovaného fondu roky",
+      "Obchodování mnohokrát týdně podle tipů",
+      "Čtení výroční zprávy"
+     ],
+     "correctIndex": 1,
+     "explanation": "Časté obchodování podle tipů závisí na načasování a štěstí."
+    },
+    {
+     "question": "Co studie často zjišťují o nejaktivnějších drobných investorech?",
+     "options": [
+      "Po nákladech obvykle vydělají méně",
+      "Vždy vydělají víc",
+      "Neplatí poplatky"
+     ],
+     "correctIndex": 0,
+     "explanation": "Náklady a špatné načasování snižují jejich výsledky."
+    }
+   ]
+  },
+  {
+   "id": "risk-and-return",
+   "order": 19,
+   "stage": 4,
+   "minutes": 4,
+   "calculator": null,
+   "title": "Proč vyšší výnosy obvykle znamenají vyšší riziko",
+   "summary": "Investoři za přijetí větší nejistoty požadují vyšší očekávaný výnos — nabídka vysokého výnosu bez rizika je proto varovný signál.",
+   "sections": [
+    {
+     "heading": "Riziková prémie",
+     "body": "Půjčit stabilnímu státu na krátkou dobu je poměrně bezpečné, a proto to vynáší málo. Vlastnit akcie firem je nejistější, takže investoři v dlouhém období očekávají víc. Tento výnos navíc se nazývá riziková prémie. Důležité je slovo „očekávaný“: vyšší riziko rozšiřuje rozpětí výsledků, včetně horších."
+    },
+    {
+     "heading": "Riziko není záruka odměny",
+     "body": "Větší riziko nezaručuje vyšší výnos; jen ho umožňuje v průměru, v dlouhém období a napříč mnoha investicemi. Některá rizika nejsou odměňována vůbec, například soustředění všeho do jedné firmy. Každý produkt slibující vysoké výnosy bez rizika si zaslouží hlubokou nedůvěru."
+    }
+   ],
+   "analogy": "Je to jako volba cesty přes hory: horní stezka může být rychlejší, ale počasí se tam umí rychle změnit.",
+   "keyPoints": [
+    "Vyšší očekávaný výnos je odměnou za přijetí větší nejistoty.",
+    "Větší riziko rozšiřuje rozpětí výsledků oběma směry.",
+    "„Vysoký výnos bez rizika“ je varovný signál."
+   ],
+   "quiz": [
+    {
+     "question": "Proč mají akcie vyšší očekávaný výnos než krátkodobé státní dluhopisy?",
+     "options": [
+      "Investoři požadují odměnu za větší nejistotu",
+      "Akcie mají nižší poplatky",
+      "Stát zakazuje vysoké úroky"
+     ],
+     "correctIndex": 0,
+     "explanation": "Této odměně se říká riziková prémie."
+    },
+    {
+     "question": "Zaručuje větší riziko vyšší výnos?",
+     "options": [
+      "Ano, vždy",
+      "Ano, po roce",
+      "Ne, jen ho v průměru umožňuje"
+     ],
+     "correctIndex": 2,
+     "explanation": "Rizikové investice mohou skončit i velkými ztrátami."
+    },
+    {
+     "question": "Produkt slibuje 15 % ročně bez rizika. Jaká je správná reakce?",
+     "options": [
+      "Rychle investovat",
+      "Brát to jako vážný varovný signál",
+      "Půjčit si a investovat víc"
+     ],
+     "correctIndex": 1,
+     "explanation": "Takové sliby jsou typické pro podvody."
+    }
+   ]
+  },
+  {
+   "id": "past-performance",
+   "order": 20,
+   "stage": 4,
+   "minutes": 3,
+   "calculator": null,
+   "title": "Proč minulé výnosy nezaručují budoucí výsledky",
+   "summary": "Minulé výnosy popisují, co se stalo za minulých podmínek; budoucnost může být velmi jiná.",
+   "sections": [
+    {
+     "heading": "Proč minulost klame",
+     "body": "Trhy se mění: úrokové sazby, ocenění, technologie, konkurence i regulace. Fondy a akcie, které byly v jednom období nejlepší, to často nezopakují. Grafy minulých vítězů navíc trpí zkreslením přeživších — ty, které selhaly, už nejsou vidět."
+    },
+    {
+     "heading": "Jak historii rozumně používat",
+     "body": "Historie pomáhá pochopit rozpětí: jak hluboké byly propady, jak dlouho trvalo zotavení, jak volatilní je třída aktiv. Není to prognóza. InvestiQ ukazuje historická rozpětí a ověřené statistické modely se širokými intervaly, porovnává je s jednoduchou prognózou „beze změny“ — a řekne, když model lepší není."
+    }
+   ],
+   "analogy": "Řídit jen podle zpětného zrcátka vám řekne, kudy silnice vedla, ne kde je další zatáčka.",
+   "keyPoints": [
+    "Minulé výnosy závisejí na minulých podmínkách, které se nemusí opakovat.",
+    "Zkreslení přeživších dělá minulost lepší, než byla.",
+    "Historie pomáhá pochopit rozpětí, ne předpovídat."
+   ],
+   "quiz": [
+    {
+     "question": "Proč včerejší nejlepší fondy často nejlepšími nezůstanou?",
+     "options": [
+      "Zakazují to pravidla",
+      "Podmínky se mění a úspěch se spolehlivě opakuje jen zřídka",
+      "Fondy přestanou zveřejňovat výsledky"
+     ],
+     "correctIndex": 1,
+     "explanation": "Stálost výsledků je ve většině studií slabá."
+    },
+    {
+     "question": "Co je zkreslení přeživších?",
+     "options": [
+      "Sledování jen investic, které stále existují, a ignorování těch, které selhaly",
+      "Daň ze starých fondů",
+      "Druh dluhopisu"
+     ],
+     "correctIndex": 0,
+     "explanation": "Vynechání neúspěchů dělá minulost hezčí."
+    },
+    {
+     "question": "K čemu je historie nejužitečnější?",
+     "options": [
+      "K předpovědi ceny příští měsíc",
+      "K zaručení výnosů",
+      "K pochopení rozpětí možných výsledků"
+     ],
+     "correctIndex": 2,
+     "explanation": "Ukazuje, jak velké byly propady a zotavení."
+    }
+   ]
+  },
+  {
+   "id": "recognising-fraud",
+   "order": 21,
+   "stage": 4,
+   "minutes": 5,
+   "calculator": null,
+   "title": "Jak rozpoznat finanční podvod",
+   "summary": "Podvodníci slibují vysoké a bezpečné výnosy a tlačí na rychlé rozhodnutí; první obranou je ověřit firmu v oficiálním registru.",
+   "sections": [
+    {
+     "heading": "Typické varovné znaky",
+     "body": "Zaručené vysoké výnosy, tlak na okamžité rozhodnutí, nevyžádaný telefonát nebo zpráva na sociálních sítích, reklama se slavnými osobnostmi, žádost o instalaci programu pro vzdálený přístup, platba kryptoaktivy nebo na soukromé účty a potíže s výběrem peněz jsou klasické znaky. Služby, které za poplatek předem slibují vrácení ztracených peněz, bývají dalším podvodem."
+    },
+    {
+     "heading": "Jak se chránit",
+     "body": "Ověřte, zda má firma povolení v registru dohledu (v Česku seznam regulovaných subjektů České národní banky, v EU registry ESMA) a zda není na seznamech varování. Nikdy nesdílejte hesla ani jednorázové kódy a nikomu nedovolte ovládat váš počítač. Když je něco naléhavé a příliš dobré, zastavte se a poraďte se s někým, komu věříte."
+    }
+   ],
+   "analogy": "Podvodník je jako cizinec prodávající „zlaté“ hodinky v temné uličce: spěch a příliš dobrá cena jsou vodítkem.",
+   "keyPoints": [
+    "Zaručené vysoké výnosy a časový tlak jsou varovné signály.",
+    "Vždy ověřte oficiální registr a seznamy varování.",
+    "Nikdy nesdílejte hesla, kódy ani vzdálený přístup."
+   ],
+   "quiz": [
+    {
+     "question": "Která nabídka je typickým znakem podvodu?",
+     "options": [
+      "Fond se zveřejněným KID",
+      "Účet u licencované banky",
+      "Zaručených 20 % měsíčně, rozhodněte se dnes"
+     ],
+     "correctIndex": 2,
+     "explanation": "Vysoký zaručený výnos plus spěch jsou klasické znaky podvodu."
+    },
+    {
+     "question": "Kde ověřit, zda má firma povolení?",
+     "options": [
+      "V oficiálním registru dohledového orgánu",
+      "V recenzích samotné firmy",
+      "Ve skupině na sociálních sítích"
+     ],
+     "correctIndex": 0,
+     "explanation": "Spolehlivý je jen registr regulátora."
+    },
+    {
+     "question": "Někdo nabízí vrácení ztracených peněz za poplatek předem. Co to nejspíš je?",
+     "options": [
+      "Státní služba",
+      "Často další podvod",
+      "Vrácení daně"
+     ],
+     "correctIndex": 1,
+     "explanation": "Podvody s „vymáháním“ cílí na už podvedené."
+    }
+   ]
+  }
+ ]
+}

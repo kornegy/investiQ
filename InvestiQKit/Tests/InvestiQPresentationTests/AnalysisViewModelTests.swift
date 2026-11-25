@@ -172,3 +172,37 @@ final class SimulatorViewModelTests: XCTestCase {
         XCTAssertEqual(lab.error, Message("strategy.error.weights"))
     }
 }
+
+@MainActor
+final class LearnViewModelTests: XCTestCase {
+    func testPathQuizAndProgress() async throws {
+        let context = try TestContext()
+        let app = AppModel(environment: AppEnvironment(paths: context.paths, secureStore: context.secureStore,
+                                                       biometricStore: context.biometrics,
+                                                       passwordDerivation: Argon2idKeyDerivation.testing, clock: context.clock,
+                                                       httpClient: OfflineHTTPClient()))
+        await app.startDemo()
+        let model = LearnViewModel(app: app, languageCode: "cs")
+        await model.load()
+        XCTAssertEqual(model.lessons.count, 21)
+        XCTAssertEqual(LearnViewModel.stages.flatMap { model.lessons(in: $0) }.count, 21)
+        let first = try XCTUnwrap(model.nextLesson)
+        await model.open(first)
+        XCTAssertEqual(model.status(of: first), .inProgress)
+        XCTAssertFalse(model.canSubmit)
+        // Wrong answers: still in progress.
+        model.answers = first.quiz.map { ($0.correctIndex + 1) % $0.options.count }
+        await model.submitQuiz()
+        XCTAssertEqual(model.submittedScore, 0)
+        XCTAssertEqual(model.status(of: first), .inProgress)
+        model.retryQuiz()
+        model.answers = first.quiz.map(\.correctIndex)
+        await model.submitQuiz()
+        XCTAssertEqual(model.submittedScore, first.quiz.count)
+        XCTAssertEqual(model.status(of: first), .completed)
+        XCTAssertEqual(model.progress[first.id]?.quizAttempts, 2)
+        XCTAssertNotEqual(model.nextLesson?.id, first.id)
+        XCTAssertFalse(model.isCourseComplete)
+        XCTAssertEqual(model.compoundPoints.count, model.compoundYears)
+    }
+}

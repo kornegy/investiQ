@@ -45,3 +45,18 @@ public struct PlannerGoal: Sendable, Hashable, Identifiable, Codable {
         self.targetDate = targetDate; self.createdAt = createdAt
     }
 }
+
+/// Progress through one lesson (learning_progress table).
+public struct LessonProgress: Sendable, Hashable, Codable {
+    public enum Status: String, Sendable, Codable, CaseIterable { case notStarted, inProgress, completed }
+    public var lessonID: String
+    public var status: Status
+    public var quizBestScore: Int?
+    public var quizAttempts: Int
+    public var updatedAt: Date
+
+    public init(lessonID: String, status: Status, quizBestScore: Int?, quizAttempts: Int, updatedAt: Date) {
+        self.lessonID = lessonID; self.status = status; self.quizBestScore = quizBestScore; self.quizAttempts = quizAttempts
+        self.updatedAt = updatedAt
+    }
+}

@@ -35,7 +35,7 @@ investiQ/
 │   │   ├── InvestiQServices/          Use cases: portfolio ledger & valuation, CSV import/export, market
 │   │   │                              data service, news pipeline, calendar, simulator, notifications,
 │   │   │                              education, brokers, AI orchestration, profile/session management
-│   │   ├── InvestiQContent/           Bundled content (education lessons ru/en/cs, broker directory,
+│   │   ├── InvestiQContent/           Bundled content (education lessons ru/en/cs, broker directory, Lessons are authored in `Content/lessons/*.py` (all three languages side by side) and generated into `Resources/lessons/<lang>.json` by `scripts/build_lessons.py`.
 │   │   │                              scheduled events, cause-effect knowledge base)
 │   │   ├── InvestiQPresentation/      @Observable view models (MainActor), AppEnvironment (DI container)
 │   │   └── InvestiQPlatformApple/     Keychain, LocalAuthentication, UserNotifications, NWPathMonitor,

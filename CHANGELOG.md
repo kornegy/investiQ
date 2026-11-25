@@ -17,6 +17,11 @@ SemVer once releases start.
 - Fix: cached price history counted as a hit when it covered only the start of a request (could hide
   recent prices); fetched bars are now merged into the cache instead of replacing it.
 - Portfolio snapshots can be valued as of a past date (used by historical simulations).
+- Education: all 21 mandatory topics as lessons in ru/en/cs (summary, sections, analogy, key points,
+  quiz with explanations) on a four-stage learning path; five interactive calculators (compound
+  interest, inflation, fees, currency, diversification); progress stored encrypted; finishing the course
+  is explicitly not presented as readiness to invest. Lessons are generated from `Content/lessons`, so the
+  languages cannot drift apart (checked in CI).
 
 ### Phase 4 — Analytics and risk
 - Bond analytics (schedules, five day counts, accrued interest, YTM/YTC, durations, convexity, full

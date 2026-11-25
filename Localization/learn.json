@@ -1,0 +1,247 @@
+{
+  "learn.intro": {
+    "en": "A step-by-step course from the very basics to understanding stocks, bonds and ETFs. Short lessons, everyday analogies, calculators and quizzes.",
+    "ru": "Пошаговый курс от самых основ до понимания акций, облигаций и ETF. Короткие уроки, понятные аналогии, калькуляторы и тесты.",
+    "cs": "Kurz krok za krokem od úplných základů k porozumění akciím, dluhopisům a ETF. Krátké lekce, srozumitelná přirovnání, kalkulačky a kvízy."
+  },
+  "learn.stage.1": {
+    "en": "1 · Foundations",
+    "ru": "1 · Основы",
+    "cs": "1 · Základy"
+  },
+  "learn.stage.2": {
+    "en": "2 · Instruments",
+    "ru": "2 · Инструменты",
+    "cs": "2 · Nástroje"
+  },
+  "learn.stage.3": {
+    "en": "3 · Risk and costs",
+    "ru": "3 · Риск и расходы",
+    "cs": "3 · Riziko a náklady"
+  },
+  "learn.stage.4": {
+    "en": "4 · Practice and protection",
+    "ru": "4 · Практика и защита",
+    "cs": "4 · Praxe a ochrana"
+  },
+  "learn.status.notStarted": {
+    "en": "Not started",
+    "ru": "Не начат",
+    "cs": "Nezahájeno"
+  },
+  "learn.status.inProgress": {
+    "en": "In progress",
+    "ru": "В процессе",
+    "cs": "Probíhá"
+  },
+  "learn.status.completed": {
+    "en": "Completed",
+    "ru": "Пройден",
+    "cs": "Dokončeno"
+  },
+  "learn.minutes": {
+    "en": "%@ min",
+    "ru": "%@ мин",
+    "cs": "%@ min"
+  },
+  "learn.progress": {
+    "en": "%1$@ of %2$@ lessons completed",
+    "ru": "Пройдено уроков: %1$@ из %2$@",
+    "cs": "Dokončeno %1$@ z %2$@ lekcí"
+  },
+  "learn.next": {
+    "en": "Continue: %@",
+    "ru": "Продолжить: %@",
+    "cs": "Pokračovat: %@"
+  },
+  "learn.complete": {
+    "en": "You have completed every lesson. Well done on finishing the course — it covers the basics, and real decisions still need your own research and care.",
+    "ru": "Вы прошли все уроки. Курс охватывает основы — для реальных решений по-прежнему нужны собственное изучение и осторожность.",
+    "cs": "Dokončili jste všechny lekce. Kurz pokrývá základy — skutečná rozhodnutí stále vyžadují vlastní průzkum a opatrnost."
+  },
+  "learn.notReadinessNote": {
+    "en": "Completing lessons is a learning milestone, not a sign that you are ready for real investing or that any investment suits you.",
+    "ru": "Прохождение уроков — учебный этап, а не признак готовности к реальным инвестициям или того, что какое-либо вложение вам подходит.",
+    "cs": "Dokončení lekcí je studijní milník, nikoli známka připravenosti na skutečné investování ani toho, že se vám některá investice hodí."
+  },
+  "learn.back": {
+    "en": "All lessons",
+    "ru": "Все уроки",
+    "cs": "Všechny lekce"
+  },
+  "learn.keyPoints": {
+    "en": "Key points",
+    "ru": "Главное",
+    "cs": "Hlavní body"
+  },
+  "learn.generalNote": {
+    "en": "General educational information, not a personal recommendation.",
+    "ru": "Общая образовательная информация, а не персональная рекомендация.",
+    "cs": "Obecné vzdělávací informace, nikoli osobní doporučení."
+  },
+  "learn.quiz.title": {
+    "en": "Check your understanding",
+    "ru": "Проверьте себя",
+    "cs": "Ověřte si porozumění"
+  },
+  "learn.quiz.check": {
+    "en": "Check answers",
+    "ru": "Проверить ответы",
+    "cs": "Zkontrolovat odpovědi"
+  },
+  "learn.quiz.retry": {
+    "en": "Try again",
+    "ru": "Попробовать снова",
+    "cs": "Zkusit znovu"
+  },
+  "learn.quiz.score": {
+    "en": "%1$@ of %2$@ correct",
+    "ru": "Верно: %1$@ из %2$@",
+    "cs": "Správně %1$@ z %2$@"
+  },
+  "learn.error.loadFailed": {
+    "en": "The lessons could not be loaded.",
+    "ru": "Не удалось загрузить уроки.",
+    "cs": "Lekce se nepodařilo načíst."
+  },
+  "learn.error.saveFailed": {
+    "en": "Your progress could not be saved.",
+    "ru": "Не удалось сохранить прогресс.",
+    "cs": "Pokrok se nepodařilo uložit."
+  },
+  "learn.calc.help": {
+    "en": "Move the sliders to see how the inputs change the result. The numbers are illustrations with constant rates, not forecasts.",
+    "ru": "Двигайте ползунки, чтобы увидеть, как входные данные меняют результат. Это иллюстрации с постоянными ставками, а не прогнозы.",
+    "cs": "Posouvejte jezdce a uvidíte, jak vstupy mění výsledek. Čísla jsou ilustrace s konstantními sazbami, ne prognózy."
+  },
+  "learn.calc.compoundInterest.title": {
+    "en": "Compound interest calculator",
+    "ru": "Калькулятор сложного процента",
+    "cs": "Kalkulačka složeného úročení"
+  },
+  "learn.calc.inflation.title": {
+    "en": "Inflation calculator",
+    "ru": "Калькулятор инфляции",
+    "cs": "Kalkulačka inflace"
+  },
+  "learn.calc.feeDrag.title": {
+    "en": "How fees add up",
+    "ru": "Как накапливаются комиссии",
+    "cs": "Jak se poplatky sčítají"
+  },
+  "learn.calc.currency.title": {
+    "en": "Currency effect",
+    "ru": "Валютный эффект",
+    "cs": "Vliv měny"
+  },
+  "learn.calc.diversification.title": {
+    "en": "Diversification and volatility",
+    "ru": "Диверсификация и волатильность",
+    "cs": "Diverzifikace a volatilita"
+  },
+  "learn.calc.initial": {
+    "en": "Starting amount",
+    "ru": "Начальная сумма",
+    "cs": "Počáteční částka"
+  },
+  "learn.calc.monthly": {
+    "en": "Monthly amount",
+    "ru": "Ежемесячная сумма",
+    "cs": "Měsíční částka"
+  },
+  "learn.calc.rate": {
+    "en": "Return per year (assumed)",
+    "ru": "Доходность в год (допущение)",
+    "cs": "Výnos ročně (předpoklad)"
+  },
+  "learn.calc.years": {
+    "en": "%@ years",
+    "ru": "Лет: %@",
+    "cs": "Let: %@"
+  },
+  "learn.calc.withGrowth": {
+    "en": "With growth",
+    "ru": "С ростом",
+    "cs": "S růstem"
+  },
+  "learn.calc.paidIn": {
+    "en": "Paid in",
+    "ru": "Внесено",
+    "cs": "Vloženo"
+  },
+  "learn.calc.amount": {
+    "en": "Amount",
+    "ru": "Сумма",
+    "cs": "Částka"
+  },
+  "learn.calc.inflation": {
+    "en": "Inflation per year",
+    "ru": "Инфляция в год",
+    "cs": "Inflace ročně"
+  },
+  "learn.calc.purchasingPower": {
+    "en": "Purchasing power",
+    "ru": "Покупательная способность",
+    "cs": "Kupní síla"
+  },
+  "learn.calc.inflation.result": {
+    "en": "After %1$@ years the amount buys what %2$@ buys today.",
+    "ru": "Через %1$@ лет эта сумма купит столько же, сколько сегодня %2$@.",
+    "cs": "Po %1$@ letech částka koupí tolik, co dnes %2$@."
+  },
+  "learn.calc.grossReturn": {
+    "en": "Return before fees (assumed)",
+    "ru": "Доходность до комиссий (допущение)",
+    "cs": "Výnos před poplatky (předpoklad)"
+  },
+  "learn.calc.fee": {
+    "en": "Yearly fee",
+    "ru": "Годовая комиссия",
+    "cs": "Roční poplatek"
+  },
+  "learn.calc.withFee": {
+    "en": "With the fee",
+    "ru": "С комиссией",
+    "cs": "S poplatkem"
+  },
+  "learn.calc.withoutFee": {
+    "en": "Without the fee",
+    "ru": "Без комиссии",
+    "cs": "Bez poplatku"
+  },
+  "learn.calc.fee.result": {
+    "en": "The fee costs %@ by the end of the period.",
+    "ru": "К концу периода комиссия обойдётся в %@.",
+    "cs": "Poplatek do konce období stojí %@."
+  },
+  "learn.calc.assetReturn": {
+    "en": "Return in the foreign currency",
+    "ru": "Доходность в иностранной валюте",
+    "cs": "Výnos v cizí měně"
+  },
+  "learn.calc.currencyChange": {
+    "en": "Change of the foreign currency against yours",
+    "ru": "Изменение иностранной валюты к вашей",
+    "cs": "Změna cizí měny vůči vaší"
+  },
+  "learn.calc.currency.result": {
+    "en": "Your return in your own currency: %@",
+    "ru": "Ваша доходность в вашей валюте: %@",
+    "cs": "Váš výnos ve vaší měně: %@"
+  },
+  "learn.calc.singleVolatility": {
+    "en": "Volatility of one holding",
+    "ru": "Волатильность одной позиции",
+    "cs": "Volatilita jedné pozice"
+  },
+  "learn.calc.correlation": {
+    "en": "Correlation between holdings",
+    "ru": "Корреляция между позициями",
+    "cs": "Korelace mezi pozicemi"
+  },
+  "learn.calc.diversification.note": {
+    "en": "Equal-weight portfolio of holdings with the same volatility and correlation. The line flattens: the part caused by the whole market cannot be diversified away.",
+    "ru": "Портфель с равными весами из позиций с одинаковой волатильностью и корреляцией. Линия выравнивается: часть риска, вызванную всем рынком, диверсификацией не убрать.",
+    "cs": "Portfolio se stejnými vahami z pozic se stejnou volatilitou a korelací. Křivka se zplošťuje: část způsobenou celým trhem diverzifikace neodstraní."
+  }
+}

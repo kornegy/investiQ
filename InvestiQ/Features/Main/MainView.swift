@@ -53,6 +53,8 @@ struct SectionContainer: View {
             PlannerView()
         case .simulator:
             SimulatorView()
+        case .learn:
+            LearnView()
         default:
             SectionPlaceholderView(section: section)
         }
