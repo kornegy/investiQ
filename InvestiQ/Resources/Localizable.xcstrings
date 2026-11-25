@@ -2186,6 +2186,29 @@
         }
       }
     },
+    "common.delete": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smazat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить"
+          }
+        }
+      }
+    },
     "common.loading": {
       "extractionState": "manual",
       "localizations": {
@@ -9772,6 +9795,1570 @@
           "stringUnit": {
             "state": "translated",
             "value": "Слабый"
+          }
+        }
+      }
+    },
+    "planner.budget.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte částky za měsíc (rezervu a úspory jako celkové částky). Pokud něco neplatí, zadejte 0; prázdná pole se berou jako neznámá, ne jako nula."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter amounts per month (the emergency fund and savings as totals). Enter 0 when something does not apply; blank fields are treated as unknown, not as zero."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Укажите суммы в месяц (резервный фонд и сбережения — итоговыми суммами). Введите 0, если что-то не относится к вам; пустые поля считаются неизвестными, а не нулём."
+          }
+        }
+      }
+    },
+    "planner.budget.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měsíční rozpočet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly budget"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ежемесячный бюджет"
+          }
+        }
+      }
+    },
+    "planner.error.invalidGoal": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte název cíle (do 100 znaků) a kladnou částku."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a goal name (up to 100 characters) and a positive amount."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите название цели (до 100 символов) и положительную сумму."
+          }
+        }
+      }
+    },
+    "planner.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data plánovače se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The planner data could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить данные планировщика."
+          }
+        }
+      }
+    },
+    "planner.error.saveFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data plánovače se nepodařilo uložit."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The planner data could not be saved."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось сохранить данные планировщика."
+          }
+        }
+      }
+    },
+    "planner.field.additionalExpenses": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatní výdaje"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other expenses"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прочие расходы"
+          }
+        }
+      }
+    },
+    "planner.field.availableSavings": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatní úspory (celkem)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other savings (total)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прочие сбережения (всего)"
+          }
+        }
+      }
+    },
+    "planner.field.debtPayments": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Splátky dluhů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debt payments"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Платежи по долгам"
+          }
+        }
+      }
+    },
+    "planner.field.emergencyFund": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finanční rezerva (celkem)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency fund (total)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервный фонд (всего)"
+          }
+        }
+      }
+    },
+    "planner.field.essentialExpenses": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nezbytné výdaje (bydlení, jídlo, zdraví, doprava)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essential expenses (housing, food, health, transport)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обязательные расходы (жильё, еда, здоровье, транспорт)"
+          }
+        }
+      }
+    },
+    "planner.field.invalid": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte číslo nula nebo větší."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number of zero or more."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите число не меньше нуля."
+          }
+        }
+      }
+    },
+    "planner.field.monthlyIncome": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čistý měsíční příjem"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly net income"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чистый ежемесячный доход"
+          }
+        }
+      }
+    },
+    "planner.field.placeholder": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Částka"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amount"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сумма"
+          }
+        }
+      }
+    },
+    "planner.goal.add": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přidat cíl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add goal"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить цель"
+          }
+        }
+      }
+    },
+    "planner.goal.amount": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cílová částka"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Target amount"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Целевая сумма"
+          }
+        }
+      }
+    },
+    "planner.goal.date": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата"
+          }
+        }
+      }
+    },
+    "planner.goal.hasDate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cílové datum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Target date"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Целевая дата"
+          }
+        }
+      }
+    },
+    "planner.goal.monthly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ měsíčně pro včasné dosažení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ a month to reach it on time"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ в месяц, чтобы успеть к сроку"
+          }
+        }
+      }
+    },
+    "planner.goal.name": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cíl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цель"
+          }
+        }
+      }
+    },
+    "planner.goal.term": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Horizont"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Term"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Срок"
+          }
+        }
+      }
+    },
+    "planner.goal.term.long": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dlouhodobý"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long-term"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Долгосрочная"
+          }
+        }
+      }
+    },
+    "planner.goal.term.short": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krátkodobý"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short-term"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Краткосрочная"
+          }
+        }
+      }
+    },
+    "planner.goals.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krátkodobé cíle (zhruba do tří let) se obvykle financují z úspor, ne z kolísavých investic. Měsíční částka nepočítá s výnosem."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short-term goals (within about three years) are usually funded from savings rather than volatile investments. The monthly amount assumes no return."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Краткосрочные цели (примерно до трёх лет) обычно финансируют из сбережений, а не из волатильных инвестиций. Ежемесячная сумма рассчитана без доходности."
+          }
+        }
+      }
+    },
+    "planner.goals.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cíle"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goals"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цели"
+          }
+        }
+      }
+    },
+    "planner.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pochopte svůj měsíční peněžní tok a finanční rezervu. Plánovač vysvětluje důsledky, ale neříká, kolik investovat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Understand your monthly cash flow and your safety cushion. The planner explains consequences; it does not tell you how much to invest."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разберитесь в ежемесячном денежном потоке и своей финансовой подушке. Планировщик объясняет последствия, но не говорит, сколько инвестировать."
+          }
+        }
+      }
+    },
+    "planner.metric.coverage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rezerva pokryje"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency fund covers"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервный фонд покрывает"
+          }
+        }
+      }
+    },
+    "planner.metric.coverage.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolik měsíců by rezerva platila nezbytné výdaje a splátky bez jakéhokoli příjmu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How many months the emergency fund would pay essential expenses and debt payments without any income."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сколько месяцев резервный фонд оплачивал бы обязательные расходы и долги без какого-либо дохода."
+          }
+        }
+      }
+    },
+    "planner.metric.freeCashFlow": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volný peněžní tok za měsíc"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free cash flow per month"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свободный денежный поток в месяц"
+          }
+        }
+      }
+    },
+    "planner.metric.freeCashFlow.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příjem minus všechny výdaje a splátky dluhů. Záporná hodnota znamená, že utrácíte víc, než vyděláváte."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income minus all expenses and debt payments. A negative value means you spend more than you earn."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доход минус все расходы и платежи по долгам. Отрицательное значение означает, что вы тратите больше, чем зарабатываете."
+          }
+        }
+      }
+    },
+    "planner.metric.ratio": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příjmy k výdajům"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income to expenses"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доходы к расходам"
+          }
+        }
+      }
+    },
+    "planner.metric.ratio.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příjem dělený všemi výdaji a splátkami. Nad 1 znamená, že příjem pokrývá výdaje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income divided by all expenses and debt payments. Above 1 means income covers spending."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доход, делённый на все расходы и платежи по долгам. Больше 1 — доход покрывает траты."
+          }
+        }
+      }
+    },
+    "planner.months": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ měs."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ months"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ мес."
+          }
+        }
+      }
+    },
+    "planner.note.debtDifficulty": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uvedli jste potíže se splácením dluhů. V mnoha zemích je k dispozici bezplatné dluhové poradenství (v Česku například neziskové dluhové poradny)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You reported difficulty repaying debts. Free debt counselling is available in many countries (in Czechia, for example, from non-profit debt advice centres)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы указали трудности с погашением долгов. Во многих странах доступны бесплатные консультации по долгам (в Чехии, например, некоммерческие консультационные центры)."
+          }
+        }
+      }
+    },
+    "planner.note.educationalModeOnly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výukový režim: plánovač slouží k učení a investice jsou zde pouze virtuální."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Educational mode: the planner is for learning, and investing here is virtual only."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учебный режим: планировщик предназначен для обучения, инвестиции здесь только виртуальные."
+          }
+        }
+      }
+    },
+    "planner.note.emergencyFundBelowThreeMonths": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rezerva pokryje méně než tři měsíce nezbytných nákladů. Běžně se doporučují tři až šest měsíců v hotovosti nebo podobně."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your emergency fund covers less than three months of essential costs. Common guidance is three to six months, kept in cash or similar."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервный фонд покрывает меньше трёх месяцев обязательных расходов. Обычно рекомендуют три–шесть месяцев в деньгах или аналогах."
+          }
+        }
+      }
+    },
+    "planner.note.highInterestDebt": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uvedli jste dluh s vysokým úrokem. Jeho splacení je zaručená úspora ve výši úroku, kterou žádná investice spolehlivě nevyrovná."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You reported high-interest debt. Repaying it is a guaranteed saving of its interest rate, which is hard for any investment to match reliably."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы указали дорогой долг. Его погашение даёт гарантированную экономию на процентах, с которой трудно надёжно сравниться любой инвестиции."
+          }
+        }
+      }
+    },
+    "planner.note.negativeCashFlow": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaše výdaje převyšují příjem. Peníze potřebné na běžný život a dluhy se obvykle neinvestují: nejdřív je důležité zlepšit měsíční bilanci."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your expenses are higher than your income. Money needed for everyday life and debts is usually not invested: improving the monthly balance comes first."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши расходы превышают доход. Деньги, нужные на повседневную жизнь и долги, обычно не инвестируют: сначала важно улучшить ежемесячный баланс."
+          }
+        }
+      }
+    },
+    "planner.note.noEmergencyFund": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nemáte finanční rezervu. Investice mohou klesnout právě ve chvíli nečekaného výdaje, proto se hotovostní rezerva obvykle vytváří před investováním."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have no emergency fund. Investments can fall exactly when an unexpected expense arrives, so a cash reserve is usually built before investing."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У вас нет резервного фонда. Вложения могут подешеветь как раз тогда, когда возникнет непредвиденный расход, поэтому денежный резерв обычно создают до инвестирования."
+          }
+        }
+      }
+    },
+    "planner.portfolio.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypotetické pohyby zadané částky v porovnání s měsíčními nezbytnými náklady. Poklesy o 20–40 % na akciových trzích nastaly již několikrát."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hypothetical moves of an amount you enter, compared with your monthly essential costs. Falls of 20–40 % have happened in stock markets several times."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Гипотетические изменения введённой суммы в сравнении с ежемесячными обязательными расходами. Падения на 20–40 % на фондовых рынках происходили неоднократно."
+          }
+        }
+      }
+    },
+    "planner.portfolio.months": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≈ %@ měs. nezbytných nákladů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≈ %@ months of essential costs"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≈ %@ мес. обязательных расходов"
+          }
+        }
+      }
+    },
+    "planner.portfolio.note": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeptejte se sami sebe, zda byste po takovém poklesu mohli nechat peníze investované, aniž byste je potřebovali na živobytí."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask yourself whether you could leave the money invested after such a fall without needing it for living costs."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Спросите себя, смогли бы вы не трогать вложения после такого падения, не нуждаясь в этих деньгах на жизнь."
+          }
+        }
+      }
+    },
+    "planner.portfolio.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změny hodnoty portfolia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portfolio value changes"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменения стоимости портфеля"
+          }
+        }
+      }
+    },
+    "planner.portfolio.value": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodnota portfolia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Portfolio value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стоимость портфеля"
+          }
+        }
+      }
+    },
+    "planner.privacy": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tyto údaje nikdy neopustí váš Mac."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These figures never leave your Mac."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Эти данные никогда не покидают ваш Mac."
+          }
+        }
+      }
+    },
+    "planner.saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uloženo v tomto Macu (šifrovaně)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved on this Mac (encrypted)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранено на этом Mac (в зашифрованном виде)."
+          }
+        }
+      }
+    },
+    "planner.savings.contributed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vloženo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paid in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Внесено"
+          }
+        }
+      }
+    },
+    "planner.savings.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pravidelné spoření s konstantním výnosem a inflací, které zvolíte. Skutečné výnosy kolísají a mohou být záporné; jde o ilustraci složeného úročení, ne o očekávání."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regular saving with a constant return and inflation that you choose. Real returns vary and can be negative; this is an illustration of compounding, not an expectation."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Регулярные сбережения с постоянной доходностью и инфляцией, которые вы выбираете. Реальная доходность меняется и может быть отрицательной; это иллюстрация сложного процента, а не ожидание."
+          }
+        }
+      }
+    },
+    "planner.savings.inflation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Předpokládaná inflace (% ročně)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assumed inflation (% a year)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Допущение инфляции (% в год)"
+          }
+        }
+      }
+    },
+    "planner.savings.initial": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Počáteční částka"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starting amount"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Начальная сумма"
+          }
+        }
+      }
+    },
+    "planner.savings.monthly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měsíční částka"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly amount"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ежемесячная сумма"
+          }
+        }
+      }
+    },
+    "planner.savings.nominal": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodnota"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стоимость"
+          }
+        }
+      }
+    },
+    "planner.savings.note": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daně a poplatky nejsou zahrnuty. Přerušovaná čára ukazuje vložené částky bez výnosu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taxes and fees are not included. The dashed line shows the amounts paid in without any return."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Налоги и комиссии не учтены. Пунктир показывает внесённые суммы без доходности."
+          }
+        }
+      }
+    },
+    "planner.savings.real": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V dnešních penězích"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In today's money"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В сегодняшних деньгах"
+          }
+        }
+      }
+    },
+    "planner.savings.return": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Předpokládaný výnos (% ročně)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assumed return (% a year)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Допущение доходности (% в год)"
+          }
+        }
+      }
+    },
+    "planner.savings.summary": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po %1$@ letech: vloženo %2$@, hodnota %3$@, v dnešních penězích %4$@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After %1$@ years: paid in %2$@, value %3$@, in today's money %4$@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Через %1$@ лет: внесено %2$@, стоимость %3$@, в сегодняшних деньгах %4$@."
+          }
+        }
+      }
+    },
+    "planner.savings.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scénář spoření"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Savings scenario"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сценарий сбережений"
+          }
+        }
+      }
+    },
+    "planner.savings.years": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Years"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лет"
+          }
+        }
+      }
+    },
+    "planner.shock.balance": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měsíční bilance: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly balance: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ежемесячный баланс: %@"
+          }
+        }
+      }
+    },
+    "planner.shock.covered": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příjem by stále pokryl výdaje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your income would still cover your expenses."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доход по-прежнему покрывал бы расходы."
+          }
+        }
+      }
+    },
+    "planner.shock.expense": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nečekaný výdaj"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unexpected expense"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Непредвиденный расход"
+          }
+        }
+      }
+    },
+    "planner.shock.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jednoduché výpočty „co kdyby“ s částkami, které zvolíte. Předpokládá se, že výdaje zůstanou stejné."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simple what-if calculations with amounts you choose. Expenses are assumed to stay the same."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Простые расчёты «что если» с выбранными вами суммами. Предполагается, что расходы не меняются."
+          }
+        }
+      }
+    },
+    "planner.shock.incomeLoss": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příjem klesne o"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income falls by"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доход снижается на"
+          }
+        }
+      }
+    },
+    "planner.shock.needBudget": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte příjem a všechny výdaje, abyste to viděli."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter income and all expenses to see this."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Укажите доход и все расходы, чтобы увидеть результат."
+          }
+        }
+      }
+    },
+    "planner.shock.rebuild": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asi %@ měsíců volného peněžního toku na její obnovení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About %@ months of free cash flow to rebuild it."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Около %@ мес. свободного денежного потока, чтобы восстановить сумму."
+          }
+        }
+      }
+    },
+    "planner.shock.remaining": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zbylé rezervy: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reserves left afterwards: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Останется резервов: %@"
+          }
+        }
+      }
+    },
+    "planner.shock.reservesLast": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rezerva a úspory by vydržely přibližně %@ měsíců."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your emergency fund and savings would last about %@ months."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервного фонда и сбережений хватило бы примерно на %@ мес."
+          }
+        }
+      }
+    },
+    "planner.shock.shortfall": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepokryto rezervami: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not covered by reserves: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не покрыто резервами: %@"
+          }
+        }
+      }
+    },
+    "planner.shock.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Co kdyby…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What if…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что если…"
           }
         }
       }

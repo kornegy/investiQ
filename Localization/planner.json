@@ -1,0 +1,347 @@
+{
+  "common.delete": {
+    "en": "Delete",
+    "ru": "Удалить",
+    "cs": "Smazat"
+  },
+  "planner.intro": {
+    "en": "Understand your monthly cash flow and your safety cushion. The planner explains consequences; it does not tell you how much to invest.",
+    "ru": "Разберитесь в ежемесячном денежном потоке и своей финансовой подушке. Планировщик объясняет последствия, но не говорит, сколько инвестировать.",
+    "cs": "Pochopte svůj měsíční peněžní tok a finanční rezervu. Plánovač vysvětluje důsledky, ale neříká, kolik investovat."
+  },
+  "planner.error.loadFailed": {
+    "en": "The planner data could not be loaded.",
+    "ru": "Не удалось загрузить данные планировщика.",
+    "cs": "Data plánovače se nepodařilo načíst."
+  },
+  "planner.error.saveFailed": {
+    "en": "The planner data could not be saved.",
+    "ru": "Не удалось сохранить данные планировщика.",
+    "cs": "Data plánovače se nepodařilo uložit."
+  },
+  "planner.error.invalidGoal": {
+    "en": "Enter a goal name (up to 100 characters) and a positive amount.",
+    "ru": "Введите название цели (до 100 символов) и положительную сумму.",
+    "cs": "Zadejte název cíle (do 100 znaků) a kladnou částku."
+  },
+  "planner.budget.title": {
+    "en": "Monthly budget",
+    "ru": "Ежемесячный бюджет",
+    "cs": "Měsíční rozpočet"
+  },
+  "planner.budget.help": {
+    "en": "Enter amounts per month (the emergency fund and savings as totals). Enter 0 when something does not apply; blank fields are treated as unknown, not as zero.",
+    "ru": "Укажите суммы в месяц (резервный фонд и сбережения — итоговыми суммами). Введите 0, если что-то не относится к вам; пустые поля считаются неизвестными, а не нулём.",
+    "cs": "Zadejte částky za měsíc (rezervu a úspory jako celkové částky). Pokud něco neplatí, zadejte 0; prázdná pole se berou jako neznámá, ne jako nula."
+  },
+  "planner.field.monthlyIncome": {
+    "en": "Monthly net income",
+    "ru": "Чистый ежемесячный доход",
+    "cs": "Čistý měsíční příjem"
+  },
+  "planner.field.essentialExpenses": {
+    "en": "Essential expenses (housing, food, health, transport)",
+    "ru": "Обязательные расходы (жильё, еда, здоровье, транспорт)",
+    "cs": "Nezbytné výdaje (bydlení, jídlo, zdraví, doprava)"
+  },
+  "planner.field.additionalExpenses": {
+    "en": "Other expenses",
+    "ru": "Прочие расходы",
+    "cs": "Ostatní výdaje"
+  },
+  "planner.field.debtPayments": {
+    "en": "Debt payments",
+    "ru": "Платежи по долгам",
+    "cs": "Splátky dluhů"
+  },
+  "planner.field.emergencyFund": {
+    "en": "Emergency fund (total)",
+    "ru": "Резервный фонд (всего)",
+    "cs": "Finanční rezerva (celkem)"
+  },
+  "planner.field.availableSavings": {
+    "en": "Other savings (total)",
+    "ru": "Прочие сбережения (всего)",
+    "cs": "Ostatní úspory (celkem)"
+  },
+  "planner.field.placeholder": {
+    "en": "Amount",
+    "ru": "Сумма",
+    "cs": "Částka"
+  },
+  "planner.field.invalid": {
+    "en": "Enter a number of zero or more.",
+    "ru": "Введите число не меньше нуля.",
+    "cs": "Zadejte číslo nula nebo větší."
+  },
+  "planner.saved": {
+    "en": "Saved on this Mac (encrypted).",
+    "ru": "Сохранено на этом Mac (в зашифрованном виде).",
+    "cs": "Uloženo v tomto Macu (šifrovaně)."
+  },
+  "planner.privacy": {
+    "en": "These figures never leave your Mac.",
+    "ru": "Эти данные никогда не покидают ваш Mac.",
+    "cs": "Tyto údaje nikdy neopustí váš Mac."
+  },
+  "planner.metric.freeCashFlow": {
+    "en": "Free cash flow per month",
+    "ru": "Свободный денежный поток в месяц",
+    "cs": "Volný peněžní tok za měsíc"
+  },
+  "planner.metric.freeCashFlow.help": {
+    "en": "Income minus all expenses and debt payments. A negative value means you spend more than you earn.",
+    "ru": "Доход минус все расходы и платежи по долгам. Отрицательное значение означает, что вы тратите больше, чем зарабатываете.",
+    "cs": "Příjem minus všechny výdaje a splátky dluhů. Záporná hodnota znamená, že utrácíte víc, než vyděláváte."
+  },
+  "planner.metric.ratio": {
+    "en": "Income to expenses",
+    "ru": "Доходы к расходам",
+    "cs": "Příjmy k výdajům"
+  },
+  "planner.metric.ratio.help": {
+    "en": "Income divided by all expenses and debt payments. Above 1 means income covers spending.",
+    "ru": "Доход, делённый на все расходы и платежи по долгам. Больше 1 — доход покрывает траты.",
+    "cs": "Příjem dělený všemi výdaji a splátkami. Nad 1 znamená, že příjem pokrývá výdaje."
+  },
+  "planner.metric.coverage": {
+    "en": "Emergency fund covers",
+    "ru": "Резервный фонд покрывает",
+    "cs": "Rezerva pokryje"
+  },
+  "planner.metric.coverage.help": {
+    "en": "How many months the emergency fund would pay essential expenses and debt payments without any income.",
+    "ru": "Сколько месяцев резервный фонд оплачивал бы обязательные расходы и долги без какого-либо дохода.",
+    "cs": "Kolik měsíců by rezerva platila nezbytné výdaje a splátky bez jakéhokoli příjmu."
+  },
+  "planner.months": {
+    "en": "%@ months",
+    "ru": "%@ мес.",
+    "cs": "%@ měs."
+  },
+  "planner.note.negativeCashFlow": {
+    "en": "Your expenses are higher than your income. Money needed for everyday life and debts is usually not invested: improving the monthly balance comes first.",
+    "ru": "Ваши расходы превышают доход. Деньги, нужные на повседневную жизнь и долги, обычно не инвестируют: сначала важно улучшить ежемесячный баланс.",
+    "cs": "Vaše výdaje převyšují příjem. Peníze potřebné na běžný život a dluhy se obvykle neinvestují: nejdřív je důležité zlepšit měsíční bilanci."
+  },
+  "planner.note.noEmergencyFund": {
+    "en": "You have no emergency fund. Investments can fall exactly when an unexpected expense arrives, so a cash reserve is usually built before investing.",
+    "ru": "У вас нет резервного фонда. Вложения могут подешеветь как раз тогда, когда возникнет непредвиденный расход, поэтому денежный резерв обычно создают до инвестирования.",
+    "cs": "Nemáte finanční rezervu. Investice mohou klesnout právě ve chvíli nečekaného výdaje, proto se hotovostní rezerva obvykle vytváří před investováním."
+  },
+  "planner.note.emergencyFundBelowThreeMonths": {
+    "en": "Your emergency fund covers less than three months of essential costs. Common guidance is three to six months, kept in cash or similar.",
+    "ru": "Резервный фонд покрывает меньше трёх месяцев обязательных расходов. Обычно рекомендуют три–шесть месяцев в деньгах или аналогах.",
+    "cs": "Rezerva pokryje méně než tři měsíce nezbytných nákladů. Běžně se doporučují tři až šest měsíců v hotovosti nebo podobně."
+  },
+  "planner.note.highInterestDebt": {
+    "en": "You reported high-interest debt. Repaying it is a guaranteed saving of its interest rate, which is hard for any investment to match reliably.",
+    "ru": "Вы указали дорогой долг. Его погашение даёт гарантированную экономию на процентах, с которой трудно надёжно сравниться любой инвестиции.",
+    "cs": "Uvedli jste dluh s vysokým úrokem. Jeho splacení je zaručená úspora ve výši úroku, kterou žádná investice spolehlivě nevyrovná."
+  },
+  "planner.note.debtDifficulty": {
+    "en": "You reported difficulty repaying debts. Free debt counselling is available in many countries (in Czechia, for example, from non-profit debt advice centres).",
+    "ru": "Вы указали трудности с погашением долгов. Во многих странах доступны бесплатные консультации по долгам (в Чехии, например, некоммерческие консультационные центры).",
+    "cs": "Uvedli jste potíže se splácením dluhů. V mnoha zemích je k dispozici bezplatné dluhové poradenství (v Česku například neziskové dluhové poradny)."
+  },
+  "planner.note.educationalModeOnly": {
+    "en": "Educational mode: the planner is for learning, and investing here is virtual only.",
+    "ru": "Учебный режим: планировщик предназначен для обучения, инвестиции здесь только виртуальные.",
+    "cs": "Výukový režim: plánovač slouží k učení a investice jsou zde pouze virtuální."
+  },
+  "planner.shock.title": {
+    "en": "What if…",
+    "ru": "Что если…",
+    "cs": "Co kdyby…"
+  },
+  "planner.shock.help": {
+    "en": "Simple what-if calculations with amounts you choose. Expenses are assumed to stay the same.",
+    "ru": "Простые расчёты «что если» с выбранными вами суммами. Предполагается, что расходы не меняются.",
+    "cs": "Jednoduché výpočty „co kdyby“ s částkami, které zvolíte. Předpokládá se, že výdaje zůstanou stejné."
+  },
+  "planner.shock.incomeLoss": {
+    "en": "Income falls by",
+    "ru": "Доход снижается на",
+    "cs": "Příjem klesne o"
+  },
+  "planner.shock.balance": {
+    "en": "Monthly balance: %@",
+    "ru": "Ежемесячный баланс: %@",
+    "cs": "Měsíční bilance: %@"
+  },
+  "planner.shock.reservesLast": {
+    "en": "Your emergency fund and savings would last about %@ months.",
+    "ru": "Резервного фонда и сбережений хватило бы примерно на %@ мес.",
+    "cs": "Rezerva a úspory by vydržely přibližně %@ měsíců."
+  },
+  "planner.shock.covered": {
+    "en": "Your income would still cover your expenses.",
+    "ru": "Доход по-прежнему покрывал бы расходы.",
+    "cs": "Příjem by stále pokryl výdaje."
+  },
+  "planner.shock.needBudget": {
+    "en": "Enter income and all expenses to see this.",
+    "ru": "Укажите доход и все расходы, чтобы увидеть результат.",
+    "cs": "Zadejte příjem a všechny výdaje, abyste to viděli."
+  },
+  "planner.shock.expense": {
+    "en": "Unexpected expense",
+    "ru": "Непредвиденный расход",
+    "cs": "Nečekaný výdaj"
+  },
+  "planner.shock.remaining": {
+    "en": "Reserves left afterwards: %@",
+    "ru": "Останется резервов: %@",
+    "cs": "Zbylé rezervy: %@"
+  },
+  "planner.shock.shortfall": {
+    "en": "Not covered by reserves: %@",
+    "ru": "Не покрыто резервами: %@",
+    "cs": "Nepokryto rezervami: %@"
+  },
+  "planner.shock.rebuild": {
+    "en": "About %@ months of free cash flow to rebuild it.",
+    "ru": "Около %@ мес. свободного денежного потока, чтобы восстановить сумму.",
+    "cs": "Asi %@ měsíců volného peněžního toku na její obnovení."
+  },
+  "planner.savings.title": {
+    "en": "Savings scenario",
+    "ru": "Сценарий сбережений",
+    "cs": "Scénář spoření"
+  },
+  "planner.savings.help": {
+    "en": "Regular saving with a constant return and inflation that you choose. Real returns vary and can be negative; this is an illustration of compounding, not an expectation.",
+    "ru": "Регулярные сбережения с постоянной доходностью и инфляцией, которые вы выбираете. Реальная доходность меняется и может быть отрицательной; это иллюстрация сложного процента, а не ожидание.",
+    "cs": "Pravidelné spoření s konstantním výnosem a inflací, které zvolíte. Skutečné výnosy kolísají a mohou být záporné; jde o ilustraci složeného úročení, ne o očekávání."
+  },
+  "planner.savings.initial": {
+    "en": "Starting amount",
+    "ru": "Начальная сумма",
+    "cs": "Počáteční částka"
+  },
+  "planner.savings.monthly": {
+    "en": "Monthly amount",
+    "ru": "Ежемесячная сумма",
+    "cs": "Měsíční částka"
+  },
+  "planner.savings.return": {
+    "en": "Assumed return (% a year)",
+    "ru": "Допущение доходности (% в год)",
+    "cs": "Předpokládaný výnos (% ročně)"
+  },
+  "planner.savings.inflation": {
+    "en": "Assumed inflation (% a year)",
+    "ru": "Допущение инфляции (% в год)",
+    "cs": "Předpokládaná inflace (% ročně)"
+  },
+  "planner.savings.years": {
+    "en": "Years",
+    "ru": "Лет",
+    "cs": "Let"
+  },
+  "planner.savings.nominal": {
+    "en": "Value",
+    "ru": "Стоимость",
+    "cs": "Hodnota"
+  },
+  "planner.savings.real": {
+    "en": "In today's money",
+    "ru": "В сегодняшних деньгах",
+    "cs": "V dnešních penězích"
+  },
+  "planner.savings.contributed": {
+    "en": "Paid in",
+    "ru": "Внесено",
+    "cs": "Vloženo"
+  },
+  "planner.savings.summary": {
+    "en": "After %1$@ years: paid in %2$@, value %3$@, in today's money %4$@.",
+    "ru": "Через %1$@ лет: внесено %2$@, стоимость %3$@, в сегодняшних деньгах %4$@.",
+    "cs": "Po %1$@ letech: vloženo %2$@, hodnota %3$@, v dnešních penězích %4$@."
+  },
+  "planner.savings.note": {
+    "en": "Taxes and fees are not included. The dashed line shows the amounts paid in without any return.",
+    "ru": "Налоги и комиссии не учтены. Пунктир показывает внесённые суммы без доходности.",
+    "cs": "Daně a poplatky nejsou zahrnuty. Přerušovaná čára ukazuje vložené částky bez výnosu."
+  },
+  "planner.portfolio.title": {
+    "en": "Portfolio value changes",
+    "ru": "Изменения стоимости портфеля",
+    "cs": "Změny hodnoty portfolia"
+  },
+  "planner.portfolio.help": {
+    "en": "Hypothetical moves of an amount you enter, compared with your monthly essential costs. Falls of 20–40 % have happened in stock markets several times.",
+    "ru": "Гипотетические изменения введённой суммы в сравнении с ежемесячными обязательными расходами. Падения на 20–40 % на фондовых рынках происходили неоднократно.",
+    "cs": "Hypotetické pohyby zadané částky v porovnání s měsíčními nezbytnými náklady. Poklesy o 20–40 % na akciových trzích nastaly již několikrát."
+  },
+  "planner.portfolio.value": {
+    "en": "Portfolio value",
+    "ru": "Стоимость портфеля",
+    "cs": "Hodnota portfolia"
+  },
+  "planner.portfolio.months": {
+    "en": "≈ %@ months of essential costs",
+    "ru": "≈ %@ мес. обязательных расходов",
+    "cs": "≈ %@ měs. nezbytných nákladů"
+  },
+  "planner.portfolio.note": {
+    "en": "Ask yourself whether you could leave the money invested after such a fall without needing it for living costs.",
+    "ru": "Спросите себя, смогли бы вы не трогать вложения после такого падения, не нуждаясь в этих деньгах на жизнь.",
+    "cs": "Zeptejte se sami sebe, zda byste po takovém poklesu mohli nechat peníze investované, aniž byste je potřebovali na živobytí."
+  },
+  "planner.goals.title": {
+    "en": "Goals",
+    "ru": "Цели",
+    "cs": "Cíle"
+  },
+  "planner.goals.help": {
+    "en": "Short-term goals (within about three years) are usually funded from savings rather than volatile investments. The monthly amount assumes no return.",
+    "ru": "Краткосрочные цели (примерно до трёх лет) обычно финансируют из сбережений, а не из волатильных инвестиций. Ежемесячная сумма рассчитана без доходности.",
+    "cs": "Krátkodobé cíle (zhruba do tří let) se obvykle financují z úspor, ne z kolísavých investic. Měsíční částka nepočítá s výnosem."
+  },
+  "planner.goal.term.short": {
+    "en": "Short-term",
+    "ru": "Краткосрочная",
+    "cs": "Krátkodobý"
+  },
+  "planner.goal.term.long": {
+    "en": "Long-term",
+    "ru": "Долгосрочная",
+    "cs": "Dlouhodobý"
+  },
+  "planner.goal.monthly": {
+    "en": "%@ a month to reach it on time",
+    "ru": "%@ в месяц, чтобы успеть к сроку",
+    "cs": "%@ měsíčně pro včasné dosažení"
+  },
+  "planner.goal.name": {
+    "en": "Goal",
+    "ru": "Цель",
+    "cs": "Cíl"
+  },
+  "planner.goal.amount": {
+    "en": "Target amount",
+    "ru": "Целевая сумма",
+    "cs": "Cílová částka"
+  },
+  "planner.goal.term": {
+    "en": "Term",
+    "ru": "Срок",
+    "cs": "Horizont"
+  },
+  "planner.goal.hasDate": {
+    "en": "Target date",
+    "ru": "Целевая дата",
+    "cs": "Cílové datum"
+  },
+  "planner.goal.date": {
+    "en": "Date",
+    "ru": "Дата",
+    "cs": "Datum"
+  },
+  "planner.goal.add": {
+    "en": "Add goal",
+    "ru": "Добавить цель",
+    "cs": "Přidat cíl"
+  }
+}

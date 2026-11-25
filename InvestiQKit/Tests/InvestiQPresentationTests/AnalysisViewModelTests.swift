@@ -95,3 +95,40 @@ final class AnalysisViewModelTests: XCTestCase {
         XCTAssertNotNil(model.stressResults[.largestIssuerDefault])
     }
 }
+
+@MainActor
+final class PlannerViewModelTests: XCTestCase {
+    func testPlannerParsesSavesAndReloads() async throws {
+        let context = try TestContext()
+        let app = AppModel(environment: AppEnvironment(paths: context.paths, secureStore: context.secureStore,
+                                                       biometricStore: context.biometrics,
+                                                       passwordDerivation: Argon2idKeyDerivation.testing, clock: context.clock,
+                                                       httpClient: OfflineHTTPClient()))
+        await app.startDemo()
+        let model = PlannerViewModel(app: app, locale: Locale(identifier: "cs_CZ"))
+        await model.load()
+        model.texts[.monthlyIncome] = "50 000"
+        model.texts[.essentialExpenses] = "25000"
+        model.texts[.additionalExpenses] = "10000"
+        model.texts[.debtPayments] = "0"
+        model.texts[.emergencyFund] = "abc"
+        model.recompute()
+        XCTAssertEqual(model.invalidField, .emergencyFund)
+        XCTAssertNil(model.analysis)
+        model.texts[.emergencyFund] = "100000,5"
+        model.recompute()
+        XCTAssertNil(model.invalidField)
+        XCTAssertEqual(model.analysis?.freeCashFlow, 15_000)
+        await model.save()
+        XCTAssertTrue(model.saved)
+        let added = await model.addGoal(name: "  Bike ", term: .short, amountText: "12000", targetDate: .d("2027-11-30"))
+        XCTAssertTrue(added)
+        XCTAssertEqual(model.goals.first?.name, "Bike")
+
+        let reloaded = PlannerViewModel(app: app, locale: Locale(identifier: "cs_CZ"))
+        await reloaded.load()
+        XCTAssertEqual(reloaded.budget?.emergencyFund, Decimal(string: "100000.5"))
+        XCTAssertEqual(reloaded.goals.count, 1)
+        XCTAssertFalse(reloaded.savings.isEmpty)
+    }
+}

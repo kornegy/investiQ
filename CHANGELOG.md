@@ -5,6 +5,12 @@ SemVer once releases start.
 
 ## [Unreleased]
 
+### Phase 5 — News and education (in progress)
+- Financial planner: budget (blank fields stay unknown), free cash flow, income/expense ratio, emergency
+  fund coverage, income-loss and unexpected-expense what-ifs, savings scenario (nominal and in today's
+  money), hypothetical portfolio moves in months of costs, goals; educational notes that never propose an
+  amount to invest.
+
 ### Phase 4 — Analytics and risk
 - Bond analytics (schedules, five day counts, accrued interest, YTM/YTC, durations, convexity, full
   repricing), ETF analysis (cost drag, currency look-through, KID expectation), neutral rule-based

@@ -49,6 +49,8 @@ struct SectionContainer: View {
             PortfolioView()
         case .risk:
             RiskView()
+        case .planner:
+            PlannerView()
         default:
             SectionPlaceholderView(section: section)
         }

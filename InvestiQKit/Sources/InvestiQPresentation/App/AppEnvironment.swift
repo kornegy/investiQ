@@ -36,6 +36,8 @@ public struct SessionServices: Sendable {
     public let portfolios: PortfolioService
     public let forecasts: ForecastService
     public let risk: RiskService
+    public let planner: PlannerService
+    public let profileData: ProfileDataService
     /// `nil` in demo mode (no keys are ever used there).
     public let credentials: KeychainCredentials?
 
@@ -62,6 +64,8 @@ public struct SessionServices: Sendable {
                                forecasts: ForecastService(store: session.userStore, marketData: marketData, clock: clock),
                                risk: RiskService(store: session.userStore, portfolios: portfolios, instruments: instruments,
                                                  marketData: marketData, clock: clock),
+                               planner: PlannerService(store: session.userStore, clock: clock),
+                               profileData: ProfileDataService(session: session),
                                credentials: credentials)
     }
 }
