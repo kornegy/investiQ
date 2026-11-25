@@ -32,7 +32,7 @@ struct CompareView: View {
                             }
                         }
                     }
-                    .chartYAxisLabel(Text("market.compare.rebased"))
+                    .chartYAxisLabel { Text("market.compare.rebased") }
                     .frame(minHeight: 260)
                 }
                 Grid(alignment: .leading, horizontalSpacing: Spacing.l, verticalSpacing: Spacing.s) {

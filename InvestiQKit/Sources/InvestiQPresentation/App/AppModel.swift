@@ -89,6 +89,11 @@ public final class AppModel {
             self.session = session
             let services = SessionServices.make(session: session, preferences: demoPreferences, environment: environment)
             try await services.instruments.seedDemoUniverse()
+            let demoPortfolio = try await services.portfolios.createPortfolio(name: DemoPortfolioSeeder.portfolioName, kind: .real,
+                                                                              baseCurrency: demoPreferences.baseCurrency)
+            try await services.portfolios.add(DemoPortfolioSeeder.transactions(portfolioID: demoPortfolio.id,
+                                                                               baseCurrency: demoPreferences.baseCurrency,
+                                                                               today: environment.clock.today(), createdAt: environment.clock.now()))
             self.services = services
             unlockedProfile = nil
             lastActivity = environment.clock.now()

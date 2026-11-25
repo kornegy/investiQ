@@ -43,6 +43,10 @@ struct SectionContainer: View {
             SettingsView()
         case .market:
             MarketView()
+        case .overview:
+            OverviewView()
+        case .portfolio:
+            PortfolioView()
         default:
             SectionPlaceholderView(section: section)
         }

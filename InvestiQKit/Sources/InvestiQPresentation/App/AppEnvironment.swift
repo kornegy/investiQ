@@ -33,6 +33,7 @@ public struct SessionServices: Sendable {
     public let instruments: InstrumentService
     public let marketData: MarketDataService
     public let exchangeRates: ExchangeRateService
+    public let portfolios: PortfolioService
     /// `nil` in demo mode (no keys are ever used there).
     public let credentials: KeychainCredentials?
 
@@ -50,10 +51,12 @@ public struct SessionServices: Sendable {
             registry = ProviderCatalog.makeRegistry(preferences: preferences, credentials: keys, gateway: gateway, clock: clock)
             credentials = keys
         }
+        let marketData = MarketDataService(registry: registry, cache: session.cacheStore, clock: clock)
+        let exchangeRates = ExchangeRateService(providers: registry.exchangeRates, cache: session.cacheStore, clock: clock)
         return SessionServices(mode: session.mode, registry: registry,
                                instruments: InstrumentService(store: session.userStore, clock: clock),
-                               marketData: MarketDataService(registry: registry, cache: session.cacheStore, clock: clock),
-                               exchangeRates: ExchangeRateService(providers: registry.exchangeRates, cache: session.cacheStore, clock: clock),
+                               marketData: marketData, exchangeRates: exchangeRates,
+                               portfolios: PortfolioService(store: session.userStore, marketData: marketData, exchangeRates: exchangeRates, clock: clock),
                                credentials: credentials)
     }
 }

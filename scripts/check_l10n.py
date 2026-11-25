@@ -17,7 +17,7 @@ NAMESPACES = {
     "safety", "educationalMode", "settings", "legal", "dashboard", "market", "asset", "portfolio", "transaction",
     "news", "calendar", "risk", "stress", "forecast", "planner", "simulator", "brokers", "learn", "quiz",
     "analytics", "bond", "etf", "stock", "provider", "ai", "backup", "export", "import", "notification",
-    "range", "metric", "method", "scenario", "category", "statement", "uncertainty", "instrument",
+    "range", "metric", "method", "scenario", "overview", "allocation", "dashboard", "category", "statement", "uncertainty", "instrument",
 }
 NON_KEY_CONTEXTS = ("systemImage:", "systemName:", "accessibilityIdentifier(", "keyPrefix:", "identifier:")
 PLACEHOLDER = re.compile(r"%(?:\d+\$)?[@dlfs]|%lld")

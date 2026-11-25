@@ -36,3 +36,6 @@ public enum AnalyticalStatus: String, Codable, Sendable, CaseIterable, Hashable 
 
     public var messageKey: String { "status.\(rawValue)" }
 }
+
+/// Lets validation code return `Result<T, Message>` with a localisable failure description.
+extension Message: Error {}
