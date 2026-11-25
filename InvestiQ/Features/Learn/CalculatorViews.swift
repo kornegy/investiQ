@@ -90,7 +90,7 @@ struct CalculatorView: View {
             Chart(model.diversificationPoints) { point in
                 LineMark(x: .value("holdings", point.holdings), y: .value("volatility", point.volatility))
             }
-            .chartYAxis { AxisMarks(format: .percent) }
+            .chartYAxis { AxisMarks(format: FloatingPointFormatStyle<Double>.Percent()) }
             .frame(height: 180)
             Text("learn.calc.diversification.note").font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
         }
