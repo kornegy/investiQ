@@ -143,7 +143,7 @@ public final class AppModel {
         transform(&updated)
         try await ProfileDataService(session: session).savePreferences(updated)
         let providersChanged = updated.providerSettings != preferences.providerSettings
-            || updated.secContactEmail != preferences.secContactEmail
+            || updated.secContactEmail != preferences.secContactEmail || updated.aiSettings != preferences.aiSettings
         preferences = updated
         if providersChanged { reloadServices() }
     }

@@ -128,8 +128,12 @@ private struct NewsCard: View {
                         }
                     }
                 }
-                if model.canOpen(article) {
-                    ExternalLinkButton(title: "news.openOriginal", url: article.url)
+                HStack(spacing: Spacing.m) {
+                    if model.canOpen(article) {
+                        ExternalLinkButton(title: "news.openOriginal", url: article.url)
+                    }
+                    AIExplainButton(title: "ai.summarize",
+                                    task: .summarizeNews(headline: article.headline, summary: article.summary, source: article.sourceName))
                 }
             }
         }

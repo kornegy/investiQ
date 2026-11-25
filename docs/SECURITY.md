@@ -144,5 +144,34 @@ check GitHub security advisories, no transitive dependency added without an ADR.
 
 ## 11. AI security
 
-See `ARCHITECTURE.md` and FR-AI: consent, minimisation, delimited untrusted content, schema-validated
-output, no tools, no write access, no secrets in prompts.
+AI is optional and off by default (ADR-010, ADR-017). Implementation: `InvestiQServices/AI`,
+`InvestiQSecurity/PromptGuard.swift`, adapters in `InvestiQData/AI` and `InvestiQPlatformApple`.
+
+* **Providers:** Apple Foundation Models (on-device, macOS 26+), Ollama (loopback only: `127.0.0.1`,
+  `::1`, `localhost` — the single exception to HTTPS-only transport, because the traffic never leaves the
+  Mac), and the Claude Messages API over HTTPS with the user's own key from the Keychain.
+* **Consent and eligibility:** the external provider can be selected only through an explicit consent
+  dialog that states what is sent; the consent time is stored; external AI is unavailable in educational
+  mode (minors) and in demo sessions.
+* **Minimisation:** prompts are built from a fixed task list (`AITask`) only — terms, displayed metric
+  values with their method, news headline and short summary, an educational question, a risk category,
+  or displayed instrument facts. Amounts, holdings, transactions and profile answers are never included.
+  Risk levels derived from the user's portfolio are sent to an external provider only with the explicit
+  "allow risk levels" setting.
+* **Secrets:** before sending, the prompt is scanned for every stored provider key and credential
+  patterns (`sk-…`, private-key headers, `password:`/`api_key=`); a match blocks the request.
+* **Prompt injection:** trusted rules live only in the system prompt. External text is sanitised (control
+  characters removed, length capped, our `<data>`/`<untrusted_data>` delimiters stripped so they cannot be
+  forged) and wrapped as untrusted data that must never be followed. Instruction-like phrases (EN/RU/CS)
+  are detected and shown to the user as a flag.
+* **Output validation:** strict JSON object with exactly `answer`, `keyPoints`, `caveats`; length caps;
+  rendered as plain text. Answers with investment advice wording or numeric probabilities are rejected;
+  links not present in the input are removed; figures not present in the input are flagged.
+* **No capabilities:** no tools are declared to any provider; answers are never stored in the database
+  or used by calculations; the AI cannot trade, run commands or modify records.
+* **Transport hygiene:** request bodies are represented by a SHA-256 in log/dedup keys; API keys are
+  redacted; responses are size-limited (2 MiB).
+
+Tests: `AISecurityTests` (injection, forged delimiters, consent, minors, disabled state, secret blocking,
+minimisation, schema enforcement, advice/probability rejection, link removal, figure flags, request shape,
+loopback-only transport) and `AISettingsTests`.

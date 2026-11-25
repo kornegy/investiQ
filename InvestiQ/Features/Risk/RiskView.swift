@@ -104,6 +104,9 @@ private struct CategoriesTab: View {
                         if assessment.isQualitative {
                             Text("risk.qualitative").font(.caption).foregroundStyle(.secondary)
                         }
+                        AIExplainButton(title: "ai.explainRisk",
+                                        task: .explainRisk(category: L10n.string("risk.category.\(assessment.category.rawValue)"),
+                                                           level: L10n.string("risk.level.\(assessment.level.rawValue)")))
                     }
                 }
                 .accessibilityElement(children: .combine)

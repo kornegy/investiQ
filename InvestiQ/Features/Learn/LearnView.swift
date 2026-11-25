@@ -99,6 +99,7 @@ private struct LearnOverview: View {
                     .controlSize(.large)
                 }
                 Text("learn.notReadinessNote").font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+                AIQuestionBox()
             }
             .padding(Spacing.xl)
             .frame(maxWidth: 760, alignment: .leading)
@@ -116,6 +117,7 @@ private struct LessonView: View {
                 Button { model.selectedLessonID = nil } label: { Label("learn.back", systemImage: "chevron.left") }
                     .buttonStyle(.borderless)
                 Text(lesson.title).font(.largeTitle.bold())
+                AIExplainButton(title: "ai.explainTopic", task: .explainTerm(lesson.title))
                 Text(lesson.summary).font(.title3).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
                 ForEach(lesson.sections, id: \.heading) { section in
                     VStack(alignment: .leading, spacing: Spacing.s) {

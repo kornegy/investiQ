@@ -11,7 +11,7 @@ Status legend: ✅ done · 🟡 in progress · ⬜ not started · ⚠️ done wi
 | 3 Portfolio | Transactions, ledger, calculations, charts, currency conversion, CSV import/export | Financial calculation tests green | ✅ |
 | 4 Analytics & risk | Stock/ETF/bond analysis, risk engine, scenarios, forecast validation | Analytics/forecast tests green | ✅ |
 | 5 News & education | News, calendar, classification, education, planner, simulator, broker directory | Tests green; content complete in ru/en/cs | ✅ |
-| 6 Optional AI | AIProvider, Ollama/external/Apple FM adapters, privacy controls, AI security tests | Tests green; app fully functional with AI off | ⬜ |
+| 6 Optional AI | AIProvider, Ollama/external/Apple FM adapters, privacy controls, AI security tests | Tests green; app fully functional with AI off | ✅ |
 | 7 Production prep | Security audit, performance profiling, accessibility, migration tests, release config, signing prep, sandbox verification, legal & licensing checklists | Reports written; known limitations listed | ⬜ |
 
 ## Future (post-v1)

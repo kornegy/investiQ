@@ -15,6 +15,8 @@ struct SettingsView: View {
                 .tabItem { Label("settings.tab.providers", systemImage: "network") }
             NotificationSettingsView()
                 .tabItem { Label("settings.tab.notifications", systemImage: "bell") }
+            AISettingsView()
+                .tabItem { Label("settings.tab.ai", systemImage: "sparkles") }
             LegalSettingsView()
                 .tabItem { Label("settings.tab.legal", systemImage: "doc.text") }
         }

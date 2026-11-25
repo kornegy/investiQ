@@ -14,12 +14,16 @@ public struct AppEnvironment: Sendable {
     public var clock: any TimeProvider
     public var httpClient: any HTTPClient
     public var notificationDelivery: any NotificationDelivering
+    /// Supplied by the app on systems with Apple Foundation Models (macOS 26+); nil elsewhere.
+    public var onDeviceAIProvider: (@Sendable () -> (any AIProvider)?)?
 
     public init(paths: ProfilePaths, secureStore: any SecureStore, biometricStore: any BiometricKeyStore,
                 passwordDerivation: any PasswordKeyDerivation, clock: any TimeProvider,
                 httpClient: any HTTPClient = URLSessionHTTPClient(),
-                notificationDelivery: any NotificationDelivering = NoNotificationDelivery()) {
+                notificationDelivery: any NotificationDelivering = NoNotificationDelivery(),
+                onDeviceAIProvider: (@Sendable () -> (any AIProvider)?)? = nil) {
         self.notificationDelivery = notificationDelivery
+        self.onDeviceAIProvider = onDeviceAIProvider
         self.paths = paths
         self.secureStore = secureStore
         self.biometricStore = biometricStore
@@ -64,9 +68,30 @@ public struct SessionServices: Sendable {
     public let news: NewsService
     public let calendar: CalendarService
     public let notifications: NotificationService
+    public let ai: AIService
     public let profileData: ProfileDataService
     /// `nil` in demo mode (no keys are ever used there).
     public let credentials: KeychainCredentials?
+
+    /// AI provider from settings. Demo sessions never use external AI (no keys exist there).
+    static func makeAI(session: ProfileSession, preferences: UserPreferences, environment: AppEnvironment,
+                       credentials: KeychainCredentials?) -> AIService {
+        let settings = preferences.aiSettings
+        let provider: (any AIProvider)?
+        switch settings.provider {
+        case .disabled: provider = nil
+        case .appleOnDevice: provider = environment.onDeviceAIProvider?()
+        case .ollama:
+            provider = OllamaProvider(client: environment.httpClient, endpoint: settings.ollamaEndpoint, model: settings.externalModel)
+        case .externalAPI:
+            provider = credentials.map { AnthropicMessagesProvider(client: environment.httpClient, credentials: $0, model: settings.externalModel) }
+        }
+        let secretSource = credentials
+        return AIService(provider: provider, settings: settings, knownSecrets: {
+            ProviderCatalog.allProviderIDs.compactMap { secretSource?.apiKey(for: $0) }
+                + [secretSource?.apiKey(for: AnthropicMessagesProvider.providerID)].compactMap { $0 }
+        })
+    }
 
     public static func make(session: ProfileSession, preferences: UserPreferences, environment: AppEnvironment) -> SessionServices {
         let clock = environment.clock
@@ -101,6 +126,7 @@ public struct SessionServices: Sendable {
                                notifications: NotificationService(userStore: session.userStore, cacheStore: session.cacheStore, registry: registry,
                                                                   portfolios: portfolios, instruments: instruments, marketData: marketData,
                                                                   calendar: calendarService, clock: clock),
+                               ai: makeAI(session: session, preferences: preferences, environment: environment, credentials: credentials),
                                profileData: ProfileDataService(session: session),
                                credentials: credentials)
     }

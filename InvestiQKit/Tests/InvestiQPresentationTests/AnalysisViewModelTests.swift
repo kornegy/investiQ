@@ -283,3 +283,37 @@ final class NotificationFlowTests: XCTestCase {
         XCTAssertEqual(reloaded.rules.first { $0.kind == .staleData }?.enabled, false)
     }
 }
+
+@MainActor
+final class AISettingsTests: XCTestCase {
+    func testDemoOffersNoExternalAIAndOllamaIsLocalOnly() async throws {
+        let context = try TestContext()
+        let app = AppModel(environment: AppEnvironment(paths: context.paths, secureStore: context.secureStore,
+                                                       biometricStore: context.biometrics,
+                                                       passwordDerivation: Argon2idKeyDerivation.testing, clock: context.clock,
+                                                       httpClient: OfflineHTTPClient()))
+        await app.startDemo()
+        let model = AISettingsViewModel(app: app)
+        model.load()
+        XCTAssertEqual(model.settings.provider, .disabled, "AI is off by default")
+        XCTAssertFalse(model.availableProviders.contains(.externalAPI))
+        XCTAssertFalse(model.availableProviders.contains(.appleOnDevice), "no on-device model on this platform")
+        await model.select(.externalAPI, consented: true)
+        XCTAssertEqual(model.settings.provider, .disabled)
+        await model.select(.ollama)
+        XCTAssertEqual(app.preferences.aiSettings.provider, .ollama)
+        model.ollamaEndpoint = "http://10.0.0.5:11434"
+        await model.saveConnection()
+        XCTAssertEqual(model.message, Message("ai.error.localOnly"))
+        model.ollamaEndpoint = "http://127.0.0.1:11434"
+        model.modelName = "llama3.2"
+        await model.saveConnection()
+        XCTAssertEqual(app.preferences.aiSettings.externalModel, "llama3.2")
+        XCTAssertTrue(app.services?.ai.hasProvider == true, "services were rebuilt with the local provider")
+        let assistant = AIAssistantViewModel(app: app, languageName: "English")
+        XCTAssertTrue(assistant.isAvailable)
+        XCTAssertFalse(assistant.sendsDataOffDevice)
+        await assistant.run(.explainTerm("bond"))
+        XCTAssertEqual(assistant.error, Message("ai.error.providerUnavailable"), "offline transport is reported, nothing invented")
+    }
+}

@@ -93,6 +93,1179 @@
         }
       }
     },
+    "ai.answer.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vysvětlení AI"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI explanation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Объяснение ИИ"
+          }
+        }
+      }
+    },
+    "ai.consent.agree": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Souhlasím, zapnout"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I agree, enable"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Согласен, включить"
+          }
+        }
+      }
+    },
+    "ai.consent.body": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaše otázky a texty, na které se ptáte, se budou odesílat do Claude API společnosti Anthropic s vaším klíčem a zpracovávat podle jejích podmínek. Částky, pozice, transakce ani údaje profilu se neodesílají. Vypnout to můžete kdykoli."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your questions and the texts you ask about will be sent to Anthropic's Claude API using your own key and processed under their terms. No amounts, holdings, transactions or profile data are sent. You can switch this off at any time."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши вопросы и тексты, о которых вы спрашиваете, будут отправляться в Claude API компании Anthropic с вашим ключом и обрабатываться по её условиям. Суммы, позиции, сделки и данные профиля не отправляются. Отключить можно в любой момент."
+          }
+        }
+      }
+    },
+    "ai.consent.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odesílat otázky externí službě AI?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send questions to an external AI service?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправлять вопросы внешнему сервису ИИ?"
+          }
+        }
+      }
+    },
+    "ai.disclaimer": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpovědi AI mohou být chybné. Jsou to obecná vysvětlení, ne rady, a neukládají se s vašimi daty."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI answers can be wrong. They are general explanations, not advice, and are not saved with your data."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответы ИИ могут быть ошибочными. Это общие объяснения, а не советы, и они не сохраняются вместе с вашими данными."
+          }
+        }
+      }
+    },
+    "ai.error.blockedSensitiveData": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Požadavek obsahoval heslo nebo klíč a nebyl odeslán."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The request contained a password or key and was not sent."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запрос содержал пароль или ключ и не был отправлен."
+          }
+        }
+      }
+    },
+    "ai.error.consentRequired": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Externí AI vyžaduje váš souhlas v Nastavení → AI."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "External AI needs your consent in Settings → AI."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для внешнего ИИ нужно ваше согласие в Настройки → ИИ."
+          }
+        }
+      }
+    },
+    "ai.error.disabled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI je v Nastavení vypnutá."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI is switched off in Settings."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ИИ выключен в настройках."
+          }
+        }
+      }
+    },
+    "ai.error.invalidResponse": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpověď AI neměla očekávaný formát a byla zahozena."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The AI answer was not in the expected format and was discarded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответ ИИ не соответствовал формату и был отброшен."
+          }
+        }
+      }
+    },
+    "ai.error.localOnly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povoleny jsou jen adresy tohoto Macu (127.0.0.1 nebo localhost)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only addresses on this Mac (127.0.0.1 or localhost) are allowed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешены только адреса этого Mac (127.0.0.1 или localhost)."
+          }
+        }
+      }
+    },
+    "ai.error.missingConfiguration": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatel AI není nastaven (chybí klíč nebo model)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The AI provider is not set up (key or model missing)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставщик ИИ не настроен (нет ключа или модели)."
+          }
+        }
+      }
+    },
+    "ai.error.notAllowedInEducationalMode": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Externí AI není ve výukovém režimu k dispozici."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "External AI is not available in educational mode."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Внешний ИИ недоступен в учебном режиме."
+          }
+        }
+      }
+    },
+    "ai.error.notAvailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento poskytovatel zde není k dispozici."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This provider is not available here."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Этот поставщик здесь недоступен."
+          }
+        }
+      }
+    },
+    "ai.error.policyViolation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpověď AI obsahovala rady nebo vymyšlené pravděpodobnosti a nebyla zobrazena."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The AI answer contained advice or invented probabilities and was not shown."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответ ИИ содержал советы или выдуманные вероятности и не был показан."
+          }
+        }
+      }
+    },
+    "ai.error.providerUnavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatel AI teď není k dispozici."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The AI provider is not available right now."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставщик ИИ сейчас недоступен."
+          }
+        }
+      }
+    },
+    "ai.error.refused": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Služba AI tento požadavek odmítla."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The AI service declined this request."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сервис ИИ отклонил этот запрос."
+          }
+        }
+      }
+    },
+    "ai.error.transport": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Služba AI není dostupná."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The AI service could not be reached."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось связаться с сервисом ИИ."
+          }
+        }
+      }
+    },
+    "ai.explainRisk": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vysvětlit toto riziko pomocí AI"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explain this risk with AI"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Объяснить этот риск с помощью ИИ"
+          }
+        }
+      }
+    },
+    "ai.explainTopic": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vysvětlit pomocí AI"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explain with AI"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Объяснить с помощью ИИ"
+          }
+        }
+      }
+    },
+    "ai.flag.injectionAttemptInInput": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdrojový text obsahoval pokyny pro AI; byly zpracovány jako prostý text."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The source text contained instructions aimed at the AI; they were treated as plain text."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исходный текст содержал инструкции для ИИ; они обработаны как обычный текст."
+          }
+        }
+      }
+    },
+    "ai.flag.removedLinks": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odkazy, které nebyly ve zdroji, byly odstraněny."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Links that were not in the source were removed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ссылки, которых не было в источнике, удалены."
+          }
+        }
+      }
+    },
+    "ai.flag.unverifiedFigures": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpověď obsahuje čísla, která nebyla v datech InvestiQ. Než se na ně spolehnete, ověřte je."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The answer contains figures that were not in the data InvestiQ provided. Check them before relying on them."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В ответе есть цифры, которых не было в данных InvestiQ. Проверьте их, прежде чем на них опираться."
+          }
+        }
+      }
+    },
+    "ai.keySaved": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč byl uložen do Klíčenky."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The key was saved in the Keychain."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ключ сохранён в Связке ключей."
+          }
+        }
+      }
+    },
+    "ai.provenance.external": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpověděla externí služba."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answered by an external service."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответ дал внешний сервис."
+          }
+        }
+      }
+    },
+    "ai.provenance.local": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpověď vznikla na tomto Macu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answered on this Mac."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответ получен на этом Mac."
+          }
+        }
+      }
+    },
+    "ai.provider.appleOnDevice": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Model Apple v zařízení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple on-device model"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Модель Apple на устройстве"
+          }
+        }
+      }
+    },
+    "ai.provider.disabled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypnuto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выключен"
+          }
+        }
+      }
+    },
+    "ai.provider.externalAPI": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Externí služba (Claude API)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "External service (Claude API)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Внешний сервис (Claude API)"
+          }
+        }
+      }
+    },
+    "ai.provider.ollama": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Místní model (Ollama)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local model (Ollama)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Локальная модель (Ollama)"
+          }
+        }
+      }
+    },
+    "ai.question.ask": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeptat se"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Спросить"
+          }
+        }
+      }
+    },
+    "ai.question.externalNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otázka bude odeslána externí službě AI, kterou jste zapnuli."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your question will be sent to the external AI service you enabled."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вопрос будет отправлен включённому вами внешнему сервису ИИ."
+          }
+        }
+      }
+    },
+    "ai.question.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obecné otázky o pojmech investování. Osobní rady se neposkytují."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General questions about investing concepts. Personal advice is not given."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Общие вопросы о понятиях инвестирования. Персональные советы не даются."
+          }
+        }
+      }
+    },
+    "ai.question.placeholder": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Například: jaký je rozdíl mezi ETF a podílovým fondem?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For example: what is the difference between an ETF and a mutual fund?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Например: чем ETF отличается от паевого фонда?"
+          }
+        }
+      }
+    },
+    "ai.question.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Položte studijní otázku"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask a learning question"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Задайте учебный вопрос"
+          }
+        }
+      }
+    },
+    "ai.settings.apiKey": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váš API klíč"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your API key"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш API-ключ"
+          }
+        }
+      }
+    },
+    "ai.settings.educationalMode": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výukový režim: externí služby AI nejsou k dispozici."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Educational mode: external AI services are not available."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учебный режим: внешние сервисы ИИ недоступны."
+          }
+        }
+      }
+    },
+    "ai.settings.endpoint": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresa (jen tento Mac)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Address (this Mac only)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Адрес (только этот Mac)"
+          }
+        }
+      }
+    },
+    "ai.settings.external": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Externí služba"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "External service"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Внешний сервис"
+          }
+        }
+      }
+    },
+    "ai.settings.guarantees": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI nemá žádné nástroje: nemůže obchodovat, spouštět příkazy ani měnit vaše data. Odpovědi se kontrolují podle pevného formátu; investiční rady, vymyšlené pravděpodobnosti a odkazy se odmítají nebo odstraňují."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI has no tools: it cannot trade, run commands or change your data. Answers are checked against a fixed format; investment advice, invented probabilities and invented links are rejected or removed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У ИИ нет инструментов: он не может совершать сделки, выполнять команды или менять данные. Ответы проверяются на соответствие формату; инвестиционные советы, выдуманные вероятности и ссылки отклоняются или удаляются."
+          }
+        }
+      }
+    },
+    "ai.settings.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI je volitelná. Umí vysvětlit pojmy a výsledky, shrnout zprávy a odpovídat na studijní otázky. Veškerá analytika InvestiQ funguje i bez ní a AI nikdy nepočítá zobrazená čísla."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI is optional. It can explain terms and results, summarise news and answer learning questions. All analytics in InvestiQ work without it, and AI never calculates the figures you see."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ИИ необязателен. Он может объяснять термины и результаты, кратко пересказывать новости и отвечать на учебные вопросы. Вся аналитика InvestiQ работает без него, и ИИ никогда не рассчитывает показанные цифры."
+          }
+        }
+      }
+    },
+    "ai.settings.keyMissing": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč zatím není uložen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No key stored yet."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ключ ещё не сохранён."
+          }
+        }
+      }
+    },
+    "ai.settings.keyStored": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč je uložen v Klíčence."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A key is stored in the Keychain."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ключ хранится в Связке ключей."
+          }
+        }
+      }
+    },
+    "ai.settings.model": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Název modelu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Model name"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название модели"
+          }
+        }
+      }
+    },
+    "ai.settings.ollama": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Místní model"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local model"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Локальная модель"
+          }
+        }
+      }
+    },
+    "ai.settings.ollamaNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ollama a model si nainstalujte sami; InvestiQ modely nestahuje. Přijímají se jen adresy tohoto Macu (127.0.0.1 nebo localhost), takže nic neopustí váš počítač."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Install Ollama and a model yourself; InvestiQ does not download models. Only addresses on this Mac (127.0.0.1 or localhost) are accepted, so nothing leaves your computer."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Установите Ollama и модель самостоятельно; InvestiQ не загружает модели. Принимаются только адреса этого Mac (127.0.0.1 или localhost), поэтому ничего не покидает компьютер."
+          }
+        }
+      }
+    },
+    "ai.settings.onDeviceUnavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Model Apple v zařízení vyžaduje macOS 26 nebo novější na podporovaném Macu se zapnutou Apple Intelligence."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Apple on-device model needs macOS 26 or later on a supported Mac with Apple Intelligence turned on."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для модели Apple на устройстве нужна macOS 26 или новее на поддерживаемом Mac с включённым Apple Intelligence."
+          }
+        }
+      }
+    },
+    "ai.settings.portfolioContext": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povolit odesílání úrovní rizika mého portfolia"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow risk levels of my portfolio in questions"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешить передавать уровни риска моего портфеля"
+          }
+        }
+      }
+    },
+    "ai.settings.provider": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatel AI"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI provider"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставщик ИИ"
+          }
+        }
+      }
+    },
+    "ai.settings.saveKey": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložit klíč do Klíčenky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save key in Keychain"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить ключ в Связке ключей"
+          }
+        }
+      }
+    },
+    "ai.settings.whatIsSent": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Službě se odesílá: otázka nebo vysvětlovaný text (např. titulek zprávy) a pevné pokyny. Nikdy se neodesílají: částky, pozice, transakce, váš profil, hesla ani klíče jiných služeb."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sent to the service: the question or the text being explained (for example a news headline) and fixed instructions. Never sent: amounts, holdings, transactions, your profile, passwords or API keys of other services."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправляется сервису: вопрос или объясняемый текст (например, заголовок новости) и фиксированные инструкции. Никогда не отправляются: суммы, позиции, сделки, ваш профиль, пароли и ключи других сервисов."
+          }
+        }
+      }
+    },
+    "ai.summarize": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shrnout pomocí AI"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summarise with AI"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кратко с помощью ИИ"
+          }
+        }
+      }
+    },
     "allocation.type.cash": {
       "extractionState": "manual",
       "localizations": {
@@ -21571,6 +22744,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Разблокировка с Touch ID"
+          }
+        }
+      }
+    },
+    "settings.tab.ai": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ИИ"
           }
         }
       }

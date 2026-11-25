@@ -5,6 +5,17 @@ SemVer once releases start.
 
 ## [Unreleased]
 
+### Phase 6 — Optional AI
+- `AIProvider` with Apple on-device (macOS 26+), local Ollama (loopback only) and Claude Messages API
+  adapters; AI off by default; the app is fully functional without it.
+- Explicit consent for external AI, blocked for minors and demo; fixed task list without personal
+  financial data; portfolio risk levels only with explicit permission; secret scanning before sending.
+- Prompt-injection defences (untrusted-data wrapping, delimiter stripping, detection flags), strict
+  schema validation, rejection of advice and invented probabilities, removal of invented links, flags
+  for figures not in the input; no tools, answers never stored.
+- "Explain with AI" in lessons, news and risk categories; learning question box; Settings → AI.
+- Transport: POST support with body hashing in dedup/log keys; plain HTTP only to loopback.
+
 ### Phase 5 — News and education (in progress)
 - Financial planner: budget (blank fields stay unknown), free cash flow, income/expense ratio, emergency
   fund coverage, income-loss and unexpected-expense what-ifs, savings scenario (nominal and in today's

@@ -10,22 +10,37 @@ public struct HTTPRequest: Sendable, Hashable {
     /// Upper bound for the response body; larger responses are rejected (THREAT_MODEL T13).
     public var maximumResponseBytes: Int
     public var timeout: TimeInterval
+    public var method: String
+    public var body: Data?
 
     public static let defaultMaximumResponseBytes = 10 * 1024 * 1024
     public static let defaultTimeout: TimeInterval = 15
 
     public init(url: URL, headers: [String: String] = [:], maximumResponseBytes: Int = defaultMaximumResponseBytes,
-                timeout: TimeInterval = defaultTimeout) {
+                timeout: TimeInterval = defaultTimeout, method: String = "GET", body: Data? = nil) {
         self.url = url
         self.headers = headers
         self.maximumResponseBytes = maximumResponseBytes
         self.timeout = timeout
+        self.method = method
+        self.body = body
     }
 
-    /// Credential-free description for logs, cache keys and de-duplication.
+    /// Credential-free description for logs, cache keys and de-duplication. Request bodies are represented
+    /// by their hash so different POST requests are never merged and body contents never appear in logs.
     public var redactedKey: String {
-        Redactor.redact(url) + "|" + Redactor.redact(headers: headers).sorted { $0.key < $1.key }
-            .map { "\($0.key)=\($0.value)" }.joined(separator: ",")
+        method + " " + Redactor.redact(url) + "|" + Redactor.redact(headers: headers).sorted { $0.key < $1.key }
+            .map { "\($0.key)=\($0.value)" }.joined(separator: ",") + (body.map { "|body:" + CryptoBox.sha256Hex($0) } ?? "")
+    }
+
+    /// HTTPS everywhere; plain HTTP only to the loopback interface (a local model server such as Ollama),
+    /// which never leaves the Mac (docs/SECURITY.md §6).
+    public var usesAllowedTransport: Bool {
+        switch url.scheme?.lowercased() {
+        case "https": return true
+        case "http": return ["127.0.0.1", "::1", "[::1]", "localhost"].contains(url.host?.lowercased() ?? "")
+        default: return false
+        }
     }
 }
 
@@ -76,9 +91,10 @@ public final class URLSessionHTTPClient: HTTPClient {
     }
 
     public func send(_ request: HTTPRequest) async throws -> HTTPResponse {
-        guard request.url.scheme?.lowercased() == "https" else { throw TransportError.insecureURL }
+        guard request.usesAllowedTransport else { throw TransportError.insecureURL }
         var urlRequest = URLRequest(url: request.url, timeoutInterval: request.timeout)
-        urlRequest.httpMethod = "GET"
+        urlRequest.httpMethod = request.method
+        urlRequest.httpBody = request.body
         for (name, value) in request.headers { urlRequest.setValue(value, forHTTPHeaderField: name) }
         do {
             let (data, response) = try await session.data(for: urlRequest)

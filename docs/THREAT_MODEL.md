@@ -42,6 +42,8 @@ Method: STRIDE per asset/data flow, scored qualitatively (Likelihood × Impact).
 | T13 | DoS through external data (D) | Huge feeds, endless redirects, slow-loris | Timeouts, size caps, item caps per feed, max redirects (URLSession default) + host allow-list, cancellation | Provider outage → stale data shown with labels |
 | T14 | Tampered restore file (T) | Malicious `.iqbackup` | Authenticated decryption; schema/integrity checks before replacing data; old DB kept | — |
 | T15 | Misleading output / manipulation (I) | App nudges users into risky behaviour | Neutral statuses only, banned-phrase lint for UI copy and notifications, no gamification | — |
+| T17 | Prompt injection via news or questions (T/E) | Feed text tells the AI to give advice or reveal data | Untrusted-data wrapping, delimiter stripping, injection flags, no tools, strict output schema, advice/probability rejection | Model may still word an answer poorly; answers are labelled as possibly wrong |
+| T18 | Data exfiltration through AI (I) | Portfolio data or keys sent to an external model | Fixed task list without amounts/holdings, consent, minors blocked, secret scan before sending, portfolio context off by default | Text the user types into a question is sent as typed |
 | T16 | Clock manipulation (T) | Rolling the clock back to bypass lockout | Lockout stored with wall + monotonic timestamps; negative elapsed time treated as locked | — |
 
 ## 4. Out of scope

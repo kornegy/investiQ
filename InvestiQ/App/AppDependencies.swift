@@ -20,7 +20,8 @@ enum AppDependencies {
                               biometricStore: KeychainBiometricKeyStore(servicePrefix: bundleID),
                               passwordDerivation: Argon2idKeyDerivation(),
                               clock: SystemTimeProvider(),
-                              notificationDelivery: UserNotificationDelivery())
+                              notificationDelivery: UserNotificationDelivery(),
+                              onDeviceAIProvider: { OnDeviceAI.provider() })
     }
 
     private static func applicationSupportPaths() -> ProfilePaths {
