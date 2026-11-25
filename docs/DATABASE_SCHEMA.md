@@ -73,7 +73,7 @@ valuations and carries the ledger hash, so every cached value is verifiable.
 | Table | Columns | Notes |
 |---|---|---|
 | `market_quotes` | `listing_key TEXT PK` (`MIC:TICKER` or provider key), `price TEXT`, `currency`, `change TEXT`, `change_percent TEXT`, `market_timestamp`, `retrieved_at`, `source`, `delay_status`, `quality_status` | Latest quote per listing |
-| `price_series` | `series_key TEXT PK` (`listing|interval|adjustment`), `instrument_id`, `interval`, `adjustment CHECK('none','split','splitAndDividend')`, `currency`, `first_date`, `last_date`, `bar_count`, `payload BLOB` (compact encoded bars), `source`, `retrieved_at` | One row per series → fast load, small DB |
+| `price_series` | `series_key TEXT PK` (`listing|interval|adjustment`), `instrument_id`, `interval`, `adjustment CHECK('unadjusted','split','splitAndDividend')`, `currency`, `first_date`, `last_date`, `bar_count`, `payload BLOB` (compact encoded bars), `source`, `retrieved_at` | One row per series → fast load, small DB |
 | `financial_statements` | `instrument_id`, `period CHECK('annual','quarterly','ttm')`, `fiscal_date`, `payload TEXT` (JSON of optional metrics), `source`, `retrieved_at` | `PRIMARY KEY(instrument_id, period, fiscal_date, source)` |
 | `fundamentals_snapshot` | `instrument_id PK`, `payload TEXT` (JSON; every metric optional), `source`, `retrieved_at` | |
 | `dividends` | `instrument_id`, `ex_date`, `pay_date`, `amount TEXT`, `currency`, `source` | `PRIMARY KEY(instrument_id, ex_date, source)` |

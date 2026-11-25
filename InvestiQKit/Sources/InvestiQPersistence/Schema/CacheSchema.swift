@@ -20,7 +20,7 @@ public enum CacheSchema {
         series_key TEXT PRIMARY KEY,
         listing_key TEXT NOT NULL,
         interval TEXT NOT NULL,
-        adjustment TEXT NOT NULL CHECK (adjustment IN ('none','split','splitAndDividend')),
+        adjustment TEXT NOT NULL CHECK (adjustment IN ('unadjusted','split','splitAndDividend')),
         currency TEXT NOT NULL,
         first_date TEXT,
         last_date TEXT,

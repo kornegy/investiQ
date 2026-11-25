@@ -29,10 +29,10 @@ public enum UserSchema {
         horizon TEXT NOT NULL CHECK (horizon IN ('underOneYear','oneToThreeYears','threeToTenYears','overTenYears')),
         income_stability TEXT NOT NULL CHECK (income_stability IN ('stable','variable','irregular','noIncome')),
         essential_monthly_expenses TEXT,
-        emergency_fund TEXT NOT NULL CHECK (emergency_fund IN ('none','underThreeMonths','threeToSixMonths','overSixMonths')),
-        debt_status TEXT NOT NULL CHECK (debt_status IN ('none','lowInterestOnly','highInterest','difficultyRepaying')),
+        emergency_fund TEXT NOT NULL CHECK (emergency_fund IN ('noFund','underThreeMonths','threeToSixMonths','overSixMonths')),
+        debt_status TEXT NOT NULL CHECK (debt_status IN ('noDebt','lowInterestOnly','highInterest','difficultyRepaying')),
         risk_attitude TEXT NOT NULL CHECK (risk_attitude IN ('avoidLosses','cautious','balanced','acceptsLargeSwings')),
-        experience TEXT NOT NULL CHECK (experience IN ('none','savingsOnly','fundsOrETFs','stocksOrBonds','extensive')),
+        experience TEXT NOT NULL CHECK (experience IN ('noExperience','savingsOnly','fundsOrETFs','stocksOrBonds','extensive')),
         updated_at TEXT NOT NULL
     );
 

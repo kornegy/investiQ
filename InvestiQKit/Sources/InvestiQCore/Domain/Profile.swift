@@ -20,11 +20,11 @@ public enum InvestmentHorizon: String, Codable, Sendable, CaseIterable {
 public enum IncomeStability: String, Codable, Sendable, CaseIterable { case stable, variable, irregular, noIncome }
 
 public enum EmergencyFundStatus: String, Codable, Sendable, CaseIterable {
-    case none, underThreeMonths, threeToSixMonths, overSixMonths
+    case noFund, underThreeMonths, threeToSixMonths, overSixMonths
 }
 
 public enum DebtStatus: String, Codable, Sendable, CaseIterable {
-    case none, lowInterestOnly, highInterest, difficultyRepaying
+    case noDebt, lowInterestOnly, highInterest, difficultyRepaying
 }
 
 public enum RiskAttitude: String, Codable, Sendable, CaseIterable {
@@ -32,7 +32,7 @@ public enum RiskAttitude: String, Codable, Sendable, CaseIterable {
 }
 
 public enum InvestmentExperience: String, Codable, Sendable, CaseIterable {
-    case none, savingsOnly, fundsOrETFs, stocksOrBonds, extensive
+    case noExperience, savingsOnly, fundsOrETFs, stocksOrBonds, extensive
 }
 
 /// Local profile metadata (visible on the lock screen).
@@ -108,7 +108,7 @@ public enum SafetyNote: String, Codable, Sendable, CaseIterable, Hashable {
         var notes: [SafetyNote] = []
         if profile.isMinor { notes.append(.educationalModeMinor) }
         switch profile.emergencyFund {
-        case .none: notes.append(.noEmergencyFund)
+        case .noFund: notes.append(.noEmergencyFund)
         case .underThreeMonths: notes.append(.smallEmergencyFund)
         default: break
         }

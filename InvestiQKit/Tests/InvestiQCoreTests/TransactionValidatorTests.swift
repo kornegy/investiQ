@@ -65,8 +65,8 @@ final class TransactionValidatorTests: XCTestCase {
     func testSafetyNotesFromProfile() {
         let profile = FinancialProfile(country: "CZ", primaryCurrency: .czk, ageCategory: .under18, knowledgeLevel: .advanced,
                                        goals: [.learning], horizon: .underOneYear, incomeStability: .noIncome,
-                                       essentialMonthlyExpenses: nil, emergencyFund: .none, debtStatus: .highInterest,
-                                       riskAttitude: .avoidLosses, experience: .none, updatedAt: fixedNow)
+                                       essentialMonthlyExpenses: nil, emergencyFund: .noFund, debtStatus: .highInterest,
+                                       riskAttitude: .avoidLosses, experience: .noExperience, updatedAt: fixedNow)
         let notes = SafetyNote.evaluate(profile)
         XCTAssertEqual(Set(notes), [.educationalModeMinor, .noEmergencyFund, .highInterestDebt, .shortHorizonVolatility, .unstableIncome, .lossAversionVsVolatility])
     }

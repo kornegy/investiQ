@@ -18,7 +18,7 @@ public struct PriceBar: Hashable, Codable, Sendable {
 
 public enum PriceAdjustment: String, Codable, Sendable, CaseIterable {
     /// Raw traded prices.
-    case none
+    case unadjusted
     /// Adjusted for splits only.
     case split
     /// Adjusted for splits and dividends (total-return style).
