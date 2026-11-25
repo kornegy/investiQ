@@ -24,6 +24,7 @@ public final class AppModel {
     public private(set) var state: State = .loading
     public private(set) var profiles: [ProfileSummary] = []
     public private(set) var session: ProfileSession?
+    public private(set) var services: SessionServices?
     public private(set) var unlockedProfile: UnlockedProfile?
     public private(set) var preferences = UserPreferences()
     public private(set) var educationalMode = false
@@ -66,6 +67,7 @@ public final class AppModel {
             preferences = try await data.preferences()
             educationalMode = unlocked.summary.educationalMode
             self.session = session
+            services = SessionServices.make(session: session, preferences: preferences, environment: environment)
             self.unlockedProfile = unlocked
             profiles = try await profileService.profiles()
             lastActivity = environment.clock.now()
@@ -85,6 +87,9 @@ public final class AppModel {
             preferences = demoPreferences
             educationalMode = false
             self.session = session
+            let services = SessionServices.make(session: session, preferences: demoPreferences, environment: environment)
+            try await services.instruments.seedDemoUniverse()
+            self.services = services
             unlockedProfile = nil
             lastActivity = environment.clock.now()
             state = .unlocked
@@ -97,6 +102,7 @@ public final class AppModel {
     public func lock(reason: LockReason) async {
         if let session { await session.close() }
         session = nil
+        services = nil
         unlockedProfile = nil
         lastLockReason = reason
         do { profiles = try await profileService.profiles() } catch { profiles = [] }
@@ -131,7 +137,16 @@ public final class AppModel {
         var updated = preferences
         transform(&updated)
         try await ProfileDataService(session: session).savePreferences(updated)
+        let providersChanged = updated.providerSettings != preferences.providerSettings
+            || updated.secContactEmail != preferences.secContactEmail
         preferences = updated
+        if providersChanged { reloadServices() }
+    }
+
+    /// Rebuilds session services after provider settings or API keys changed.
+    public func reloadServices() {
+        guard let session else { return }
+        services = SessionServices.make(session: session, preferences: preferences, environment: environment)
     }
 
     // MARK: Auto-lock

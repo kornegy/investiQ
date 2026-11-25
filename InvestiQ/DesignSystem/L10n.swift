@@ -56,8 +56,10 @@ enum Formatters {
             .precision(.fractionLength(digits)).locale(L10n.locale))
     }
 
-    static func money(_ amount: Decimal?, _ currency: CurrencyCode) -> String {
+    /// Unknown currency is shown as a plain number — never guessed.
+    static func money(_ amount: Decimal?, _ currency: CurrencyCode?) -> String {
         guard let amount else { return L10n.string("value.missing") }
+        guard let currency else { return decimal(amount) }
         return money(Money(amount, currency))
     }
 

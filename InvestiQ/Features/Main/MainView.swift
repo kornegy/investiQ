@@ -41,6 +41,8 @@ struct SectionContainer: View {
         switch section {
         case .settings:
             SettingsView()
+        case .market:
+            MarketView()
         default:
             SectionPlaceholderView(section: section)
         }

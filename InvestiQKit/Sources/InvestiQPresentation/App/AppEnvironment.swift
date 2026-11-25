@@ -2,6 +2,7 @@ import Foundation
 import InvestiQCore
 import InvestiQSecurity
 import InvestiQServices
+import InvestiQData
 
 /// Dependency container injected into view models (docs/ARCHITECTURE.md §2, no singletons).
 /// The app target builds it with Apple adapters; tests build it with fakes.
@@ -11,21 +12,48 @@ public struct AppEnvironment: Sendable {
     public var biometricStore: any BiometricKeyStore
     public var passwordDerivation: any PasswordKeyDerivation
     public var clock: any TimeProvider
-    public var services: ServiceFactory
+    public var httpClient: any HTTPClient
 
     public init(paths: ProfilePaths, secureStore: any SecureStore, biometricStore: any BiometricKeyStore,
                 passwordDerivation: any PasswordKeyDerivation, clock: any TimeProvider,
-                services: ServiceFactory = ServiceFactory()) {
+                httpClient: any HTTPClient = URLSessionHTTPClient()) {
         self.paths = paths
         self.secureStore = secureStore
         self.biometricStore = biometricStore
         self.passwordDerivation = passwordDerivation
         self.clock = clock
-        self.services = services
+        self.httpClient = httpClient
     }
 }
 
-/// Creates per-session services. Extended in later phases (market data, portfolio, news, …).
-public struct ServiceFactory: Sendable {
-    public init() {}
+/// Services bound to one open session (real profile or demo). Rebuilt when provider settings change.
+public struct SessionServices: Sendable {
+    public let mode: SessionMode
+    public let registry: ProviderRegistry
+    public let instruments: InstrumentService
+    public let marketData: MarketDataService
+    public let exchangeRates: ExchangeRateService
+    /// `nil` in demo mode (no keys are ever used there).
+    public let credentials: KeychainCredentials?
+
+    public static func make(session: ProfileSession, preferences: UserPreferences, environment: AppEnvironment) -> SessionServices {
+        let clock = environment.clock
+        let registry: ProviderRegistry
+        let credentials: KeychainCredentials?
+        switch session.mode {
+        case .demo:
+            registry = .demo(clock: clock)
+            credentials = nil
+        case .real:
+            let keys = KeychainCredentials(store: environment.secureStore, profileID: session.profileID)
+            let gateway = ProviderGateway(client: environment.httpClient, clock: clock, observer: CacheHealthObserver(store: session.cacheStore))
+            registry = ProviderCatalog.makeRegistry(preferences: preferences, credentials: keys, gateway: gateway, clock: clock)
+            credentials = keys
+        }
+        return SessionServices(mode: session.mode, registry: registry,
+                               instruments: InstrumentService(store: session.userStore, clock: clock),
+                               marketData: MarketDataService(registry: registry, cache: session.cacheStore, clock: clock),
+                               exchangeRates: ExchangeRateService(providers: registry.exchangeRates, cache: session.cacheStore, clock: clock),
+                               credentials: credentials)
+    }
 }

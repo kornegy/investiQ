@@ -93,6 +93,213 @@
         }
       }
     },
+    "analytics.drawdown.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Největší pokles činil %1$@ od maxima %2$@ do minima %3$@; cena později dosáhla předchozího maxima."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The deepest fall was %1$@ from the high on %2$@ to the low on %3$@; the price later regained the previous high."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Наибольшее падение составило %1$@ — от максимума %2$@ до минимума %3$@; позже цена вернулась к прежнему максимуму."
+          }
+        }
+      }
+    },
+    "analytics.drawdown.explanationNotRecovered": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Největší pokles činil %1$@ od maxima %2$@ do minima %3$@; předchozí maximum v tomto období nebylo dosaženo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The deepest fall was %1$@ from the high on %2$@ to the low on %3$@; the previous high has not been regained in this period."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Наибольшее падение составило %1$@ — от максимума %2$@ до минимума %3$@; в этом периоде прежний максимум не восстановлен."
+          }
+        }
+      }
+    },
+    "analytics.input.dailyReturns": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní výnosy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily returns"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дневные доходности"
+          }
+        }
+      }
+    },
+    "analytics.input.observations": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pozorování"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Observations"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Наблюдения"
+          }
+        }
+      }
+    },
+    "analytics.limitation.pastNotFuture": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vychází z minulých cen a nepředpovídá budoucnost."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on past prices; it does not predict the future."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Основано на прошлых ценах и не предсказывает будущее."
+          }
+        }
+      }
+    },
+    "analytics.limitation.tooFewObservations": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K dispozici je jen %1$@ pozorování; potřeba je alespoň %2$@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only %1$@ observations available; at least %2$@ are needed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доступно только %1$@ наблюдений; нужно не менее %2$@."
+          }
+        }
+      }
+    },
+    "analytics.limitation.unadjustedPrices": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceny nejsou upraveny o splity."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prices are not adjusted for splits."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цены не скорректированы на сплиты."
+          }
+        }
+      }
+    },
+    "analytics.methodFooter": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metoda %1$@ · úplnost dat %2$@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Method %1$@ · data completeness %2$@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Метод %1$@ · полнота данных %2$@"
+          }
+        }
+      }
+    },
+    "analytics.volatility.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní pohyby ceny odpovídaly přibližně %@ ročně. Na klidném trhu je hodnota nižší, na neklidném vyšší."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily price moves corresponded to about %@ per year. In calmer markets this figure is lower, in turbulent ones higher."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дневные колебания цены соответствовали примерно %@ в год. На спокойном рынке показатель ниже, на турбулентном — выше."
+          }
+        }
+      }
+    },
     "app.error.databaseUnreadable": {
       "extractionState": "manual",
       "localizations": {
@@ -181,6 +388,466 @@
           "stringUnit": {
             "state": "translated",
             "value": "Что-то пошло не так"
+          }
+        }
+      }
+    },
+    "asset.chart.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Závěrečné ceny za zvolené období. Minulé ceny nepředpovídají budoucí."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Closing prices for the selected period. Past prices do not predict future prices."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цены закрытия за выбранный период. Прошлые цены не предсказывают будущие."
+          }
+        }
+      }
+    },
+    "asset.chart.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historie ceny"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price history"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "История цены"
+          }
+        }
+      }
+    },
+    "asset.chart.unadjusted": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceny nejsou upraveny o splity; skoky mohou způsobit korporátní akce."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These prices are not adjusted for splits; jumps can be caused by corporate actions."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цены не скорректированы на сплиты; скачки могут быть вызваны корпоративными действиями."
+          }
+        }
+      }
+    },
+    "asset.conflict": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jiný zdroj (%1$@) uvedl pro tentýž den %2$@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Another source (%1$@) reported %2$@ for the same day."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Другой источник (%1$@) сообщил %2$@ за тот же день."
+          }
+        }
+      }
+    },
+    "asset.currency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měna"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currency"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Валюта"
+          }
+        }
+      }
+    },
+    "asset.dataIssues.stale": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatele dat se nepodařilo kontaktovat; zobrazuje se uložená kopie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The data providers could not be reached; a saved copy is shown."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось связаться с поставщиками данных; показана сохранённая копия."
+          }
+        }
+      }
+    },
+    "asset.dataIssues.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problémy s daty"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data issues"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проблемы с данными"
+          }
+        }
+      }
+    },
+    "asset.fundamentals.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Údaje zveřejněné firmou nebo poskytovatelem dat. Najetím na ukazatel zobrazíte vysvětlení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Figures reported by the company or a data provider. Hover over each metric for an explanation."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Данные, раскрытые компанией или поставщиком данных. Наведите на показатель, чтобы увидеть объяснение."
+          }
+        }
+      }
+    },
+    "asset.fundamentals.missingNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„není k dispozici“ znamená, že zdroj hodnotu neposkytl — nejde o nulu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\"n/a\" means the source did not provide the value — it is not zero."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«нет данных» означает, что источник не предоставил значение, а не что оно равно нулю."
+          }
+        }
+      }
+    },
+    "asset.fundamentals.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukazatele firmy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Company figures"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показатели компании"
+          }
+        }
+      }
+    },
+    "asset.fundamentals.unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádný zdroj neposkytl ukazatele firmy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No source has provided company figures."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ни один источник не предоставил показатели компании."
+          }
+        }
+      }
+    },
+    "asset.metric.maxDrawdown": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximální propad"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximum drawdown"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Максимальная просадка"
+          }
+        }
+      }
+    },
+    "asset.metric.maxDrawdown.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Největší pokles od předchozího maxima v období. Budoucí poklesy mohou být větší."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The largest fall from a previous high within the period. Future falls can be larger."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Наибольшее падение от предыдущего максимума за период. Будущие падения могут быть больше."
+          }
+        }
+      }
+    },
+    "asset.metric.periodReturn": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změna ceny za období"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price change in period"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение цены за период"
+          }
+        }
+      }
+    },
+    "asset.metric.periodReturn.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změna mezi první a poslední závěrečnou cenou období, bez dividend."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change between the first and last closing price of the period, without dividends."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение между первой и последней ценой закрытия периода, без учёта дивидендов."
+          }
+        }
+      }
+    },
+    "asset.metric.volatility": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volatilita (roční)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volatility (annualised)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Волатильность (годовая)"
+          }
+        }
+      }
+    },
+    "asset.metric.volatility.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jak silně cena kolísala. Vyšší volatilita znamená větší výkyvy oběma směry."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How strongly the price fluctuated. Higher volatility means larger swings in both directions."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Насколько сильно колебалась цена. Более высокая волатильность — более сильные колебания в обе стороны."
+          }
+        }
+      }
+    },
+    "asset.noQuote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena není k dispozici"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No price available"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена недоступна"
+          }
+        }
+      }
+    },
+    "asset.range": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Období"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Period"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Период"
+          }
+        }
+      }
+    },
+    "asset.refresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обновить"
           }
         }
       }
@@ -507,6 +1174,374 @@
         }
       }
     },
+    "bond.callable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Předčasně splatitelný"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Callable early"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Досрочный выкуп эмитентом"
+          }
+        }
+      }
+    },
+    "bond.couponFrequency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Četnost kupónů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon frequency"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Частота купонов"
+          }
+        }
+      }
+    },
+    "bond.couponRate": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kupónová sazba"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coupon rate"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Купонная ставка"
+          }
+        }
+      }
+    },
+    "bond.faceValue": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jmenovitá hodnota"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face value"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Номинал"
+          }
+        }
+      }
+    },
+    "bond.frequency.0": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bezkupónový"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero coupon"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бескупонная"
+          }
+        }
+      }
+    },
+    "bond.frequency.1": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ročně"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annual"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Раз в год"
+          }
+        }
+      }
+    },
+    "bond.frequency.12": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měsíčně"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ежемесячно"
+          }
+        }
+      }
+    },
+    "bond.frequency.2": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pololetně"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semi-annual"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Раз в полгода"
+          }
+        }
+      }
+    },
+    "bond.frequency.4": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čtvrtletně"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quarterly"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ежеквартально"
+          }
+        }
+      }
+    },
+    "bond.maturity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Splatnost"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maturity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Погашение"
+          }
+        }
+      }
+    },
+    "bond.minimumDenomination": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimální nominál"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum denomination"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Минимальный номинал"
+          }
+        }
+      }
+    },
+    "bond.rating": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Úvěrový rating"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Credit rating"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кредитный рейтинг"
+          }
+        }
+      }
+    },
+    "bond.terms.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smluvní podmínky dluhopisu. Analýza výnosu a rizik je na kartě Analýza."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contractual terms of the bond. Analysis of yield and risks is shown in the Analysis tab."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Условия облигации по договору. Анализ доходности и рисков — на вкладке «Анализ»."
+          }
+        }
+      }
+    },
+    "bond.terms.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podmínky dluhopisu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bond terms"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Условия облигации"
+          }
+        }
+      }
+    },
+    "chart.noHistory": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádná historická data"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No historical data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет исторических данных"
+          }
+        }
+      }
+    },
+    "chart.noHistory.detail": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádný zdroj neposkytl historii cen za toto období. InvestiQ nekreslí odhadované grafy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No source has provided price history for this period. InvestiQ does not draw estimated charts."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ни один источник не предоставил историю цен за этот период. InvestiQ не рисует примерные графики."
+          }
+        }
+      }
+    },
     "common.back": {
       "extractionState": "manual",
       "localizations": {
@@ -599,6 +1634,29 @@
         }
       }
     },
+    "common.no": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ne"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет"
+          }
+        }
+      }
+    },
     "common.ok": {
       "extractionState": "manual",
       "localizations": {
@@ -641,6 +1699,52 @@
           "stringUnit": {
             "state": "translated",
             "value": "Повторить"
+          }
+        }
+      }
+    },
+    "common.save": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить"
+          }
+        }
+      }
+    },
+    "common.yes": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ano"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Да"
           }
         }
       }
@@ -940,6 +2044,443 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось выполнить операцию."
+          }
+        }
+      }
+    },
+    "etf.currencyNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obchodní měna je jen měnou kotace. Měnové riziko plyne z měn aktiv, která fond drží."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The trading currency is only the currency of the price quote. Currency risk comes from the currencies of the assets the fund holds."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Валюта торгов — лишь валюта котировки. Валютный риск определяется валютами активов внутри фонда."
+          }
+        }
+      }
+    },
+    "etf.distribution": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nakládání s výnosy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Income use"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Использование дохода"
+          }
+        }
+      }
+    },
+    "etf.distribution.accumulating": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akumulační"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accumulating"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Реинвестирующий"
+          }
+        }
+      }
+    },
+    "etf.distribution.distributing": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distribuční"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distributing"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Распределяющий"
+          }
+        }
+      }
+    },
+    "etf.domicile": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sídlo fondu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domicile"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страна регистрации"
+          }
+        }
+      }
+    },
+    "etf.facts.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hlavní charakteristiky fondu podle zdroje."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key characteristics of the fund as recorded from its source."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Основные характеристики фонда по данным источника."
+          }
+        }
+      }
+    },
+    "etf.facts.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Údaje o fondu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fund facts"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сведения о фонде"
+          }
+        }
+      }
+    },
+    "etf.index": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledovaný index"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracked index"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отслеживаемый индекс"
+          }
+        }
+      }
+    },
+    "etf.manager": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Správce fondu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fund manager"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Управляющая компания"
+          }
+        }
+      }
+    },
+    "etf.replication": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replikace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replication"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Метод репликации"
+          }
+        }
+      }
+    },
+    "etf.replication.physicalFull": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fyzická (úplná)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Physical (full)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Физическая (полная)"
+          }
+        }
+      }
+    },
+    "etf.replication.physicalSampling": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fyzická (výběrová)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Physical (sampling)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Физическая (выборочная)"
+          }
+        }
+      }
+    },
+    "etf.replication.synthetic": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Syntetická (swap)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synthetic (swap)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Синтетическая (своп)"
+          }
+        }
+      }
+    },
+    "etf.ter": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Celková nákladovost (TER)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total expense ratio"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Общие расходы (TER)"
+          }
+        }
+      }
+    },
+    "etf.ucits": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UCITS"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UCITS"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UCITS"
+          }
+        }
+      }
+    },
+    "instrument.kind.corporateBond": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podnikový dluhopis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corporate bond"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Корпоративная облигация"
+          }
+        }
+      }
+    },
+    "instrument.kind.etf": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ETF"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ETF"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ETF"
+          }
+        }
+      }
+    },
+    "instrument.kind.governmentBond": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Státní dluhopis"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Government bond"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Гособлигация"
+          }
+        }
+      }
+    },
+    "instrument.kind.stock": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akcie"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stock"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Акция"
           }
         }
       }
@@ -1588,6 +3129,788 @@
         }
       }
     },
+    "market.add": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přidat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить"
+          }
+        }
+      }
+    },
+    "market.addToWatchlist": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přidat do sledovaných"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add to watchlist"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить в избранное"
+          }
+        }
+      }
+    },
+    "market.compare.currencyNote": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Každá křivka je ve své obchodní měně; vliv měnových kurzů není zahrnut."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Each line uses its own trading currency; exchange-rate effects are not included."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Каждая линия рассчитана в своей валюте торгов; влияние курсов валют не учтено."
+          }
+        }
+      }
+    },
+    "market.compare.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte až čtyři nástroje k porovnání"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select up to four instruments to compare"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите до четырёх инструментов для сравнения"
+          }
+        }
+      }
+    },
+    "market.compare.rebased": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodnota 100 investovaných na začátku"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Value of 100 invested at the start"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стоимость 100, вложенных в начале"
+          }
+        }
+      }
+    },
+    "market.compare.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porovnání"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparison"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сравнение"
+          }
+        }
+      }
+    },
+    "market.compareCount": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porovnat (%@)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compare (%@)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сравнить (%@)"
+          }
+        }
+      }
+    },
+    "market.error.addFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nástroj se nepodařilo přidat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The instrument could not be added."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось добавить инструмент."
+          }
+        }
+      }
+    },
+    "market.error.libraryUnavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaše nástroje se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your instruments could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить ваши инструменты."
+          }
+        }
+      }
+    },
+    "market.error.missingCurrency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatel neuvedl měnu tohoto nástroje, proto jej nelze bezpečně přidat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The provider did not report a currency for this listing, so it cannot be added safely."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставщик не указал валюту этого инструмента, поэтому его нельзя безопасно добавить."
+          }
+        }
+      }
+    },
+    "market.error.watchlistFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seznam sledovaných se nepodařilo aktualizovat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The watchlist could not be updated."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось обновить избранное."
+          }
+        }
+      }
+    },
+    "market.filter.all": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vše"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все"
+          }
+        }
+      }
+    },
+    "market.filter.country": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Země"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страна"
+          }
+        }
+      }
+    },
+    "market.filter.currency": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měna"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currency"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Валюта"
+          }
+        }
+      }
+    },
+    "market.filter.kind": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тип"
+          }
+        }
+      }
+    },
+    "market.filter.sector": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sektor"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sector"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сектор"
+          }
+        }
+      }
+    },
+    "market.foundVia": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "přes %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "via %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "через %@"
+          }
+        }
+      }
+    },
+    "market.library": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaše nástroje"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your instruments"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши инструменты"
+          }
+        }
+      }
+    },
+    "market.libraryEmpty": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné odpovídající nástroje. Přidejte nástroj vyhledáním u poskytovatele dat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No instruments match. Search a data provider to add one."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет подходящих инструментов. Найдите инструмент у поставщика данных, чтобы добавить его."
+          }
+        }
+      }
+    },
+    "market.noProviders": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Není nastaven žádný poskytovatel tržních dat. Nástroje a ceny můžete zadávat ručně, nebo přidat vlastní API klíč."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No market data provider is configured. You can still add instruments and prices manually, or add your own API key."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставщик рыночных данных не настроен. Вы можете добавлять инструменты и цены вручную или указать свой API-ключ."
+          }
+        }
+      }
+    },
+    "market.openProviderSettings": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otevřít nastavení poskytovatelů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open data provider settings"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть настройки поставщиков"
+          }
+        }
+      }
+    },
+    "market.providerFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: %2$@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: %2$@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: %2$@"
+          }
+        }
+      }
+    },
+    "market.providerResults": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výsledky od poskytovatelů dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Results from data providers"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Результаты поставщиков данных"
+          }
+        }
+      }
+    },
+    "market.removeFromWatchlist": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odebrat ze sledovaných"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove from watchlist"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Убрать из избранного"
+          }
+        }
+      }
+    },
+    "market.searchPlaceholder": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Název, ticker nebo ISIN"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name, ticker or ISIN"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название, тикер или ISIN"
+          }
+        }
+      }
+    },
+    "market.searchProviders": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hledat u poskytovatelů dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search data providers"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Искать у поставщиков данных"
+          }
+        }
+      }
+    },
+    "market.searchProviders.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odešle hledaný text zapnutým poskytovatelům dat. Bezplatné tarify mají denní limity, proto se dotaz odesílá jen na váš pokyn."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sends your search text to the enabled data providers. Free plans have daily limits, so searches are only sent when you ask."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправляет текст поиска включённым поставщикам данных. У бесплатных тарифов есть дневные лимиты, поэтому запрос отправляется только по вашей команде."
+          }
+        }
+      }
+    },
+    "market.sort": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Řazení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sort"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сортировка"
+          }
+        }
+      }
+    },
+    "market.sort.changeAscending": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní změna ↑"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily change ↑"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение за день ↑"
+          }
+        }
+      }
+    },
+    "market.sort.changeDescending": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní změna ↓"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily change ↓"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение за день ↓"
+          }
+        }
+      }
+    },
+    "market.sort.kind": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тип"
+          }
+        }
+      }
+    },
+    "market.sort.marketCap": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tržní kapitalizace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Market capitalisation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рыночная капитализация"
+          }
+        }
+      }
+    },
+    "market.sort.name": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Název"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название"
+          }
+        }
+      }
+    },
+    "market.watchlistOnly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jen sledované"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Watchlist only"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только избранное"
+          }
+        }
+      }
+    },
     "menu.account": {
       "extractionState": "manual",
       "localizations": {
@@ -1653,6 +3976,535 @@
           "stringUnit": {
             "state": "translated",
             "value": "Переход"
+          }
+        }
+      }
+    },
+    "metric.debtToEquity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dluh/vlastní kapitál"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debt/equity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Долг/капитал"
+          }
+        }
+      }
+    },
+    "metric.debtToEquity.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolik dluhu má firma ve srovnání s vlastním kapitálem. Vyšší hodnota znamená větší finanční páku."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How much debt the company has compared with its equity. Higher means more financial leverage."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сколько долга у компании по сравнению с её капиталом. Чем выше, тем больше финансовый рычаг."
+          }
+        }
+      }
+    },
+    "metric.dividendYield": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividendový výnos"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividend yield"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дивидендная доходность"
+          }
+        }
+      }
+    },
+    "metric.dividendYield.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividendy za rok vydělené cenou akcie. Dividendy nejsou zaručené a mohou být sníženy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dividends paid over a year divided by the share price. Dividends are not guaranteed and can be cut."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дивиденды за год, делённые на цену акции. Дивиденды не гарантированы и могут быть сокращены."
+          }
+        }
+      }
+    },
+    "metric.eps": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zisk na akcii"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earnings per share"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прибыль на акцию"
+          }
+        }
+      }
+    },
+    "metric.eps.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čistý zisk vydělený počtem akcií."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Net income divided by the number of shares."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чистая прибыль, делённая на число акций."
+          }
+        }
+      }
+    },
+    "metric.fcf": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volné peněžní toky (12 měsíců)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free cash flow (12 months)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свободный денежный поток (12 месяцев)"
+          }
+        }
+      }
+    },
+    "metric.fcf.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peněžní toky z provozu minus investice do majetku."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cash from operations minus investment in property and equipment."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Денежный поток от операций минус инвестиции в основные средства."
+          }
+        }
+      }
+    },
+    "metric.marketCap": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tržní kapitalizace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Market capitalisation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рыночная капитализация"
+          }
+        }
+      }
+    },
+    "metric.marketCap.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena akcie × počet akcií: kolik trh aktuálně oceňuje celou firmu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share price × number of shares: what the market currently values the whole company at."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена акции × число акций: во сколько рынок сейчас оценивает всю компанию."
+          }
+        }
+      }
+    },
+    "metric.netIncome": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čistý zisk (12 měsíců)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Net income (12 months)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чистая прибыль (12 месяцев)"
+          }
+        }
+      }
+    },
+    "metric.netIncome.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zisk po všech nákladech, úrocích a daních. Může být záporný (ztráta)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profit after all costs, interest and taxes. Can be negative (a loss)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прибыль после всех расходов, процентов и налогов. Может быть отрицательной (убыток)."
+          }
+        }
+      }
+    },
+    "metric.notMeaningful": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "nemá smysl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "not meaningful"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "не имеет смысла"
+          }
+        }
+      }
+    },
+    "metric.operatingMargin": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provozní marže"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operating margin"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операционная маржа"
+          }
+        }
+      }
+    },
+    "metric.operatingMargin.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provozní zisk jako podíl na tržbách."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operating profit as a share of revenue."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операционная прибыль как доля выручки."
+          }
+        }
+      }
+    },
+    "metric.pb": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena/účetní hodnota (P/B)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price/book (P/B)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена/балансовая стоимость (P/B)"
+          }
+        }
+      }
+    },
+    "metric.pb.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena akcie ve srovnání s účetní hodnotou vlastního kapitálu na akcii."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share price compared with the accounting value of the company's equity per share."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена акции по сравнению с балансовой стоимостью капитала компании на акцию."
+          }
+        }
+      }
+    },
+    "metric.pe": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena/zisk (P/E)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Price/earnings (P/E)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена/прибыль (P/E)"
+          }
+        }
+      }
+    },
+    "metric.pe.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cena akcie vydělená ziskem na akcii. Vysoká hodnota může znamenat, že vysoká očekávání už jsou v ceně. Při záporném zisku nemá smysl."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share price divided by earnings per share. A high value can mean high expectations are already priced in. Not meaningful when earnings are negative."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цена акции, делённая на прибыль на акцию. Высокое значение может означать, что высокие ожидания уже заложены в цену. Не имеет смысла при отрицательной прибыли."
+          }
+        }
+      }
+    },
+    "metric.revenue": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tržby (12 měsíců)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revenue (12 months)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выручка (12 месяцев)"
+          }
+        }
+      }
+    },
+    "metric.revenue.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peníze, které firma získala z prodejů před odečtením nákladů."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Money the company received from sales before costs."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Деньги, полученные компанией от продаж до вычета расходов."
+          }
+        }
+      }
+    },
+    "metric.revenueGrowth": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Růst tržeb (meziročně)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revenue growth (year on year)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рост выручки (год к году)"
+          }
+        }
+      }
+    },
+    "metric.revenueGrowth.help": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změna tržeb oproti stejnému období před rokem."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change in revenue compared with the same period a year earlier."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изменение выручки по сравнению с тем же периодом годом ранее."
           }
         }
       }
@@ -3796,6 +6648,857 @@
         }
       }
     },
+    "provider.demoOnly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukázkový režim používá jen smyšlená data"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo mode uses synthetic data only"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В демо-режиме используются только синтетические данные"
+          }
+        }
+      }
+    },
+    "provider.demoOnly.detail": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytvořte si profil a připojte skutečné poskytovatele dat s vlastními API klíči."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create a profile to connect real data providers with your own API keys."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создайте профиль, чтобы подключить реальных поставщиков данных со своими API-ключами."
+          }
+        }
+      }
+    },
+    "provider.enabled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapnuto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enabled"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включено"
+          }
+        }
+      }
+    },
+    "provider.failure.connectionFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "připojení selhalo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the connection failed"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "не удалось подключиться"
+          }
+        }
+      }
+    },
+    "provider.failure.invalidResponse": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "odpověď byla neplatná a byla odmítnuta"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the response was invalid and was rejected"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ответ некорректен и отклонён"
+          }
+        }
+      }
+    },
+    "provider.failure.misconfigured": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "nastavení není úplné"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "configuration is incomplete"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "настройка не завершена"
+          }
+        }
+      }
+    },
+    "provider.failure.missingAPIKey": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "není zadán API klíč"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "no API key entered"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API-ключ не указан"
+          }
+        }
+      }
+    },
+    "provider.failure.notFound": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "u tohoto poskytovatele nenalezeno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "not found at this provider"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "не найдено у этого поставщика"
+          }
+        }
+      }
+    },
+    "provider.failure.notSupported": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "není součástí vašeho tarifu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "not included in your plan"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "не входит в ваш тариф"
+          }
+        }
+      }
+    },
+    "provider.failure.offline": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bez připojení k internetu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "no internet connection"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "нет подключения к интернету"
+          }
+        }
+      }
+    },
+    "provider.failure.quotaExhausted": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "denní limit dotazů vyčerpán"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "daily request limit used up"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "дневной лимит запросов исчерпан"
+          }
+        }
+      }
+    },
+    "provider.failure.rateLimited": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dosažen limit dotazů, zkuste později"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "request limit reached, try later"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "достигнут лимит запросов, попробуйте позже"
+          }
+        }
+      }
+    },
+    "provider.failure.serverError": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "server poskytovatele hlásí chybu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the provider's server reported an error"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "сервер поставщика сообщил об ошибке"
+          }
+        }
+      }
+    },
+    "provider.failure.timedOut": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "vypršel časový limit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the request timed out"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "истекло время ожидания"
+          }
+        }
+      }
+    },
+    "provider.failure.unauthorized": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API klíč byl odmítnut"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the API key was rejected"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API-ключ отклонён"
+          }
+        }
+      }
+    },
+    "provider.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ nemá server ani vestavěné API klíče. Zadejte vlastní klíče — ukládají se jen do Klíčenky macOS. Poskytovatelé výše v seznamu se dotazují jako první."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InvestiQ has no server and ships no API keys. Enter your own keys; they are stored only in the macOS Keychain. Providers higher in the list are asked first."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У InvestiQ нет сервера и нет встроенных API-ключей. Введите свои ключи — они хранятся только в связке ключей macOS. Поставщики выше в списке опрашиваются первыми."
+          }
+        }
+      }
+    },
+    "provider.keyPlaceholder": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API klíč"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API key"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API-ключ"
+          }
+        }
+      }
+    },
+    "provider.keySaveFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč se nepodařilo uložit do Klíčenky."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The key could not be saved in the Keychain."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось сохранить ключ в связке ключей."
+          }
+        }
+      }
+    },
+    "provider.keySaved": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč byl uložen do Klíčenky."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The key was saved in the Keychain."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ключ сохранён в связке ключей."
+          }
+        }
+      }
+    },
+    "provider.keyStored": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč uložen — zadáním nového jej nahradíte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API key stored — enter a new one to replace it"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ключ сохранён — введите новый, чтобы заменить"
+          }
+        }
+      }
+    },
+    "provider.lastFailure": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poslední neúspěšný dotaz: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last failed request: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Последний неудачный запрос: %@"
+          }
+        }
+      }
+    },
+    "provider.lastSuccess": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poslední úspěšný dotaz: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last successful request: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Последний успешный запрос: %@"
+          }
+        }
+      }
+    },
+    "provider.priorityDown": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dotazovat později"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask this provider later"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Опрашивать позже"
+          }
+        }
+      }
+    },
+    "provider.priorityUp": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dotazovat dříve"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask this provider earlier"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Опрашивать раньше"
+          }
+        }
+      }
+    },
+    "provider.removeKey": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odebrat klíč"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove key"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить ключ"
+          }
+        }
+      }
+    },
+    "provider.sec.email": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontaktní e-mail"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contact e-mail"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Контактный e-mail"
+          }
+        }
+      }
+    },
+    "provider.sec.explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC vyžaduje, aby každý automatický dotaz obsahoval kontaktní e-mail. Pokud jej zadáte, bude se s každým dotazem odesílat SEC. Ponechte prázdné, chcete-li data SEC nepoužívat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The SEC requires every automated request to include a contact e-mail. If you enter one, it is sent to the SEC with each request. Leave empty to keep SEC data disabled."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC требует, чтобы каждый автоматический запрос содержал контактный e-mail. Если вы его укажете, он будет отправляться в SEC с каждым запросом. Оставьте поле пустым, чтобы не использовать данные SEC."
+          }
+        }
+      }
+    },
+    "provider.sec.title": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR (výkazy amerických firem)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR (US company filings)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR (отчётность компаний США)"
+          }
+        }
+      }
+    },
+    "provider.secDisabled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR je vypnut."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR is disabled."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR отключён."
+          }
+        }
+      }
+    },
+    "provider.secEmailInvalid": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte platnou e-mailovou adresu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a valid e-mail address."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите корректный адрес e-mail."
+          }
+        }
+      }
+    },
+    "provider.secSaved": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR je zapnut s vaším kontaktním e-mailem."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR is enabled with your contact e-mail."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SEC EDGAR включён с вашим контактным e-mail."
+          }
+        }
+      }
+    },
+    "provider.signup": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Získat klíč"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get a key"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Получить ключ"
+          }
+        }
+      }
+    },
+    "provider.terms": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podmínky"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terms"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Условия"
+          }
+        }
+      }
+    },
+    "provider.test": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otestovat připojení"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test connection"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить соединение"
+          }
+        }
+      }
+    },
+    "provider.testFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test připojení selhal: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connection test failed: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверка не удалась: %@"
+          }
+        }
+      }
+    },
+    "provider.testNotEnabled": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nejprve poskytovatele zapněte (a případně zadejte klíč)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable the provider (and enter a key if needed) first."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сначала включите поставщика (и при необходимости введите ключ)."
+          }
+        }
+      }
+    },
+    "provider.testSucceeded": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatel odpověděl a odpověď je platná."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The provider answered and the response was valid."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставщик ответил, ответ корректен."
+          }
+        }
+      }
+    },
     "quality.conflicting": {
       "extractionState": "manual",
       "localizations": {
@@ -3815,6 +7518,144 @@
           "stringUnit": {
             "state": "translated",
             "value": "Источники расходятся"
+          }
+        }
+      }
+    },
+    "range.all": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vše"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всё"
+          }
+        }
+      }
+    },
+    "range.fiveYears": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5L"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5Y"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5Л"
+          }
+        }
+      }
+    },
+    "range.oneMonth": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1M"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1M"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1М"
+          }
+        }
+      }
+    },
+    "range.oneYear": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1R"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1Y"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1Г"
+          }
+        }
+      }
+    },
+    "range.sixMonths": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6M"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6M"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6М"
+          }
+        }
+      }
+    },
+    "range.threeMonths": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3M"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3M"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3М"
           }
         }
       }
@@ -4942,6 +8783,29 @@
           "stringUnit": {
             "state": "translated",
             "value": "Правовая информация"
+          }
+        }
+      }
+    },
+    "settings.tab.providers": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poskytovatelé dat"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data Providers"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставщики данных"
           }
         }
       }

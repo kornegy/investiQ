@@ -11,6 +11,8 @@ struct SettingsView: View {
                 .tabItem { Label("settings.tab.general", systemImage: "gearshape") }
             SecuritySettingsView()
                 .tabItem { Label("settings.tab.security", systemImage: "lock.shield") }
+            DataProvidersSettingsView()
+                .tabItem { Label("settings.tab.providers", systemImage: "network") }
             LegalSettingsView()
                 .tabItem { Label("settings.tab.legal", systemImage: "doc.text") }
         }
