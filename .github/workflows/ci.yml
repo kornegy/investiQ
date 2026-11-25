@@ -64,7 +64,16 @@ jobs:
           set -o pipefail
           xcodebuild -project InvestiQ.xcodeproj -scheme InvestiQ -configuration Debug \
             -destination 'platform=macOS' test 2>&1 | tee test.log | grep -E "error:|Test Case|TEST (SUCCEEDED|FAILED)|\*\* TEST" || true
-          grep -q "TEST SUCCEEDED" test.log
+          if ! grep -q "TEST SUCCEEDED" test.log; then
+            echo "---- tail of test.log ----"
+            tail -250 test.log
+            echo "---- crash reports ----"
+            ls -la ~/Library/Logs/DiagnosticReports 2>/dev/null || true
+            for report in ~/Library/Logs/DiagnosticReports/InvestiQ*; do
+              [ -f "$report" ] && head -150 "$report"
+            done
+            exit 1
+          fi
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4

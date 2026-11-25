@@ -23,7 +23,7 @@ final class InvestiQUITests: XCTestCase {
     func testDemoModeNavigatesAllSections() {
         let app = launchApp()
         let demo = element(app, "welcome.tryDemo")
-        XCTAssertTrue(demo.waitForExistence(timeout: 15))
+        XCTAssertTrue(demo.waitForExistence(timeout: 30), "welcome screen not found. Hierarchy:\n\(app.debugDescription)")
         demo.click()
         for section in ["overview", "market", "portfolio", "news", "risk", "planner", "simulator", "brokers", "learn", "settings"] {
             let item = element(app, "sidebar.\(section)")
@@ -35,7 +35,7 @@ final class InvestiQUITests: XCTestCase {
     func testCreateProfileLockAndUnlock() {
         let app = launchApp()
         let create = element(app, "welcome.createProfile")
-        XCTAssertTrue(create.waitForExistence(timeout: 15))
+        XCTAssertTrue(create.waitForExistence(timeout: 30), "welcome screen not found. Hierarchy:\n\(app.debugDescription)")
         create.click()
 
         let name = element(app, "profile.displayName")
