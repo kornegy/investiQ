@@ -43,3 +43,29 @@ final class LessonCatalogTests: XCTestCase {
         XCTAssertEqual(try LessonCatalog.load(language: "de").first?.title, try LessonCatalog.load(language: "en").first?.title)
     }
 }
+
+final class DirectoryAndCalendarContentTests: XCTestCase {
+    func testBrokerDirectoryIsVerifiedNeutralAndClean() throws {
+        let (brokers, verifiedOn) = try BrokerCatalog.load()
+        XCTAssertGreaterThanOrEqual(brokers.count, 5)
+        XCTAssertEqual(brokers.map(\.brand), brokers.map(\.brand).sorted { $0.localizedCaseInsensitiveCompare($1) == .orderedAscending },
+                       "alphabetical — no ranking")
+        for broker in brokers {
+            XCTAssertFalse(broker.sources.isEmpty, broker.id)
+            XCTAssertLessThanOrEqual(broker.verifiedOn, verifiedOn)
+            let urls = [broker.registerURL] + broker.sources + [broker.websiteURL].compactMap { $0 }
+            for url in urls {
+                XCTAssertEqual(url.scheme, "https", "\(broker.id): \(url)")
+                let query = url.query?.lowercased() ?? ""
+                XCTAssertFalse(["ref=", "utm_", "affiliate", "aff=", "partner", "promo"].contains { query.contains($0) },
+                               "\(broker.id): no referral or tracking parameters")
+            }
+            if let protection = broker.investorProtection, let percent = protection.coveragePercent {
+                XCTAssertTrue((1...100).contains(percent))
+            }
+            // Unverified fast-changing facts stay empty rather than guessed.
+            XCTAssertNil(broker.fees, broker.id)
+            XCTAssertNil(broker.fxFees, broker.id)
+        }
+    }
+}

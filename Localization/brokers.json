@@ -1,0 +1,207 @@
+{
+  "brokers.intro": {
+    "en": "An informational list of regulated investment firms relevant for Czechia and the EU. Listed alphabetically: no ranking, no recommendation, no referral or affiliate links. Only facts checked against official registers or the firms' own legal documents are shown.",
+    "ru": "Информационный список регулируемых инвестиционных компаний, актуальных для Чехии и ЕС. В алфавитном порядке: без рейтинга, без рекомендаций, без реферальных и партнёрских ссылок. Показаны только сведения, проверенные по официальным реестрам или юридическим документам компаний.",
+    "cs": "Informativní seznam regulovaných investičních firem relevantních pro Česko a EU. Seřazeno abecedně: bez žebříčku, bez doporučení, bez referenčních či partnerských odkazů. Zobrazují se jen údaje ověřené v oficiálních registrech nebo právních dokumentech firem."
+  },
+  "brokers.protectionWarning": {
+    "en": "Investor compensation schemes may pay out if an intermediary fails and client assets are missing. They never protect against falling prices or investment losses.",
+    "ru": "Системы компенсации инвесторам могут выплатить деньги, если посредник обанкротится и активы клиентов пропадут. Они никогда не защищают от падения цен и инвестиционных убытков.",
+    "cs": "Systémy odškodnění investorů mohou vyplatit náhradu, pokud zprostředkovatel selže a majetek klientů chybí. Nikdy nechrání před poklesem cen ani investičními ztrátami."
+  },
+  "brokers.educationalMode": {
+    "en": "Educational mode: links to broker websites are hidden. Use the simulator to practise with virtual money.",
+    "ru": "Учебный режим: ссылки на сайты брокеров скрыты. Практикуйтесь в симуляторе на виртуальных деньгах.",
+    "cs": "Výukový režim: odkazy na weby brokerů jsou skryté. Procvičujte v simulátoru s virtuálními penězi."
+  },
+  "brokers.error.loadFailed": {
+    "en": "The directory could not be loaded.",
+    "ru": "Не удалось загрузить справочник.",
+    "cs": "Adresář se nepodařilo načíst."
+  },
+  "brokers.filter": {
+    "en": "Presence in Czechia",
+    "ru": "Присутствие в Чехии",
+    "cs": "Působení v Česku"
+  },
+  "brokers.presence.czechCompany": {
+    "en": "Czech company",
+    "ru": "Чешская компания",
+    "cs": "Česká firma"
+  },
+  "brokers.presence.czechBranch": {
+    "en": "Branch in Czechia",
+    "ru": "Филиал в Чехии",
+    "cs": "Pobočka v Česku"
+  },
+  "brokers.presence.crossBorder": {
+    "en": "Serves Czech clients from another EU country",
+    "ru": "Обслуживает чешских клиентов из другой страны ЕС",
+    "cs": "Obsluhuje české klienty z jiné země EU"
+  },
+  "brokers.presence.unknown": {
+    "en": "Not verified",
+    "ru": "Не проверено",
+    "cs": "Neověřeno"
+  },
+  "brokers.licence.bankAndInvestmentFirm": {
+    "en": "Bank providing investment services",
+    "ru": "Банк, оказывающий инвестиционные услуги",
+    "cs": "Banka poskytující investiční služby"
+  },
+  "brokers.licence.investmentFirm": {
+    "en": "Investment firm",
+    "ru": "Инвестиционная компания",
+    "cs": "Obchodník s cennými papíry"
+  },
+  "brokers.field.legalName": {
+    "en": "Legal entity",
+    "ru": "Юридическое лицо",
+    "cs": "Právnická osoba"
+  },
+  "brokers.field.country": {
+    "en": "Country of registration",
+    "ru": "Страна регистрации",
+    "cs": "Země registrace"
+  },
+  "brokers.field.regulator": {
+    "en": "Supervisor",
+    "ru": "Надзорный орган",
+    "cs": "Dohledový orgán"
+  },
+  "brokers.field.licence": {
+    "en": "Licence",
+    "ru": "Лицензия",
+    "cs": "Licence"
+  },
+  "brokers.field.presence": {
+    "en": "Availability in Czechia",
+    "ru": "Доступность в Чехии",
+    "cs": "Dostupnost v Česku"
+  },
+  "brokers.field.protection": {
+    "en": "Investor compensation",
+    "ru": "Компенсация инвесторам",
+    "cs": "Odškodnění investorů"
+  },
+  "brokers.field.deposit": {
+    "en": "Deposit insurance (cash at the bank)",
+    "ru": "Страхование вкладов (деньги в банке)",
+    "cs": "Pojištění vkladů (peníze v bance)"
+  },
+  "brokers.field.fees": {
+    "en": "Trading fees",
+    "ru": "Торговые комиссии",
+    "cs": "Poplatky za obchody"
+  },
+  "brokers.field.fxFees": {
+    "en": "Currency conversion fees",
+    "ru": "Комиссии за конвертацию",
+    "cs": "Poplatky za převod měn"
+  },
+  "brokers.field.minimum": {
+    "en": "Minimum deposit",
+    "ru": "Минимальный депозит",
+    "cs": "Minimální vklad"
+  },
+  "brokers.field.age": {
+    "en": "Minimum age",
+    "ru": "Минимальный возраст",
+    "cs": "Minimální věk"
+  },
+  "brokers.field.instruments": {
+    "en": "Instrument types",
+    "ru": "Типы инструментов",
+    "cs": "Druhy nástrojů"
+  },
+  "brokers.field.identity": {
+    "en": "Identity verification",
+    "ru": "Проверка личности",
+    "cs": "Ověření totožnosti"
+  },
+  "brokers.notVerified": {
+    "en": "Not verified — check the firm's current documents",
+    "ru": "Не проверено — смотрите актуальные документы компании",
+    "cs": "Neověřeno — zkontrolujte aktuální dokumenty firmy"
+  },
+  "brokers.identity.general": {
+    "en": "Required by EU anti-money-laundering rules for every account",
+    "ru": "Обязательна по правилам ЕС о противодействии отмыванию денег для любого счёта",
+    "cs": "Povinné podle pravidel EU proti praní peněz u každého účtu"
+  },
+  "brokers.protection.percent": {
+    "en": "%@ %% of the claim",
+    "ru": "%@ %% требования",
+    "cs": "%@ %% nároku"
+  },
+  "brokers.protection.cap": {
+    "en": "up to EUR %@",
+    "ru": "до %@ EUR",
+    "cs": "do %@ EUR"
+  },
+  "brokers.protection.detailsNotVerified": {
+    "en": "coverage details not verified",
+    "ru": "детали покрытия не проверены",
+    "cs": "podrobnosti krytí neověřeny"
+  },
+  "brokers.deposit.value": {
+    "en": "up to EUR %@ per depositor (separate from investor compensation)",
+    "ru": "до %@ EUR на вкладчика (отдельно от компенсации инвесторам)",
+    "cs": "do %@ EUR na vkladatele (odděleně od odškodnění investorů)"
+  },
+  "brokers.protection.note.czGFOCP": {
+    "en": "Czech Guarantee Fund of Securities Traders: compensation if the firm cannot return client assets; not for investment losses.",
+    "ru": "Чешский гарантийный фонд торговцев ценными бумагами: компенсация, если компания не может вернуть активы клиентов; не за инвестиционные убытки.",
+    "cs": "Garanční fond obchodníků s cennými papíry: náhrada, pokud firma nemůže vrátit majetek klientů; nikoli za investiční ztráty."
+  },
+  "brokers.protection.note.kdpw": {
+    "en": "Polish scheme: 100 % up to EUR 3,000 and 90 % above, at most EUR 20,100 per investor (per KDPW).",
+    "ru": "Польская система: 100 % до 3 000 EUR и 90 % сверх этого, не более 20 100 EUR на инвестора (по данным KDPW).",
+    "cs": "Polský systém: 100 % do 3 000 EUR a 90 % nad tuto částku, nejvýše 20 100 EUR na investora (podle KDPW)."
+  },
+  "brokers.protection.note.retailOnly": {
+    "en": "Covers eligible retail clients only, not professional or institutional clients.",
+    "ru": "Покрывает только соответствующих требованиям розничных клиентов, не профессиональных и институциональных.",
+    "cs": "Kryje jen způsobilé drobné klienty, nikoli profesionální a institucionální."
+  },
+  "brokers.open.branchCoverage": {
+    "en": "Not verified: whether clients of the Czech branch are covered by the Polish scheme.",
+    "ru": "Не проверено: распространяется ли польская система на клиентов чешского филиала.",
+    "cs": "Neověřeno: zda polský systém kryje klienty české pobočky."
+  },
+  "brokers.open.groupEntity": {
+    "en": "Not verified: which group company serves clients in Czechia (the group has entities in several countries).",
+    "ru": "Не проверено: какая компания группы обслуживает клиентов в Чехии (у группы есть компании в нескольких странах).",
+    "cs": "Neověřeno: která společnost skupiny obsluhuje klienty v Česku (skupina má společnosti v několika zemích)."
+  },
+  "brokers.open.compensationCap": {
+    "en": "Not verified: the current compensation limit of the scheme.",
+    "ru": "Не проверено: текущий лимит компенсации системы.",
+    "cs": "Neověřeno: aktuální limit odškodnění systému."
+  },
+  "brokers.register": {
+    "en": "Check in the official register",
+    "ru": "Проверить в официальном реестре",
+    "cs": "Ověřit v oficiálním registru"
+  },
+  "brokers.website": {
+    "en": "Official website",
+    "ru": "Официальный сайт",
+    "cs": "Oficiální web"
+  },
+  "brokers.sources": {
+    "en": "Sources",
+    "ru": "Источники",
+    "cs": "Zdroje"
+  },
+  "brokers.verifiedOn": {
+    "en": "Verified on %@",
+    "ru": "Проверено %@",
+    "cs": "Ověřeno %@"
+  },
+  "brokers.disclaimer": {
+    "en": "Information can change at any time; always check the firm's current documents and the official register before acting. Inclusion is not a recommendation, and InvestiQ receives nothing from any firm listed.",
+    "ru": "Сведения могут измениться в любой момент; перед любыми действиями проверяйте актуальные документы компании и официальный реестр. Включение в список — не рекомендация, и InvestiQ ничего не получает от перечисленных компаний.",
+    "cs": "Údaje se mohou kdykoli změnit; před jakýmkoli krokem ověřte aktuální dokumenty firmy a oficiální registr. Uvedení v seznamu není doporučení a InvestiQ od uvedených firem nic nedostává."
+  }
+}

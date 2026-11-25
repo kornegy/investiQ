@@ -57,21 +57,8 @@ struct SectionContainer: View {
             LearnView()
         case .news:
             NewsView()
-        default:
-            SectionPlaceholderView(section: section)
-        }
-    }
-}
-
-/// Honest placeholder for sections whose implementation lands in a later roadmap phase.
-struct SectionPlaceholderView: View {
-    let section: AppSection
-
-    var body: some View {
-        ContentUnavailableView {
-            Label(LocalizedStringKey(section.titleKey), systemImage: section.systemImage)
-        } description: {
-            Text("section.notYetAvailable")
+        case .brokers:
+            BrokersView()
         }
     }
 }

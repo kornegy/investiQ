@@ -27,6 +27,10 @@ SemVer once releases start.
   cautious cause-and-effect notes; only headlines and short summaries are kept; demo news.
 - Economic calendar: central-bank decisions and statistics releases verified against official pages with
   source links, time zones, tentative/rescheduled status; earnings dates for library instruments.
+- Broker directory: six firms relevant for Czechia/EU with only verified facts (legal entity, supervisor,
+  licence type, presence in Czechia, investor-compensation scheme and limits where documented, deposit
+  insurance shown separately), sources and verification date; unverified facts shown as "not verified";
+  alphabetical, no ranking or referral links; broker websites hidden in educational mode.
 
 ### Phase 4 — Analytics and risk
 - Bond analytics (schedules, five day counts, accrued interest, YTM/YTC, durations, convexity, full

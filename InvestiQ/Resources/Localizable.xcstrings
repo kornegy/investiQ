@@ -2071,6 +2071,949 @@
         }
       }
     },
+    "brokers.deposit.value": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "do %@ EUR na vkladatele (odděleně od odškodnění investorů)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "up to EUR %@ per depositor (separate from investor compensation)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "до %@ EUR на вкладчика (отдельно от компенсации инвесторам)"
+          }
+        }
+      }
+    },
+    "brokers.disclaimer": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Údaje se mohou kdykoli změnit; před jakýmkoli krokem ověřte aktuální dokumenty firmy a oficiální registr. Uvedení v seznamu není doporučení a InvestiQ od uvedených firem nic nedostává."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Information can change at any time; always check the firm's current documents and the official register before acting. Inclusion is not a recommendation, and InvestiQ receives nothing from any firm listed."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сведения могут измениться в любой момент; перед любыми действиями проверяйте актуальные документы компании и официальный реестр. Включение в список — не рекомендация, и InvestiQ ничего не получает от перечисленных компаний."
+          }
+        }
+      }
+    },
+    "brokers.educationalMode": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výukový režim: odkazy na weby brokerů jsou skryté. Procvičujte v simulátoru s virtuálními penězi."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Educational mode: links to broker websites are hidden. Use the simulator to practise with virtual money."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учебный режим: ссылки на сайты брокеров скрыты. Практикуйтесь в симуляторе на виртуальных деньгах."
+          }
+        }
+      }
+    },
+    "brokers.error.loadFailed": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresář se nepodařilo načíst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The directory could not be loaded."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось загрузить справочник."
+          }
+        }
+      }
+    },
+    "brokers.field.age": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimální věk"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum age"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Минимальный возраст"
+          }
+        }
+      }
+    },
+    "brokers.field.country": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Země registrace"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country of registration"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страна регистрации"
+          }
+        }
+      }
+    },
+    "brokers.field.deposit": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pojištění vkladů (peníze v bance)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deposit insurance (cash at the bank)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страхование вкладов (деньги в банке)"
+          }
+        }
+      }
+    },
+    "brokers.field.fees": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poplatky za obchody"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trading fees"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Торговые комиссии"
+          }
+        }
+      }
+    },
+    "brokers.field.fxFees": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poplatky za převod měn"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currency conversion fees"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Комиссии за конвертацию"
+          }
+        }
+      }
+    },
+    "brokers.field.identity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ověření totožnosti"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identity verification"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверка личности"
+          }
+        }
+      }
+    },
+    "brokers.field.instruments": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Druhy nástrojů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instrument types"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Типы инструментов"
+          }
+        }
+      }
+    },
+    "brokers.field.legalName": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Právnická osoba"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legal entity"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Юридическое лицо"
+          }
+        }
+      }
+    },
+    "brokers.field.licence": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licence"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licence"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лицензия"
+          }
+        }
+      }
+    },
+    "brokers.field.minimum": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimální vklad"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum deposit"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Минимальный депозит"
+          }
+        }
+      }
+    },
+    "brokers.field.presence": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostupnost v Česku"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Availability in Czechia"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доступность в Чехии"
+          }
+        }
+      }
+    },
+    "brokers.field.protection": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odškodnění investorů"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Investor compensation"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Компенсация инвесторам"
+          }
+        }
+      }
+    },
+    "brokers.field.regulator": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dohledový orgán"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supervisor"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Надзорный орган"
+          }
+        }
+      }
+    },
+    "brokers.filter": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Působení v Česku"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presence in Czechia"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Присутствие в Чехии"
+          }
+        }
+      }
+    },
+    "brokers.identity.general": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povinné podle pravidel EU proti praní peněz u každého účtu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Required by EU anti-money-laundering rules for every account"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обязательна по правилам ЕС о противодействии отмыванию денег для любого счёта"
+          }
+        }
+      }
+    },
+    "brokers.intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informativní seznam regulovaných investičních firem relevantních pro Česko a EU. Seřazeno abecedně: bez žebříčku, bez doporučení, bez referenčních či partnerských odkazů. Zobrazují se jen údaje ověřené v oficiálních registrech nebo právních dokumentech firem."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An informational list of regulated investment firms relevant for Czechia and the EU. Listed alphabetically: no ranking, no recommendation, no referral or affiliate links. Only facts checked against official registers or the firms' own legal documents are shown."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информационный список регулируемых инвестиционных компаний, актуальных для Чехии и ЕС. В алфавитном порядке: без рейтинга, без рекомендаций, без реферальных и партнёрских ссылок. Показаны только сведения, проверенные по официальным реестрам или юридическим документам компаний."
+          }
+        }
+      }
+    },
+    "brokers.licence.bankAndInvestmentFirm": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Banka poskytující investiční služby"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bank providing investment services"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Банк, оказывающий инвестиционные услуги"
+          }
+        }
+      }
+    },
+    "brokers.licence.investmentFirm": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obchodník s cennými papíry"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Investment firm"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Инвестиционная компания"
+          }
+        }
+      }
+    },
+    "brokers.notVerified": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neověřeno — zkontrolujte aktuální dokumenty firmy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not verified — check the firm's current documents"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не проверено — смотрите актуальные документы компании"
+          }
+        }
+      }
+    },
+    "brokers.open.branchCoverage": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neověřeno: zda polský systém kryje klienty české pobočky."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not verified: whether clients of the Czech branch are covered by the Polish scheme."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не проверено: распространяется ли польская система на клиентов чешского филиала."
+          }
+        }
+      }
+    },
+    "brokers.open.compensationCap": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neověřeno: aktuální limit odškodnění systému."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not verified: the current compensation limit of the scheme."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не проверено: текущий лимит компенсации системы."
+          }
+        }
+      }
+    },
+    "brokers.open.groupEntity": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neověřeno: která společnost skupiny obsluhuje klienty v Česku (skupina má společnosti v několika zemích)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not verified: which group company serves clients in Czechia (the group has entities in several countries)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не проверено: какая компания группы обслуживает клиентов в Чехии (у группы есть компании в нескольких странах)."
+          }
+        }
+      }
+    },
+    "brokers.presence.crossBorder": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obsluhuje české klienty z jiné země EU"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serves Czech clients from another EU country"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обслуживает чешских клиентов из другой страны ЕС"
+          }
+        }
+      }
+    },
+    "brokers.presence.czechBranch": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pobočka v Česku"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Branch in Czechia"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Филиал в Чехии"
+          }
+        }
+      }
+    },
+    "brokers.presence.czechCompany": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Česká firma"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech company"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чешская компания"
+          }
+        }
+      }
+    },
+    "brokers.presence.unknown": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neověřeno"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not verified"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не проверено"
+          }
+        }
+      }
+    },
+    "brokers.protection.cap": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "do %@ EUR"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "up to EUR %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "до %@ EUR"
+          }
+        }
+      }
+    },
+    "brokers.protection.detailsNotVerified": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "podrobnosti krytí neověřeny"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "coverage details not verified"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "детали покрытия не проверены"
+          }
+        }
+      }
+    },
+    "brokers.protection.note.czGFOCP": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Garanční fond obchodníků s cennými papíry: náhrada, pokud firma nemůže vrátit majetek klientů; nikoli za investiční ztráty."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech Guarantee Fund of Securities Traders: compensation if the firm cannot return client assets; not for investment losses."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чешский гарантийный фонд торговцев ценными бумагами: компенсация, если компания не может вернуть активы клиентов; не за инвестиционные убытки."
+          }
+        }
+      }
+    },
+    "brokers.protection.note.kdpw": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Polský systém: 100 % do 3 000 EUR a 90 % nad tuto částku, nejvýše 20 100 EUR na investora (podle KDPW)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Polish scheme: 100 % up to EUR 3,000 and 90 % above, at most EUR 20,100 per investor (per KDPW)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Польская система: 100 % до 3 000 EUR и 90 % сверх этого, не более 20 100 EUR на инвестора (по данным KDPW)."
+          }
+        }
+      }
+    },
+    "brokers.protection.note.retailOnly": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kryje jen způsobilé drobné klienty, nikoli profesionální a institucionální."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Covers eligible retail clients only, not professional or institutional clients."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покрывает только соответствующих требованиям розничных клиентов, не профессиональных и институциональных."
+          }
+        }
+      }
+    },
+    "brokers.protection.percent": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %% nároku"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %% of the claim"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %% требования"
+          }
+        }
+      }
+    },
+    "brokers.protectionWarning": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systémy odškodnění investorů mohou vyplatit náhradu, pokud zprostředkovatel selže a majetek klientů chybí. Nikdy nechrání před poklesem cen ani investičními ztrátami."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Investor compensation schemes may pay out if an intermediary fails and client assets are missing. They never protect against falling prices or investment losses."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Системы компенсации инвесторам могут выплатить деньги, если посредник обанкротится и активы клиентов пропадут. Они никогда не защищают от падения цен и инвестиционных убытков."
+          }
+        }
+      }
+    },
+    "brokers.register": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ověřit v oficiálním registru"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check in the official register"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить в официальном реестре"
+          }
+        }
+      }
+    },
+    "brokers.sources": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdroje"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sources"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Источники"
+          }
+        }
+      }
+    },
+    "brokers.verifiedOn": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ověřeno %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verified on %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверено %@"
+          }
+        }
+      }
+    },
+    "brokers.website": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oficiální web"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Official website"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Официальный сайт"
+          }
+        }
+      }
+    },
     "calendar.earnings.amc": {
       "extractionState": "manual",
       "localizations": {

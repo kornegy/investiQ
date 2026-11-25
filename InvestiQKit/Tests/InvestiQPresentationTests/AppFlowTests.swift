@@ -81,6 +81,20 @@ final class AppFlowTests: XCTestCase {
         XCTAssertEqual(profiles.first?.educationalMode, true)
     }
 
+    func testMinorSeesNoBrokerWebsitesButKeepsRegisters() async throws {
+        let app = makeApp()
+        await app.bootstrap()
+        let create = CreateProfileViewModel(app: app)
+        create.displayName = "Student"; create.password = password; create.confirmation = password
+        await create.submit()
+        await completeOnboarding(app, age: .under18)
+        let brokers = BrokersViewModel(app: app)
+        brokers.load()
+        XCTAssertFalse(brokers.brokers.isEmpty)
+        XCTAssertTrue(brokers.brokers.allSatisfy { brokers.websiteURL($0) == nil }, "no sign-up paths for minors")
+        XCTAssertTrue(brokers.brokers.allSatisfy { $0.registerURL.host?.isEmpty == false }, "supervisors' registers stay available")
+    }
+
     func testAutoLockAfterInactivity() async throws {
         let app = makeApp()
         await app.bootstrap()

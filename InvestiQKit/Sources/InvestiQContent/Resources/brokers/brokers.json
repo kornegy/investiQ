@@ -1,0 +1,137 @@
+{
+ "version": 1,
+ "verifiedOn": "2026-11-25",
+ "brokers": [
+  {
+   "id": "degiro",
+   "brand": "DEGIRO",
+   "legalName": "flatexDEGIRO Bank AG",
+   "country": "DE",
+   "regulator": "Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin)",
+   "licence": "bankAndInvestmentFirm",
+   "registerURL": "https://www.esma.europa.eu/investor-corner/check-if-firm-regulated",
+   "czechPresence": "crossBorder",
+   "investorProtection": {
+    "scheme": "Entschädigungseinrichtung deutscher Banken (EdB)",
+    "coveragePercent": 90,
+    "capEUR": 20000
+   },
+   "depositProtectionCapEUR": 100000,
+   "websiteURL": "https://www.degiro.cz",
+   "sources": [
+    "https://flatexdegiro.com/en/flatexdegiro-bank/informationen"
+   ],
+   "verifiedOn": "2026-11-25"
+  },
+  {
+   "id": "fio",
+   "brand": "Fio banka",
+   "legalName": "Fio banka, a.s.",
+   "country": "CZ",
+   "regulator": "Česká národní banka (ČNB)",
+   "licence": "bankAndInvestmentFirm",
+   "registerURL": "https://jerrs.cnb.cz/apljerrsdad/JERRS.WEB07.INTRO_PAGE?p_lang=en",
+   "czechPresence": "czechCompany",
+   "investorProtection": {
+    "scheme": "Garanční fond obchodníků s cennými papíry",
+    "coveragePercent": 90,
+    "capEUR": 20000,
+    "note": "brokers.protection.note.czGFOCP"
+   },
+   "depositProtectionCapEUR": 100000,
+   "websiteURL": "https://www.fio.cz",
+   "sources": [
+    "https://www.fio.cz/docs/cz/I_Garancni_fond.pdf",
+    "https://www2.fio.cz/docs/cz/I_Investicni_nastroje_a_ochrana.pdf"
+   ],
+   "verifiedOn": "2026-11-25"
+  },
+  {
+   "id": "ibkr-ie",
+   "brand": "Interactive Brokers",
+   "legalName": "Interactive Brokers Ireland Limited",
+   "country": "IE",
+   "regulator": "Central Bank of Ireland",
+   "licence": "investmentFirm",
+   "registerURL": "https://www.esma.europa.eu/investor-corner/check-if-firm-regulated",
+   "czechPresence": "crossBorder",
+   "investorProtection": {
+    "scheme": "Investor Compensation Scheme (Ireland), administered by ICCL",
+    "coveragePercent": 90,
+    "capEUR": 20000,
+    "note": "brokers.protection.note.retailOnly"
+   },
+   "websiteURL": "https://www.interactivebrokers.ie",
+   "sources": [
+    "https://www.interactivebrokers.com/support/faq/content/126537062"
+   ],
+   "verifiedOn": "2026-11-25"
+  },
+  {
+   "id": "patria",
+   "brand": "Patria Finance",
+   "legalName": "Patria Finance, a.s. (IČO 26455064)",
+   "country": "CZ",
+   "regulator": "Česká národní banka (ČNB)",
+   "licence": "investmentFirm",
+   "registerURL": "https://jerrs.cnb.cz/apljerrsdad/JERRS.WEB07.INTRO_PAGE?p_lang=en",
+   "czechPresence": "czechCompany",
+   "investorProtection": {
+    "scheme": "Garanční fond obchodníků s cennými papíry",
+    "note": "brokers.protection.note.czGFOCP"
+   },
+   "websiteURL": "https://www.patria.cz",
+   "sources": [
+    "https://cdn.patria.cz/Obchodni-podminky.pdf"
+   ],
+   "verifiedOn": "2026-11-25"
+  },
+  {
+   "id": "trading212",
+   "brand": "Trading 212",
+   "legalName": "Trading 212 Markets Ltd (Cyprus, CySEC licence 398/21)",
+   "country": "CY",
+   "regulator": "Cyprus Securities and Exchange Commission (CySEC)",
+   "licence": "investmentFirm",
+   "registerURL": "https://www.esma.europa.eu/investor-corner/check-if-firm-regulated",
+   "czechPresence": "unknown",
+   "investorProtection": {
+    "scheme": "Investor Compensation Fund for clients of Cyprus Investment Firms"
+   },
+   "websiteURL": "https://www.trading212.com",
+   "sources": [
+    "https://www.trading212.com/en/about-us",
+    "https://trading212.com/legal-documentation/cy/common/Investor-Compensation-Fund_EN.pdf"
+   ],
+   "verifiedOn": "2026-11-25",
+   "openQuestionKeys": [
+    "brokers.open.groupEntity",
+    "brokers.open.compensationCap"
+   ]
+  },
+  {
+   "id": "xtb",
+   "brand": "XTB",
+   "legalName": "XTB S.A.",
+   "country": "PL",
+   "regulator": "Komisja Nadzoru Finansowego (KNF)",
+   "licence": "investmentFirm",
+   "registerURL": "https://www.esma.europa.eu/investor-corner/check-if-firm-regulated",
+   "czechPresence": "czechBranch",
+   "investorProtection": {
+    "scheme": "KDPW investor compensation scheme (Poland)",
+    "capEUR": 20100,
+    "note": "brokers.protection.note.kdpw"
+   },
+   "websiteURL": "https://www.xtb.com/cz",
+   "sources": [
+    "https://www.kdpw.pl/en/investor-compensation-scheme.html",
+    "https://www.xtb.com/cz/o-nas"
+   ],
+   "verifiedOn": "2026-11-25",
+   "openQuestionKeys": [
+    "brokers.open.branchCoverage"
+   ]
+  }
+ ]
+}
