@@ -7,15 +7,15 @@ Date: 2026-11-25 · Commit: see `git log -1` on branch `claude/upbeat-cori-u977l
 | Suite | Where | Result |
 |---|---|---|
 | Package tests (`InvestiQKit`, XCTest) | Linux, Docker `swift:6.2-noble` (`./scripts/test-linux.sh`) | **244 passed, 0 failed** |
-| Package tests incl. Keychain adapter | macOS 26 runner, GitHub Actions (`swift test`) | passed (last verified run: #14) |
-| App build (`xcodebuild build`, Xcode 26) | macOS 26 runner | passed (run #14) |
-| UI tests (`InvestiQUITests`: demo navigation through all sections; create profile → lock → unlock) | macOS 26 runner | passed (run #14) |
+| Package tests incl. Keychain adapter | macOS 26 runner, GitHub Actions (`swift test`) | passed (run #17) |
+| App build (`xcodebuild build`, Xcode 26) incl. Foundation Models adapter | macOS 26 runner | passed (run #17) |
+| UI tests (`InvestiQUITests`: demo navigation through all sections; create profile → lock → unlock) | macOS 26 runner | passed (run #17) |
 | Localisation completeness (1 259 keys × ru/en/cs, placeholder parity, `%` escaping) | CI lint job | passed |
 | Copy lint (manipulative/promissory phrases incl. lessons) | CI lint job | passed |
 | Lessons generated from source (structure identical in 3 languages) | CI lint job | passed |
 
-Runs #15–#18 (Phase 6/7 commits) were in progress when this report was written; check
-https://github.com/kornegy/investiQ/actions for their final state.
+Run #17 (commit "Phase 7b") covers all code of Phases 0–7 and passed every job:
+https://github.com/kornegy/investiQ/actions/runs/45643584669
 
 ## Coverage by area (package tests)
 
