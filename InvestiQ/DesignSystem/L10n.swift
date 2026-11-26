@@ -1,15 +1,35 @@
 import Foundation
+import Observation
 import InvestiQCore
+
+/// Observable, so every view that formats text through `L10n` re-renders as soon as the language changes
+/// (onboarding's first step or Settings), not only on its next unrelated update.
+@MainActor
+@Observable
+private final class InterfaceLanguageState {
+    var override: String?
+}
 
 /// Resolves `Message` descriptors from the business layer into localised text (ADR-012).
 @MainActor
 enum L10n {
-    /// Language override chosen in Settings (`nil` = system language).
-    static var languageOverride: String?
+    private static let state = InterfaceLanguageState()
 
-    static var locale: Locale {
+    /// Language chosen in onboarding or Settings (`nil` = system language).
+    static var languageOverride: String? {
+        get { state.override }
+        set { if state.override != newValue { state.override = newValue } }
+    }
+
+    /// Language the interface is shown in: the chosen one, else the best match among the system languages.
+    /// Lessons and AI answers follow it.
+    static var languageCode: String? { languageOverride ?? Bundle.main.preferredLocalizations.first }
+
+    static func locale(for languageOverride: String?) -> Locale {
         languageOverride.map(Locale.init(identifier:)) ?? .current
     }
+
+    static var locale: Locale { locale(for: languageOverride) }
 
     private static var bundle: Bundle {
         if let language = languageOverride,

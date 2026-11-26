@@ -5,6 +5,12 @@ SemVer once releases start.
 
 ## [Unreleased]
 
+### Added
+- Language choice at the very start of the onboarding questionnaire (system language, Русский, English,
+  Čeština). The whole app switches immediately; the choice is the profile's language setting (Settings →
+  General) and is kept after onboarding. Lessons and AI answers now follow the chosen language instead of
+  the system language, and text formatted outside SwiftUI (`L10n.string`) refreshes at once.
+
 ### Fixed — first manual test on a Mac
 - Labels built from enum values showed raw keys (e.g. `onboarding.age.under18`, `news.type.officialRelease`)
   in onboarding, news, calendar, risk, simulator, planner, settings and other screens:

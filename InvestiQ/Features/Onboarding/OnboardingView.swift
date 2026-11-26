@@ -54,6 +54,8 @@ private struct OnboardingSteps: View {
     @ViewBuilder private var stepContent: some View {
         switch model.step {
         case .welcome:
+            OnboardingLanguageChoice(model: model)
+            Divider()
             Text("onboarding.welcome.title").font(.largeTitle.bold())
             Text("onboarding.welcome.body").fixedSize(horizontal: false, vertical: true)
             Text("onboarding.welcome.privacy").foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
@@ -124,6 +126,28 @@ private struct OnboardingSteps: View {
                 }
             }
             GeneralInformationNote()
+        }
+    }
+}
+
+/// First thing in the questionnaire: the interface language. The whole app switches immediately and the
+/// choice is stored in the profile (the same setting as Settings → General).
+private struct OnboardingLanguageChoice: View {
+    let model: OnboardingViewModel
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.s) {
+            Label("settings.language", systemImage: "globe").font(.headline)
+            Picker("settings.language", selection: Binding(
+                get: { model.languageOverride ?? "" },
+                set: { code in Task { await model.setLanguage(code.isEmpty ? nil : code) } })) {
+                LanguagePickerOptions()
+            }
+            .pickerStyle(.radioGroup)
+            .horizontalRadioGroupLayout()
+            .labelsHidden()
+            .accessibilityIdentifier("onboarding.language")
+            Text("onboarding.language.hint").font(.caption).foregroundStyle(.secondary)
         }
     }
 }

@@ -8,6 +8,7 @@
   "onboarding.residence.title": {"en": "Where do you live?", "ru": "Где вы живёте?", "cs": "Kde žijete?"},
   "onboarding.country": {"en": "Country of residence", "ru": "Страна проживания", "cs": "Země pobytu"},
   "onboarding.currency": {"en": "Primary currency", "ru": "Основная валюта", "cs": "Hlavní měna"},
+  "onboarding.language.hint": {"en": "You can change the language later in Settings.", "ru": "Язык можно изменить позже в настройках.", "cs": "Jazyk můžete později změnit v Nastavení."},
   "onboarding.age.title": {"en": "Your age group", "ru": "Ваша возрастная группа", "cs": "Vaše věková skupina"},
   "onboarding.age.under18": {"en": "Under 18", "ru": "До 18 лет", "cs": "Do 18 let"},
   "onboarding.age.from18to25": {"en": "18–25", "ru": "18–25", "cs": "18–25"},

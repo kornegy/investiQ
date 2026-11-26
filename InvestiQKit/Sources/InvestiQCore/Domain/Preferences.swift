@@ -4,6 +4,8 @@ import Foundation
 /// Every field decodes with a default so new preferences never require a migration.
 public struct UserPreferences: Codable, Hashable, Sendable {
     public static let autoLockChoices = [1, 5, 15, 30]
+    /// Interface languages with complete translations (values of `languageOverride`).
+    public static let supportedLanguages = ["ru", "en", "cs"]
 
     public var baseCurrency: CurrencyCode
     /// `nil` = follow the system language. Otherwise "ru", "en" or "cs".

@@ -37,7 +37,8 @@ struct RootView: View {
             }
         }
         .environment(\.palette, Palette(colorBlindSafe: app.preferences.colorBlindSafePalette))
-        .environment(\.locale, L10n.locale)
+        // Read from the preferences directly so a language change applies in the same update.
+        .environment(\.locale, L10n.locale(for: app.preferences.languageOverride))
         .task {
             L10n.languageOverride = app.preferences.languageOverride
             await app.bootstrap()

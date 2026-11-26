@@ -7,14 +7,19 @@ import InvestiQPresentation
 struct LearnView: View {
     @Environment(AppModel.self) private var app
     @State private var model: LearnViewModel?
+    @State private var lessonLanguage: String?
 
     var body: some View {
         Group {
             if let model { LearnContent(model: model) } else { ProgressView() }
         }
-        .task {
-            // Lessons follow the language the app's interface is shown in.
-            if model == nil { model = LearnViewModel(app: app, languageCode: Bundle.main.preferredLocalizations.first) }
+        .task(id: L10n.languageCode) {
+            // Lessons follow the language the interface is shown in; switching it reloads them.
+            let language = L10n.languageCode
+            if model == nil || lessonLanguage != language {
+                model = LearnViewModel(app: app, languageCode: language)
+                lessonLanguage = language
+            }
             await model?.load()
         }
     }

@@ -15181,6 +15181,29 @@
         }
       }
     },
+    "onboarding.language.hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jazyk můžete později změnit v Nastavení."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can change the language later in Settings."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Язык можно изменить позже в настройках."
+          }
+        }
+      }
+    },
     "onboarding.progress": {
       "extractionState": "manual",
       "localizations": {

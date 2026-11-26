@@ -2,6 +2,8 @@ import XCTest
 
 /// UI tests run with `--ui-testing`: a throwaway data directory and an in-memory keychain, so they
 /// never touch real user data (see AppDependencies.makeUITestingEnvironment).
+/// XCUIAutomation APIs are main-actor isolated, so tests and the helpers that use them are `@MainActor`
+/// (as in Xcode's UI-test template); `setUpWithError` stays nonisolated like the XCTestCase original.
 final class InvestiQUITests: XCTestCase {
     private let password = "Correct horse 2026!"
 
@@ -9,6 +11,7 @@ final class InvestiQUITests: XCTestCase {
         continueAfterFailure = false
     }
 
+    @MainActor
     private func launchApp() -> XCUIApplication {
         let app = XCUIApplication()
         app.launchArguments = ["--ui-testing", "-AppleLanguages", "(en)", "-AppleLocale", "en_US",
@@ -23,8 +26,19 @@ final class InvestiQUITests: XCTestCase {
         return app
     }
 
+    @MainActor
     private func element(_ app: XCUIApplication, _ identifier: String) -> XCUIElement {
         app.descendants(matching: .any).matching(identifier: identifier).firstMatch
+    }
+
+    /// Visible text as macOS exposes it: buttons and radio buttons in `title`/`label`, static text in `value`.
+    private func shows(_ text: String) -> NSPredicate {
+        NSPredicate(format: "label == %@ OR title == %@ OR value == %@", text, text, text)
+    }
+
+    @MainActor
+    private func waitUntil(_ element: XCUIElement, shows text: String, timeout: TimeInterval = 10) -> Bool {
+        XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: shows(text), object: element)], timeout: timeout) == .completed
     }
 
     // MARK: - Untranslated keys
@@ -49,6 +63,7 @@ final class InvestiQUITests: XCTestCase {
         }
     }
 
+    @MainActor
     private func rawKeys(in app: XCUIApplication) throws -> [String] {
         var found: [String] = []
         func visit(_ element: XCUIElementSnapshot) {
@@ -62,6 +77,7 @@ final class InvestiQUITests: XCTestCase {
     }
 
     /// Checks now and again after `settle` seconds, so content that loads asynchronously is covered too.
+    @MainActor
     private func assertNoRawKeys(_ app: XCUIApplication, on screen: String, settle: TimeInterval = 0,
                                  file: StaticString = #filePath, line: UInt = #line) throws {
         XCTAssertEqual(try rawKeys(in: app), [], "untranslated keys on \(screen)", file: file, line: line)
@@ -70,6 +86,7 @@ final class InvestiQUITests: XCTestCase {
         XCTAssertEqual(try rawKeys(in: app), [], "untranslated keys on \(screen)", file: file, line: line)
     }
 
+    @MainActor
     func testDemoModeNavigatesAllSections() throws {
         let app = launchApp()
         let demo = element(app, "welcome.tryDemo")
@@ -84,20 +101,33 @@ final class InvestiQUITests: XCTestCase {
         }
     }
 
-    /// Walks every onboarding step (choosing the second option of each question, so the profile is an
-    /// adult one) and fails if any label is an unresolved key.
-    func testOnboardingShowsTranslatedText() throws {
+    /// Picks Czech on the first step (the whole app switches at once), then walks every onboarding step
+    /// choosing the second option of each question (an adult profile) and fails if any label is an
+    /// unresolved key.
+    @MainActor
+    func testOnboardingLanguageChoiceAndTranslatedText() throws {
         let app = launchApp()
         createProfile(app)
-        XCTAssertTrue(element(app, "onboarding.continue").waitForExistence(timeout: 20))
+        let continueButton = element(app, "onboarding.continue")
+        XCTAssertTrue(continueButton.waitForExistence(timeout: 20))
+        XCTAssertTrue(waitUntil(continueButton, shows: "Continue", timeout: 2))
+        let czech = app.radioButtons.matching(shows("Čeština")).firstMatch
+        XCTAssertTrue(czech.waitForExistence(timeout: 5), "language choice missing on the first step")
+        czech.click()
+        XCTAssertTrue(waitUntil(continueButton, shows: "Pokračovat"),
+                      "interface did not switch to Czech. Hierarchy:\n\(app.debugDescription)")
+
         var goalChosen = false
         var finished = false
         for step in 0..<12 where !finished {
             try assertNoRawKeys(app, on: "onboarding step \(step)")
-            let groups = app.radioGroups
-            for index in 0..<groups.count {
-                let options = groups.element(boundBy: index).radioButtons
-                if options.count > 1 { options.element(boundBy: 1).click() }
+            // Step 0 holds only the language choice, which stays Czech.
+            if step > 0 {
+                let groups = app.radioGroups
+                for index in 0..<groups.count {
+                    let options = groups.element(boundBy: index).radioButtons
+                    if options.count > 1 { options.element(boundBy: 1).click() }
+                }
             }
             if !goalChosen, app.checkBoxes.count > 0 {
                 app.checkBoxes.element(boundBy: 0).click()
@@ -116,10 +146,14 @@ final class InvestiQUITests: XCTestCase {
             }
         }
         XCTAssertTrue(finished, "onboarding did not reach the summary step")
-        XCTAssertTrue(element(app, "sidebar.overview").waitForExistence(timeout: 20))
+        let overview = element(app, "sidebar.overview")
+        XCTAssertTrue(overview.waitForExistence(timeout: 20))
         try assertNoRawKeys(app, on: "overview after onboarding", settle: 2)
+        XCTAssertTrue(app.descendants(matching: .any).matching(shows("Přehled")).firstMatch.waitForExistence(timeout: 10),
+                      "the language chosen in onboarding is kept in the app")
     }
 
+    @MainActor
     private func createProfile(_ app: XCUIApplication) {
         let create = element(app, "welcome.createProfile")
         XCTAssertTrue(create.waitForExistence(timeout: 30), "welcome screen not found. Hierarchy:\n\(app.debugDescription)")
@@ -138,6 +172,7 @@ final class InvestiQUITests: XCTestCase {
         element(app, "profile.create.submit").click()
     }
 
+    @MainActor
     func testCreateProfileLockAndUnlock() {
         let app = launchApp()
         createProfile(app)

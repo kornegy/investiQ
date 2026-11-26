@@ -31,12 +31,30 @@ public final class OnboardingViewModel {
     public private(set) var error: Message?
 
     private let app: AppModel
-    private let locale: Locale
+    private let systemLocale: Locale
 
+    /// `locale` is used to read amounts while the system language is shown (no language picked).
     public init(app: AppModel, locale: Locale = .current) {
         self.app = app
-        self.locale = locale
+        self.systemLocale = locale
     }
+
+    /// Interface language picked on the first step (`nil` = system language). It is the same profile
+    /// preference as Settings → General, so the choice stays after onboarding.
+    public var languageOverride: String? { app.preferences.languageOverride }
+
+    public func setLanguage(_ code: String?) async {
+        guard code.map(UserPreferences.supportedLanguages.contains) ?? true else { return }
+        do {
+            try await app.updatePreferences { $0.languageOverride = code }
+            error = nil
+        } catch {
+            self.error = Message("settings.error.saveFailed")
+        }
+    }
+
+    /// Amounts are read in the language shown on screen.
+    private var locale: Locale { languageOverride.map(Locale.init(identifier:)) ?? systemLocale }
 
     /// `nil` when empty; invalid text blocks the step (never silently becomes 0).
     public var essentialExpenses: Decimal? {

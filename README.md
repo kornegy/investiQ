@@ -51,8 +51,9 @@ For Touch ID unlock (Data Protection Keychain) set your own Development Team and
 the target's *Signing & Capabilities* (see `docs/reports/RELEASE_AND_SIGNING.md`).
 
 First launch: **Try demo** (no setup) or **Create profile** (display name + password; the password
-cannot be recovered — keep a backup). A short onboarding asks about goals and safety cushion; the
-answers are used only for educational notes, never to pick instruments.
+cannot be recovered — keep a backup). The onboarding starts with the interface language (Russian, English
+or Czech; changeable later in Settings), then asks about goals and safety cushion; the answers are used
+only for educational notes, never to pick instruments.
 
 ## Tests
 

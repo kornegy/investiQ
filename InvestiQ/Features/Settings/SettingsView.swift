@@ -42,10 +42,7 @@ private struct GeneralSettingsView: View {
             Picker("settings.language", selection: Binding(
                 get: { app.preferences.languageOverride ?? "" },
                 set: { value in update { $0.languageOverride = value.isEmpty ? nil : value } })) {
-                Text("settings.language.system").tag("")
-                Text(verbatim: "Русский").tag("ru")
-                Text(verbatim: "English").tag("en")
-                Text(verbatim: "Čeština").tag("cs")
+                LanguagePickerOptions()
             }
             Picker("settings.baseCurrency", selection: Binding(
                 get: { app.preferences.baseCurrency },

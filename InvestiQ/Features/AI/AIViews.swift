@@ -13,7 +13,7 @@ struct AIExplainButton: View {
     var body: some View {
         if app.services?.ai.isEnabled == true {
             Button {
-                if model == nil { model = AIAssistantViewModel(app: app, languageName: AIAssistantViewModel.languageName(for: Bundle.main.preferredLocalizations.first)) }
+                if model == nil { model = AIAssistantViewModel(app: app, languageName: AIAssistantViewModel.languageName(for: L10n.languageCode)) }
                 presented = true
                 Task { await model?.run(task) }
             } label: { Label(title, systemImage: "sparkles") }
@@ -86,7 +86,7 @@ struct AIQuestionBox: View {
                 }
             }
             .task {
-                if model == nil { model = AIAssistantViewModel(app: app, languageName: AIAssistantViewModel.languageName(for: Bundle.main.preferredLocalizations.first)) }
+                if model == nil { model = AIAssistantViewModel(app: app, languageName: AIAssistantViewModel.languageName(for: L10n.languageCode)) }
             }
         }
     }

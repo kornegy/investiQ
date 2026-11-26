@@ -20,14 +20,18 @@ final class AppFlowTests: XCTestCase {
 
     func completeOnboarding(_ app: AppModel, age: AgeCategory = .from26to35) async {
         let vm = OnboardingViewModel(app: app, locale: Locale(identifier: "cs_CZ"))
+        vm.essentialExpensesText = "25 000,50"
+        XCTAssertEqual(vm.essentialExpenses, Decimal(string: "25000.5"))
+        await completeOnboarding(app, using: vm, age: age)
+    }
+
+    func completeOnboarding(_ app: AppModel, using vm: OnboardingViewModel, age: AgeCategory = .from26to35) async {
         vm.next() // welcome → residence
         vm.country = "CZ"; vm.currency = .czk; vm.next()
         vm.ageCategory = age; vm.next()
         vm.knowledgeLevel = .beginner; vm.experience = .savingsOnly; vm.next()
         vm.goals = [.learning]; vm.horizon = .overTenYears; vm.next()
         vm.incomeStability = .stable; vm.emergencyFund = .threeToSixMonths; vm.debtStatus = .noDebt
-        vm.essentialExpensesText = "25 000,50"
-        XCTAssertEqual(vm.essentialExpenses, Decimal(string: "25000.5"))
         vm.next()
         vm.riskAttitude = .balanced; vm.next()
         XCTAssertEqual(vm.step, .summary)
@@ -67,6 +71,41 @@ final class AppFlowTests: XCTestCase {
         lock.password = password
         await lock.unlock()
         XCTAssertEqual(app.state, .unlocked, "onboarding is not repeated after unlock")
+    }
+
+    func testLanguageChosenAtStartOfOnboardingIsKept() async throws {
+        let app = makeApp()
+        await app.bootstrap()
+        let create = CreateProfileViewModel(app: app)
+        create.displayName = "Jazyk"
+        create.password = password
+        create.confirmation = password
+        await create.submit()
+        XCTAssertEqual(app.state, .onboarding)
+
+        let vm = OnboardingViewModel(app: app, locale: Locale(identifier: "cs_CZ"))
+        XCTAssertEqual(vm.step, .welcome)
+        XCTAssertNil(vm.languageOverride, "system language until the user picks one")
+        await vm.setLanguage("en")
+        XCTAssertEqual(app.preferences.languageOverride, "en")
+        await vm.setLanguage("de")
+        XCTAssertEqual(app.preferences.languageOverride, "en", "unsupported languages are ignored")
+
+        // Amounts are read in the language shown on screen.
+        vm.essentialExpensesText = "25,000.50"
+        XCTAssertEqual(vm.essentialExpenses, Decimal(string: "25000.5"))
+        vm.essentialExpensesText = ""
+
+        await completeOnboarding(app, using: vm)
+        XCTAssertEqual(app.state, .unlocked)
+        XCTAssertEqual(app.preferences.languageOverride, "en", "finishing onboarding keeps the language")
+
+        await app.lock(reason: .manual)
+        let lock = LockScreenViewModel(app: app)
+        await lock.onAppear()
+        lock.password = password
+        await lock.unlock()
+        XCTAssertEqual(app.preferences.languageOverride, "en", "stored in the encrypted profile")
     }
 
     func testMinorGetsEducationalMode() async throws {
