@@ -5,6 +5,18 @@ SemVer once releases start.
 
 ## [Unreleased]
 
+### Fixed — first manual test on a Mac
+- Labels built from enum values showed raw keys (e.g. `onboarding.age.under18`, `news.type.officialRelease`)
+  in onboarding, news, calendar, risk, simulator, planner, settings and other screens:
+  `LocalizedStringKey("prefix.\(value)")` makes the value a format argument, so SwiftUI looked up
+  `prefix.%@`. All 41 call sites now use `L10n.key(prefix, value)`.
+- Sidebar icons: a fixed 20 pt icon box gives every row the same height and alignment; risk and simulator
+  use outline symbols like the other sections.
+- Guards: `check_l10n.py` rejects interpolated SwiftUI keys and checks every run-time key pattern against
+  the catalog; a package test requires an en/ru/cs translation for every enum case used in a run-time key;
+  UI tests fail if any visible text is an unresolved key (welcome, all onboarding steps, all ten demo
+  sections).
+
 ### Phase 7 — Production preparation
 - Encrypted backups (`.iqbackup`: authenticated header with Argon2id parameters, AES-256-GCM payload,
   separate passphrase, API keys never included); restore validates integrity and foreign keys, migrates

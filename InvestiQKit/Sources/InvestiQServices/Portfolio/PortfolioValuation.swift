@@ -31,7 +31,7 @@ public struct HoldingValuation: Sendable, Identifiable, Hashable {
 }
 
 /// What the total-return percentage is measured against (shown in the UI for transparency).
-public enum ReturnBasis: String, Sendable {
+public enum ReturnBasis: String, Sendable, CaseIterable {
     /// Σ deposits − Σ withdrawals.
     case netContributions
     /// Σ purchase costs (portfolios that do not record deposits).

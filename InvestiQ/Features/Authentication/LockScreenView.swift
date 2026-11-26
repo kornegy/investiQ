@@ -29,7 +29,7 @@ private struct LockForm: View {
             Image(systemName: "lock.fill").font(.system(size: 44)).foregroundStyle(.secondary).accessibilityHidden(true)
             Text("lock.title").font(.title.bold())
             if let reason = app.lastLockReason {
-                Text(LocalizedStringKey("lock.reason.\(reason.rawValue)")).foregroundStyle(.secondary)
+                Text(L10n.key("lock.reason", reason.rawValue)).foregroundStyle(.secondary)
             }
             Form {
                 Picker("lock.profile", selection: $model.selectedProfileID) {

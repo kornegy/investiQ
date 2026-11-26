@@ -84,7 +84,7 @@ private struct MarketContent: View {
             HStack(spacing: Spacing.m) {
                 Picker("market.filter.kind", selection: $model.kindFilter) {
                     Text("market.filter.all").tag(InstrumentKind?.none)
-                    ForEach(InstrumentKind.allCases, id: \.self) { Text(LocalizedStringKey("instrument.kind.\($0.rawValue)")).tag(Optional($0)) }
+                    ForEach(InstrumentKind.allCases, id: \.self) { Text(L10n.key("instrument.kind", $0.rawValue)).tag(Optional($0)) }
                 }
                 Picker("market.filter.country", selection: $model.countryFilter) {
                     Text("market.filter.all").tag(String?.none)
@@ -101,7 +101,7 @@ private struct MarketContent: View {
                     ForEach(model.availableCurrencies, id: \.self) { Text($0.rawValue).tag(Optional($0)) }
                 }
                 Picker("market.sort", selection: $model.sortOrder) {
-                    ForEach(MarketExplorerViewModel.SortOrder.allCases, id: \.self) { Text(LocalizedStringKey("market.sort.\($0.rawValue)")).tag($0) }
+                    ForEach(MarketExplorerViewModel.SortOrder.allCases, id: \.self) { Text(L10n.key("market.sort", $0.rawValue)).tag($0) }
                 }
                 Toggle("market.watchlistOnly", isOn: $model.watchlistOnly)
                 Spacer()

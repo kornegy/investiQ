@@ -32,7 +32,7 @@ private struct AISettingsContent: View {
                     set: { kind in
                         if kind == .externalAPI { consentPending = true } else { Task { await model.select(kind) } }
                     })) {
-                    ForEach(model.availableProviders, id: \.self) { Text(LocalizedStringKey("ai.provider.\($0.rawValue)")).tag($0) }
+                    ForEach(model.availableProviders, id: \.self) { Text(L10n.key("ai.provider", $0.rawValue)).tag($0) }
                 }
                 if model.isEducationalMode { Text("ai.settings.educationalMode").font(.caption).foregroundStyle(.secondary) }
                 if !model.onDeviceAvailable { Text("ai.settings.onDeviceUnavailable").font(.caption).foregroundStyle(.secondary) }

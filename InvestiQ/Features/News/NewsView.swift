@@ -52,12 +52,12 @@ private struct NewsList: View {
                     TextField("news.search", text: $model.query).textFieldStyle(.roundedBorder).frame(maxWidth: 240)
                     Picker("news.filter.category", selection: $model.categoryFilter) {
                         Text("news.filter.all").tag(NewsCategory?.none)
-                        ForEach(NewsCategory.allCases, id: \.self) { Text(LocalizedStringKey("news.category.\($0.rawValue)")).tag(Optional($0)) }
+                        ForEach(NewsCategory.allCases, id: \.self) { Text(L10n.key("news.category", $0.rawValue)).tag(Optional($0)) }
                     }
                     .frame(maxWidth: 260)
                     Picker("news.filter.type", selection: $model.typeFilter) {
                         Text("news.filter.all").tag(StatementType?.none)
-                        ForEach(StatementType.allCases, id: \.self) { Text(LocalizedStringKey("news.type.\($0.rawValue)")).tag(Optional($0)) }
+                        ForEach(StatementType.allCases, id: \.self) { Text(L10n.key("news.type", $0.rawValue)).tag(Optional($0)) }
                     }
                     .frame(maxWidth: 240)
                     Toggle("news.filter.mine", isOn: $model.onlyMyInstruments)
@@ -85,7 +85,7 @@ private struct NewsCard: View {
             VStack(alignment: .leading, spacing: Spacing.s) {
                 HStack(spacing: Spacing.s) {
                     TypeBadge(type: article.statementType)
-                    Label(LocalizedStringKey("news.uncertainty.\(article.uncertainty.rawValue)"), systemImage: "questionmark.diamond")
+                    Label(L10n.key("news.uncertainty", article.uncertainty.rawValue), systemImage: "questionmark.diamond")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                     if article.isDemo { Text("demo.label").font(.caption.weight(.semibold)).foregroundStyle(.purple) }
@@ -145,7 +145,7 @@ private struct TypeBadge: View {
     let type: StatementType
 
     var body: some View {
-        Text(LocalizedStringKey("news.type.\(type.rawValue)"))
+        Text(L10n.key("news.type", type.rawValue))
             .font(.caption.weight(.semibold))
             .padding(.horizontal, Spacing.s)
             .padding(.vertical, 2)
@@ -178,7 +178,7 @@ private struct CalendarList: View {
                 HStack {
                     Picker("calendar.filter.kind", selection: $model.kindFilter) {
                         Text("news.filter.all").tag(EconomicEventKind?.none)
-                        ForEach(EconomicEventKind.allCases, id: \.self) { Text(LocalizedStringKey("calendar.kind.\($0.rawValue)")).tag(Optional($0)) }
+                        ForEach(EconomicEventKind.allCases, id: \.self) { Text(L10n.key("calendar.kind", $0.rawValue)).tag(Optional($0)) }
                     }
                     .frame(maxWidth: 280)
                     Picker("calendar.filter.region", selection: $model.regionFilter) {
@@ -210,7 +210,7 @@ private struct EventRow: View {
                 HStack {
                     Text(L10n.string(model.title(event))).font(.callout.weight(.semibold))
                     if event.status != .scheduled {
-                        Text(LocalizedStringKey("calendar.status.\(event.status.rawValue)")).font(.caption).foregroundStyle(.orange)
+                        Text(L10n.key("calendar.status", event.status.rawValue)).font(.caption).foregroundStyle(.orange)
                     }
                     Spacer()
                     Text(timeText).font(.caption.monospacedDigit()).foregroundStyle(.secondary)

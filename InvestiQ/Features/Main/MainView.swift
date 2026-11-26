@@ -11,14 +11,22 @@ struct MainView: View {
             set: { if let section = $0 { app.selectedSection = section } })
         NavigationSplitView {
             List(AppSection.allCases, selection: selection) { section in
-                Label(LocalizedStringKey(section.titleKey), systemImage: section.systemImage)
-                    .tag(section)
-                    .accessibilityIdentifier("sidebar.\(section.rawValue)")
+                Label {
+                    Text(LocalizedStringKey(section.titleKey))
+                } icon: {
+                    SidebarIcon(systemName: section.systemImage)
+                }
+                .tag(section)
+                .accessibilityIdentifier("sidebar.\(section.rawValue)")
             }
             .navigationSplitViewColumnWidth(min: 190, ideal: 220)
             .safeAreaInset(edge: .bottom) {
                 Button { Task { await app.lock(reason: .manual) } } label: {
-                    Label(app.isDemo ? "demo.exit" : "menu.lock", systemImage: app.isDemo ? "xmark.circle" : "lock")
+                    Label {
+                        Text(LocalizedStringKey(app.isDemo ? "demo.exit" : "menu.lock"))
+                    } icon: {
+                        SidebarIcon(systemName: app.isDemo ? "xmark.circle" : "lock")
+                    }
                 }
                 .buttonStyle(.borderless)
                 .padding(Spacing.m)
@@ -73,16 +81,29 @@ struct EducationalModeBanner: View {
     }
 }
 
+/// SF Symbols have different natural proportions (`graduationcap` is wide, `list.bullet.clipboard` is
+/// tall). A fixed box keeps every sidebar row the same height and every title at the same x.
+struct SidebarIcon: View {
+    let systemName: String
+
+    var body: some View {
+        Image(systemName: systemName)
+            .imageScale(.medium)
+            .frame(width: IconSize.sidebar, height: IconSize.sidebar)
+    }
+}
+
 extension AppSection {
+    /// Outline symbols only, so no icon looks heavier than its neighbours.
     var systemImage: String {
         switch self {
         case .overview: return "square.grid.2x2"
         case .market: return "chart.line.uptrend.xyaxis"
         case .portfolio: return "briefcase"
         case .news: return "newspaper"
-        case .risk: return "shield.lefthalf.filled"
+        case .risk: return "exclamationmark.shield"
         case .planner: return "list.bullet.clipboard"
-        case .simulator: return "testtube.2"
+        case .simulator: return "play.rectangle"
         case .brokers: return "building.columns"
         case .learn: return "graduationcap"
         case .settings: return "gearshape"

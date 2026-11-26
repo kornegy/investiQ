@@ -191,7 +191,7 @@ private struct ScenarioCard: View {
                     HStack(spacing: Spacing.m) {
                         ForEach(scenarios, id: \.kind) { scenario in
                             VStack(alignment: .leading, spacing: Spacing.xs) {
-                                Text(LocalizedStringKey("scenario.kind.\(scenario.kind.rawValue)")).font(.subheadline.weight(.semibold))
+                                Text(L10n.key("scenario.kind", scenario.kind.rawValue)).font(.subheadline.weight(.semibold))
                                 Text(Formatters.decimal(Decimal(finite: scenario.endValue), fractionDigits: 0)).font(.title3.monospacedDigit())
                                 Text(Formatters.percent(scenario.periodReturn, fractionDigits: 1)).font(.caption).foregroundStyle(.secondary)
                             }
@@ -249,7 +249,7 @@ private struct ForecastValidationCard: View {
                 CardHeader(title: "forecast.title", help: "forecast.help")
                 HStack {
                     Picker("forecast.model", selection: $model.forecastModel) {
-                        ForEach(ForecastModelID.allCases, id: \.self) { Text(LocalizedStringKey("forecast.model.\($0.rawValue)")).tag($0) }
+                        ForEach(ForecastModelID.allCases, id: \.self) { Text(L10n.key("forecast.model", $0.rawValue)).tag($0) }
                     }
                     .frame(maxWidth: 260)
                     Picker("forecast.horizon", selection: $model.forecastHorizon) {
@@ -301,7 +301,7 @@ private struct ValidationTable: View {
                 .foregroundStyle(.secondary)
                 ForEach(metrics, id: \.model) { m in
                     GridRow {
-                        Text(LocalizedStringKey("forecast.model.\(m.model.rawValue)")).gridColumnAlignment(.leading)
+                        Text(L10n.key("forecast.model", m.model.rawValue)).gridColumnAlignment(.leading)
                         Text(verbatim: "\(m.evaluations)")
                         Text(Formatters.decimal(m.relativeMAE.flatMap { Decimal(finite: $0) }, fractionDigits: 2))
                         Text(Formatters.decimal(m.mase.flatMap { Decimal(finite: $0) }, fractionDigits: 2))

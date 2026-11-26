@@ -12,5 +12,7 @@ fi
 
 docker run --rm --network host \
   -e HTTPS_PROXY -e https_proxy -e NO_PROXY -e no_proxy \
-  -v "$ROOT/InvestiQKit:/work" -w /work "$IMAGE" \
+  -v "$ROOT/InvestiQKit:/work" -w /work \
+  -v "$ROOT/Localization:/localization:ro" -e INVESTIQ_LOCALIZATION_DIR=/localization \
+  "$IMAGE" \
   swift "$COMMAND" --build-path /work/.build-linux "$@"

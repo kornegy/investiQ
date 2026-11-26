@@ -81,7 +81,7 @@ private struct OnboardingSteps: View {
         case .goals:
             Text("onboarding.goals.title").font(.title.bold())
             ForEach(FinancialGoal.allCases, id: \.self) { goal in
-                Toggle(LocalizedStringKey("onboarding.goal.\(goal.rawValue)"), isOn: Binding(
+                Toggle(L10n.key("onboarding.goal", goal.rawValue), isOn: Binding(
                     get: { model.goals.contains(goal) },
                     set: { isOn in if isOn { model.goals.insert(goal) } else { model.goals.remove(goal) } }))
             }
@@ -117,8 +117,8 @@ private struct OnboardingSteps: View {
                 ForEach(model.safetyNotes, id: \.self) { note in
                     Card {
                         VStack(alignment: .leading, spacing: Spacing.xs) {
-                            Text(LocalizedStringKey("safety.\(note.rawValue).title")).font(.headline)
-                            Text(LocalizedStringKey("safety.\(note.rawValue).body")).fixedSize(horizontal: false, vertical: true)
+                            Text(L10n.key("safety", note.rawValue, "title")).font(.headline)
+                            Text(L10n.key("safety", note.rawValue, "body")).fixedSize(horizontal: false, vertical: true)
                         }
                     }
                 }
@@ -137,7 +137,7 @@ struct OptionPicker<Option: RawRepresentable & Hashable>: View where Option.RawV
     var body: some View {
         Picker("", selection: $selection) {
             ForEach(options, id: \.self) { option in
-                Text(LocalizedStringKey("\(keyPrefix).\(option.rawValue)")).tag(Optional(option))
+                Text(L10n.key(keyPrefix, option.rawValue)).tag(Optional(option))
             }
         }
         .pickerStyle(.radioGroup)

@@ -39,7 +39,7 @@ private struct BrokersContent: View {
                 Picker("brokers.filter", selection: $model.presenceFilter) {
                     Text("news.filter.all").tag(BrokerEntry.CzechPresence?.none)
                     ForEach(BrokerEntry.CzechPresence.allCases, id: \.self) {
-                        Text(LocalizedStringKey("brokers.presence.\($0.rawValue)")).tag(Optional($0))
+                        Text(L10n.key("brokers.presence", $0.rawValue)).tag(Optional($0))
                     }
                 }
                 .frame(maxWidth: 360)

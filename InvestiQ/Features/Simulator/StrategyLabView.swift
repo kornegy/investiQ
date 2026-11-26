@@ -54,7 +54,7 @@ struct StrategyLabView: View {
                                 Text("strategy.rebalancing")
                                 Picker("strategy.rebalancing", selection: $model.rebalancing) {
                                     ForEach(StrategyBacktest.Rebalancing.allCases, id: \.self) {
-                                        Text(LocalizedStringKey("strategy.rebalancing.\($0.rawValue)")).tag($0)
+                                        Text(L10n.key("strategy.rebalancing", $0.rawValue)).tag($0)
                                     }
                                 }
                                 .labelsHidden()

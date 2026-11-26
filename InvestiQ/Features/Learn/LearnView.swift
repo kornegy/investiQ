@@ -46,12 +46,12 @@ private struct PathList: View {
                                     if let lesson = model.lessons.first(where: { $0.id == id }) { Task { await model.open(lesson) } }
                                 })) {
             ForEach(LearnViewModel.stages, id: \.self) { stage in
-                Section(LocalizedStringKey("learn.stage.\(stage)")) {
+                Section(L10n.key("learn.stage", String(stage))) {
                     ForEach(model.lessons(in: stage)) { lesson in
                         HStack {
                             Image(systemName: icon(model.status(of: lesson)))
                                 .foregroundStyle(model.status(of: lesson) == .completed ? Color.green : Color.secondary)
-                                .accessibilityLabel(Text(LocalizedStringKey("learn.status.\(model.status(of: lesson).rawValue)")))
+                                .accessibilityLabel(Text(L10n.key("learn.status", model.status(of: lesson).rawValue)))
                             VStack(alignment: .leading) {
                                 Text(lesson.title).lineLimit(2)
                                 Text(L10n.string(Message("learn.minutes", [.integer(lesson.minutes)]))).font(.caption).foregroundStyle(.secondary)

@@ -10,6 +10,11 @@ enum Spacing {
     static let xxl: CGFloat = 32
 }
 
+enum IconSize {
+    /// Box for sidebar icons; fits every SF Symbol used there at body size.
+    static let sidebar: CGFloat = 20
+}
+
 enum Radius {
     static let control: CGFloat = 6
     static let card: CGFloat = 10

@@ -65,7 +65,7 @@ public protocol BiometricKeyStore: Sendable {
     func hasKey(account: String) -> Bool
 }
 
-public enum BiometricAvailability: Equatable, Sendable {
+public enum BiometricAvailability: Equatable, Sendable, CaseIterable {
     case available
     case notEnrolled
     case notSupported

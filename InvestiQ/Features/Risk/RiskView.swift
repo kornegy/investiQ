@@ -60,7 +60,7 @@ private struct RiskContent: View {
                         case .forecasts: EmptyView()
                         }
                     } else if !model.isLoading {
-                        ContentUnavailableView("risk.empty.title", systemImage: "shield.lefthalf.filled",
+                        ContentUnavailableView("risk.empty.title", systemImage: "exclamationmark.shield",
                                                description: Text("risk.empty.description"))
                     }
                 }
@@ -96,7 +96,7 @@ private struct CategoriesTab: View {
                 Card {
                     VStack(alignment: .leading, spacing: Spacing.xs) {
                         HStack {
-                            Text(LocalizedStringKey("risk.category.\(assessment.category.rawValue)")).font(.headline)
+                            Text(L10n.key("risk.category", assessment.category.rawValue)).font(.headline)
                             Spacer()
                             RiskLevelBadge(level: assessment.level)
                         }
@@ -121,7 +121,7 @@ struct RiskLevelBadge: View {
     let level: RiskLevel
 
     var body: some View {
-        Label(LocalizedStringKey("risk.level.\(level.rawValue)"), systemImage: symbol)
+        Label(L10n.key("risk.level", level.rawValue), systemImage: symbol)
             .font(.caption.weight(.medium))
             .padding(.horizontal, Spacing.s)
             .padding(.vertical, 3)

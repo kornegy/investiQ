@@ -48,7 +48,7 @@ private struct AssetDetailContent: View {
                     })
                 }
                 Picker("asset.range", selection: Binding(get: { model.range }, set: { model.setRange($0) })) {
-                    ForEach(ChartRange.allCases) { Text(LocalizedStringKey("range.\($0.rawValue)")).tag($0) }
+                    ForEach(ChartRange.allCases) { Text(L10n.key("range", $0.rawValue)).tag($0) }
                 }
                 .pickerStyle(.segmented)
                 PriceChartCard(model: model)

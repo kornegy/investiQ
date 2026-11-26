@@ -35,7 +35,7 @@ private struct CreateProfileForm: View {
                 VStack(alignment: .leading, spacing: Spacing.xs) {
                     PasswordStrengthMeter(strength: model.strength, isEmpty: model.password.isEmpty)
                     ForEach(model.issues, id: \.self) { issue in
-                        Label(LocalizedStringKey("password.issue.\(issue.rawValue)"), systemImage: "xmark.circle")
+                        Label(L10n.key("password.issue", issue.rawValue), systemImage: "xmark.circle")
                             .foregroundStyle(.orange)
                             .font(.caption)
                     }
@@ -68,7 +68,7 @@ struct PasswordStrengthMeter: View {
             ProgressView(value: isEmpty ? 0 : Double(strength.rawValue + 1), total: Double(PasswordStrength.allCases.count))
                 .tint(strength >= .good ? .green : .orange)
                 .frame(width: 140)
-            if !isEmpty { Text(LocalizedStringKey("password.strength.\(strength.label)")).font(.caption) }
+            if !isEmpty { Text(L10n.key("password.strength", strength.label)).font(.caption) }
         }
         .accessibilityElement(children: .combine)
     }

@@ -257,7 +257,7 @@ private struct GoalsCard: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text(goal.name).font(.headline)
-                            Text(LocalizedStringKey("planner.goal.term.\(goal.term.rawValue)")).font(.caption).foregroundStyle(.secondary)
+                            Text(L10n.key("planner.goal.term", goal.term.rawValue)).font(.caption).foregroundStyle(.secondary)
                         }
                         Spacer()
                         VStack(alignment: .trailing) {
@@ -278,7 +278,7 @@ private struct GoalsCard: View {
                     TextField("planner.goal.name", text: $name).textFieldStyle(.roundedBorder)
                     TextField("planner.goal.amount", text: $amount).textFieldStyle(.roundedBorder).frame(maxWidth: 140)
                     Picker("planner.goal.term", selection: $term) {
-                        ForEach(PlannerGoal.Term.allCases, id: \.self) { Text(LocalizedStringKey("planner.goal.term.\($0.rawValue)")).tag($0) }
+                        ForEach(PlannerGoal.Term.allCases, id: \.self) { Text(L10n.key("planner.goal.term", $0.rawValue)).tag($0) }
                     }
                     .frame(maxWidth: 200)
                 }

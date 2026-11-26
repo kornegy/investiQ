@@ -12,7 +12,7 @@ struct CalculatorView: View {
     var body: some View {
         Card {
             VStack(alignment: .leading, spacing: Spacing.m) {
-                CardHeader(title: LocalizedStringKey("learn.calc.\(kind.rawValue).title"), help: "learn.calc.help")
+                CardHeader(title: L10n.key("learn.calc", kind.rawValue, "title"), help: "learn.calc.help")
                 switch kind {
                 case .compoundInterest: compound
                 case .inflation: inflation

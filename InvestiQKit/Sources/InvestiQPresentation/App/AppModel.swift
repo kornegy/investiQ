@@ -4,7 +4,7 @@ import InvestiQCore
 import InvestiQSecurity
 import InvestiQServices
 
-public enum LockReason: String, Sendable { case manual, inactivity, systemSleep, screenLocked }
+public enum LockReason: String, Sendable, CaseIterable { case manual, inactivity, systemSleep, screenLocked }
 
 /// Root application state machine (docs/ARCHITECTURE.md §3.1).
 @MainActor

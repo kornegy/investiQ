@@ -45,7 +45,7 @@ private struct ForecastAccuracyContent: View {
                             .font(.caption.weight(.semibold)).foregroundStyle(.secondary)
                             ForEach(model.accuracy, id: \.modelID) { row in
                                 GridRow {
-                                    Text(LocalizedStringKey("forecast.model.\(row.modelID)")).gridColumnAlignment(.leading)
+                                    Text(L10n.key("forecast.model", row.modelID)).gridColumnAlignment(.leading)
                                     Text(verbatim: "\(row.evaluated)")
                                     Text(verbatim: "\(row.pending)")
                                     Text(Formatters.percent(row.meanAbsolutePercentError, fractionDigits: 1))
@@ -77,7 +77,7 @@ private struct ForecastRecordRow: View {
                 HStack {
                     Text(item.instrumentName).font(.headline).lineLimit(1)
                     Spacer()
-                    Text(LocalizedStringKey("forecast.model.\(item.row.modelID)")).font(.caption).foregroundStyle(.secondary)
+                    Text(L10n.key("forecast.model", item.row.modelID)).font(.caption).foregroundStyle(.secondary)
                 }
                 Text(L10n.string(Message("forecast.record.period", [.date(item.row.originDate), .date(item.row.targetDate)])))
                     .font(.caption).foregroundStyle(.secondary)

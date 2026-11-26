@@ -206,7 +206,7 @@ private struct TransactionsList: View {
             ForEach(model.transactions) { transaction in
                 HStack {
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(LocalizedStringKey("transaction.type.\(transaction.type.rawValue)")).font(.body.weight(.medium))
+                        Text(L10n.key("transaction.type", transaction.type.rawValue)).font(.body.weight(.medium))
                         Text([Formatters.date(transaction.tradeDate), model.instrumentName(transaction.instrumentID)].compactMap { $0 }.joined(separator: " · "))
                             .font(.caption).foregroundStyle(.secondary)
                     }

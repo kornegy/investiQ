@@ -58,7 +58,7 @@ struct AIAnswerContent: View {
                         .font(.callout).foregroundStyle(.secondary)
                 }
                 ForEach(AIOutputFlag.allCases.filter { answer.flags.contains($0) }, id: \.self) { flag in
-                    Label(LocalizedStringKey("ai.flag.\(flag.rawValue)"), systemImage: "exclamationmark.triangle")
+                    Label(L10n.key("ai.flag", flag.rawValue), systemImage: "exclamationmark.triangle")
                         .font(.caption).foregroundStyle(.orange).fixedSize(horizontal: false, vertical: true)
                 }
                 Text(LocalizedStringKey(answer.sentOffDevice ? "ai.provenance.external" : "ai.provenance.local"))

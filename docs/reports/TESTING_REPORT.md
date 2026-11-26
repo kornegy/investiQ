@@ -6,11 +6,11 @@ Date: 2026-11-25 · Commit: see `git log -1` on branch `claude/upbeat-cori-u977l
 
 | Suite | Where | Result |
 |---|---|---|
-| Package tests (`InvestiQKit`, XCTest) | Linux, Docker `swift:6.2-noble` (`./scripts/test-linux.sh`) | **244 passed, 0 failed** |
+| Package tests (`InvestiQKit`, XCTest) | Linux, Docker `swift:6.2-noble` (`./scripts/test-linux.sh`) | **245 passed, 0 failed** |
 | Package tests incl. Keychain adapter | macOS 26 runner, GitHub Actions (`swift test`) | passed (run #17) |
 | App build (`xcodebuild build`, Xcode 26) incl. Foundation Models adapter | macOS 26 runner | passed (run #17) |
-| UI tests (`InvestiQUITests`: demo navigation through all sections; create profile → lock → unlock) | macOS 26 runner | passed (run #17) |
-| Localisation completeness (1 259 keys × ru/en/cs, placeholder parity, `%` escaping) | CI lint job | passed |
+| UI tests (`InvestiQUITests`: demo navigation through all sections; every onboarding step; create profile → lock → unlock; no visible text may be an unresolved localisation key) | macOS 26 runner | see CI run for the latest commit |
+| Localisation completeness (1 259 keys × ru/en/cs, placeholder parity, `%` escaping, no interpolated SwiftUI keys, run-time key patterns exist) | CI lint job | passed |
 | Copy lint (manipulative/promissory phrases incl. lessons) | CI lint job | passed |
 | Lessons generated from source (structure identical in 3 languages) | CI lint job | passed |
 
@@ -29,7 +29,7 @@ https://github.com/kornegy/investiQ/actions/runs/45643584669
 | Portfolio | `PortfolioLedgerTests` (16), `PortfolioValuationTests`, `PortfolioServiceTests` | Average cost, partial sales, fees, dividends/coupons with tax, splits, FX, missing FX → unknown, TWR, XIRR (spreadsheet reference), CSV round trip, **bond percent-of-face valuation (regression)** |
 | Analytics | `PerformanceTests`, `ReturnsTests`, `BondMathTests`, `ForecastValidationTests`, `RiskAndAnalysisTests`, `FinancialPlannerTests`, `SimulatorEngineTests`, `LearningCalculatorsTests`, `NotificationEvaluatorTests` | Hand-checked values for every formula in `FINANCIAL_METHODOLOGY.md`; look-ahead tests (forecast validation, back-test); usefulness gate never true for the naive model |
 | Services | `AnalysisServicesTests`, `SimulatorServiceTests`, `NewsAndCalendarTests`, `BackupTests`, `AISecurityTests` | Forecast ledger immutability and evaluation, risk assessment recording, historical simulator never sees later data, news classification/dedup, calendar time zones, backup tamper detection and restore safety, AI security (see below) |
-| Presentation | `AppFlowTests`, `MarketViewModelTests`, `PortfolioViewModelTests`, `AnalysisViewModelTests` (+ planner, simulator, learn, news, notifications, AI settings) | End-to-end flows on the demo session and real profiles: onboarding, minors → educational mode, auto-lock, broker websites hidden for minors, notifications sent once, AI off by default |
+| Presentation | `AppFlowTests`, `MarketViewModelTests`, `PortfolioViewModelTests`, `AnalysisViewModelTests` (+ planner, simulator, learn, news, notifications, AI settings), `LocalizationCoverageTests` | End-to-end flows on the demo session and real profiles: onboarding, minors → educational mode, auto-lock, broker websites hidden for minors, notifications sent once, AI off by default; every enum case used in a run-time key has en/ru/cs text |
 | Content | `LessonCatalogTests`, `DirectoryAndCalendarContentTests` | 21 mandatory lessons in 3 languages with identical answers; broker data sourced, alphabetical, no referral parameters; calendar entries sourced with valid time zones |
 | Performance | `PerformanceBenchmarks` | Ceilings for heavy operations (see PERFORMANCE_REPORT.md) |
 

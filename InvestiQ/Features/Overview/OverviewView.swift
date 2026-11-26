@@ -113,7 +113,7 @@ private struct ValueChartCard: View {
                 HStack {
                     CardHeader(title: "overview.chart.title", help: "overview.chart.help")
                     Picker("overview.chart.range", selection: Binding(get: { model.range }, set: { range in Task { await model.setRange(range) } })) {
-                        ForEach(DashboardRange.allCases) { Text(LocalizedStringKey("dashboard.range.\($0.rawValue)")).tag($0) }
+                        ForEach(DashboardRange.allCases) { Text(L10n.key("dashboard.range", $0.rawValue)).tag($0) }
                     }
                     .pickerStyle(.segmented)
                     .frame(maxWidth: 420)

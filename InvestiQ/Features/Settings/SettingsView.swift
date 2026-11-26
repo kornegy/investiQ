@@ -103,7 +103,7 @@ private struct SecurityForm: View {
                     set: { enabled in Task { await model.setBiometricUnlock(enabled) } }))
                     .disabled(model.biometricAvailability != .available)
                 if model.biometricAvailability != .available {
-                    Text(LocalizedStringKey("auth.error.biometric.\(model.biometricAvailability.localizationSuffix)"))
+                    Text(L10n.key("auth.error.biometric", model.biometricAvailability.localizationSuffix))
                         .font(.caption).foregroundStyle(.secondary)
                 }
                 Button("menu.lock") { Task { await app.lock(reason: .manual) } }
@@ -113,7 +113,7 @@ private struct SecurityForm: View {
                 SecureField("settings.security.newPassword", text: $model.newPassword)
                 SecureField("profile.passwordConfirmation", text: $model.newPasswordConfirmation)
                 ForEach(model.newPasswordIssues, id: \.self) { issue in
-                    Text(LocalizedStringKey("password.issue.\(issue.rawValue)")).font(.caption).foregroundStyle(.orange)
+                    Text(L10n.key("password.issue", issue.rawValue)).font(.caption).foregroundStyle(.orange)
                 }
                 Button("settings.security.changePassword") { Task { await model.changePassword() } }
                     .disabled(model.isBusy || model.currentPassword.isEmpty || model.newPassword.isEmpty)

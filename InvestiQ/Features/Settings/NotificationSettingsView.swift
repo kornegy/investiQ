@@ -36,7 +36,7 @@ private struct NotificationSettingsContent: View {
             Section("notifications.types") {
                 ForEach(model.rules) { rule in
                     VStack(alignment: .leading, spacing: Spacing.xs) {
-                        Toggle(LocalizedStringKey("notifications.kind.\(rule.kind.rawValue)"), isOn: Binding(
+                        Toggle(L10n.key("notifications.kind", rule.kind.rawValue), isOn: Binding(
                             get: { rule.enabled }, set: { value in Task { await model.setEnabled(rule.kind, value) } }))
                         if rule.kind == .priceMove {
                             Stepper(value: Binding(get: { model.priceThresholdPercent },

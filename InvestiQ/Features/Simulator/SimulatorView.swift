@@ -76,7 +76,7 @@ private struct SessionHeader: View {
         Card {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text(LocalizedStringKey("simulator.mode.\(overview.session.mode.rawValue)")).font(.headline)
+                    Text(L10n.key("simulator.mode", overview.session.mode.rawValue)).font(.headline)
                     if overview.session.mode == .historical {
                         Text(L10n.string(Message("simulator.simDate", [.date(overview.session.simDate)]))).font(.title3)
                         Text("simulator.noFuture").font(.caption).foregroundStyle(.secondary)
@@ -241,7 +241,7 @@ private struct NewSessionCard: View {
                     GridRow {
                         Text("simulator.new.mode")
                         Picker("simulator.new.mode", selection: $model.newMode) {
-                            ForEach(SimulatorMode.allCases, id: \.self) { Text(LocalizedStringKey("simulator.mode.\($0.rawValue)")).tag($0) }
+                            ForEach(SimulatorMode.allCases, id: \.self) { Text(L10n.key("simulator.mode", $0.rawValue)).tag($0) }
                         }
                         .labelsHidden()
                     }

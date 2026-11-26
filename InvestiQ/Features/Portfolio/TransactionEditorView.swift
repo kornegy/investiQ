@@ -30,7 +30,7 @@ private struct EditorForm: View {
         Form {
             Section {
                 Picker("transaction.field.type", selection: $model.type) {
-                    ForEach(TransactionType.allCases, id: \.self) { Text(LocalizedStringKey("transaction.type.\($0.rawValue)")).tag($0) }
+                    ForEach(TransactionType.allCases, id: \.self) { Text(L10n.key("transaction.type", $0.rawValue)).tag($0) }
                 }
                 DatePicker("transaction.field.date", selection: $model.date, displayedComponents: .date)
                 if model.usesInstrument {
