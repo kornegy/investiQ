@@ -1,21 +1,25 @@
 # InvestiQ — Testing report
 
-Date: 2026-11-25 · Commit: see `git log -1` on branch `claude/upbeat-cori-u977ll`.
+Date: 2026-11-26 · Commit: see `git log -1` on branch `claude/upbeat-cori-u977ll`.
 
 ## Summary
 
 | Suite | Where | Result |
 |---|---|---|
 | Package tests (`InvestiQKit`, XCTest) | Linux, Docker `swift:6.2-noble` (`./scripts/test-linux.sh`) | **246 passed, 0 failed** |
-| Package tests incl. Keychain adapter | macOS 26 runner, GitHub Actions (`swift test`) | passed (run #17) |
-| App build (`xcodebuild build`, Xcode 26) incl. Foundation Models adapter | macOS 26 runner | passed (run #17) |
-| UI tests (`InvestiQUITests`: demo navigation through all sections; language choice switches the app to Czech; every onboarding step; create profile → lock → unlock; no visible text may be an unresolved localisation key) | macOS 26 runner | see CI run for the latest commit |
+| Package tests incl. Keychain adapter | macOS 26 runner, GitHub Actions (`swift test`) | passed (run #25) |
+| App build (`xcodebuild build`, Xcode 26) incl. Foundation Models adapter | macOS 26 runner | passed (run #25) |
+| UI tests (`InvestiQUITests`: demo navigation through all sections; language choice switches the app to Czech; every onboarding step; create profile → lock → unlock; no visible text may be an unresolved localisation key) | macOS 26 runner | passed (run #25) |
 | Localisation completeness (1 259 keys × ru/en/cs, placeholder parity, `%` escaping, no interpolated SwiftUI keys, run-time key patterns exist) | CI lint job | passed |
 | Copy lint (manipulative/promissory phrases incl. lessons) | CI lint job | passed |
 | Lessons generated from source (structure identical in 3 languages) | CI lint job | passed |
 
 Run #17 (commit "Phase 7b") covers all code of Phases 0–7 and passed every job:
 https://github.com/kornegy/investiQ/actions/runs/45643584669
+
+Run #25 (after the first manual test on a Mac: raw-key fix, sidebar icons, onboarding language choice,
+Xcode string extraction off) passed every job, including the three UI tests:
+https://github.com/kornegy/investiQ/actions/runs/45807156813
 
 ## Coverage by area (package tests)
 
