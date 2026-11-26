@@ -1,0 +1,467 @@
+{
+  "news.tabs": {
+    "en": "View",
+    "ru": "Вид",
+    "cs": "Zobrazení"
+  },
+  "news.tab.news": {
+    "en": "News",
+    "ru": "Новости",
+    "cs": "Zprávy"
+  },
+  "news.tab.calendar": {
+    "en": "Economic calendar",
+    "ru": "Экономический календарь",
+    "cs": "Ekonomický kalendář"
+  },
+  "news.intro": {
+    "en": "Headlines from your news providers and official press releases. Each item shows its source, how it was classified and how uncertain it is. News is not a signal to act.",
+    "ru": "Заголовки от ваших поставщиков новостей и официальные пресс-релизы. У каждой новости указаны источник, классификация и степень неопределённости. Новость — не сигнал к действию.",
+    "cs": "Titulky od vašich poskytovatelů zpráv a oficiální tiskové zprávy. U každé zprávy je zdroj, způsob klasifikace a míra nejistoty. Zpráva není signál k jednání."
+  },
+  "news.refresh": {
+    "en": "Refresh",
+    "ru": "Обновить",
+    "cs": "Obnovit"
+  },
+  "news.search": {
+    "en": "Search headlines",
+    "ru": "Поиск по заголовкам",
+    "cs": "Hledat v titulcích"
+  },
+  "news.filter.category": {
+    "en": "Category",
+    "ru": "Категория",
+    "cs": "Kategorie"
+  },
+  "news.filter.type": {
+    "en": "Type",
+    "ru": "Тип",
+    "cs": "Typ"
+  },
+  "news.filter.all": {
+    "en": "All",
+    "ru": "Все",
+    "cs": "Vše"
+  },
+  "news.filter.mine": {
+    "en": "Only my instruments",
+    "ru": "Только мои инструменты",
+    "cs": "Jen moje nástroje"
+  },
+  "news.offline": {
+    "en": "News providers could not be reached. Showing saved items.",
+    "ru": "Не удалось связаться с поставщиками новостей. Показаны сохранённые новости.",
+    "cs": "Poskytovatelé zpráv nejsou dostupní. Zobrazují se uložené zprávy."
+  },
+  "news.error.loadFailed": {
+    "en": "Saved news could not be loaded.",
+    "ru": "Не удалось загрузить сохранённые новости.",
+    "cs": "Uložené zprávy se nepodařilo načíst."
+  },
+  "news.error.refreshFailed": {
+    "en": "News could not be refreshed.",
+    "ru": "Не удалось обновить новости.",
+    "cs": "Zprávy se nepodařilo obnovit."
+  },
+  "news.empty.title": {
+    "en": "No news",
+    "ru": "Нет новостей",
+    "cs": "Žádné zprávy"
+  },
+  "news.empty.description": {
+    "en": "Enable a news source in Settings → Data Providers, or change the filters.",
+    "ru": "Включите источник новостей в Настройках → Поставщики данных или измените фильтры.",
+    "cs": "Zapněte zdroj zpráv v Nastavení → Poskytovatelé dat nebo změňte filtry."
+  },
+  "news.alsoReported": {
+    "en": "· also reported by %@",
+    "ru": "· также сообщили: %@",
+    "cs": "· informovali také: %@"
+  },
+  "news.eventDate": {
+    "en": "· event date %@",
+    "ru": "· дата события %@",
+    "cs": "· datum události %@"
+  },
+  "news.related": {
+    "en": "Related: %@",
+    "ru": "Связано: %@",
+    "cs": "Souvisí: %@"
+  },
+  "news.classifiedBecause": {
+    "en": "Classified because the text contains “%@”.",
+    "ru": "Классифицировано, так как текст содержит «%@».",
+    "cs": "Zařazeno, protože text obsahuje „%@“."
+  },
+  "news.effects": {
+    "en": "Possible connections",
+    "ru": "Возможные связи",
+    "cs": "Možné souvislosti"
+  },
+  "news.openOriginal": {
+    "en": "Open the original article",
+    "ru": "Открыть оригинал",
+    "cs": "Otevřít původní článek"
+  },
+  "news.copyrightNote": {
+    "en": "Only headlines and short summaries are shown; read the full text at the source.",
+    "ru": "Показаны только заголовки и краткие описания; полный текст читайте в источнике.",
+    "cs": "Zobrazují se jen titulky a krátká shrnutí; celý text si přečtěte u zdroje."
+  },
+  "news.type.officialRelease": {
+    "en": "Official release",
+    "ru": "Официальный релиз",
+    "cs": "Oficiální zpráva"
+  },
+  "news.type.reported": {
+    "en": "Reported",
+    "ru": "Сообщение СМИ",
+    "cs": "Zpráva médií"
+  },
+  "news.type.opinion": {
+    "en": "Opinion",
+    "ru": "Мнение",
+    "cs": "Názor"
+  },
+  "news.type.rumour": {
+    "en": "Unconfirmed report",
+    "ru": "Неподтверждённые сведения",
+    "cs": "Nepotvrzená zpráva"
+  },
+  "news.type.forecast": {
+    "en": "Forecast",
+    "ru": "Прогноз",
+    "cs": "Prognóza"
+  },
+  "news.uncertainty.low": {
+    "en": "Low uncertainty",
+    "ru": "Низкая неопределённость",
+    "cs": "Nízká nejistota"
+  },
+  "news.uncertainty.medium": {
+    "en": "Medium uncertainty",
+    "ru": "Средняя неопределённость",
+    "cs": "Střední nejistota"
+  },
+  "news.uncertainty.high": {
+    "en": "High uncertainty",
+    "ru": "Высокая неопределённость",
+    "cs": "Vysoká nejistota"
+  },
+  "news.category.globalEconomy": {
+    "en": "Global economy",
+    "ru": "Мировая экономика",
+    "cs": "Světová ekonomika"
+  },
+  "news.effect.globalEconomy": {
+    "en": "Changes in economic growth can affect company sales and profits and the demand for raw materials.",
+    "ru": "Изменения экономического роста могут влиять на продажи и прибыль компаний и на спрос на сырьё.",
+    "cs": "Změny hospodářského růstu mohou ovlivnit tržby a zisky firem a poptávku po surovinách."
+  },
+  "news.category.centralBanks": {
+    "en": "Central banks",
+    "ru": "Центральные банки",
+    "cs": "Centrální banky"
+  },
+  "news.effect.centralBanks": {
+    "en": "Central bank decisions and statements influence interest rates, borrowing costs and exchange rates. Markets often react more to the difference from expectations than to the decision itself.",
+    "ru": "Решения и заявления центральных банков влияют на ставки, стоимость заимствований и курсы валют. Рынки часто реагируют скорее на отличие от ожиданий, чем на само решение.",
+    "cs": "Rozhodnutí a prohlášení centrálních bank ovlivňují úrokové sazby, náklady půjček a měnové kurzy. Trhy často reagují spíše na rozdíl oproti očekávání než na samotné rozhodnutí."
+  },
+  "news.category.interestRates": {
+    "en": "Interest rates",
+    "ru": "Процентные ставки",
+    "cs": "Úrokové sazby"
+  },
+  "news.effect.interestRates": {
+    "en": "Changes in interest rates can affect borrowing costs, company valuations and the prices of existing bonds, which tend to move opposite to yields.",
+    "ru": "Изменения ставок могут влиять на стоимость заимствований, оценку компаний и цены уже выпущенных облигаций, которые обычно движутся противоположно доходностям.",
+    "cs": "Změny úrokových sazeb mohou ovlivnit náklady půjček, ocenění firem a ceny existujících dluhopisů, které se obvykle pohybují opačně než výnosy."
+  },
+  "news.category.inflation": {
+    "en": "Inflation",
+    "ru": "Инфляция",
+    "cs": "Inflace"
+  },
+  "news.effect.inflation": {
+    "en": "Inflation data can change expectations about interest rates and the real value of fixed payments such as bond coupons.",
+    "ru": "Данные об инфляции могут менять ожидания по ставкам и реальную стоимость фиксированных выплат, например купонов.",
+    "cs": "Údaje o inflaci mohou změnit očekávání ohledně sazeb a reálnou hodnotu pevných plateb, například kuponů."
+  },
+  "news.category.employment": {
+    "en": "Employment",
+    "ru": "Занятость",
+    "cs": "Zaměstnanost"
+  },
+  "news.effect.employment": {
+    "en": "Labour market data can influence expectations about consumer spending, wages and central bank policy.",
+    "ru": "Данные рынка труда могут влиять на ожидания относительно потребительских расходов, зарплат и политики центральных банков.",
+    "cs": "Údaje z trhu práce mohou ovlivnit očekávání ohledně spotřeby, mezd a politiky centrálních bank."
+  },
+  "news.category.corporateEarnings": {
+    "en": "Corporate earnings",
+    "ru": "Отчётность компаний",
+    "cs": "Hospodářské výsledky firem"
+  },
+  "news.effect.corporateEarnings": {
+    "en": "Company results can change investors' view of future profits; the price reaction depends on how results compare with expectations, not only on whether they look good or bad.",
+    "ru": "Результаты компании могут изменить взгляд инвесторов на будущую прибыль; реакция цены зависит от сравнения с ожиданиями, а не только от того, хороши ли результаты.",
+    "cs": "Výsledky firmy mohou změnit pohled investorů na budoucí zisky; reakce ceny závisí na srovnání s očekáváním, nejen na tom, zda vypadají dobře či špatně."
+  },
+  "news.category.geopolitics": {
+    "en": "Geopolitics",
+    "ru": "Геополитика",
+    "cs": "Geopolitika"
+  },
+  "news.effect.geopolitics": {
+    "en": "Political events can affect trade, energy prices, currencies and willingness to take risk. Effects are often uncertain and can reverse quickly.",
+    "ru": "Политические события могут влиять на торговлю, цены на энергию, валюты и готовность рисковать. Последствия часто неопределённы и могут быстро меняться на противоположные.",
+    "cs": "Politické události mohou ovlivnit obchod, ceny energií, měny a ochotu riskovat. Dopady jsou často nejisté a mohou se rychle obrátit."
+  },
+  "news.category.energy": {
+    "en": "Energy",
+    "ru": "Энергетика",
+    "cs": "Energetika"
+  },
+  "news.effect.energy": {
+    "en": "Energy prices affect costs for companies and households, inflation and the profits of energy producers in different ways.",
+    "ru": "Цены на энергию по-разному влияют на расходы компаний и домохозяйств, инфляцию и прибыль производителей энергии.",
+    "cs": "Ceny energií různě ovlivňují náklady firem a domácností, inflaci a zisky výrobců energie."
+  },
+  "news.category.technology": {
+    "en": "Technology",
+    "ru": "Технологии",
+    "cs": "Technologie"
+  },
+  "news.effect.technology": {
+    "en": "Technology developments can change competition and growth expectations in the sector; such expectations are often already reflected in prices.",
+    "ru": "Технологические изменения могут менять конкуренцию и ожидания роста в отрасли; такие ожидания часто уже учтены в ценах.",
+    "cs": "Technologický vývoj může změnit konkurenci a očekávání růstu v odvětví; tato očekávání už často jsou v cenách."
+  },
+  "news.category.regulation": {
+    "en": "Regulation",
+    "ru": "Регулирование",
+    "cs": "Regulace"
+  },
+  "news.effect.regulation": {
+    "en": "New rules can change costs, competition or how products may be sold; the effect depends on the details and their implementation.",
+    "ru": "Новые правила могут менять расходы, конкуренцию или порядок продажи продуктов; эффект зависит от деталей и их применения.",
+    "cs": "Nová pravidla mohou změnit náklady, konkurenci nebo způsob prodeje produktů; dopad závisí na podrobnostech a jejich zavedení."
+  },
+  "news.category.europeanMarkets": {
+    "en": "European markets",
+    "ru": "Европейские рынки",
+    "cs": "Evropské trhy"
+  },
+  "news.effect.europeanMarkets": {
+    "en": "Developments in Europe can affect investments with European exposure, including funds, and the euro exchange rate.",
+    "ru": "События в Европе могут влиять на вложения с европейской экспозицией, включая фонды, и на курс евро.",
+    "cs": "Dění v Evropě může ovlivnit investice s evropskou expozicí včetně fondů a kurz eura."
+  },
+  "news.category.usMarkets": {
+    "en": "US markets",
+    "ru": "Рынки США",
+    "cs": "Trhy USA"
+  },
+  "news.effect.usMarkets": {
+    "en": "Developments in the United States can affect investments with US exposure — including many world funds — and the dollar exchange rate.",
+    "ru": "События в США могут влиять на вложения с американской экспозицией, включая многие мировые фонды, и на курс доллара.",
+    "cs": "Dění v USA může ovlivnit investice s americkou expozicí — včetně mnoha světových fondů — a kurz dolaru."
+  },
+  "news.category.czechEconomy": {
+    "en": "Czech economy",
+    "ru": "Экономика Чехии",
+    "cs": "Česká ekonomika"
+  },
+  "news.effect.czechEconomy": {
+    "en": "Czech economic data and ČNB decisions can affect the koruna exchange rate, Czech interest rates and companies focused on the domestic market.",
+    "ru": "Чешские экономические данные и решения ЧНБ могут влиять на курс кроны, чешские ставки и компании, ориентированные на внутренний рынок.",
+    "cs": "České ekonomické údaje a rozhodnutí ČNB mohou ovlivnit kurz koruny, české úrokové sazby a firmy zaměřené na domácí trh."
+  },
+  "news.effect.caveat": {
+    "en": "These are possible channels, not predictions. The same news can lead to different market reactions depending on expectations and other circumstances.",
+    "ru": "Это возможные каналы влияния, а не прогнозы. Одна и та же новость может вызвать разную реакцию рынка в зависимости от ожиданий и других обстоятельств.",
+    "cs": "Jde o možné kanály vlivu, ne o předpovědi. Stejná zpráva může vyvolat různou reakci trhu podle očekávání a dalších okolností."
+  },
+  "demo.label": {
+    "en": "Demo",
+    "ru": "Демо",
+    "cs": "Demo"
+  },
+  "provider.coverage.official": {
+    "en": "Press releases of the ECB, the Federal Reserve and the Czech National Bank (public RSS feeds, no key). Fetched only when you open or refresh News.",
+    "ru": "Пресс-релизы ЕЦБ, ФРС и Чешского национального банка (публичные RSS-ленты, без ключа). Загружаются только при открытии или обновлении новостей.",
+    "cs": "Tiskové zprávy ECB, Fedu a České národní banky (veřejné RSS kanály, bez klíče). Stahují se jen při otevření nebo obnovení zpráv."
+  },
+  "calendar.title": {
+    "en": "Economic calendar",
+    "ru": "Экономический календарь",
+    "cs": "Ekonomický kalendář"
+  },
+  "calendar.intro": {
+    "en": "Scheduled central bank decisions, statistics releases and earnings reports of instruments in your library. Dates can change; the source is linked for each event.",
+    "ru": "Запланированные решения центральных банков, публикации статистики и отчёты компаний из вашей библиотеки. Даты могут меняться; у каждого события указан источник.",
+    "cs": "Plánovaná rozhodnutí centrálních bank, zveřejnění statistik a výsledky firem z vaší knihovny. Data se mohou změnit; u každé události je odkaz na zdroj."
+  },
+  "calendar.verifiedOn": {
+    "en": "Central bank and statistics dates verified on %@.",
+    "ru": "Даты центральных банков и статистики проверены %@.",
+    "cs": "Data centrálních bank a statistik ověřena %@."
+  },
+  "calendar.filter.kind": {
+    "en": "Type",
+    "ru": "Тип",
+    "cs": "Typ"
+  },
+  "calendar.filter.region": {
+    "en": "Region",
+    "ru": "Регион",
+    "cs": "Region"
+  },
+  "calendar.footnote": {
+    "en": "InvestiQ checks the calendar only while it is running. Earnings dates come from your data providers and are often preliminary.",
+    "ru": "InvestiQ проверяет календарь только во время работы. Даты отчётности поступают от ваших поставщиков данных и часто предварительные.",
+    "cs": "InvestiQ kontroluje kalendář jen za běhu. Data výsledků pocházejí od vašich poskytovatelů dat a bývají předběžná."
+  },
+  "calendar.error.loadFailed": {
+    "en": "The calendar could not be loaded.",
+    "ru": "Не удалось загрузить календарь.",
+    "cs": "Kalendář se nepodařilo načíst."
+  },
+  "calendar.error.earningsUnavailable": {
+    "en": "Earnings dates are not available right now.",
+    "ru": "Даты отчётности сейчас недоступны.",
+    "cs": "Data výsledků teď nejsou k dispozici."
+  },
+  "calendar.referencePeriod": {
+    "en": "Reference period: %@",
+    "ru": "Отчётный период: %@",
+    "cs": "Referenční období: %@"
+  },
+  "calendar.previousDate": {
+    "en": "Originally scheduled for %@",
+    "ru": "Первоначально назначено на %@",
+    "cs": "Původně plánováno na %@"
+  },
+  "calendar.source": {
+    "en": "Source",
+    "ru": "Источник",
+    "cs": "Zdroj"
+  },
+  "calendar.timeNotPublished": {
+    "en": "Time not given by the source",
+    "ru": "Время в источнике не указано",
+    "cs": "Čas zdroj neuvádí"
+  },
+  "calendar.timeWithZone": {
+    "en": "%1$@ your time (%2$@ %3$@)",
+    "ru": "%1$@ по вашему времени (%2$@ %3$@)",
+    "cs": "%1$@ váš čas (%2$@ %3$@)"
+  },
+  "calendar.kind.centralBankDecision": {
+    "en": "Central bank decision",
+    "ru": "Решение центрального банка",
+    "cs": "Rozhodnutí centrální banky"
+  },
+  "calendar.kind.inflationRelease": {
+    "en": "Inflation release",
+    "ru": "Публикация инфляции",
+    "cs": "Zveřejnění inflace"
+  },
+  "calendar.kind.employmentReport": {
+    "en": "Employment report",
+    "ru": "Отчёт о занятости",
+    "cs": "Zpráva o zaměstnanosti"
+  },
+  "calendar.kind.earningsReport": {
+    "en": "Earnings report",
+    "ru": "Отчётность компании",
+    "cs": "Hospodářské výsledky"
+  },
+  "calendar.kind.other": {
+    "en": "Other",
+    "ru": "Другое",
+    "cs": "Ostatní"
+  },
+  "calendar.title.centralBankDecision": {
+    "en": "%@: monetary policy decision",
+    "ru": "%@: решение по денежно-кредитной политике",
+    "cs": "%@: měnověpolitické rozhodnutí"
+  },
+  "calendar.title.inflationRelease": {
+    "en": "%@: inflation data",
+    "ru": "%@: данные по инфляции",
+    "cs": "%@: údaje o inflaci"
+  },
+  "calendar.title.employmentReport": {
+    "en": "%@: employment report",
+    "ru": "%@: отчёт о занятости",
+    "cs": "%@: zpráva o zaměstnanosti"
+  },
+  "calendar.title.earningsReport": {
+    "en": "%@: earnings report",
+    "ru": "%@: финансовые результаты",
+    "cs": "%@: hospodářské výsledky"
+  },
+  "calendar.title.other": {
+    "en": "%@: meeting",
+    "ru": "%@: заседание",
+    "cs": "%@: zasedání"
+  },
+  "calendar.status.scheduled": {
+    "en": "Scheduled",
+    "ru": "Запланировано",
+    "cs": "Naplánováno"
+  },
+  "calendar.status.tentative": {
+    "en": "Tentative",
+    "ru": "Предварительно",
+    "cs": "Předběžně"
+  },
+  "calendar.status.rescheduled": {
+    "en": "Rescheduled",
+    "ru": "Перенесено",
+    "cs": "Přesunuto"
+  },
+  "calendar.status.cancelled": {
+    "en": "Cancelled",
+    "ru": "Отменено",
+    "cs": "Zrušeno"
+  },
+  "calendar.status.released": {
+    "en": "Released",
+    "ru": "Опубликовано",
+    "cs": "Zveřejněno"
+  },
+  "calendar.note.strategyOnly": {
+    "en": "Strategy discussion only — no policy decision is scheduled at this meeting.",
+    "ru": "Только обсуждение стратегии — решение по ставке на этом заседании не запланировано.",
+    "cs": "Pouze diskuse o strategii — na tomto zasedání se o sazbách nerozhoduje."
+  },
+  "calendar.note.movedFromDecember": {
+    "en": "Moved forward: originally planned for December.",
+    "ru": "Перенесено на более ранний срок: первоначально планировалось на декабрь.",
+    "cs": "Přesunuto dříve: původně plánováno na prosinec."
+  },
+  "calendar.note.flash": {
+    "en": "Flash (preliminary) estimate.",
+    "ru": "Предварительная (флэш) оценка.",
+    "cs": "Předběžný (rychlý) odhad."
+  },
+  "calendar.earnings.bmo": {
+    "en": "Before market open",
+    "ru": "До открытия торгов",
+    "cs": "Před otevřením trhu"
+  },
+  "calendar.earnings.amc": {
+    "en": "After market close",
+    "ru": "После закрытия торгов",
+    "cs": "Po uzavření trhu"
+  },
+  "calendar.earnings.dmh": {
+    "en": "During market hours",
+    "ru": "Во время торгов",
+    "cs": "Během obchodování"
+  }
+}

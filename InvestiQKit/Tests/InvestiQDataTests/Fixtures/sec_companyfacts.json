@@ -1,0 +1,23 @@
+{"cik":320193,"entityName":"Apple Inc.","facts":{"us-gaap":{
+ "RevenueFromContractWithCustomerExcludingAssessedTax":{"label":"Revenue","units":{"USD":[
+   {"start":"2023-10-01","end":"2024-09-28","val":391035000000,"fy":2024,"fp":"FY","form":"10-K","filed":"2024-11-01"},
+   {"start":"2024-09-29","end":"2025-09-27","val":416161000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"},
+   {"start":"2023-10-01","end":"2024-09-28","val":391035000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"},
+   {"start":"2025-06-29","end":"2025-09-27","val":102466000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"},
+   {"start":"2025-03-30","end":"2025-06-28","val":94036000000,"fy":2025,"fp":"Q3","form":"10-Q","filed":"2025-08-01"}]}},
+ "NetIncomeLoss":{"label":"Net income","units":{"USD":[
+   {"start":"2023-10-01","end":"2024-09-28","val":93736000000,"fy":2024,"fp":"FY","form":"10-K","filed":"2024-11-01"},
+   {"start":"2024-09-29","end":"2025-09-27","val":112010000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"}]}},
+ "OperatingIncomeLoss":{"label":"Operating income","units":{"USD":[
+   {"start":"2024-09-29","end":"2025-09-27","val":133050000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"}]}},
+ "EarningsPerShareDiluted":{"label":"EPS","units":{"USD/shares":[
+   {"start":"2024-09-29","end":"2025-09-27","val":7.46,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"}]}},
+ "NetCashProvidedByUsedInOperatingActivities":{"label":"CFO","units":{"USD":[
+   {"start":"2024-09-29","end":"2025-09-27","val":111482000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"}]}},
+ "PaymentsToAcquirePropertyPlantAndEquipment":{"label":"Capex","units":{"USD":[
+   {"start":"2024-09-29","end":"2025-09-27","val":12715000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"}]}},
+ "LongTermDebt":{"label":"Debt","units":{"USD":[
+   {"end":"2025-09-27","val":90678000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"}]}},
+ "StockholdersEquity":{"label":"Equity","units":{"USD":[
+   {"end":"2025-09-27","val":73733000000,"fy":2025,"fp":"FY","form":"10-K","filed":"2025-10-31"}]}}
+}}}

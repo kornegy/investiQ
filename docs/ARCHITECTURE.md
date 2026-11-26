@@ -143,8 +143,12 @@ AES-256-GCM and written atomically. See `docs/SECURITY.md` §3 and `docs/DATABAS
 
 User-visible text never originates in business logic. Services return structured values and
 `Message(key:arguments:)` descriptors; the app target resolves keys from `Localizable.xcstrings`
-(ru, en, cs) and formats arguments with the current locale (ADR-012). Long-form content (lessons) is
-structured JSON per language in `InvestiQContent`.
+(ru, en, cs) and formats arguments with the current locale (ADR-012). The catalog is generated from
+`Localization/*.json` by `scripts/build_xcstrings.py`; Xcode's build-time string extraction is disabled
+(`SWIFT_EMIT_LOC_STRINGS = NO`) so building never modifies it. The interface language is a profile
+preference (chosen on the first onboarding step or in Settings); `L10n` holds it as observable state and
+the root view passes the matching locale to SwiftUI. Long-form content (lessons) is
+structured JSON per language in `InvestiQContent`. Lessons are authored in `Content/lessons/*.py` (all three languages side by side) and generated into `Resources/lessons/<lang>.json` by `scripts/build_lessons.py`.
 
 ### 3.6 Platform adapters
 

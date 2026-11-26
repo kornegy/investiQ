@@ -1,0 +1,5 @@
+[
+  {"category":"company","datetime":1763640000,"headline":"Apple reports quarterly results","id":1,"image":"","related":"AAPL","source":"Example Wire","summary":"Revenue rose year over year.","url":"https://news.example.com/apple-results"},
+  {"category":"company","datetime":1763600000,"headline":"Insecure link item","id":2,"image":"","related":"AAPL","source":"Example","summary":"","url":"http://insecure.example.com/x"},
+  {"category":"company","datetime":0,"headline":"Missing time","id":3,"image":"","related":"AAPL","source":"Example","summary":"","url":"https://news.example.com/y"}
+]

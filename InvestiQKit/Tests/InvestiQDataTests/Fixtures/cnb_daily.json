@@ -1,0 +1,5 @@
+{"rates":[
+ {"validFor":"2026-11-20","order":225,"country":"EMU","currency":"euro","amount":1,"currencyCode":"EUR","rate":24.950},
+ {"validFor":"2026-11-20","order":225,"country":"USA","currency":"dollar","amount":1,"currencyCode":"USD","rate":22.995},
+ {"validFor":"2026-11-20","order":225,"country":"Japan","currency":"yen","amount":100,"currencyCode":"JPY","rate":14.820}
+]}

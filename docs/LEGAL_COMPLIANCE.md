@@ -117,3 +117,13 @@ but external AI is disabled for minors.
 - [ ] Privacy policy and terms finalised; controller identity and contact defined
 - [ ] App Store submission entity and age rating decided
 - [ ] Broker directory: verification process and liability review
+
+## Broker directory data (added in Phase 5)
+
+The directory (`InvestiQContent/Resources/brokers/brokers.json`) lists six firms with facts checked on
+2026-11-25 against official registers or the firms' own legal documents (sources are stored per entry).
+Fees, currency-conversion fees, minimums, age limits and available instruments were **not** verified and
+are shown as "not verified". Before any release, a person must re-verify every entry against the
+supervisors' registers (ČNB JERRS, ESMA) and current price lists, and legal review must confirm that the
+directory is not a financial promotion. Order is alphabetical; there are no referral or affiliate links;
+broker websites are hidden in educational mode.

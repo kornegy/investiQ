@@ -48,3 +48,4 @@ LocalOverrides.xcconfig
 
 # Local-only proxy CA certificates for ci/Dockerfile.linux
 ci/extra-ca/*.crt
+.build-linux/

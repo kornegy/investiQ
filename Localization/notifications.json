@@ -1,0 +1,207 @@
+{
+  "settings.tab.notifications": {
+    "en": "Notifications",
+    "ru": "Уведомления",
+    "cs": "Oznámení"
+  },
+  "notifications.intro": {
+    "en": "Informative notifications about your instruments, scheduled events and data quality. They report facts; they never suggest buying or selling.",
+    "ru": "Информационные уведомления о ваших инструментах, запланированных событиях и качестве данных. Они сообщают факты и никогда не предлагают покупать или продавать.",
+    "cs": "Informativní oznámení o vašich nástrojích, plánovaných událostech a kvalitě dat. Sdělují fakta a nikdy nevybízejí k nákupu ani prodeji."
+  },
+  "notifications.runningOnly": {
+    "en": "InvestiQ checks for notifications only while it is open (on unlock and about every 30 minutes). It does not monitor anything when it is closed or your Mac is asleep.",
+    "ru": "InvestiQ проверяет уведомления только когда открыт (при разблокировке и примерно каждые 30 минут). Когда приложение закрыто или Mac спит, ничего не отслеживается.",
+    "cs": "InvestiQ kontroluje oznámení jen tehdy, když je otevřený (po odemčení a přibližně každých 30 minut). Když je zavřený nebo Mac spí, nic nesleduje."
+  },
+  "notifications.allow": {
+    "en": "Allow notifications…",
+    "ru": "Разрешить уведомления…",
+    "cs": "Povolit oznámení…"
+  },
+  "notifications.allowed": {
+    "en": "Notifications are allowed in macOS.",
+    "ru": "Уведомления разрешены в macOS.",
+    "cs": "Oznámení jsou v macOS povolena."
+  },
+  "notifications.notAllowed": {
+    "en": "Until you allow notifications, nothing is checked or sent. You can change this later in System Settings → Notifications.",
+    "ru": "Пока уведомления не разрешены, ничего не проверяется и не отправляется. Это можно изменить в Системных настройках → Уведомления.",
+    "cs": "Dokud oznámení nepovolíte, nic se nekontroluje ani neposílá. Změnit to lze v Nastavení systému → Oznámení."
+  },
+  "notifications.types": {
+    "en": "Types",
+    "ru": "Типы",
+    "cs": "Typy"
+  },
+  "notifications.kind.priceMove": {
+    "en": "Significant price moves",
+    "ru": "Значительные изменения цены",
+    "cs": "Výrazné pohyby ceny"
+  },
+  "notifications.kind.earningsReport": {
+    "en": "Scheduled financial reports",
+    "ru": "Запланированная отчётность",
+    "cs": "Plánované finanční výsledky"
+  },
+  "notifications.kind.economicEvent": {
+    "en": "Important economic events",
+    "ru": "Важные экономические события",
+    "cs": "Důležité ekonomické události"
+  },
+  "notifications.kind.dividendPayment": {
+    "en": "Dividend payments",
+    "ru": "Выплаты дивидендов",
+    "cs": "Výplaty dividend"
+  },
+  "notifications.kind.couponPayment": {
+    "en": "Coupon payments",
+    "ru": "Выплаты купонов",
+    "cs": "Výplaty kuponů"
+  },
+  "notifications.kind.bondMaturity": {
+    "en": "Approaching bond maturity",
+    "ru": "Приближение погашения облигаций",
+    "cs": "Blížící se splatnost dluhopisů"
+  },
+  "notifications.kind.riskChange": {
+    "en": "Changes in portfolio risk levels",
+    "ru": "Изменения уровней риска портфеля",
+    "cs": "Změny úrovní rizika portfolia"
+  },
+  "notifications.kind.staleData": {
+    "en": "Outdated data",
+    "ru": "Устаревшие данные",
+    "cs": "Zastaralá data"
+  },
+  "notifications.kind.providerOutage": {
+    "en": "Data provider problems",
+    "ru": "Проблемы с поставщиками данных",
+    "cs": "Potíže poskytovatelů dat"
+  },
+  "notifications.threshold": {
+    "en": "Threshold: %@ %% daily change",
+    "ru": "Порог: изменение за день %@ %%",
+    "cs": "Práh: denní změna %@ %%"
+  },
+  "notifications.leadDays": {
+    "en": "Notify %@ days ahead",
+    "ru": "Сообщать за %@ дн.",
+    "cs": "Upozornit %@ dní předem"
+  },
+  "notifications.dividendDataUnavailable": {
+    "en": "Needs a data source with future dividend dates; the free providers supported in this version do not supply them.",
+    "ru": "Нужен источник с будущими датами дивидендов; бесплатные поставщики этой версии их не предоставляют.",
+    "cs": "Vyžaduje zdroj s budoucími daty dividend; bezplatní poskytovatelé v této verzi je neposkytují."
+  },
+  "notifications.checkNow": {
+    "en": "Check now",
+    "ru": "Проверить сейчас",
+    "cs": "Zkontrolovat nyní"
+  },
+  "notifications.checked": {
+    "en": "New notifications: %@",
+    "ru": "Новых уведомлений: %@",
+    "cs": "Nová oznámení: %@"
+  },
+  "notifications.privacy": {
+    "en": "Notifications can appear on the lock screen. They contain instrument names and percentages, never amounts or holdings.",
+    "ru": "Уведомления могут появляться на экране блокировки. В них есть названия инструментов и проценты, но никогда суммы или размеры позиций.",
+    "cs": "Oznámení se mohou zobrazit na zamčené obrazovce. Obsahují názvy nástrojů a procenta, nikdy částky ani velikost pozic."
+  },
+  "notifications.error.loadFailed": {
+    "en": "Notification settings could not be loaded.",
+    "ru": "Не удалось загрузить настройки уведомлений.",
+    "cs": "Nastavení oznámení se nepodařilo načíst."
+  },
+  "notifications.error.saveFailed": {
+    "en": "Notification settings could not be saved.",
+    "ru": "Не удалось сохранить настройки уведомлений.",
+    "cs": "Nastavení oznámení se nepodařilo uložit."
+  },
+  "notification.priceMove.title": {
+    "en": "%@: price change",
+    "ru": "%@: изменение цены",
+    "cs": "%@: změna ceny"
+  },
+  "notification.priceMove.body": {
+    "en": "Changed by %1$@ today (your threshold: %2$@). Data may be delayed.",
+    "ru": "Изменение за сегодня: %1$@ (ваш порог: %2$@). Данные могут быть с задержкой.",
+    "cs": "Dnešní změna: %1$@ (váš práh: %2$@). Data mohou být zpožděná."
+  },
+  "notification.earnings.title": {
+    "en": "%@: financial report scheduled",
+    "ru": "%@: запланирована отчётность",
+    "cs": "%@: plánované výsledky"
+  },
+  "notification.earnings.body": {
+    "en": "Results are expected on %@ (date from your data provider, may change).",
+    "ru": "Результаты ожидаются %@ (дата от поставщика данных, может измениться).",
+    "cs": "Výsledky se očekávají %@ (datum od poskytovatele dat, může se změnit)."
+  },
+  "notification.event.body": {
+    "en": "Scheduled for %@.",
+    "ru": "Запланировано на %@.",
+    "cs": "Naplánováno na %@."
+  },
+  "notification.dividend.title": {
+    "en": "%@: dividend payment",
+    "ru": "%@: выплата дивидендов",
+    "cs": "%@: výplata dividendy"
+  },
+  "notification.dividend.body": {
+    "en": "Payment date: %@.",
+    "ru": "Дата выплаты: %@.",
+    "cs": "Datum výplaty: %@."
+  },
+  "notification.coupon.title": {
+    "en": "%@: coupon payment",
+    "ru": "%@: выплата купона",
+    "cs": "%@: výplata kuponu"
+  },
+  "notification.coupon.body": {
+    "en": "Next coupon date: %@.",
+    "ru": "Дата следующего купона: %@.",
+    "cs": "Datum příštího kuponu: %@."
+  },
+  "notification.maturity.title": {
+    "en": "%@: maturity approaching",
+    "ru": "%@: приближается погашение",
+    "cs": "%@: blíží se splatnost"
+  },
+  "notification.maturity.body": {
+    "en": "The bond matures on %@.",
+    "ru": "Облигация погашается %@.",
+    "cs": "Dluhopis je splatný %@."
+  },
+  "notification.risk.title": {
+    "en": "%@: risk level changed",
+    "ru": "%@: изменился уровень риска",
+    "cs": "%@: změnila se úroveň rizika"
+  },
+  "notification.risk.body": {
+    "en": "%1$@: from %2$@ to %3$@.",
+    "ru": "%1$@: с «%2$@» на «%3$@».",
+    "cs": "%1$@: z „%2$@“ na „%3$@“."
+  },
+  "notification.stale.title": {
+    "en": "Some data is outdated",
+    "ru": "Часть данных устарела",
+    "cs": "Část dat je zastaralá"
+  },
+  "notification.stale.body": {
+    "en": "Prices of %@ instruments could not be updated and are shown from the cache.",
+    "ru": "Цены %@ инструментов не удалось обновить, они показаны из кэша.",
+    "cs": "Ceny %@ nástrojů se nepodařilo aktualizovat a zobrazují se z mezipaměti."
+  },
+  "notification.outage.title": {
+    "en": "Data provider problem",
+    "ru": "Проблема с поставщиком данных",
+    "cs": "Potíže poskytovatele dat"
+  },
+  "notification.outage.body": {
+    "en": "%@ did not respond recently. InvestiQ uses other providers or saved data where possible.",
+    "ru": "%@ недавно не отвечал. InvestiQ по возможности использует других поставщиков или сохранённые данные.",
+    "cs": "%@ v poslední době neodpovídal. InvestiQ podle možností použije jiné poskytovatele nebo uložená data."
+  }
+}

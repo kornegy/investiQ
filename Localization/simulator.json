@@ -1,0 +1,542 @@
+{
+  "simulator.tabs": {
+    "en": "View",
+    "ru": "Вид",
+    "cs": "Zobrazení"
+  },
+  "simulator.tab.sessions": {
+    "en": "Paper trading",
+    "ru": "Учебная торговля",
+    "cs": "Cvičné obchodování"
+  },
+  "simulator.tab.strategy": {
+    "en": "Strategy lab",
+    "ru": "Лаборатория стратегий",
+    "cs": "Laboratoř strategií"
+  },
+  "simulator.intro": {
+    "en": "Practise with virtual money. Fees, spreads, currency conversion and data delays are applied. There are no rankings or rewards: the point is to learn, not to trade more.",
+    "ru": "Практикуйтесь на виртуальных деньгах. Учитываются комиссии, спреды, конвертация валют и задержки данных. Здесь нет рейтингов и наград: цель — учиться, а не торговать больше.",
+    "cs": "Procvičujte s virtuálními penězi. Uplatňují se poplatky, spready, převod měn a zpoždění dat. Nejsou zde žebříčky ani odměny: cílem je učit se, ne více obchodovat."
+  },
+  "simulator.session": {
+    "en": "Session",
+    "ru": "Сессия",
+    "cs": "Relace"
+  },
+  "simulator.mode.live": {
+    "en": "Live (delayed data)",
+    "ru": "Текущий (данные с задержкой)",
+    "cs": "Aktuální (zpožděná data)"
+  },
+  "simulator.mode.historical": {
+    "en": "Historical replay",
+    "ru": "Исторический режим",
+    "cs": "Historické přehrání"
+  },
+  "simulator.simDate": {
+    "en": "Simulated date: %@",
+    "ru": "Дата симуляции: %@",
+    "cs": "Simulované datum: %@"
+  },
+  "simulator.noFuture": {
+    "en": "Only data up to this date is used. The date can move forward but never back.",
+    "ru": "Используются только данные до этой даты. Дату можно сдвигать вперёд, но не назад.",
+    "cs": "Používají se jen data do tohoto data. Datum lze posouvat dopředu, nikdy zpět."
+  },
+  "simulator.liveNote": {
+    "en": "Prices come from your data providers and may be delayed; the delay is shown with each price.",
+    "ru": "Цены поступают от ваших поставщиков данных и могут быть с задержкой; задержка указана у каждой цены.",
+    "cs": "Ceny pocházejí od vašich poskytovatelů dat a mohou být zpožděné; zpoždění je uvedeno u každé ceny."
+  },
+  "simulator.advance.day": {
+    "en": "+1 day",
+    "ru": "+1 день",
+    "cs": "+1 den"
+  },
+  "simulator.advance.week": {
+    "en": "+1 week",
+    "ru": "+1 неделя",
+    "cs": "+1 týden"
+  },
+  "simulator.advance.month": {
+    "en": "+1 month",
+    "ru": "+1 месяц",
+    "cs": "+1 měsíc"
+  },
+  "simulator.metric.value": {
+    "en": "Value",
+    "ru": "Стоимость",
+    "cs": "Hodnota"
+  },
+  "simulator.metric.cash": {
+    "en": "Cash",
+    "ru": "Денежные средства",
+    "cs": "Hotovost"
+  },
+  "simulator.metric.costs": {
+    "en": "Costs paid",
+    "ru": "Уплаченные расходы",
+    "cs": "Zaplacené náklady"
+  },
+  "simulator.metric.costs.help": {
+    "en": "Commissions and currency conversion fees. Spread costs are included in the fill prices.",
+    "ru": "Комиссии и сборы за конвертацию валют. Расходы на спред учтены в ценах исполнения.",
+    "cs": "Provize a poplatky za převod měn. Náklady spreadu jsou zahrnuty v cenách provedení."
+  },
+  "simulator.metric.benchmark": {
+    "en": "Benchmark with the same deposits",
+    "ru": "Бенчмарк с теми же взносами",
+    "cs": "Benchmark se stejnými vklady"
+  },
+  "simulator.metric.benchmark.help": {
+    "en": "What the same deposits would be worth if each had been invested in the benchmark on the same day, with the same costs.",
+    "ru": "Сколько стоили бы те же взносы, если бы каждый был вложен в бенчмарк в тот же день с теми же расходами.",
+    "cs": "Kolik by měly stejné vklady hodnotu, kdyby byl každý investován do benchmarku ve stejný den se stejnými náklady."
+  },
+  "simulator.benchmark.ahead": {
+    "en": "%@ more than the benchmark so far. Short periods say little about skill.",
+    "ru": "Пока на %@ больше, чем бенчмарк. Короткие периоды мало говорят о навыке.",
+    "cs": "Zatím o %@ více než benchmark. Krátká období o dovednosti mnoho neříkají."
+  },
+  "simulator.benchmark.behind": {
+    "en": "%@ less than the benchmark so far. Short periods say little about skill.",
+    "ru": "Пока на %@ меньше, чем бенчмарк. Короткие периоды мало говорят о навыке.",
+    "cs": "Zatím o %@ méně než benchmark. Krátká období o dovednosti mnoho neříkají."
+  },
+  "simulator.holdings": {
+    "en": "Holdings",
+    "ru": "Позиции",
+    "cs": "Pozice"
+  },
+  "simulator.order.title": {
+    "en": "Simulated order",
+    "ru": "Учебная заявка",
+    "cs": "Cvičný pokyn"
+  },
+  "simulator.order.help": {
+    "en": "Orders fill at the reference price plus or minus half the spread. Costs are shown before you confirm.",
+    "ru": "Заявки исполняются по опорной цене плюс или минус половина спреда. Расходы показываются до подтверждения.",
+    "cs": "Pokyny se provádějí za referenční cenu plus minus polovinu spreadu. Náklady se zobrazí před potvrzením."
+  },
+  "simulator.order.side": {
+    "en": "Side",
+    "ru": "Направление",
+    "cs": "Směr"
+  },
+  "simulator.order.buy": {
+    "en": "Buy",
+    "ru": "Покупка",
+    "cs": "Nákup"
+  },
+  "simulator.order.sell": {
+    "en": "Sell",
+    "ru": "Продажа",
+    "cs": "Prodej"
+  },
+  "simulator.order.instrument": {
+    "en": "Instrument",
+    "ru": "Инструмент",
+    "cs": "Nástroj"
+  },
+  "simulator.order.choose": {
+    "en": "Choose…",
+    "ru": "Выберите…",
+    "cs": "Vyberte…"
+  },
+  "simulator.order.quantity": {
+    "en": "Quantity",
+    "ru": "Количество",
+    "cs": "Množství"
+  },
+  "simulator.order.reference": {
+    "en": "Reference price",
+    "ru": "Опорная цена",
+    "cs": "Referenční cena"
+  },
+  "simulator.order.fill": {
+    "en": "Fill price",
+    "ru": "Цена исполнения",
+    "cs": "Cena provedení"
+  },
+  "simulator.order.value": {
+    "en": "Order value",
+    "ru": "Сумма заявки",
+    "cs": "Hodnota pokynu"
+  },
+  "simulator.order.commission": {
+    "en": "Commission",
+    "ru": "Комиссия",
+    "cs": "Provize"
+  },
+  "simulator.order.fxFee": {
+    "en": "Currency conversion fee",
+    "ru": "Сбор за конвертацию",
+    "cs": "Poplatek za převod měny"
+  },
+  "simulator.order.spread": {
+    "en": "Spread cost (included in the fill)",
+    "ru": "Расход на спред (в цене исполнения)",
+    "cs": "Náklad spreadu (v ceně provedení)"
+  },
+  "simulator.order.totalBuy": {
+    "en": "Total paid",
+    "ru": "Итого к оплате",
+    "cs": "Celkem zaplaceno"
+  },
+  "simulator.order.totalSell": {
+    "en": "Net proceeds",
+    "ru": "Чистая выручка",
+    "cs": "Čistý výnos z prodeje"
+  },
+  "simulator.order.placeBuy": {
+    "en": "Place simulated purchase",
+    "ru": "Выполнить учебную покупку",
+    "cs": "Provést cvičný nákup"
+  },
+  "simulator.order.placeSell": {
+    "en": "Place simulated sale",
+    "ru": "Выполнить учебную продажу",
+    "cs": "Provést cvičný prodej"
+  },
+  "simulator.order.done": {
+    "en": "Simulated order recorded.",
+    "ru": "Учебная заявка записана.",
+    "cs": "Cvičný pokyn zaznamenán."
+  },
+  "simulator.insights.title": {
+    "en": "Patterns to reflect on",
+    "ru": "Закономерности для размышления",
+    "cs": "Vzorce k zamyšlení"
+  },
+  "simulator.insights.help": {
+    "en": "Simple checks of your simulated trading. They describe habits that often cost money; they are not judgements.",
+    "ru": "Простые проверки вашей учебной торговли. Они описывают привычки, которые часто стоят денег; это не оценки.",
+    "cs": "Jednoduché kontroly vašeho cvičného obchodování. Popisují návyky, které často stojí peníze; nejde o hodnocení."
+  },
+  "simulator.insight.turnover": {
+    "en": "Annual turnover of about %@. Frequent buying and selling adds costs and taxes in real life.",
+    "ru": "Годовой оборот около %@. Частые покупки и продажи в реальности добавляют расходы и налоги.",
+    "cs": "Roční obrat přibližně %@. Časté nakupování a prodávání ve skutečnosti přidává náklady a daně."
+  },
+  "simulator.insight.fees": {
+    "en": "Costs of about %@ of the starting capital per year. Costs reduce returns year after year.",
+    "ru": "Расходы около %@ стартового капитала в год. Расходы снижают доходность год за годом.",
+    "cs": "Náklady přibližně %@ počátečního kapitálu ročně. Náklady snižují výnos rok co rok."
+  },
+  "simulator.insight.concentration": {
+    "en": "%1$@ makes up %2$@ of the portfolio. A single position can fall sharply.",
+    "ru": "%1$@ составляет %2$@ портфеля. Отдельная позиция может резко подешеветь.",
+    "cs": "%1$@ tvoří %2$@ portfolia. Jednotlivá pozice může prudce klesnout."
+  },
+  "simulator.insight.sellingAfterFall": {
+    "en": "%@ sale(s) happened after a fall of 10 %% or more. Selling after falls locks in losses; it is worth asking whether the reason for owning changed.",
+    "ru": "%@ продаж(и) произошли после падения на 10 %% и более. Продажа после падения фиксирует убытки; стоит спросить себя, изменилась ли причина владения.",
+    "cs": "%@ prodej(e) proběhl(y) po poklesu o 10 %% a více. Prodej po poklesu realizuje ztrátu; stojí za to se zeptat, zda se změnil důvod držení."
+  },
+  "simulator.insight.frequent": {
+    "en": "About %@ trades per month. Trading often rarely improves results once costs are included.",
+    "ru": "Около %@ сделок в месяц. Частая торговля редко улучшает результат с учётом расходов.",
+    "cs": "Přibližně %@ obchodů měsíčně. Časté obchodování výsledky po započtení nákladů zřídka zlepší."
+  },
+  "simulator.insight.idleCash": {
+    "en": "%@ of the portfolio is cash. That is fine if intended; cash does not grow and loses value to inflation.",
+    "ru": "%@ портфеля — денежные средства. Это нормально, если так задумано; деньги не растут и обесцениваются инфляцией.",
+    "cs": "%@ portfolia je hotovost. Pokud je to záměr, je to v pořádku; hotovost neroste a ztrácí hodnotu inflací."
+  },
+  "simulator.new.title": {
+    "en": "New simulation",
+    "ru": "Новая симуляция",
+    "cs": "Nová simulace"
+  },
+  "simulator.new.help": {
+    "en": "Historical replay starts in the past and moves forward day by day using only data available at that time. Live mode uses current delayed data.",
+    "ru": "Исторический режим начинается в прошлом и движется вперёд день за днём, используя только доступные тогда данные. Текущий режим использует актуальные данные с задержкой.",
+    "cs": "Historické přehrání začíná v minulosti a postupuje den po dni jen s daty dostupnými v dané době. Aktuální režim používá současná zpožděná data."
+  },
+  "simulator.new.name": {
+    "en": "Name",
+    "ru": "Название",
+    "cs": "Název"
+  },
+  "simulator.new.mode": {
+    "en": "Mode",
+    "ru": "Режим",
+    "cs": "Režim"
+  },
+  "simulator.new.start": {
+    "en": "Start date",
+    "ru": "Дата начала",
+    "cs": "Datum začátku"
+  },
+  "simulator.new.capital": {
+    "en": "Virtual starting capital",
+    "ru": "Виртуальный стартовый капитал",
+    "cs": "Virtuální počáteční kapitál"
+  },
+  "simulator.new.benchmark": {
+    "en": "Benchmark",
+    "ru": "Бенчмарк",
+    "cs": "Benchmark"
+  },
+  "simulator.new.noBenchmark": {
+    "en": "None",
+    "ru": "Нет",
+    "cs": "Žádný"
+  },
+  "simulator.new.costs": {
+    "en": "Default costs: 0.1 % commission (minimum 1), 0.1 % spread, 0.25 % currency conversion. Real brokers differ.",
+    "ru": "Расходы по умолчанию: комиссия 0,1 % (минимум 1), спред 0,1 %, конвертация 0,25 %. У реальных брокеров условия отличаются.",
+    "cs": "Výchozí náklady: provize 0,1 % (minimum 1), spread 0,1 %, převod měny 0,25 %. Skuteční brokeři se liší."
+  },
+  "simulator.new.create": {
+    "en": "Start simulation",
+    "ru": "Начать симуляцию",
+    "cs": "Spustit simulaci"
+  },
+  "simulator.error.loadFailed": {
+    "en": "The simulator could not be loaded.",
+    "ru": "Не удалось загрузить симулятор.",
+    "cs": "Simulátor se nepodařilo načíst."
+  },
+  "simulator.error.invalidCapital": {
+    "en": "Enter a positive starting capital.",
+    "ru": "Введите положительный стартовый капитал.",
+    "cs": "Zadejte kladný počáteční kapitál."
+  },
+  "simulator.error.invalidQuantity": {
+    "en": "Enter a positive quantity.",
+    "ru": "Введите положительное количество.",
+    "cs": "Zadejte kladné množství."
+  },
+  "simulator.error.invalidStartDate": {
+    "en": "A historical replay must start at least %@ days in the past.",
+    "ru": "Исторический режим должен начинаться не позже чем %@ дней назад.",
+    "cs": "Historické přehrání musí začínat alespoň %@ dní v minulosti."
+  },
+  "simulator.error.noPrice": {
+    "en": "No price is available for this instrument at the simulated date.",
+    "ru": "Для инструмента нет цены на дату симуляции.",
+    "cs": "Pro nástroj není k simulovanému datu k dispozici cena."
+  },
+  "simulator.error.noRate": {
+    "en": "No exchange rate is available for %@ at the simulated date.",
+    "ru": "Нет курса для %@ на дату симуляции.",
+    "cs": "Pro %@ není k simulovanému datu k dispozici kurz."
+  },
+  "simulator.error.insufficientCash": {
+    "en": "Not enough virtual cash: %@ available.",
+    "ru": "Недостаточно виртуальных денег: доступно %@.",
+    "cs": "Nedostatek virtuální hotovosti: k dispozici %@."
+  },
+  "simulator.error.insufficientQuantity": {
+    "en": "You hold only %@ units.",
+    "ru": "У вас только %@ шт.",
+    "cs": "Držíte jen %@ ks."
+  },
+  "simulator.error.backwards": {
+    "en": "The simulated date can only move forward.",
+    "ru": "Дату симуляции можно сдвигать только вперёд.",
+    "cs": "Simulované datum lze posouvat jen dopředu."
+  },
+  "simulator.error.notTradable": {
+    "en": "This instrument has no listing with price data.",
+    "ru": "У инструмента нет листинга с данными о ценах.",
+    "cs": "Nástroj nemá kotaci s cenovými daty."
+  },
+  "simulator.error.generic": {
+    "en": "The simulated order could not be completed.",
+    "ru": "Не удалось выполнить учебную заявку.",
+    "cs": "Cvičný pokyn se nepodařilo provést."
+  },
+  "strategy.title": {
+    "en": "Strategy lab",
+    "ru": "Лаборатория стратегий",
+    "cs": "Laboratoř strategií"
+  },
+  "strategy.intro": {
+    "en": "See how a fixed allocation would have behaved in the past, with regular contributions, rebalancing and costs. The past does not repeat exactly.",
+    "ru": "Посмотрите, как вела бы себя фиксированная структура в прошлом с регулярными взносами, ребалансировкой и расходами. Прошлое не повторяется в точности.",
+    "cs": "Podívejte se, jak by se pevné rozložení chovalo v minulosti s pravidelnými vklady, rebalancováním a náklady. Minulost se přesně neopakuje."
+  },
+  "strategy.allocation": {
+    "en": "Allocation",
+    "ru": "Распределение",
+    "cs": "Rozložení"
+  },
+  "strategy.allocation.help": {
+    "en": "Target weights must add up to 100 %. Rebalancing trades back to these weights and costs money each time.",
+    "ru": "Целевые веса должны в сумме давать 100 %. Ребалансировка возвращает к этим весам и каждый раз стоит денег.",
+    "cs": "Cílové váhy musí dát dohromady 100 %. Rebalancování obchoduje zpět k těmto vahám a pokaždé stojí peníze."
+  },
+  "strategy.instrument": {
+    "en": "Instrument",
+    "ru": "Инструмент",
+    "cs": "Nástroj"
+  },
+  "strategy.weight": {
+    "en": "Weight",
+    "ru": "Вес",
+    "cs": "Váha"
+  },
+  "strategy.addRow": {
+    "en": "Add instrument",
+    "ru": "Добавить инструмент",
+    "cs": "Přidat nástroj"
+  },
+  "strategy.weightSum": {
+    "en": "Total: %@ %%",
+    "ru": "Итого: %@ %%",
+    "cs": "Celkem: %@ %%"
+  },
+  "strategy.initial": {
+    "en": "Initial amount",
+    "ru": "Начальная сумма",
+    "cs": "Počáteční částka"
+  },
+  "strategy.monthly": {
+    "en": "Monthly contribution",
+    "ru": "Ежемесячный взнос",
+    "cs": "Měsíční vklad"
+  },
+  "strategy.start": {
+    "en": "From",
+    "ru": "С",
+    "cs": "Od"
+  },
+  "strategy.end": {
+    "en": "To",
+    "ru": "По",
+    "cs": "Do"
+  },
+  "strategy.rebalancing": {
+    "en": "Rebalancing",
+    "ru": "Ребалансировка",
+    "cs": "Rebalancování"
+  },
+  "strategy.rebalancing.never": {
+    "en": "Never",
+    "ru": "Никогда",
+    "cs": "Nikdy"
+  },
+  "strategy.rebalancing.annually": {
+    "en": "Once a year",
+    "ru": "Раз в год",
+    "cs": "Jednou ročně"
+  },
+  "strategy.rebalancing.quarterly": {
+    "en": "Every quarter",
+    "ru": "Каждый квартал",
+    "cs": "Každé čtvrtletí"
+  },
+  "strategy.rebalancing.threshold": {
+    "en": "When a weight drifts by more than 5 points",
+    "ru": "Когда вес отклоняется более чем на 5 п. п.",
+    "cs": "Když se váha odchýlí o více než 5 bodů"
+  },
+  "strategy.benchmark": {
+    "en": "Benchmark",
+    "ru": "Бенчмарк",
+    "cs": "Benchmark"
+  },
+  "strategy.run": {
+    "en": "Run back-test",
+    "ru": "Запустить бэктест",
+    "cs": "Spustit zpětný test"
+  },
+  "strategy.result": {
+    "en": "Back-test result",
+    "ru": "Результат бэктеста",
+    "cs": "Výsledek zpětného testu"
+  },
+  "strategy.result.help": {
+    "en": "Values in your base currency using only prices and exchange rates known on each date. Costs: 0.1 % commission (min. 1), 0.1 % spread, 0.25 % conversion. Taxes are not included.",
+    "ru": "Стоимость в базовой валюте с использованием только цен и курсов, известных на каждую дату. Расходы: комиссия 0,1 % (мин. 1), спред 0,1 %, конвертация 0,25 %. Налоги не учтены.",
+    "cs": "Hodnoty v základní měně jen s cenami a kurzy známými k danému datu. Náklady: provize 0,1 % (min. 1), spread 0,1 %, převod 0,25 %. Daně nejsou zahrnuty."
+  },
+  "strategy.series.strategy": {
+    "en": "Strategy",
+    "ru": "Стратегия",
+    "cs": "Strategie"
+  },
+  "strategy.series.benchmark": {
+    "en": "Benchmark",
+    "ru": "Бенчмарк",
+    "cs": "Benchmark"
+  },
+  "strategy.series.contributed": {
+    "en": "Paid in",
+    "ru": "Внесено",
+    "cs": "Vloženo"
+  },
+  "strategy.metric.final": {
+    "en": "Final value",
+    "ru": "Итоговая стоимость",
+    "cs": "Konečná hodnota"
+  },
+  "strategy.metric.contributed": {
+    "en": "Paid in",
+    "ru": "Внесено",
+    "cs": "Vloženo"
+  },
+  "strategy.metric.twr": {
+    "en": "Time-weighted return",
+    "ru": "Доходность, взвешенная по времени",
+    "cs": "Časově vážený výnos"
+  },
+  "strategy.metric.volatility": {
+    "en": "Volatility (annualised)",
+    "ru": "Волатильность (годовая)",
+    "cs": "Volatilita (roční)"
+  },
+  "strategy.metric.drawdown": {
+    "en": "Maximum drawdown",
+    "ru": "Максимальная просадка",
+    "cs": "Maximální propad"
+  },
+  "strategy.metric.costs": {
+    "en": "Costs",
+    "ru": "Расходы",
+    "cs": "Náklady"
+  },
+  "strategy.metric.rebalances": {
+    "en": "Rebalancings",
+    "ru": "Ребалансировок",
+    "cs": "Rebalancování"
+  },
+  "strategy.disclaimer": {
+    "en": "A back-test shows one path the past took. Other periods give different results, and it is easy to pick an allocation that merely fits the past.",
+    "ru": "Бэктест показывает лишь один путь, по которому шло прошлое. Другие периоды дают иные результаты, и легко подобрать структуру, которая просто подогнана под прошлое.",
+    "cs": "Zpětný test ukazuje jen jednu cestu, kterou minulost šla. Jiná období dávají jiné výsledky a je snadné vybrat rozložení, které jen sedí na minulost."
+  },
+  "strategy.error.invalidRow": {
+    "en": "Choose an instrument and a weight of zero or more in every row.",
+    "ru": "В каждой строке выберите инструмент и вес не меньше нуля.",
+    "cs": "V každém řádku vyberte nástroj a váhu nula nebo více."
+  },
+  "strategy.error.weights": {
+    "en": "Weights must add up to 100 %.",
+    "ru": "Сумма весов должна быть 100 %.",
+    "cs": "Váhy musí dát dohromady 100 %."
+  },
+  "strategy.error.amounts": {
+    "en": "Enter a positive initial amount and a monthly contribution of zero or more.",
+    "ru": "Введите положительную начальную сумму и ежемесячный взнос не меньше нуля.",
+    "cs": "Zadejte kladnou počáteční částku a měsíční vklad nula nebo více."
+  },
+  "strategy.error.period": {
+    "en": "The start date must be before the end date.",
+    "ru": "Дата начала должна быть раньше даты окончания.",
+    "cs": "Datum začátku musí předcházet datu konce."
+  },
+  "strategy.error.noPriceAtStart": {
+    "en": "%@ has no price at the start date. Choose a later start.",
+    "ru": "У %@ нет цены на дату начала. Выберите более позднюю дату.",
+    "cs": "%@ nemá k datu začátku cenu. Zvolte pozdější začátek."
+  },
+  "strategy.error.failed": {
+    "en": "The back-test could not be run with the available data.",
+    "ru": "Не удалось выполнить бэктест на доступных данных.",
+    "cs": "Zpětný test se s dostupnými daty nepodařilo provést."
+  }
+}

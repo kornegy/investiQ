@@ -1,0 +1,262 @@
+{
+  "settings.tab.ai": {
+    "en": "AI",
+    "ru": "ИИ",
+    "cs": "AI"
+  },
+  "ai.settings.intro": {
+    "en": "AI is optional. It can explain terms and results, summarise news and answer learning questions. All analytics in InvestiQ work without it, and AI never calculates the figures you see.",
+    "ru": "ИИ необязателен. Он может объяснять термины и результаты, кратко пересказывать новости и отвечать на учебные вопросы. Вся аналитика InvestiQ работает без него, и ИИ никогда не рассчитывает показанные цифры.",
+    "cs": "AI je volitelná. Umí vysvětlit pojmy a výsledky, shrnout zprávy a odpovídat na studijní otázky. Veškerá analytika InvestiQ funguje i bez ní a AI nikdy nepočítá zobrazená čísla."
+  },
+  "ai.settings.provider": {
+    "en": "AI provider",
+    "ru": "Поставщик ИИ",
+    "cs": "Poskytovatel AI"
+  },
+  "ai.provider.disabled": {
+    "en": "Off",
+    "ru": "Выключен",
+    "cs": "Vypnuto"
+  },
+  "ai.provider.appleOnDevice": {
+    "en": "Apple on-device model",
+    "ru": "Модель Apple на устройстве",
+    "cs": "Model Apple v zařízení"
+  },
+  "ai.provider.ollama": {
+    "en": "Local model (Ollama)",
+    "ru": "Локальная модель (Ollama)",
+    "cs": "Místní model (Ollama)"
+  },
+  "ai.provider.externalAPI": {
+    "en": "External service (Claude API)",
+    "ru": "Внешний сервис (Claude API)",
+    "cs": "Externí služba (Claude API)"
+  },
+  "ai.settings.educationalMode": {
+    "en": "Educational mode: external AI services are not available.",
+    "ru": "Учебный режим: внешние сервисы ИИ недоступны.",
+    "cs": "Výukový režim: externí služby AI nejsou k dispozici."
+  },
+  "ai.settings.onDeviceUnavailable": {
+    "en": "The Apple on-device model needs macOS 26 or later on a supported Mac with Apple Intelligence turned on.",
+    "ru": "Для модели Apple на устройстве нужна macOS 26 или новее на поддерживаемом Mac с включённым Apple Intelligence.",
+    "cs": "Model Apple v zařízení vyžaduje macOS 26 nebo novější na podporovaném Macu se zapnutou Apple Intelligence."
+  },
+  "ai.settings.ollama": {
+    "en": "Local model",
+    "ru": "Локальная модель",
+    "cs": "Místní model"
+  },
+  "ai.settings.endpoint": {
+    "en": "Address (this Mac only)",
+    "ru": "Адрес (только этот Mac)",
+    "cs": "Adresa (jen tento Mac)"
+  },
+  "ai.settings.model": {
+    "en": "Model name",
+    "ru": "Название модели",
+    "cs": "Název modelu"
+  },
+  "ai.settings.ollamaNote": {
+    "en": "Install Ollama and a model yourself; InvestiQ does not download models. Only addresses on this Mac (127.0.0.1 or localhost) are accepted, so nothing leaves your computer.",
+    "ru": "Установите Ollama и модель самостоятельно; InvestiQ не загружает модели. Принимаются только адреса этого Mac (127.0.0.1 или localhost), поэтому ничего не покидает компьютер.",
+    "cs": "Ollama a model si nainstalujte sami; InvestiQ modely nestahuje. Přijímají se jen adresy tohoto Macu (127.0.0.1 nebo localhost), takže nic neopustí váš počítač."
+  },
+  "ai.settings.external": {
+    "en": "External service",
+    "ru": "Внешний сервис",
+    "cs": "Externí služba"
+  },
+  "ai.settings.apiKey": {
+    "en": "Your API key",
+    "ru": "Ваш API-ключ",
+    "cs": "Váš API klíč"
+  },
+  "ai.settings.saveKey": {
+    "en": "Save key in Keychain",
+    "ru": "Сохранить ключ в Связке ключей",
+    "cs": "Uložit klíč do Klíčenky"
+  },
+  "ai.settings.keyStored": {
+    "en": "A key is stored in the Keychain.",
+    "ru": "Ключ хранится в Связке ключей.",
+    "cs": "Klíč je uložen v Klíčence."
+  },
+  "ai.settings.keyMissing": {
+    "en": "No key stored yet.",
+    "ru": "Ключ ещё не сохранён.",
+    "cs": "Klíč zatím není uložen."
+  },
+  "ai.keySaved": {
+    "en": "The key was saved in the Keychain.",
+    "ru": "Ключ сохранён в Связке ключей.",
+    "cs": "Klíč byl uložen do Klíčenky."
+  },
+  "ai.settings.portfolioContext": {
+    "en": "Allow risk levels of my portfolio in questions",
+    "ru": "Разрешить передавать уровни риска моего портфеля",
+    "cs": "Povolit odesílání úrovní rizika mého portfolia"
+  },
+  "ai.settings.whatIsSent": {
+    "en": "Sent to the service: the question or the text being explained (for example a news headline) and fixed instructions. Never sent: amounts, holdings, transactions, your profile, passwords or API keys of other services.",
+    "ru": "Отправляется сервису: вопрос или объясняемый текст (например, заголовок новости) и фиксированные инструкции. Никогда не отправляются: суммы, позиции, сделки, ваш профиль, пароли и ключи других сервисов.",
+    "cs": "Službě se odesílá: otázka nebo vysvětlovaný text (např. titulek zprávy) a pevné pokyny. Nikdy se neodesílají: částky, pozice, transakce, váš profil, hesla ani klíče jiných služeb."
+  },
+  "ai.settings.guarantees": {
+    "en": "AI has no tools: it cannot trade, run commands or change your data. Answers are checked against a fixed format; investment advice, invented probabilities and invented links are rejected or removed.",
+    "ru": "У ИИ нет инструментов: он не может совершать сделки, выполнять команды или менять данные. Ответы проверяются на соответствие формату; инвестиционные советы, выдуманные вероятности и ссылки отклоняются или удаляются.",
+    "cs": "AI nemá žádné nástroje: nemůže obchodovat, spouštět příkazy ani měnit vaše data. Odpovědi se kontrolují podle pevného formátu; investiční rady, vymyšlené pravděpodobnosti a odkazy se odmítají nebo odstraňují."
+  },
+  "ai.consent.title": {
+    "en": "Send questions to an external AI service?",
+    "ru": "Отправлять вопросы внешнему сервису ИИ?",
+    "cs": "Odesílat otázky externí službě AI?"
+  },
+  "ai.consent.body": {
+    "en": "Your questions and the texts you ask about will be sent to Anthropic's Claude API using your own key and processed under their terms. No amounts, holdings, transactions or profile data are sent. You can switch this off at any time.",
+    "ru": "Ваши вопросы и тексты, о которых вы спрашиваете, будут отправляться в Claude API компании Anthropic с вашим ключом и обрабатываться по её условиям. Суммы, позиции, сделки и данные профиля не отправляются. Отключить можно в любой момент.",
+    "cs": "Vaše otázky a texty, na které se ptáte, se budou odesílat do Claude API společnosti Anthropic s vaším klíčem a zpracovávat podle jejích podmínek. Částky, pozice, transakce ani údaje profilu se neodesílají. Vypnout to můžete kdykoli."
+  },
+  "ai.consent.agree": {
+    "en": "I agree, enable",
+    "ru": "Согласен, включить",
+    "cs": "Souhlasím, zapnout"
+  },
+  "ai.answer.title": {
+    "en": "AI explanation",
+    "ru": "Объяснение ИИ",
+    "cs": "Vysvětlení AI"
+  },
+  "ai.disclaimer": {
+    "en": "AI answers can be wrong. They are general explanations, not advice, and are not saved with your data.",
+    "ru": "Ответы ИИ могут быть ошибочными. Это общие объяснения, а не советы, и они не сохраняются вместе с вашими данными.",
+    "cs": "Odpovědi AI mohou být chybné. Jsou to obecná vysvětlení, ne rady, a neukládají se s vašimi daty."
+  },
+  "ai.provenance.external": {
+    "en": "Answered by an external service.",
+    "ru": "Ответ дал внешний сервис.",
+    "cs": "Odpověděla externí služba."
+  },
+  "ai.provenance.local": {
+    "en": "Answered on this Mac.",
+    "ru": "Ответ получен на этом Mac.",
+    "cs": "Odpověď vznikla na tomto Macu."
+  },
+  "ai.flag.unverifiedFigures": {
+    "en": "The answer contains figures that were not in the data InvestiQ provided. Check them before relying on them.",
+    "ru": "В ответе есть цифры, которых не было в данных InvestiQ. Проверьте их, прежде чем на них опираться.",
+    "cs": "Odpověď obsahuje čísla, která nebyla v datech InvestiQ. Než se na ně spolehnete, ověřte je."
+  },
+  "ai.flag.removedLinks": {
+    "en": "Links that were not in the source were removed.",
+    "ru": "Ссылки, которых не было в источнике, удалены.",
+    "cs": "Odkazy, které nebyly ve zdroji, byly odstraněny."
+  },
+  "ai.flag.injectionAttemptInInput": {
+    "en": "The source text contained instructions aimed at the AI; they were treated as plain text.",
+    "ru": "Исходный текст содержал инструкции для ИИ; они обработаны как обычный текст.",
+    "cs": "Zdrojový text obsahoval pokyny pro AI; byly zpracovány jako prostý text."
+  },
+  "ai.error.disabled": {
+    "en": "AI is switched off in Settings.",
+    "ru": "ИИ выключен в настройках.",
+    "cs": "AI je v Nastavení vypnutá."
+  },
+  "ai.error.consentRequired": {
+    "en": "External AI needs your consent in Settings → AI.",
+    "ru": "Для внешнего ИИ нужно ваше согласие в Настройки → ИИ.",
+    "cs": "Externí AI vyžaduje váš souhlas v Nastavení → AI."
+  },
+  "ai.error.notAllowedInEducationalMode": {
+    "en": "External AI is not available in educational mode.",
+    "ru": "Внешний ИИ недоступен в учебном режиме.",
+    "cs": "Externí AI není ve výukovém režimu k dispozici."
+  },
+  "ai.error.providerUnavailable": {
+    "en": "The AI provider is not available right now.",
+    "ru": "Поставщик ИИ сейчас недоступен.",
+    "cs": "Poskytovatel AI teď není k dispozici."
+  },
+  "ai.error.missingConfiguration": {
+    "en": "The AI provider is not set up (key or model missing).",
+    "ru": "Поставщик ИИ не настроен (нет ключа или модели).",
+    "cs": "Poskytovatel AI není nastaven (chybí klíč nebo model)."
+  },
+  "ai.error.blockedSensitiveData": {
+    "en": "The request contained a password or key and was not sent.",
+    "ru": "Запрос содержал пароль или ключ и не был отправлен.",
+    "cs": "Požadavek obsahoval heslo nebo klíč a nebyl odeslán."
+  },
+  "ai.error.invalidResponse": {
+    "en": "The AI answer was not in the expected format and was discarded.",
+    "ru": "Ответ ИИ не соответствовал формату и был отброшен.",
+    "cs": "Odpověď AI neměla očekávaný formát a byla zahozena."
+  },
+  "ai.error.policyViolation": {
+    "en": "The AI answer contained advice or invented probabilities and was not shown.",
+    "ru": "Ответ ИИ содержал советы или выдуманные вероятности и не был показан.",
+    "cs": "Odpověď AI obsahovala rady nebo vymyšlené pravděpodobnosti a nebyla zobrazena."
+  },
+  "ai.error.refused": {
+    "en": "The AI service declined this request.",
+    "ru": "Сервис ИИ отклонил этот запрос.",
+    "cs": "Služba AI tento požadavek odmítla."
+  },
+  "ai.error.transport": {
+    "en": "The AI service could not be reached.",
+    "ru": "Не удалось связаться с сервисом ИИ.",
+    "cs": "Služba AI není dostupná."
+  },
+  "ai.error.notAvailable": {
+    "en": "This provider is not available here.",
+    "ru": "Этот поставщик здесь недоступен.",
+    "cs": "Tento poskytovatel zde není k dispozici."
+  },
+  "ai.error.localOnly": {
+    "en": "Only addresses on this Mac (127.0.0.1 or localhost) are allowed.",
+    "ru": "Разрешены только адреса этого Mac (127.0.0.1 или localhost).",
+    "cs": "Povoleny jsou jen adresy tohoto Macu (127.0.0.1 nebo localhost)."
+  },
+  "ai.explainTopic": {
+    "en": "Explain with AI",
+    "ru": "Объяснить с помощью ИИ",
+    "cs": "Vysvětlit pomocí AI"
+  },
+  "ai.summarize": {
+    "en": "Summarise with AI",
+    "ru": "Кратко с помощью ИИ",
+    "cs": "Shrnout pomocí AI"
+  },
+  "ai.explainRisk": {
+    "en": "Explain this risk with AI",
+    "ru": "Объяснить этот риск с помощью ИИ",
+    "cs": "Vysvětlit toto riziko pomocí AI"
+  },
+  "ai.question.title": {
+    "en": "Ask a learning question",
+    "ru": "Задайте учебный вопрос",
+    "cs": "Položte studijní otázku"
+  },
+  "ai.question.help": {
+    "en": "General questions about investing concepts. Personal advice is not given.",
+    "ru": "Общие вопросы о понятиях инвестирования. Персональные советы не даются.",
+    "cs": "Obecné otázky o pojmech investování. Osobní rady se neposkytují."
+  },
+  "ai.question.placeholder": {
+    "en": "For example: what is the difference between an ETF and a mutual fund?",
+    "ru": "Например: чем ETF отличается от паевого фонда?",
+    "cs": "Například: jaký je rozdíl mezi ETF a podílovým fondem?"
+  },
+  "ai.question.ask": {
+    "en": "Ask",
+    "ru": "Спросить",
+    "cs": "Zeptat se"
+  },
+  "ai.question.externalNote": {
+    "en": "Your question will be sent to the external AI service you enabled.",
+    "ru": "Вопрос будет отправлен включённому вами внешнему сервису ИИ.",
+    "cs": "Otázka bude odeslána externí službě AI, kterou jste zapnuli."
+  }
+}

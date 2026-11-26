@@ -104,3 +104,19 @@ with `#available(macOS 26, *)`. Building requires Xcode 26+.
 
 No mutable positions table. `PortfolioLedger` replays transactions; valuation snapshots store the ledger
 hash so cached values are verifiable and automatically invalidated.
+
+## ADR-017 AI providers: Apple on-device, local Ollama, Claude Messages API over raw HTTPS
+
+**Context.** Spec §24 asks for an `AIProvider` interface with local models (Ollama), Apple Foundation
+Models and external LLM APIs, all optional. Swift has no official Anthropic SDK.
+**Decision.** `AIProvider` (`InvestiQData/AI`) with three adapters: `AppleOnDeviceAIProvider`
+(`FoundationModels`, `@available(macOS 26)`, injected by the app), `OllamaProvider` (loopback only) and
+`AnthropicMessagesProvider` — raw HTTPS `POST /v1/messages`, `anthropic-version: 2026-10-21`, default
+model `claude-opus-5-5` (user-changeable), explicit `output_config.effort`, structured output via
+`output_config.format` (JSON schema), server-side refusal fallback (`fallbacks: "default"`), `stop_reason`
+checked before reading content, no tools, no sampling parameters. A single `AIService` applies consent,
+eligibility, minimisation, secret scanning and output validation for every provider.
+**Consequences.** No new dependency. Plain HTTP is permitted only to loopback addresses
+(`HTTPRequest.usesAllowedTransport`); ATS does not apply to loopback, so no ATS exception is needed. The
+default external model can be changed in Settings without a code change.
+

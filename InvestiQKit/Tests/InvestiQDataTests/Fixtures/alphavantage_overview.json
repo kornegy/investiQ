@@ -1,0 +1,9 @@
+{
+    "Symbol": "IBM", "AssetType": "Common Stock", "Name": "International Business Machines",
+    "Description": "A technology company.", "CIK": "51143", "Exchange": "NYSE", "Currency": "USD", "Country": "USA",
+    "Sector": "TECHNOLOGY", "Industry": "COMPUTER & OFFICE EQUIPMENT", "FiscalYearEnd": "December", "LatestQuarter": "2026-09-30",
+    "MarketCapitalization": "207500000000", "EBITDA": "14600000000", "PERatio": "32.5", "PEGRatio": "None",
+    "BookValue": "28.5", "DividendPerShare": "6.68", "DividendYield": "0.0297", "EPS": "6.92", "RevenuePerShareTTM": "68.2",
+    "ProfitMargin": "0.101", "OperatingMarginTTM": "0.172", "RevenueTTM": "62900000000", "QuarterlyRevenueGrowthYOY": "0.015",
+    "AnalystTargetPrice": "-", "PriceToBookRatio": "7.9", "Beta": "0.71", "SharesOutstanding": "924000000"
+}
