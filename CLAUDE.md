@@ -73,7 +73,11 @@ python3 scripts/lint_copy.py && python3 scripts/check_l10n.py
 * No magic numbers — named constants with a comment for financial thresholds (link the method ID).
 * No silent error handling: no `try?` on user data paths; typed errors.
 * User-facing strings never in business logic: return `Message(key:arguments:)`; add keys to
-  `InvestiQ/Resources/Localizable.xcstrings` with ru, en and cs translations.
+  `Localization/*.json` with ru, en and cs translations and run `scripts/build_xcstrings.py`. The generated
+  `InvestiQ/Resources/Localizable.xcstrings` is never edited by hand; Xcode string extraction is off
+  (`SWIFT_EMIT_LOC_STRINGS = NO`) so builds do not rewrite it.
+* Keys assembled at run time: `L10n.key("news.type", type.rawValue)`, never
+  `LocalizedStringKey("news.type.\(type.rawValue)")` (SwiftUI would look up `news.type.%@` and show the raw key).
 * Copy rules: no "buy now", "last chance", "missing out", "guaranteed", urgency or FOMO in any language
   (`scripts/lint_copy.py`).
 * Comments explain *why* (formula, decision), not *what*.
